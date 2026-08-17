@@ -1,0 +1,3808 @@
+{
+  "catalog": {
+    "uuid": "d3b4e7c1-8f2a-4b9e-a1d5-6c7f8a9b0c1d",
+    "metadata": {
+      "title": "Durchführungsverordnung (EU) 2024/2690 der Kommission (NIS-2-Durchführungsverordnung)",
+      "last-modified": "2026-08-14T11:30:24Z",
+      "version": "1.0",
+      "oscal-version": "1.1.2",
+      "remarks": "Durchführungsverordnung (EU) 2024/2690 der Kommission vom 17. Oktober 2024 mit Durchführungsbestimmungen zur Richtlinie (EU) 2022/2555 im Hinblick auf die technischen und methodischen Anforderungen der Risikomanagementmaßnahmen im Bereich der Cybersicherheit und die Präzisierung der Fälle, in denen ein Sicherheitsvorfall als erheblich gilt."
+    },
+    "groups": [
+    {
+      "id": "artikel",
+      "title": "Artikel der Durchführungsverordnung",
+      "controls": [
+        {
+          "id": "artikel-1",
+          "title": "Artikel 1: Gegenstand",
+          "parts": [
+            {
+              "id": "artikel-1_stmt",
+              "name": "statement",
+              "prose": "In dieser Verordnung werden in Bezug auf DNS-Diensteanbieter, TLD-Namenregister, Anbieter von Cloud-Computing-Diensten, Anbieter von Rechenzentrumsdiensten, Betreiber von Inhaltszustellnetzen, Anbieter verwalteter Dienste, Anbieter verwalteter Sicherheitsdienste, Anbieter von Online-Marktplätzen, Online-Suchmaschinen und Plattformen für Dienste sozialer Netzwerke und Vertrauensdiensteanbieter (im Folgenden „betreffende Einrichtungen“) die technischen und methodischen Anforderungen der in Artikel 21 Absatz 2 der Richtlinie (EU) 2022/2555 genannten Maßnahmen festgelegt und die Fälle präzisiert, in denen ein Sicherheitsvorfall gemäß Artikel 23 Absatz 3 der Richtlinie (EU) 2022/2555 als erheblich anzusehen ist."
+            }
+          ]
+        },
+        {
+          "id": "artikel-2",
+          "title": "Artikel 2: Technische und methodische Anforderungen",
+          "parts": [
+            {
+              "id": "artikel-2_stmt",
+              "name": "statement",
+              "parts": [
+                {
+                  "id": "artikel-2_stmt.1",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "(1)"
+                    }
+                  ],
+                  "prose": "Für die betreffenden Einrichtungen sind im Anhang dieser Verordnung die technischen und methodischen Anforderungen der in Artikel 21 Absatz 2 Buchstaben a bis j der Richtlinie (EU) 2022/2555 genannten Risikomanagementmaßnahmen im Bereich der Cybersicherheit festgelegt."
+                },
+                {
+                  "id": "artikel-2_stmt.2",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "(2)"
+                    }
+                  ],
+                  "prose": "Bei der Umsetzung und Anwendung der technischen und methodischen Anforderungen der im Anhang dieser Verordnung festgelegten Risikomanagementmaßnahmen im Bereich der Cybersicherheit gewährleisten die betreffenden Einrichtungen ein den bestehenden Risiken angemessenes Sicherheitsniveau der Netz- und Informationssysteme. Zu diesem Zweck tragen sie dem Ausmaß ihrer Risikoexposition, ihrer Größe und der Wahrscheinlichkeit des Eintretens von Sicherheitsvorfällen und deren Schwere, einschließlich gesellschaftlicher und wirtschaftlicher Auswirkungen, gebührend Rechnung, wenn sie die im Anhang dieser Verordnung festgelegten technischen und methodischen Anforderungen der Risikomanagementmaßnahmen im Bereich der Cybersicherheit erfüllen."
+                },
+                {
+                  "id": "artikel-2_stmt.3",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "(3)"
+                    }
+                  ],
+                  "prose": "Ist im Anhang dieser Verordnung vorgesehen, dass eine technische oder methodische Anforderung einer Risikomanagementmaßnahmen im Bereich der Cybersicherheit nur anzuwenden ist, soweit dies angemessen, anwendbar oder durchführbar ist, und hält es eine betreffende Einrichtung für nicht angemessen, nicht anwendbar oder nicht durchführbar, bestimmte technische und methodische Anforderungen anzuwenden, so muss die betreffende Einrichtung ihre diesbezügliche Begründung in verständlicher Weise dokumentieren."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "artikel-3",
+          "title": "Artikel 3: Erhebliche Sicherheitsvorfälle",
+          "parts": [
+            {
+              "id": "artikel-3_stmt",
+              "name": "statement",
+              "parts": [
+                {
+                  "id": "artikel-3_stmt.1",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "(1)"
+                    }
+                  ],
+                  "prose": "Ein Sicherheitsvorfall gilt in Bezug auf die betreffenden Einrichtungen als erheblich im Sinne von Artikel 23 Absatz 3 der Richtlinie (EU) 2022/2555, wenn eines oder mehrere der folgenden Kriterien erfüllt sind:",
+                  "parts": [
+                    {
+                      "id": "artikel-3_stmt.1.a",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "a)"
+                        }
+                      ],
+                      "prose": "der Vorfall hat der betreffenden Einrichtung einen direkten finanziellen Verlust in Höhe von mehr als 500 000 EUR oder 5 % ihres jährlichen Gesamtumsatzes im vorangegangenen Geschäftsjahr – je nachdem, welcher Wert niedriger ist – verursacht oder kann einen solchen Verlust verursachen;"
+                    },
+                    {
+                      "id": "artikel-3_stmt.1.b",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "b)"
+                        }
+                      ],
+                      "prose": "der Vorfall hat den Abfluss von Geschäftsgeheimnissen der betreffenden Einrichtung im Sinne von Artikel 2 Nummer 1 der Richtlinie (EU) 2016/943 verursacht oder kann einen solchen Abfluss verursachen;"
+                    },
+                    {
+                      "id": "artikel-3_stmt.1.c",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "c)"
+                        }
+                      ],
+                      "prose": "der Vorfall hat den Tod einer natürlichen Person verursacht oder kann einen solchen Tod verursachen;"
+                    },
+                    {
+                      "id": "artikel-3_stmt.1.d",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "d)"
+                        }
+                      ],
+                      "prose": "der Vorfall hat eine schwere Schädigung der Gesundheit einer natürlichen Person verursacht oder kann eine solche Schädigung verursachen;"
+                    },
+                    {
+                      "id": "artikel-3_stmt.1.e",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "e)"
+                        }
+                      ],
+                      "prose": "es hat einen erfolgreichen, mutmaßlich böswilligen und unbefugten Zugriff auf Netz- und Informationssysteme gegeben, der geeignet ist, schwerwiegende Betriebsstörungen zu verursachen;"
+                    },
+                    {
+                      "id": "artikel-3_stmt.1.f",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "f)"
+                        }
+                      ],
+                      "prose": "der Vorfall erfüllt die in Artikel 4 aufgeführten Kriterien;"
+                    },
+                    {
+                      "id": "artikel-3_stmt.1.g",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "g)"
+                        }
+                      ],
+                      "prose": "der Vorfall erfüllt eines oder mehrere der in den Artikeln 5 bis 14 aufgeführten Kriterien."
+                    }
+                  ]
+                },
+                {
+                  "id": "artikel-3_stmt.2",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "(2)"
+                    }
+                  ],
+                  "prose": "Planmäßige Betriebsunterbrechungen und geplante Folgen planmäßiger Wartungsarbeiten, die von oder im Auftrag der betreffenden Einrichtungen durchgeführt werden, gelten nicht als erhebliche Sicherheitsvorfälle."
+                },
+                {
+                  "id": "artikel-3_stmt.3",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "(3)"
+                    }
+                  ],
+                  "prose": "Bei der Berechnung der Zahl der von einem Sicherheitsvorfall betroffenen Nutzer für die Zwecke der Artikel 7 und Artikel 9 bis 14 berücksichtigen die betreffenden Einrichtungen Folgendes:",
+                  "parts": [
+                    {
+                      "id": "artikel-3_stmt.3.a",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "a)"
+                        }
+                      ],
+                      "prose": "die Zahl der Kunden, die mit der betreffenden Einrichtung einen Vertrag geschlossen haben, der ihnen Zugang zu den Netz- und Informationssystemen der betreffenden Einrichtung oder über diese Netz- und Informationssysteme angebotenen oder zugänglichen Diensten verschafft;"
+                    },
+                    {
+                      "id": "artikel-3_stmt.3.b",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "b)"
+                        }
+                      ],
+                      "prose": "die Zahl der natürlichen oder juristischen Personen, die mit Geschäftskunden verbunden sind, die Netz- und Informationssysteme der betreffenden Einrichtung oder über diese Netz- und Informationssysteme angebotene oder zugängliche Diensten nutzen."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "artikel-4",
+          "title": "Artikel 4: Wiederholte Sicherheitsvorfälle",
+          "parts": [
+            {
+              "id": "artikel-4_stmt",
+              "name": "statement",
+              "prose": "Sicherheitsvorfälle, die einzeln betrachtet nach Artikel 3 nicht als erhebliche Sicherheitsvorfälle angesehen werden, gelten zusammengenommen als ein erheblicher Sicherheitsvorfall, wenn sie alle folgenden Kriterien erfüllen:",
+              "parts": [
+                {
+                  "id": "artikel-4_stmt.a",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "a)"
+                    }
+                  ],
+                  "prose": "sie sind innerhalb von sechs Monaten mindestens zwei Mal aufgetreten;"
+                },
+                {
+                  "id": "artikel-4_stmt.b",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "b)"
+                    }
+                  ],
+                  "prose": "sie haben dieselbe offensichtliche Ursache;"
+                },
+                {
+                  "id": "artikel-4_stmt.c",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "c)"
+                    }
+                  ],
+                  "prose": "sie erfüllen zusammengenommen die in Artikel 3 Absatz 1 Buchstabe a aufgeführten Kriterien."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "artikel-5",
+          "title": "Artikel 5: Erhebliche Sicherheitsvorfälle in Bezug auf DNS-Diensteanbieter",
+          "parts": [
+            {
+              "id": "artikel-5_stmt",
+              "name": "statement",
+              "prose": "In Bezug auf DNS-Diensteanbieter gilt ein Sicherheitsvorfall als erheblich im Sinne von Artikel 3 Absatz 1 Buchstabe g, wenn er eines oder mehrere der folgenden Kriterien erfüllt:",
+              "parts": [
+                {
+                  "id": "artikel-5_stmt.a",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "a)"
+                    }
+                  ],
+                  "prose": "ein rekursiver oder autoritativer Dienst zur Auflösung von Domänennamen ist mehr als 30 Minuten lang vollständig nicht verfügbar;"
+                },
+                {
+                  "id": "artikel-5_stmt.b",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "b)"
+                    }
+                  ],
+                  "prose": "mehr als eine Stunde lang beträgt die durchschnittliche Antwortzeit eines rekursiven oder autoritativen Dienstes zur Auflösung von Domänennamen auf DNS-Anfragen mehr als 10 Sekunden;"
+                },
+                {
+                  "id": "artikel-5_stmt.c",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "c)"
+                    }
+                  ],
+                  "prose": "die Integrität, Vertraulichkeit oder Authentizität der Daten, die im Zusammenhang mit der Bereitstellung des autoritativen Dienstes zur Auflösung von Domänennamen gespeichert, übermittelt oder verarbeitet werden, ist beeinträchtigt, außer falls die Daten von weniger als 1 000 Domänennamen, die von dem DNS-Diensteanbieter verwaltet werden und die höchstens 1 % der von dem DNS-Diensteanbieter verwalteten Domänennamen ausmachen, aufgrund einer Fehlkonfiguration nicht korrekt sind."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "artikel-6",
+          "title": "Artikel 6: Erhebliche Sicherheitsvorfälle in Bezug auf TLD-Namenregister",
+          "parts": [
+            {
+              "id": "artikel-6_stmt",
+              "name": "statement",
+              "prose": "In Bezug auf TLD-Namenregister gilt ein Sicherheitsvorfall als erheblich im Sinne von Artikel 3 Absatz 1 Buchstabe g, wenn er eines oder mehrere der folgenden Kriterien erfüllt:",
+              "parts": [
+                {
+                  "id": "artikel-6_stmt.a",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "a)"
+                    }
+                  ],
+                  "prose": "ein autoritativer Dienst zur Auflösung von Domänennamen ist vollständig nicht verfügbar;"
+                },
+                {
+                  "id": "artikel-6_stmt.b",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "b)"
+                    }
+                  ],
+                  "prose": "mehr als eine Stunde lang beträgt die durchschnittliche Antwortzeit eines autoritativen Dienstes zur Auflösung von Domänennamen auf DNS-Anfragen mehr als 10 Sekunden;"
+                },
+                {
+                  "id": "artikel-6_stmt.c",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "c)"
+                    }
+                  ],
+                  "prose": "die Integrität, Vertraulichkeit oder Authentizität der im Zusammenhang mit dem technischen Betrieb der TLD gespeicherten, übermittelten oder verarbeiteten Daten ist beeinträchtigt."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "artikel-7",
+          "title": "Artikel 7: Erhebliche Sicherheitsvorfälle in Bezug auf Anbieter von Cloud-Computing-Diensten",
+          "parts": [
+            {
+              "id": "artikel-7_stmt",
+              "name": "statement",
+              "prose": "In Bezug auf Anbieter von Cloud-Computing-Diensten gilt ein Sicherheitsvorfall als erheblich im Sinne von Artikel 3 Absatz 1 Buchstabe g, wenn er eines oder mehrere der folgenden Kriterien erfüllt:",
+              "parts": [
+                {
+                  "id": "artikel-7_stmt.a",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "a)"
+                    }
+                  ],
+                  "prose": "ein erbrachter Cloud-Computing-Dienst ist mehr als 30 Minuten lang vollständig nicht verfügbar;"
+                },
+                {
+                  "id": "artikel-7_stmt.b",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "b)"
+                    }
+                  ],
+                  "prose": "die Verfügbarkeit eines Cloud-Computing-Dienstes eines Anbieters ist für mehr als 5 % der Nutzer des Cloud-Computing-Dienstes in der Union oder für mehr als 1 Mio. Nutzer des Cloud-Computing-Dienstes in der Union – je nachdem, welche Zahl niedriger ist – für eine Dauer von mehr als einer Stunde eingeschränkt;"
+                },
+                {
+                  "id": "artikel-7_stmt.c",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "c)"
+                    }
+                  ],
+                  "prose": "die Integrität, Vertraulichkeit oder Authentizität der im Zusammenhang mit der Erbringung eines Cloud-Computing-Dienstes gespeicherten, übermittelten oder verarbeiteten Daten ist infolge einer mutmaßlich böswilligen Handlung beeinträchtigt;"
+                },
+                {
+                  "id": "artikel-7_stmt.d",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "d)"
+                    }
+                  ],
+                  "prose": "die Integrität, Vertraulichkeit oder Authentizität der im Zusammenhang mit der Erbringung eines Cloud-Computing-Dienstes gespeicherten, übermittelten oder verarbeiteten Daten ist beeinträchtigt, und dies wirkt sich auf mehr als 5 % der Nutzer des Cloud-Computing-Dienstes in der Union oder auf mehr als 1 Mio. Nutzer des Cloud-Computing-Dienstes in der Union – je nachdem, welche Zahl niedriger ist – aus."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "artikel-8",
+          "title": "Artikel 8: Erhebliche Sicherheitsvorfälle in Bezug auf Anbieter von Rechenzentrumsdiensten",
+          "parts": [
+            {
+              "id": "artikel-8_stmt",
+              "name": "statement",
+              "prose": "In Bezug auf Anbieter von Rechenzentrumsdiensten gilt ein Sicherheitsvorfall als erheblich im Sinne von Artikel 3 Absatz 1 Buchstabe g, wenn er eines oder mehrere der folgenden Kriterien erfüllt:",
+              "parts": [
+                {
+                  "id": "artikel-8_stmt.a",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "a)"
+                    }
+                  ],
+                  "prose": "ein Rechenzentrumsdienst eines vom Anbieter betriebenen Rechenzentrums ist vollständig nicht verfügbar;"
+                },
+                {
+                  "id": "artikel-8_stmt.b",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "b)"
+                    }
+                  ],
+                  "prose": "die Verfügbarkeit eines Rechenzentrumsdienstes eines vom Anbieter betriebenen Rechenzentrums ist für eine Dauer von mehr als einer Stunde eingeschränkt;"
+                },
+                {
+                  "id": "artikel-8_stmt.c",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "c)"
+                    }
+                  ],
+                  "prose": "die Integrität, Vertraulichkeit oder Authentizität der im Zusammenhang mit der Erbringung eines Rechenzentrumsdienstes gespeicherten, übermittelten oder verarbeiteten Daten ist infolge einer mutmaßlich böswilligen Handlung beeinträchtigt;"
+                },
+                {
+                  "id": "artikel-8_stmt.d",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "d)"
+                    }
+                  ],
+                  "prose": "der physische Zugang zu einem von dem Anbieter betriebenen Rechenzentrum ist beeinträchtigt."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "artikel-9",
+          "title": "Artikel 9: Erhebliche Sicherheitsvorfälle in Bezug auf Betreiber von Inhaltszustellnetzen",
+          "parts": [
+            {
+              "id": "artikel-9_stmt",
+              "name": "statement",
+              "prose": "In Bezug auf Betreiber von Inhaltszustellnetzen gilt ein Sicherheitsvorfall als erheblich im Sinne von Artikel 3 Absatz 1 Buchstabe g, wenn er eines oder mehrere der folgenden Kriterien erfüllt:",
+              "parts": [
+                {
+                  "id": "artikel-9_stmt.a",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "a)"
+                    }
+                  ],
+                  "prose": "ein Inhaltszustellnetz ist mehr als 30 Minuten lang vollständig nicht verfügbar;"
+                },
+                {
+                  "id": "artikel-9_stmt.b",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "b)"
+                    }
+                  ],
+                  "prose": "die Verfügbarkeit eines Inhaltszustellnetzes ist für mehr als 5 % der Nutzer des Inhaltszustellnetzes in der Union oder für mehr als 1 Mio. Nutzer des Inhaltszustellnetzes in der Union – je nachdem, welche Zahl niedriger ist – für eine Dauer von mehr als einer Stunde eingeschränkt;"
+                },
+                {
+                  "id": "artikel-9_stmt.c",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "c)"
+                    }
+                  ],
+                  "prose": "die Integrität, Vertraulichkeit oder Authentizität der im Zusammenhang mit dem Betrieb eines Inhaltszustellnetzes gespeicherten, übermittelten oder verarbeiteten Daten ist infolge einer mutmaßlich böswilligen Handlung beeinträchtigt;"
+                },
+                {
+                  "id": "artikel-9_stmt.d",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "d)"
+                    }
+                  ],
+                  "prose": "die Integrität, Vertraulichkeit oder Authentizität der im Zusammenhang mit dem Betrieb eines Inhaltszustellnetzes gespeicherten, übermittelten oder verarbeiteten Daten ist beeinträchtigt, und dies wirkt sich auf mehr als 5 % der Nutzer des Inhaltszustellnetzes in der Union oder auf mehr als 1 Mio. Nutzer des Inhaltszustellnetzes in der Union – je nachdem, welche Zahl niedriger ist – aus."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "artikel-10",
+          "title": "Artikel 10: Erhebliche Sicherheitsvorfälle in Bezug Anbieter verwalteter Dienste und Anbieter verwalteter Sicherheitsdienste",
+          "parts": [
+            {
+              "id": "artikel-10_stmt",
+              "name": "statement",
+              "prose": "In Bezug auf Anbieter verwalteter Dienste und Anbieter verwalteter Sicherheitsdienste gilt ein Sicherheitsvorfall als erheblich im Sinne von Artikel 3 Absatz 1 Buchstabe g, wenn er eines oder mehrere der folgenden Kriterien erfüllt:",
+              "parts": [
+                {
+                  "id": "artikel-10_stmt.a",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "a)"
+                    }
+                  ],
+                  "prose": "ein verwalteter Dienst oder ein verwalteter Sicherheitsdienst ist mehr als 30 Minuten lang vollständig nicht verfügbar;"
+                },
+                {
+                  "id": "artikel-10_stmt.b",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "b)"
+                    }
+                  ],
+                  "prose": "die Verfügbarkeit eines verwalteten Dienstes oder verwalteten Sicherheitsdienstes ist für mehr als 5 % der Nutzer des Dienstes in der Union oder für mehr als 1 Mio. Nutzer des Dienstes in der Union – je nachdem, welche Zahl niedriger ist – für eine Dauer von mehr als einer Stunde eingeschränkt;"
+                },
+                {
+                  "id": "artikel-10_stmt.c",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "c)"
+                    }
+                  ],
+                  "prose": "die Integrität, Vertraulichkeit oder Authentizität der im Zusammenhang mit der Erbringung eines verwalteten Dienstes oder verwalteten Sicherheitsdienstes gespeicherten, übermittelten oder verarbeiteten Daten ist infolge einer mutmaßlich böswilligen Handlung beeinträchtigt;"
+                },
+                {
+                  "id": "artikel-10_stmt.d",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "d)"
+                    }
+                  ],
+                  "prose": "die Integrität, Vertraulichkeit oder Authentizität der im Zusammenhang mit der Erbringung eines verwalteten Dienstes oder verwalteten Sicherheitsdienstes gespeicherten, übermittelten oder verarbeiteten Daten ist beeinträchtigt, und dies wirkt sich auf mehr als 5 % der Nutzer des Dienstes in der Union oder auf mehr als 1 Mio. Nutzer des Dienstes in der Union – je nachdem, welche Zahl niedriger ist – aus."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "artikel-11",
+          "title": "Artikel 11: Erhebliche Sicherheitsvorfälle in Bezug auf Anbieter von Online-Marktplätzen",
+          "parts": [
+            {
+              "id": "artikel-11_stmt",
+              "name": "statement",
+              "prose": "In Bezug auf Anbieter von Online-Marktplätzen gilt ein Sicherheitsvorfall als erheblich im Sinne von Artikel 3 Absatz 1 Buchstabe g, wenn er eines oder mehrere der folgenden Kriterien erfüllt:",
+              "parts": [
+                {
+                  "id": "artikel-11_stmt.a",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "a)"
+                    }
+                  ],
+                  "prose": "ein Online-Marktplatz ist für mehr als 5 % der Nutzer des Online-Marktplatzes in der Union oder für mehr als 1 Mio. Nutzer des Online-Marktplatzes in der Union – je nachdem, welche Zahl niedriger ist – vollständig nicht verfügbar;"
+                },
+                {
+                  "id": "artikel-11_stmt.b",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "b)"
+                    }
+                  ],
+                  "prose": "mehr als 5 % der Nutzer eines Online-Marktplatzes in der Union oder mehr als 1 Mio. Nutzer eines Online-Marktplatzes in der Union – je nachdem, welche Zahl niedriger ist – sind von einer eingeschränkten Verfügbarkeit des Online-Marktplatzes betroffen;"
+                },
+                {
+                  "id": "artikel-11_stmt.c",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "c)"
+                    }
+                  ],
+                  "prose": "die Integrität, Vertraulichkeit oder Authentizität der im Zusammenhang mit dem Betrieb eines Online-Marktplatzes gespeicherten, übermittelten oder verarbeiteten Daten ist infolge einer mutmaßlich böswilligen Handlung beeinträchtigt;"
+                },
+                {
+                  "id": "artikel-11_stmt.d",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "d)"
+                    }
+                  ],
+                  "prose": "die Integrität, Vertraulichkeit oder Authentizität der im Zusammenhang mit dem Betrieb eines Online-Marktplatzes gespeicherten, übermittelten oder verarbeiteten Daten ist beeinträchtigt, und dies wirkt sich auf mehr als 5 % der Nutzer des Online-Marktplatzes in der Union oder auf mehr als 1 Mio. Nutzer des Online-Marktplatzes in der Union – je nachdem, welche Zahl niedriger ist – aus."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "artikel-12",
+          "title": "Artikel 12: Erhebliche Sicherheitsvorfälle in Bezug auf Anbieter von Online-Suchmaschinen",
+          "parts": [
+            {
+              "id": "artikel-12_stmt",
+              "name": "statement",
+              "prose": "In Bezug auf Anbieter von Online-Suchmaschinen gilt ein Sicherheitsvorfall als erheblich im Sinne von Artikel 3 Absatz 1 Buchstabe g, wenn er eines oder mehrere der folgenden Kriterien erfüllt:",
+              "parts": [
+                {
+                  "id": "artikel-12_stmt.a",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "a)"
+                    }
+                  ],
+                  "prose": "eine Online-Suchmaschine ist für mehr als 5 % der Nutzer der Online-Suchmaschine in der Union oder für mehr als 1 Mio. Nutzer der Online-Suchmaschine in der Union – je nachdem, welche Zahl niedriger ist – vollständig nicht verfügbar;"
+                },
+                {
+                  "id": "artikel-12_stmt.b",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "b)"
+                    }
+                  ],
+                  "prose": "mehr als 5 % der Nutzer einer Online-Suchmaschine in der Union oder mehr als 1 Mio. Nutzer einer Online-Suchmaschine in der Union – je nachdem, welche Zahl niedriger ist – sind von einer eingeschränkten Verfügbarkeit der Online-Suchmaschine betroffen;"
+                },
+                {
+                  "id": "artikel-12_stmt.c",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "c)"
+                    }
+                  ],
+                  "prose": "die Integrität, Vertraulichkeit oder Authentizität der im Zusammenhang mit dem Betrieb einer Online-Suchmaschine gespeicherten, übermittelten oder verarbeiteten Daten ist infolge einer mutmaßlich böswilligen Handlung beeinträchtigt;"
+                },
+                {
+                  "id": "artikel-12_stmt.d",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "d)"
+                    }
+                  ],
+                  "prose": "die Integrität, Vertraulichkeit oder Authentizität der im Zusammenhang mit dem Betrieb einer Online-Suchmaschine gespeicherten, übermittelten oder verarbeiteten Daten ist beeinträchtigt, und dies wirkt sich auf mehr als 5 % der Nutzer der Online-Suchmaschine in der Union oder auf mehr als 1 Mio. Nutzer der Online-Suchmaschine in der Union – je nachdem, welche Zahl niedriger ist – aus."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "artikel-13",
+          "title": "Artikel 13: Erhebliche Sicherheitsvorfälle in Bezug auf Anbieter von Plattformen für Dienste sozialer Netzwerke",
+          "parts": [
+            {
+              "id": "artikel-13_stmt",
+              "name": "statement",
+              "prose": "In Bezug auf Anbieter von Plattformen für Dienste sozialer Netzwerke gilt ein Sicherheitsvorfall als erheblich im Sinne von Artikel 3 Absatz 1 Buchstabe g, wenn er eines oder mehrere der folgenden Kriterien erfüllt:",
+              "parts": [
+                {
+                  "id": "artikel-13_stmt.a",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "a)"
+                    }
+                  ],
+                  "prose": "eine Plattform für Dienste sozialer Netzwerke ist für mehr als 5 % der Nutzer der Plattform für Dienste sozialer Netzwerke in der Union oder für mehr als 1 Mio. Nutzer der Plattform für Dienste sozialer Netzwerke in der Union – je nachdem, welche Zahl niedriger ist – vollständig nicht verfügbar;"
+                },
+                {
+                  "id": "artikel-13_stmt.b",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "b)"
+                    }
+                  ],
+                  "prose": "mehr als 5 % der Nutzer einer Plattform für Dienste sozialer Netzwerke in der Union oder mehr als 1 Mio. Nutzer einer Plattform für Dienste sozialer Netzwerke in der Union – je nachdem, welche Zahl niedriger ist – sind von einer eingeschränkten Verfügbarkeit der Plattform für Dienste sozialer Netzwerke betroffen;"
+                },
+                {
+                  "id": "artikel-13_stmt.c",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "c)"
+                    }
+                  ],
+                  "prose": "die Integrität, Vertraulichkeit oder Authentizität der im Zusammenhang mit dem Betrieb einer Plattform für Dienste sozialer Netzwerke gespeicherten, übermittelten oder verarbeiteten Daten ist infolge einer mutmaßlich böswilligen Handlung beeinträchtigt;"
+                },
+                {
+                  "id": "artikel-13_stmt.d",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "d)"
+                    }
+                  ],
+                  "prose": "die Integrität, Vertraulichkeit oder Authentizität der im Zusammenhang mit dem Betrieb einer Plattform für Dienste sozialer Netzwerke gespeicherten, übermittelten oder verarbeiteten Daten ist beeinträchtigt, und dies wirkt sich auf mehr als 5 % der Nutzer der Plattform für Dienste sozialer Netzwerke in der Union oder auf mehr als 1 Mio. Nutzer der Plattform für Dienste sozialer Netzwerke in der Union – je nachdem, welche Zahl niedriger ist – aus."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "artikel-14",
+          "title": "Artikel 14: Erhebliche Sicherheitsvorfälle in Bezug auf Vertrauensdiensteanbieter",
+          "parts": [
+            {
+              "id": "artikel-14_stmt",
+              "name": "statement",
+              "prose": "In Bezug auf Vertrauensdiensteanbieter gilt ein Sicherheitsvorfall als erheblich im Sinne von Artikel 3 Absatz 1 Buchstabe g, wenn er eines oder mehrere der folgenden Kriterien erfüllt:",
+              "parts": [
+                {
+                  "id": "artikel-14_stmt.a",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "a)"
+                    }
+                  ],
+                  "prose": "ein Vertrauensdienst ist mehr als 20 Minuten lang vollständig nicht verfügbar;"
+                },
+                {
+                  "id": "artikel-14_stmt.b",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "b)"
+                    }
+                  ],
+                  "prose": "ein Vertrauensdienst ist für Nutzer oder vertrauende Beteiligte im Laufe einer Kalenderwoche mehr als eine Stunde lang nicht verfügbar;"
+                },
+                {
+                  "id": "artikel-14_stmt.c",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "c)"
+                    }
+                  ],
+                  "prose": "mehr als 1 % der Nutzer oder vertrauenden Beteiligten in der Union oder mehr als 200 000 Nutzer oder vertrauende Beteiligte in der Union – je nachdem, welche Zahl niedriger ist – sind von einer eingeschränkten Verfügbarkeit eines Vertrauensdienstes betroffen;"
+                },
+                {
+                  "id": "artikel-14_stmt.d",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "d)"
+                    }
+                  ],
+                  "prose": "der physische Zugang zu einem Bereich, in dem sich Netz- und Informationssysteme befinden und zu dem nur vertrauenswürdiges Personal des Vertrauensdiensteanbieters Zugang hat, oder der Schutz dieses physischen Zugangs ist beeinträchtigt;"
+                },
+                {
+                  "id": "artikel-14_stmt.e",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "e)"
+                    }
+                  ],
+                  "prose": "die Integrität, Vertraulichkeit oder Authentizität der im Zusammenhang mit der Erbringung eines Vertrauensdienstes gespeicherten, übermittelten oder verarbeiteten Daten ist beeinträchtigt, und dies wirkt sich auf mehr als 0,1 % der Nutzer oder vertrauenden Beteiligten oder auf mehr als 100 Nutzer oder vertrauende Beteiligte des Vertrauensdienstes in der Union – je nachdem, welche Zahl niedriger ist – aus."
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "artikel-15",
+          "title": "Artikel 15: Aufhebung",
+          "parts": [
+            {
+              "id": "artikel-15_stmt",
+              "name": "statement",
+              "prose": "Die Durchführungsverordnung (EU) 2018/151 der Kommission wird aufgehoben."
+            }
+          ]
+        },
+        {
+          "id": "artikel-16",
+          "title": "Artikel 16: Inkrafttreten und Geltungsbeginn",
+          "parts": [
+            {
+              "id": "artikel-16_stmt",
+              "name": "statement",
+              "prose": "Diese Verordnung tritt am zwanzigsten Tag nach ihrer Veröffentlichung im Amtsblatt der Europäischen Union in Kraft.\n\nDiese Verordnung ist in allen ihren Teilen verbindlich und gilt unmittelbar in jedem Mitgliedstaat."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anhang",
+      "title": "ANHANG: Technische und methodische Anforderungen",
+      "controls": [
+        {
+          "id": "anhang-1",
+          "title": "1. Konzept für die Sicherheit von Netz- und Informationssystemen (Artikel 21 Absatz 2 Buchstabe a der Richtlinie (EU) 2022/2555)",
+          "parts": [
+            {
+              "id": "anhang-1_stmt",
+              "name": "statement",
+              "parts": [
+                {
+                  "id": "anhang-1.1",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "1.1."
+                    }
+                  ],
+                  "prose": "Konzept für die Sicherheit von Netz- und Informationssystemen",
+                  "parts": [
+                    {
+                      "id": "anhang-1.1.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "1.1.1."
+                        }
+                      ],
+                      "prose": "Für die Zwecke von Artikel 21 Absatz 2 Buchstabe a der Richtlinie (EU) 2022/2555 muss das Konzept für die Sicherheit von Netz- und Informationssystemen",
+                      "parts": [
+                        {
+                          "id": "anhang-1.1.1.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "den Ansatz der betreffenden Einrichtungen für das Management der Sicherheit ihrer Netz- und Informationssysteme darlegen;"
+                        },
+                        {
+                          "id": "anhang-1.1.1.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "für die Geschäftsstrategie und die Ziele der betreffenden Einrichtungen geeignet sein und diese ergänzen;"
+                        },
+                        {
+                          "id": "anhang-1.1.1.c",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "c)"
+                            }
+                          ],
+                          "prose": "die Ziele der Sicherheit von Netz- und Informationssystemen darlegen;"
+                        },
+                        {
+                          "id": "anhang-1.1.1.d",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "d)"
+                            }
+                          ],
+                          "prose": "eine Verpflichtung zur kontinuierlichen Verbesserung der Sicherheit von Netz- und Informationssystemen enthalten;"
+                        },
+                        {
+                          "id": "anhang-1.1.1.e",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "e)"
+                            }
+                          ],
+                          "prose": "eine Verpflichtung enthalten, die für seine Umsetzung erforderlichen angemessenen Ressourcen bereitzustellen, einschließlich des erforderlichen Personals, der erforderlichen Finanzmittel sowie der Verfahren, Instrumente und Technologien;"
+                        },
+                        {
+                          "id": "anhang-1.1.1.f",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "f)"
+                            }
+                          ],
+                          "prose": "den einschlägigen Mitarbeitenden und interessierten externen Beteiligten mitgeteilt und von ihnen anerkannt werden;"
+                        },
+                        {
+                          "id": "anhang-1.1.1.g",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "g)"
+                            }
+                          ],
+                          "prose": "die Festlegung der Rollen und Verantwortlichkeiten gemäß Nummer 1.2 enthalten;"
+                        },
+                        {
+                          "id": "anhang-1.1.1.h",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "h)"
+                            }
+                          ],
+                          "prose": "die aufzubewahrenden Unterlagen und die Dauer ihrer Aufbewahrung aufführen;"
+                        },
+                        {
+                          "id": "anhang-1.1.1.i",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "i)"
+                            }
+                          ],
+                          "prose": "die themenspezifischen Konzepte aufführen;"
+                        },
+                        {
+                          "id": "anhang-1.1.1.j",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "j)"
+                            }
+                          ],
+                          "prose": "Indikatoren und Maßnahmen zur Überwachung seiner Umsetzung und des aktuellen Reifegrads der Netz- und Informationssicherheit in den betreffenden Einrichtungen festlegen;"
+                        },
+                        {
+                          "id": "anhang-1.1.1.k",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "k)"
+                            }
+                          ],
+                          "prose": "das Datum der förmlichen Genehmigung durch die Leitungsorgane der betreffenden Einrichtungen (im Folgenden „Leitungsorgane“) enthalten."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "anhang-1.1.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "1.1.2."
+                        }
+                      ],
+                      "prose": "Das Konzept für die Sicherheit von Netz- und Informationssystemen wird von den Leitungsorganen mindestens jährlich sowie bei erheblichen Sicherheitsvorfällen oder wesentlichen Änderungen der Betriebsabläufe oder der Risiken überprüft und – soweit angemessen – aktualisiert. Das Ergebnis der Überprüfung wird dokumentiert."
+                    }
+                  ]
+                },
+                {
+                  "id": "anhang-1.2",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "1.2."
+                    }
+                  ],
+                  "prose": "Rollen, Verantwortlichkeiten und Weisungsbefugnisse",
+                  "parts": [
+                    {
+                      "id": "anhang-1.2.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "1.2.1."
+                        }
+                      ],
+                      "prose": "Im Rahmen ihres Konzepts für die Sicherheit von Netz- und Informationssystemen gemäß Nummer 1.1 legen die betreffenden Einrichtungen Verantwortlichkeiten und Weisungsbefugnisse für die Sicherheit von Netz- und Informationssystemen fest und ordnen sie den Rollen zu, weisen sie entsprechend dem Bedarf der jeweiligen Einrichtungen zu und teilen dies den Leitungsorganen mit."
+                    },
+                    {
+                      "id": "anhang-1.2.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "1.2.2."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen verlangen von allen Mitarbeitenden und Dritten, die Netz- und Informationssystemsicherheit entsprechend dem festgelegten Konzept für die Sicherheit von Netz- und Informationssystemen, den themenspezifischen Konzepten und den Verfahren der betreffenden Einrichtungen anzuwenden."
+                    },
+                    {
+                      "id": "anhang-1.2.3",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "1.2.3."
+                        }
+                      ],
+                      "prose": "Mindestens eine Person muss gegenüber den Leitungsorganen direkt für Fragen der Sicherheit von Netz- und Informationssystemen verantwortlich sein."
+                    },
+                    {
+                      "id": "anhang-1.2.4",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "1.2.4."
+                        }
+                      ],
+                      "prose": "Je nach Größe der betreffenden Einrichtungen wird die Sicherheit von Netz- und Informationssystemen durch spezielle Rollen oder Aufgaben abgedeckt, die zusätzlich zu den bestehenden Rollen übernommen werden."
+                    },
+                    {
+                      "id": "anhang-1.2.5",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "1.2.5."
+                        }
+                      ],
+                      "prose": "Widerstrebende Pflichten und sich widersprechende Verantwortlichkeiten werden – soweit anwendbar – getrennt."
+                    },
+                    {
+                      "id": "anhang-1.2.6",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "1.2.6."
+                        }
+                      ],
+                      "prose": "Die Rollen, Verantwortlichkeiten und Weisungsbefugnisse werden von den Leitungsorganen in geplanten Zeitabständen sowie bei erheblichen Sicherheitsvorfällen oder wesentlichen Änderungen der Betriebsabläufe oder der Risiken überprüft und – soweit angemessen – aktualisiert."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "anhang-2",
+          "title": "2. Konzept für das Risikomanagement (Artikel 21 Absatz 2 Buchstabe a der Richtlinie (EU) 2022/2555)",
+          "parts": [
+            {
+              "id": "anhang-2_stmt",
+              "name": "statement",
+              "parts": [
+                {
+                  "id": "anhang-2.1",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "2.1."
+                    }
+                  ],
+                  "prose": "Risikomanagementrahmen",
+                  "parts": [
+                    {
+                      "id": "anhang-2.1.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "2.1.1."
+                        }
+                      ],
+                      "prose": "Für die Zwecke von Artikel 21 Absatz 2 Buchstabe a der Richtlinie (EU) 2022/2555 führen die betreffenden Einrichtungen einen geeigneten Risikomanagementrahmen ein, um die Risiken für die Sicherheit von Netz- und Informationssystemen zu ermitteln und anzugehen, und erhalten diesen Rahmen aufrecht. Die betreffenden Einrichtungen führen Risikobewertungen durch und dokumentieren diese; auf der Grundlage der Ergebnisse erstellen sie einen Risikobehandlungsplan, setzen diesen um und überwachen ihn. Die Ergebnisse der Risikobewertung und die Restrisiken werden von den Leitungsorganen oder – soweit anwendbar – von Personen akzeptiert, die für das Risikomanagement rechenschaftspflichtig und befugt sind, sofern die betreffenden Einrichtungen für eine angemessene Berichterstattung an die Leitungsorgane sorgen."
+                    },
+                    {
+                      "id": "anhang-2.1.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "2.1.2."
+                        }
+                      ],
+                      "prose": "Für die Zwecke von Nummer 2.1.1 legen die betreffenden Einrichtungen Verfahren für die Ermittlung, Analyse, Bewertung und Behandlung von Risiken fest („Risikomanagementverfahren im Bereich der Cybersicherheit“). Das Risikomanagementverfahren im Bereich der Cybersicherheit ist – soweit anwendbar – fester Bestandteil des gesamten Risikomanagementverfahrens der betreffenden Einrichtungen. Als Teil des Risikomanagementverfahrens im Bereich der Cybersicherheit müssen die betreffenden Einrichtungen",
+                      "parts": [
+                        {
+                          "id": "anhang-2.1.2.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "eine Risikomanagementmethodik befolgen;"
+                        },
+                        {
+                          "id": "anhang-2.1.2.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "eine Risikotoleranzschwelle im Einklang mit der Risikobereitschaft der betreffenden Einrichtungen festlegen;"
+                        },
+                        {
+                          "id": "anhang-2.1.2.c",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "c)"
+                            }
+                          ],
+                          "prose": "einschlägige Risikokriterien einführen und pflegen;"
+                        },
+                        {
+                          "id": "anhang-2.1.2.d",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "d)"
+                            }
+                          ],
+                          "prose": "im Einklang mit einem gefahrenübergreifenden Ansatz die bestehenden Risiken für die Sicherheit von Netz- und Informationssystemen ermitteln und dokumentieren, insbesondere in Bezug auf Dritte sowie auf Risiken, die zu Störungen der Verfügbarkeit, Integrität, Authentizität oder Vertraulichkeit der Netz- und Informationssysteme führen könnten, wobei auch punktuelle Ausfälle zu ermitteln sind;"
+                        },
+                        {
+                          "id": "anhang-2.1.2.e",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "e)"
+                            }
+                          ],
+                          "prose": "die bestehenden Risiken für die Sicherheit von Netz- und Informationssystemen analysieren, einschließlich des Niveaus der Bedrohung, der Wahrscheinlichkeit, der Auswirkung und des Risikos unter Berücksichtigung der Erkenntnisse über Cyberbedrohungen und Schwachstellen;"
+                        },
+                        {
+                          "id": "anhang-2.1.2.f",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "f)"
+                            }
+                          ],
+                          "prose": "die ermittelten Risiken auf der Grundlage der Risikokriterien bewerten;"
+                        },
+                        {
+                          "id": "anhang-2.1.2.g",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "g)"
+                            }
+                          ],
+                          "prose": "geeignete Optionen und Maßnahmen für die Behandlung von Risiken bestimmen;"
+                        },
+                        {
+                          "id": "anhang-2.1.2.h",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "h)"
+                            }
+                          ],
+                          "prose": "die Umsetzung der Maßnahmen für die Behandlung von Risiken fortlaufend überwachen;"
+                        },
+                        {
+                          "id": "anhang-2.1.2.i",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "i)"
+                            }
+                          ],
+                          "prose": "ermitteln, wer für die Umsetzung der Maßnahmen für die Behandlung von Risiken verantwortlich ist und wann diese erfolgen sollte;"
+                        },
+                        {
+                          "id": "anhang-2.1.2.j",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "j)"
+                            }
+                          ],
+                          "prose": "die gewählten Maßnahmen für die Behandlung von Risiken in einem Risikobehandlungsplan dokumentieren und die Gründe für das Eingehen der Restrisiken umfassend erläutern."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "anhang-2.1.3",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "2.1.3."
+                        }
+                      ],
+                      "prose": "Bei der Ermittlung und Priorisierung geeigneter Risikomanagementoptionen und -maßnahmen berücksichtigen die betreffenden Einrichtungen die Ergebnisse der Risikobewertung, die Ergebnisse des Verfahrens zur Bewertung der Wirksamkeit von Risikomanagementmaßnahmen im Bereich der Cybersicherheit, die Umsetzungskosten im Verhältnis zum erwarteten Nutzen, die in Nummer 12.1 genannte Klassifizierung von Anlagen und Werten und die in Nummer 4.1.3 genannte Analyse der betrieblichen Auswirkungen."
+                    },
+                    {
+                      "id": "anhang-2.1.4",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "2.1.4."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen bewerten die Ergebnisse der Risikobewertung und den Risikobehandlungsplan in geplanten Zeitabständen und mindestens jährlich sowie bei wesentlichen Änderungen der Betriebsabläufe oder der Risiken oder bei erheblichen Sicherheitsvorfällen und aktualisieren sie – soweit angemessen."
+                    }
+                  ]
+                },
+                {
+                  "id": "anhang-2.2",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "2.2."
+                    }
+                  ],
+                  "prose": "Überwachung der Einhaltung",
+                  "parts": [
+                    {
+                      "id": "anhang-2.2.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "2.2.1."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen überprüfen regelmäßig die Einhaltung ihrer Konzepte für die Sicherheit von Netz- und Informationssystemen, themenspezifischen Konzepten, Vorschriften und Normen. Die Leitungsorgane werden durch regelmäßige Berichterstattung auf der Grundlage der Überprüfungen der Einhaltung über den Stand der Netz- und Informationssicherheit unterrichtet."
+                    },
+                    {
+                      "id": "anhang-2.2.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "2.2.2."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen führen ein wirksames System für die Berichterstattung über die Einhaltung der Bestimmungen ein, das ihren Strukturen, Betriebsumfeldern und Bedrohungslandschaften angemessen ist. Das System für die Berichterstattung über die Einhaltung muss den Leitungsorganen einen fundierten Überblick über den aktuellen Stand des Risikomanagements der betreffenden Einrichtungen geben können."
+                    },
+                    {
+                      "id": "anhang-2.2.3",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "2.2.3."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen führen in geplanten Zeitabständen sowie bei erheblichen Sicherheitsvorfällen oder wesentlichen Änderungen der Betriebsabläufe oder der Risiken Maßnahmen zur Überwachung der Einhaltung durch."
+                    }
+                  ]
+                },
+                {
+                  "id": "anhang-2.3",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "2.3."
+                    }
+                  ],
+                  "prose": "Unabhängige Überprüfung der Netz- und Informationssicherheit",
+                  "parts": [
+                    {
+                      "id": "anhang-2.3.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "2.3.1."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen überprüfen unabhängig ihren Ansatz für das Management der Sicherheit von Netz- und Informationssystemen und dessen Umsetzung, einschließlich Personen, Verfahren und Technologien."
+                    },
+                    {
+                      "id": "anhang-2.3.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "2.3.2."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen entwickeln Verfahren zur Durchführung unabhängiger Überprüfungen durch Personen mit angemessener Prüfungskompetenz und pflegen diese Verfahren. Wird die unabhängige Überprüfung von Mitgliedern des Personals der betreffenden Einrichtung durchgeführt, so dürfen die Personen, die die Überprüfungen durchführen, nicht dem Personal des zu überprüfenden Bereichs unterstellt sein. Lässt die Größe der betreffenden Einrichtungen eine solche Trennung der Befugnisse nicht zu, so ergreifen die betreffenden Einrichtungen alternative Maßnahmen, um die Unparteilichkeit der Überprüfungen zu gewährleisten."
+                    },
+                    {
+                      "id": "anhang-2.3.3",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "2.3.3."
+                        }
+                      ],
+                      "prose": "Die Ergebnisse der unabhängigen Überprüfungen, einschließlich der Ergebnisse der Überwachung der Einhaltung gemäß Nummer 2.2 und der Überwachung und Messung gemäß Nummer 7, werden den Leitungsorganen gemeldet. Gemäß den Risikoakzeptanzkriterien der betreffenden Einrichtungen sind Korrekturmaßnahmen zu ergreifen oder Restrisiken zu akzeptieren."
+                    },
+                    {
+                      "id": "anhang-2.3.4",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "2.3.4."
+                        }
+                      ],
+                      "prose": "Die unabhängigen Überprüfungen finden in geplanten Zeitabständen sowie bei erheblichen Sicherheitsvorfällen oder wesentlichen Änderungen der Betriebsabläufe oder der Risiken statt."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "anhang-3",
+          "title": "3. Bewältigung von Sicherheitsvorfällen (Artikel 21 Absatz 2 Buchstabe b der Richtlinie (EU) 2022/2555)",
+          "parts": [
+            {
+              "id": "anhang-3_stmt",
+              "name": "statement",
+              "parts": [
+                {
+                  "id": "anhang-3.1",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "3.1."
+                    }
+                  ],
+                  "prose": "Konzept für die Bewältigung von Sicherheitsvorfällen",
+                  "parts": [
+                    {
+                      "id": "anhang-3.1.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.1.1."
+                        }
+                      ],
+                      "prose": "Für die Zwecke von Artikel 21 Absatz 2 Buchstabe b der Richtlinie (EU) 2022/2555 arbeiten die betreffenden Einrichtungen ein Konzept für die Bewältigung von Sicherheitsvorfällen aus, in dem Rollen, Verantwortlichkeiten und Verfahren für die zeitnahe Erkennung, Analyse, Eindämmung oder Reaktion, die Wiederherstellung sowie Dokumentation und Meldung in Bezug auf Sicherheitsvorfälle festgelegt werden, und setzen dieses um."
+                    },
+                    {
+                      "id": "anhang-3.1.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.1.2."
+                        }
+                      ],
+                      "prose": "Das in Nummer 3.1.1 genannte Konzept muss mit dem Notfallplan für die Aufrechterhaltung und Wiederherstellung des Betriebs gemäß Nummer 4.1 im Einklang stehen. Das Konzept umfasst",
+                      "parts": [
+                        {
+                          "id": "anhang-3.1.2.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "ein Kategorisierungssystem für Sicherheitsvorfälle, das mit der Bewertung und Klassifizierung von Ereignissen gemäß Nummer 3.4.1 im Einklang steht;"
+                        },
+                        {
+                          "id": "anhang-3.1.2.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "wirksame Kommunikationspläne, auch für die Eskalation und Meldung;"
+                        },
+                        {
+                          "id": "anhang-3.1.2.c",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "c)"
+                            }
+                          ],
+                          "prose": "eine Zuweisung der Rollen bei der Erkennung von Sicherheitsvorfällen und der angemessenen Reaktion darauf an kompetente Mitarbeitende;"
+                        },
+                        {
+                          "id": "anhang-3.1.2.d",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "d)"
+                            }
+                          ],
+                          "prose": "Dokumente, die im Laufe der Erkennung von Sicherheitsvorfällen und der Reaktion darauf zu verwenden sind, wie Anleitungen für die Reaktion bei Sicherheitsvorfällen, Eskalationsschemata, Kontaktlisten und Vorlagen."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "anhang-3.1.3",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.1.3."
+                        }
+                      ],
+                      "prose": "Die in dem Konzept festgelegten Rollen, Verantwortlichkeiten und Verfahren werden in geplanten Zeitabständen sowie bei erheblichen Sicherheitsvorfällen oder wesentlichen Änderungen der Betriebsabläufe oder der Risiken getestet, überprüft und – soweit angemessen – aktualisiert."
+                    }
+                  ]
+                },
+                {
+                  "id": "anhang-3.2",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "3.2."
+                    }
+                  ],
+                  "prose": "Überwachung und Protokollierung",
+                  "parts": [
+                    {
+                      "id": "anhang-3.2.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.2.1."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen legen Verfahren fest und verwenden Instrumente, um Aktivitäten in ihrem Netz- und Informationssystem zu überwachen und zu protokollieren, damit sie Ereignisse, die als Sicherheitsvorfälle betrachtet werden könnten, erkennen und zur Eindämmung der Auswirkungen entsprechend darauf reagieren können."
+                    },
+                    {
+                      "id": "anhang-3.2.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.2.2."
+                        }
+                      ],
+                      "prose": "Soweit durchführbar, erfolgt die Überwachung automatisch und wird vorbehaltlich der betrieblichen Kapazitäten entweder kontinuierlich oder in regelmäßigen Zeitabständen durchgeführt. Die betreffenden Einrichtungen führen ihre Überwachungstätigkeiten so durch, dass es zu möglichst wenigen falsch positiven und falsch negativen Ergebnissen kommt."
+                    },
+                    {
+                      "id": "anhang-3.2.3",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.2.3."
+                        }
+                      ],
+                      "prose": "Auf der Grundlage der in Nummer 3.2.1 genannten Verfahren führen, dokumentieren und überprüfen die betreffenden Einrichtungen Protokolle. Die betreffenden Einrichtungen erstellen auf der Grundlage der Ergebnisse der gemäß Nummer 2.1 durchgeführten Risikobewertung eine Liste der Anlagen und Werte, die Gegenstand der Protokollierung sind. Soweit angemessen, müssen die Protokolle Folgendes enthalten:",
+                      "parts": [
+                        {
+                          "id": "anhang-3.2.3.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "relevanten ausgehenden und eingehenden Netzverkehr;"
+                        },
+                        {
+                          "id": "anhang-3.2.3.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "Einrichtung, Änderung oder Löschung von Nutzern der Netz- und Informationssysteme der betreffenden Einrichtungen und Erweiterung der Berechtigungen;"
+                        },
+                        {
+                          "id": "anhang-3.2.3.c",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "c)"
+                            }
+                          ],
+                          "prose": "Zugriffe auf Systeme und Anwendungen;"
+                        },
+                        {
+                          "id": "anhang-3.2.3.d",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "d)"
+                            }
+                          ],
+                          "prose": "authentifizierungsbezogene Ereignisse;"
+                        },
+                        {
+                          "id": "anhang-3.2.3.e",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "e)"
+                            }
+                          ],
+                          "prose": "alle privilegierten Zugriffe auf Systeme und Anwendungen sowie Aktivitäten der Verwaltungskonten;"
+                        },
+                        {
+                          "id": "anhang-3.2.3.f",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "f)"
+                            }
+                          ],
+                          "prose": "Zugriffe auf kritische Konfigurations- und Backup-Sicherungsdateien oder Änderungen dieser Dateien;"
+                        },
+                        {
+                          "id": "anhang-3.2.3.g",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "g)"
+                            }
+                          ],
+                          "prose": "Ereignisprotokolle und Protokolle von Sicherheitstools wie Antivirenprogrammen, Angriffserkennungssystemen oder Firewalls;"
+                        },
+                        {
+                          "id": "anhang-3.2.3.h",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "h)"
+                            }
+                          ],
+                          "prose": "Nutzung der Systemressourcen sowie deren Leistung;"
+                        },
+                        {
+                          "id": "anhang-3.2.3.i",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "i)"
+                            }
+                          ],
+                          "prose": "physischen Zugang zu Betriebsstätten;"
+                        },
+                        {
+                          "id": "anhang-3.2.3.j",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "j)"
+                            }
+                          ],
+                          "prose": "Zugang zu ihren Netzwerkausrüstungen und -geräten und deren Nutzung;"
+                        },
+                        {
+                          "id": "anhang-3.2.3.k",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "k)"
+                            }
+                          ],
+                          "prose": "Aktivierung, Beendigung und Pausieren der verschiedenen Protokolle;"
+                        },
+                        {
+                          "id": "anhang-3.2.3.l",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "l)"
+                            }
+                          ],
+                          "prose": "Ereignisse im Umfeld."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "anhang-3.2.4",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.2.4."
+                        }
+                      ],
+                      "prose": "Die Protokolle werden regelmäßig auf ungewöhnliche oder unerwünschte Trends überprüft. Soweit angemessen, legen die betreffenden Einrichtungen geeignete Werte für Alarmschwellen fest. Bei Überschreitung der festgelegten Alarmschwellenwerte wird – soweit angemessen – automatisch ein Alarm ausgelöst. Der betreffenden Einrichtungen stellen sicher, dass im Falle eines Alarms zeitnah eine qualifizierte und angemessene Reaktion eingeleitet wird."
+                    },
+                    {
+                      "id": "anhang-3.2.5",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.2.5."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen führen und sichern die Protokolle für einen vorab festgelegten Zeitraum und schützen sie vor unbefugten Zugriffen oder Änderungen."
+                    },
+                    {
+                      "id": "anhang-3.2.6",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.2.6."
+                        }
+                      ],
+                      "prose": "Soweit durchführbar, stellen die betreffenden Einrichtungen sicher, alle Systeme zeitlich synchronisiert sind, um Protokolle zwischen den Systemen für die Ereignisbewertung miteinander in Beziehung setzen zu können. Die betreffenden Einrichtungen erstellen und führen eine Liste aller Anlagen und Werten, die protokolliert werden, und stellen sicher, dass für die Überwachung und Protokollierung Redundanzsysteme zur Verfügung stehen. Die Verfügbarkeit der Überwachungs- und Protokollierungssysteme wird unabhängig von den von ihnen überwachten Systemen überwacht."
+                    },
+                    {
+                      "id": "anhang-3.2.7",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.2.7."
+                        }
+                      ],
+                      "prose": "Die Verfahren sowie die Liste der protokollierten Anlagen und Werte werden in regelmäßigen Abständen und nach erheblichen Sicherheitsvorfällen überprüft und – soweit angemessen – aktualisiert."
+                    }
+                  ]
+                },
+                {
+                  "id": "anhang-3.3",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "3.3."
+                    }
+                  ],
+                  "prose": "Meldung von Ereignissen",
+                  "parts": [
+                    {
+                      "id": "anhang-3.3.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.3.1."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen richten einen einfachen Mechanismus ein, über den ihre Mitarbeitenden, Anbieter und Kunden verdächtige Ereignisse melden können."
+                    },
+                    {
+                      "id": "anhang-3.3.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.3.2."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen unterrichten – soweit angemessen – ihre Anbieter und Kunden über den Mechanismus für die Meldung von Ereignissen und schulen ihre Mitarbeitenden regelmäßig in Bezug auf dessen Nutzung."
+                    }
+                  ]
+                },
+                {
+                  "id": "anhang-3.4",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "3.4."
+                    }
+                  ],
+                  "prose": "Bewertung und Klassifizierung von Ereignissen",
+                  "parts": [
+                    {
+                      "id": "anhang-3.4.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.4.1."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen bewerten verdächtige Ereignisse, um festzustellen, ob es sich um Sicherheitsvorfälle handelt, und – falls dies der Fall ist – um deren Art und Schwere zu bestimmen."
+                    },
+                    {
+                      "id": "anhang-3.4.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.4.2."
+                        }
+                      ],
+                      "prose": "Für die Zwecke von Nummer 3.4.1 gehen die betreffenden Einrichtungen wie folgt vor:",
+                      "parts": [
+                        {
+                          "id": "anhang-3.4.2.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "Sie führen die Bewertung auf der Grundlage vorab festgelegter Kriterien und einer Triage durch, um die Priorisierung der Eindämmung und Beseitigung von Sicherheitsvorfällen zu bestimmen,"
+                        },
+                        {
+                          "id": "anhang-3.4.2.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "sie bewerten vierteljährlich, ob wiederholte Sicherheitsvorfälle gemäß Artikel 4 dieser Verordnung vorliegen,"
+                        },
+                        {
+                          "id": "anhang-3.4.2.c",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "c)"
+                            }
+                          ],
+                          "prose": "sie überprüfen die betreffenden Protokolle für die Zwecke der Bewertung und Klassifizierung von Ereignissen,"
+                        },
+                        {
+                          "id": "anhang-3.4.2.d",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "d)"
+                            }
+                          ],
+                          "prose": "sie führen ein Verfahren für die Korrelation und Analyse von Protokollen ein, und"
+                        },
+                        {
+                          "id": "anhang-3.4.2.e",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "e)"
+                            }
+                          ],
+                          "prose": "sie bewerten und klassifizieren Ereignisse neu, falls neue Informationen verfügbar werden, oder nach der Auswertung zuvor verfügbarer Informationen."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "anhang-3.5",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "3.5."
+                    }
+                  ],
+                  "prose": "Reaktion auf Sicherheitsvorfälle",
+                  "parts": [
+                    {
+                      "id": "anhang-3.5.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.5.1."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen reagieren auf Sicherheitsvorfälle zeitnah gemäß dokumentierten Verfahren."
+                    },
+                    {
+                      "id": "anhang-3.5.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.5.2."
+                        }
+                      ],
+                      "prose": "Die Verfahren für Reaktionsmaßnahmen bei Sicherheitsvorfällen umfassen folgende Phasen:",
+                      "parts": [
+                        {
+                          "id": "anhang-3.5.2.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "Eindämmung des Sicherheitsvorfalls, um zu verhindern, dass sich dessen Folgen ausbreiten;"
+                        },
+                        {
+                          "id": "anhang-3.5.2.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "Beseitigung, um zu verhindern, dass der Sicherheitsvorfall andauert oder erneut auftritt;"
+                        },
+                        {
+                          "id": "anhang-3.5.2.c",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "c)"
+                            }
+                          ],
+                          "prose": "erforderlichenfalls Wiederherstellung nach dem Sicherheitsvorfall."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "anhang-3.5.3",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.5.3."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen erstellen Pläne und Verfahren für die Kommunikation",
+                      "parts": [
+                        {
+                          "id": "anhang-3.5.3.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "mit den Computer-Notfallteams (CSIRTs) oder – soweit anwendbar – mit den zuständigen Behörden im Zusammenhang mit der Meldung von Sicherheitsvorfällen;"
+                        },
+                        {
+                          "id": "anhang-3.5.3.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "zwischen den Mitgliedern des Personals der betreffenden Einrichtung und mit einschlägigen Interessenträgern außerhalb der betreffenden Einrichtung."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "anhang-3.5.4",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.5.4."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen protokollieren die Tätigkeiten zur Reaktion auf Sicherheitsvorfälle gemäß den in Nummer 3.2.1 genannten Verfahren und sammeln Nachweise."
+                    },
+                    {
+                      "id": "anhang-3.5.5",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.5.5."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen testen ihre Verfahren zur Reaktion auf Sicherheitsvorfälle in geplanten Zeitabständen."
+                    }
+                  ]
+                },
+                {
+                  "id": "anhang-3.6",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "3.6."
+                    }
+                  ],
+                  "prose": "Überprüfungen nach Sicherheitsvorfällen",
+                  "parts": [
+                    {
+                      "id": "anhang-3.6.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.6.1."
+                        }
+                      ],
+                      "prose": "Nach Sicherheitsvorfällen führen die betreffenden Einrichtungen im Anschluss an die Wiederherstellung – soweit angemessen – nachträgliche Überprüfungen durch. Bei der Überprüfung nach einem Sicherheitsvorfall wird, soweit möglich, die Ursache des Vorfalls ermittelt und es werden die daraus gezogenen Lehren dokumentiert, um das Auftreten und die Folgen künftiger Vorfälle zu verringern."
+                    },
+                    {
+                      "id": "anhang-3.6.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.6.2."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen stellen sicher, dass die Überprüfungen nach Sicherheitsvorfällen zur Verbesserung ihres Konzepts für die Netz- und Informationssicherheit, zu Risikobehandlungsmaßnahmen und Verfahren zur Bewältigung und Erkennung von Sicherheitsvorfällen sowie zur Reaktion darauf beitragen."
+                    },
+                    {
+                      "id": "anhang-3.6.3",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "3.6.3."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen überprüfen in geplanten Zeitabständen, ob Sicherheitsvorfälle entsprechende Überprüfungen nach sich zogen."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "anhang-4",
+          "title": "4. Betriebskontinuitäts- und Krisenmanagement (Artikel 21 Absatz 2 Buchstabe c der Richtlinie (EU) 2022/2555)",
+          "parts": [
+            {
+              "id": "anhang-4_stmt",
+              "name": "statement",
+              "parts": [
+                {
+                  "id": "anhang-4.1",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "4.1."
+                    }
+                  ],
+                  "prose": "Notfallplan für die Aufrechterhaltung und Wiederherstellung des Betriebs",
+                  "parts": [
+                    {
+                      "id": "anhang-4.1.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "4.1.1."
+                        }
+                      ],
+                      "prose": "Für die Zwecke von Artikel 21 Absatz 2 Buchstabe c der Richtlinie (EU) 2022/2555 legen die betreffenden Einrichtungen einen Notfallplan für die Aufrechterhaltung und Wiederherstellung des Betriebs fest, der bei Sicherheitsvorfällen Anwendung findet."
+                    },
+                    {
+                      "id": "anhang-4.1.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "4.1.2."
+                        }
+                      ],
+                      "prose": "Die Abläufe der betreffenden Einrichtungen werden gemäß dem Notfallplan für die Aufrechterhaltung und Wiederherstellung des Betriebs wiederhergestellt. Der Plan beruht auf den Ergebnissen der gemäß Nummer 2.1 durchgeführten Risikobewertung ein und umfasst – soweit angemessen – Folgendes:",
+                      "parts": [
+                        {
+                          "id": "anhang-4.1.2.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "Zweck, Umfang und Zielgruppe;"
+                        },
+                        {
+                          "id": "anhang-4.1.2.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "Rollen und Verantwortlichkeiten;"
+                        },
+                        {
+                          "id": "anhang-4.1.2.c",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "c)"
+                            }
+                          ],
+                          "prose": "wichtige Kontaktangaben und (interne und externe) Kommunikationskanäle;"
+                        },
+                        {
+                          "id": "anhang-4.1.2.d",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "d)"
+                            }
+                          ],
+                          "prose": "Bedingungen für die Aktivierung und die Deaktivierung des Plans;"
+                        },
+                        {
+                          "id": "anhang-4.1.2.e",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "e)"
+                            }
+                          ],
+                          "prose": "Reihenfolge der Wiederherstellung der Betriebsabläufe;"
+                        },
+                        {
+                          "id": "anhang-4.1.2.f",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "f)"
+                            }
+                          ],
+                          "prose": "Wiederherstellungspläne für bestimmte Betriebsabläufe, einschließlich der Wiederherstellungsziele;"
+                        },
+                        {
+                          "id": "anhang-4.1.2.g",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "g)"
+                            }
+                          ],
+                          "prose": "erforderliche Ressourcen, einschließlich Sicherungen und Redundanzen;"
+                        },
+                        {
+                          "id": "anhang-4.1.2.h",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "h)"
+                            }
+                          ],
+                          "prose": "Wiederherstellung und Wiederaufnahme der Tätigkeiten nach vorübergehenden Maßnahmen."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "anhang-4.1.3",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "4.1.3."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen führen eine Analyse der betrieblichen Auswirkungen durch, um die möglichen Auswirkungen schwerwiegender Störungen auf ihre Betriebsabläufe zu bewerten, und legen auf der Grundlage der Ergebnisse Kontinuitätsanforderungen für die Netz- und Informationssysteme fest."
+                    },
+                    {
+                      "id": "anhang-4.1.4",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "4.1.4."
+                        }
+                      ],
+                      "prose": "Der Notfallplan für die Aufrechterhaltung und Wiederherstellung des Betriebs wird in geplanten Zeitabständen sowie bei erheblichen Sicherheitsvorfällen oder wesentlichen Änderungen der Betriebsabläufe oder der Risiken getestet, überprüft und – soweit angemessen – aktualisiert. Die betreffenden Einrichtungen stellen sicher, dass die aus diesen Tests gezogenen Lehren in die Pläne einfließen."
+                    }
+                  ]
+                },
+                {
+                  "id": "anhang-4.2",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "4.2."
+                    }
+                  ],
+                  "prose": "Backup-Sicherungs- und Redundanzmanagement",
+                  "parts": [
+                    {
+                      "id": "anhang-4.2.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "4.2.1."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen machen Sicherungskopien der Daten und stellen ausreichend verfügbare Ressourcen, einschließlich Betriebsstätten, Netz- und Informationssysteme sowie Personal, bereit, um ein angemessenes Maß an Redundanz zu gewährleisten."
+                    },
+                    {
+                      "id": "anhang-4.2.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "4.2.2."
+                        }
+                      ],
+                      "prose": "Auf der Grundlage der Ergebnisse der gemäß Nummer 2.1 durchgeführten Risikobewertung und des Betriebskontinuitätsplans legen die betreffenden Einrichtungen Sicherungspläne fest, die Folgendes umfassen:",
+                      "parts": [
+                        {
+                          "id": "anhang-4.2.2.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "Wiederherstellungszeiten;"
+                        },
+                        {
+                          "id": "anhang-4.2.2.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "Gewährleistung, dass Sicherungskopien vollständig und genau sind, einschließlich Konfigurationsdaten und Daten, die in der Umgebung von Cloud-Computing-Diensten gespeichert sind;"
+                        },
+                        {
+                          "id": "anhang-4.2.2.c",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "c)"
+                            }
+                          ],
+                          "prose": "Speicherung von Sicherungskopien (online oder offline) an einem oder mehreren sicheren Orten, die sich nicht im selben Netz wie das System sowie in ausreichend großer Entfernung befinden, um Schäden durch einen Notfall am Hauptstandort zu vermeiden;"
+                        },
+                        {
+                          "id": "anhang-4.2.2.d",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "d)"
+                            }
+                          ],
+                          "prose": "geeignete physische und logische Zugangskontrollen zu Sicherungskopien entsprechend der Klassifizierungsstufe der Anlagen und Werte;"
+                        },
+                        {
+                          "id": "anhang-4.2.2.e",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "e)"
+                            }
+                          ],
+                          "prose": "Wiederherstellung von Daten aus Sicherungskopien;"
+                        },
+                        {
+                          "id": "anhang-4.2.2.f",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "f)"
+                            }
+                          ],
+                          "prose": "Aufbewahrungsfristen entsprechend geschäftlichen und regulatorischen Anforderungen."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "anhang-4.2.3",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "4.2.3."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen führen regelmäßige Integritätsprüfungen der Sicherungskopien durch."
+                    },
+                    {
+                      "id": "anhang-4.2.4",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "4.2.4."
+                        }
+                      ],
+                      "prose": "Auf der Grundlage der Ergebnisse der gemäß Nummer 2.1 durchgeführten Risikobewertung und des Betriebskontinuitätsplans sorgen die betreffenden Einrichtungen für eine ausreichende Verfügbarkeit von Ressourcen durch eine zumindest teilweise Redundanz der folgenden Elemente:",
+                      "parts": [
+                        {
+                          "id": "anhang-4.2.4.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "Netz- und Informationssysteme;"
+                        },
+                        {
+                          "id": "anhang-4.2.4.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "Anlagen und Werte, einschließlich Betriebsstätten, Ausrüstung und Verbrauchsmaterial;"
+                        },
+                        {
+                          "id": "anhang-4.2.4.c",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "c)"
+                            }
+                          ],
+                          "prose": "Personal mit der erforderlichen Verantwortlichkeit, Weisungsbefugnis und Kompetenz;"
+                        },
+                        {
+                          "id": "anhang-4.2.4.d",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "d)"
+                            }
+                          ],
+                          "prose": "geeignete Kommunikationskanäle."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "anhang-4.2.5",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "4.2.5."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen stellen – soweit angemessen – sicher, dass sich die Überwachung und Anpassung der Ressourcen, einschließlich Betriebsstätten, Systeme und Personal, ordnungsgemäß auf die Anforderungen an die Sicherung und Redundanz stützen."
+                    },
+                    {
+                      "id": "anhang-4.2.6",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "4.2.6."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen führen regelmäßige Tests der Wiederherstellung von Sicherungskopien und Redundanzen durch, um sicherzustellen, dass sie bei der Wiederherstellung zuverlässig sind und alle Kopien, Verfahren und Kenntnisse abdecken, die nötig sind, um eine wirksame Wiederherstellung durchzuführen. Die betreffenden Einrichtungen dokumentieren die Testergebnisse und ergreifen erforderlichenfalls Korrekturmaßnahmen."
+                    }
+                  ]
+                },
+                {
+                  "id": "anhang-4.3",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "4.3."
+                    }
+                  ],
+                  "prose": "Krisenmanagement",
+                  "parts": [
+                    {
+                      "id": "anhang-4.3.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "4.3.1."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen legen ein Verfahren für das Krisenmanagement fest."
+                    },
+                    {
+                      "id": "anhang-4.3.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "4.3.2."
+                        }
+                      ],
+                      "prose": "Sie sorgen dafür, dass das Krisenmanagementverfahren mindestens die folgenden Elemente abdeckt:",
+                      "parts": [
+                        {
+                          "id": "anhang-4.3.2.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "Rollen und Verantwortlichkeiten des Personals und – soweit angemessen – der Anbieter und Diensteanbieter, wobei die Zuweisung der Rollen in Krisensituationen, einschließlich spezifischer zu befolgender Schritte, festgelegt wird;"
+                        },
+                        {
+                          "id": "anhang-4.3.2.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "geeignete Kommunikationsmittel zwischen den betreffenden Einrichtungen und den jeweils zuständigen Behörden;"
+                        },
+                        {
+                          "id": "anhang-4.3.2.c",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "c)"
+                            }
+                          ],
+                          "prose": "Anwendung angemessener Maßnahmen zur Gewährleistung der Aufrechterhaltung der Sicherheit von Netz- und Informationssystemen in Krisensituationen."
+                        },
+                        {
+                          "id": "anhang-4.3.2.outro",
+                          "name": "item",
+                          "prose": "Für die Zwecke von Buchstabe b umfasst der Informationsfluss zwischen den betreffenden Einrichtungen und den jeweils zuständigen Behörden sowohl obligatorische Mitteilungen wie Meldungen von Sicherheitsvorfällen und entsprechende Fristen als auch fakultative Mitteilungen."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "anhang-4.3.3",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "4.3.3."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen führen ein Verfahren für die Verwaltung und Nutzung der von den CSIRTs oder – soweit anwendbar – den zuständigen Behörden erhaltenen Informationen über Sicherheitsvorfälle, Schwachstellen, Bedrohungen oder mögliche Risikominderungsmaßnahmen ein."
+                    },
+                    {
+                      "id": "anhang-4.3.4",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "4.3.4."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen testen den Krisenmanagementplan in geplanten Zeitabständen oder nach erheblichen Sicherheitsvorfällen oder wesentlichen Änderungen der Betriebsabläufe oder der Risiken und aktualisieren ihn – soweit angemessen."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "anhang-5",
+          "title": "5. Sicherheit der Lieferkette (Artikel 21 Absatz 2 Buchstabe d der Richtlinie (EU) 2022/2555)",
+          "parts": [
+            {
+              "id": "anhang-5_stmt",
+              "name": "statement",
+              "parts": [
+                {
+                  "id": "anhang-5.1",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "5.1."
+                    }
+                  ],
+                  "prose": "Konzept für die Sicherheit der Lieferkette",
+                  "parts": [
+                    {
+                      "id": "anhang-5.1.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "5.1.1."
+                        }
+                      ],
+                      "prose": "Für die Zwecke von Artikel 21 Absatz 2 Buchstabe d der Richtlinie (EU) 2022/2555 legen die betreffenden Einrichtungen ein Konzept für die Sicherheit der Lieferkette fest, das die Beziehungen zu ihren direkten Anbietern und Diensteanbietern regelt, setzen es um und wenden es an, um die ermittelten Risiken für die Sicherheit von Netz- und Informationssystemen zu mindern. Im Rahmen des Konzepts für die Sicherheit der Lieferkette legen die betreffenden Einrichtungen ihre Rolle in der Lieferkette fest und teilen sie ihren direkten Anbietern und Diensteanbietern mit."
+                    },
+                    {
+                      "id": "anhang-5.1.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "5.1.2."
+                        }
+                      ],
+                      "prose": "Im Rahmen des in Nummer 5.1.1 genannten Konzepts für die Sicherheit der Lieferkette legen die betreffenden Einrichtungen Kriterien für die Auswahl von Anbietern und Diensteanbietern und die Auftragsvergabe an sie fest. Diese Kriterien umfassen Folgendes:",
+                      "parts": [
+                        {
+                          "id": "anhang-5.1.2.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "die Cybersicherheitsverfahren der Anbieter und Diensteanbieter, einschließlich der Sicherheit ihrer Entwicklungsprozesse;"
+                        },
+                        {
+                          "id": "anhang-5.1.2.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "die Fähigkeit der Anbieter und Diensteanbieter, die von den betreffenden Einrichtungen festgelegten Cybersicherheitsspezifikationen zu erfüllen;"
+                        },
+                        {
+                          "id": "anhang-5.1.2.c",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "c)"
+                            }
+                          ],
+                          "prose": "die allgemeine Qualität und Resilienz der IKT-Produkte und -Dienste und die darin enthaltenen Risikomanagementmaßnahmen im Bereich der Cybersicherheit, einschließlich der Risiken und der Klassifizierungsstufe der IKT-Produkte und -Dienste;"
+                        },
+                        {
+                          "id": "anhang-5.1.2.d",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "d)"
+                            }
+                          ],
+                          "prose": "die Fähigkeit der betreffenden Einrichtungen, ihre Versorgungsquellen zu diversifizieren und – soweit anwendbar – ihre Abhängigkeit von bestimmten Anbietern zu begren."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "anhang-5.1.3",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "5.1.3."
+                        }
+                      ],
+                      "prose": "Bei der Erstellung ihres Konzepts für die Sicherheit der Lieferkette berücksichtigen die betreffenden Einrichtungen – soweit anwendbar – die Ergebnisse koordinierter Sicherheitsrisikobewertungen kritischer Lieferketten gemäß Artikel 22 Absatz 1 der Richtlinie (EU) 2022/2555."
+                    },
+                    {
+                      "id": "anhang-5.1.4",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "5.1.4."
+                        }
+                      ],
+                      "prose": "Auf der Grundlage des Konzepts für die Sicherheit der Lieferkette und unter Berücksichtigung der Ergebnisse der gemäß Nummer 2.1 dieses Anhangs durchgeführten Risikobewertung stellen die betreffenden Einrichtungen sicher, dass in ihren Verträgen mit Anbietern und Diensteanbietern – soweit angemessen – im Rahmen von Leistungsvereinbarungen Folgendes festgelegt wird:",
+                      "parts": [
+                        {
+                          "id": "anhang-5.1.4.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "Cybersicherheitsanforderungen an die Anbieter oder Diensteanbieter, einschließlich der Anforderungen an die Sicherheit beim Erwerb von IKT-Diensten oder -Produkten gemäß Nummer 6.1;"
+                        },
+                        {
+                          "id": "anhang-5.1.4.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "Sensibilisierungs-, Qualifikations- und Ausbildungsanforderungen sowie – soweit angemessen – Zertifizierungen, die von den Mitarbeitenden der Anbieter oder Diensteanbieter verlangt werden;"
+                        },
+                        {
+                          "id": "anhang-5.1.4.c",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "c)"
+                            }
+                          ],
+                          "prose": "Anforderungen an die Zuverlässigkeitsüberprüfungen der Mitarbeitenden der Anbieter und Diensteanbieter;"
+                        },
+                        {
+                          "id": "anhang-5.1.4.d",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "d)"
+                            }
+                          ],
+                          "prose": "eine Verpflichtung der Anbieter und Diensteanbieter, den betreffenden Einrichtungen Sicherheitsvorfälle, die ein Risiko für die Sicherheit der Netz- und Informationssysteme dieser Einrichtungen darstellen, unverzüglich zu melden;"
+                        },
+                        {
+                          "id": "anhang-5.1.4.e",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "e)"
+                            }
+                          ],
+                          "prose": "das Recht auf Prüfung oder das Recht auf Erhalt von Prüfberichten;"
+                        },
+                        {
+                          "id": "anhang-5.1.4.f",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "f)"
+                            }
+                          ],
+                          "prose": "eine Verpflichtung der Anbieter und Diensteanbieter zur Behebung von Schwachstellen, die ein Risiko für die Sicherheit der Netz- und Informationssysteme der betreffenden Einrichtungen darstellen;"
+                        },
+                        {
+                          "id": "anhang-5.1.4.g",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "g)"
+                            }
+                          ],
+                          "prose": "Anforderungen an die Unterauftragsvergabe und – sofern die betreffenden Einrichtungen die Vergabe von Unteraufträgen zulassen – Cybersicherheitsanforderungen an Unterauftragnehmer im Einklang mit den unter Buchstabe a genannten Cybersicherheitsanforderungen;"
+                        },
+                        {
+                          "id": "anhang-5.1.4.h",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "h)"
+                            }
+                          ],
+                          "prose": "Pflichten der Anbieter und Diensteanbieter bei Vertragskündigung, z. B. Abruf und Entsorgung der Informationen, die die Anbieter und Diensteanbieter in Wahrnehmung ihrer Aufgaben erlangten."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "anhang-5.1.5",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "5.1.5."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen berücksichtigen die in den Nummern 5.1.2 und 5.1.3 genannten Elemente im Rahmen des Auswahlverfahrens für neue Anbieter und Diensteanbieter sowie im Rahmen des Vergabeverfahrens gemäß Nummer 6.1."
+                    },
+                    {
+                      "id": "anhang-5.1.6",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "5.1.6."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen überprüfen das Konzept für die Sicherheit der Lieferkette, überwachen und bewerten Änderungen der Cybersicherheitsverfahren von Anbietern und Diensteanbietern bei wesentlichen Änderungen der Betriebsabläufe oder der Risiken oder bei erheblichen Sicherheitsvorfällen im Zusammenhang mit der Bereitstellung von IKT-Diensten oder mit Auswirkungen auf die Sicherheit der IKT-Produkte von Anbietern und Diensteanbietern und werden erforderlichenfalls im Hinblick auf diese Änderungen tätig."
+                    },
+                    {
+                      "id": "anhang-5.1.7",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "5.1.7."
+                        }
+                      ],
+                      "prose": "Für die Zwecke von Nummer 5.1.6 müssen die betreffenden Einrichtungen",
+                      "parts": [
+                        {
+                          "id": "anhang-5.1.7.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "die Berichte über die Umsetzung der Leistungsvereinbarungen regelmäßig verfolgen – soweit anwendbar;"
+                        },
+                        {
+                          "id": "anhang-5.1.7.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "Sicherheitsvorfälle im Zusammenhang mit IKT-Produkten und -Diensten von Anbietern und Diensteanbietern überprüfen;"
+                        },
+                        {
+                          "id": "anhang-5.1.7.c",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "c)"
+                            }
+                          ],
+                          "prose": "die Notwendigkeit außerplanmäßiger Überprüfungen prüfen und die Ergebnisse verständlich dokumentieren;"
+                        },
+                        {
+                          "id": "anhang-5.1.7.d",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "d)"
+                            }
+                          ],
+                          "prose": "die Risiken, die sich aus Änderungen im Zusammenhang mit IKT-Produkten und -Diensten von Anbietern und Diensteanbietern ergeben, analysieren und – soweit angemessen – rechtzeitig Risikominderungsmaßnahmen ergreifen."
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "id": "anhang-5.2",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "5.2."
+                    }
+                  ],
+                  "prose": "Verzeichnis der Anbieter und Diensteanbieter",
+                  "parts": [
+                    {
+                      "id": "anhang-5.2.outro",
+                      "name": "item",
+                      "prose": "Die betreffenden Einrichtungen führen ein Verzeichnis ihrer direkten Anbieter und Diensteanbieter, das Folgendes umfasst, und halten es auf dem neuesten Stand:",
+                      "parts": [
+                        {
+                          "id": "anhang-5.2.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "Kontaktstellen für jeden direkten Anbieter und Diensteanbieter;"
+                        },
+                        {
+                          "id": "anhang-5.2.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "eine Liste der IKT-Produkte, -Dienste und -Prozesse, die der direkte Anbieter oder Diensteanbieter für die betreffenden Einrichtungen bereitstellt."
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "anhang-6",
+          "title": "6. Sicherheitsmaßnahmen bei Erwerb, Entwicklung und Wartung von Netz- und Informationssystemen (Artikel 21 Absatz 2 Buchstabe e der Richtlinie (EU) 2022/2555)",
+          "parts": [
+            {
+              "id": "anhang-6_stmt",
+              "name": "statement",
+              "parts": [
+                {
+                  "id": "anhang-6.1",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "6.1."
+                    }
+                  ],
+                  "prose": "Sicherheitsmaßnahmen beim Erwerb von IKT-Diensten oder IKT-Produkten",
+                  "parts": [
+                    {
+                      "id": "anhang-6.1.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.1.1."
+                        }
+                      ],
+                      "prose": "Für die Zwecke von Artikel 21 Absatz 2 Buchstabe e der Richtlinie (EU) 2022/2555 legen die betreffenden Einrichtungen auf der Grundlage der gemäß Nummer 2.1 durchgeführten Risikobewertung Verfahren für das Management der Risiken fest, die sich aus dem Erwerb von IKT-Diensten oder -Produkten für Komponenten ergeben, die für die Sicherheit der Netz- und Informationssysteme der betreffenden Einrichtungen unverzichtbar sind, und setzen sie um."
+                    },
+                    {
+                      "id": "anhang-6.1.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.1.2."
+                        }
+                      ],
+                      "prose": "Für die Zwecke von Nummer 6.1.1 umfassen die in Nummer 6.1.1 genannten Verfahren Folgendes:",
+                      "parts": [
+                        {
+                          "id": "anhang-6.1.2.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "Sicherheitsanforderungen, die für die zu erwerbenden IKT-Dienste oder -Produkte gelten;"
+                        },
+                        {
+                          "id": "anhang-6.1.2.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "Anforderungen an Sicherheitsaktualisierungen während der gesamten Lebensdauer der IKT-Dienste oder -Produkte oder deren Ersatz nach Ablauf des Unterstützungszeitraums;"
+                        },
+                        {
+                          "id": "anhang-6.1.2.c",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "c)"
+                            }
+                          ],
+                          "prose": "Informationen zur Beschreibung der Hardware- und Softwarekomponenten, die in den IKT-Diensten oder -Produkten verwendet werden;"
+                        },
+                        {
+                          "id": "anhang-6.1.2.d",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "d)"
+                            }
+                          ],
+                          "prose": "Informationen zur Beschreibung der umgesetzten Cybersicherheitsfunktionen der IKT-Dienste oder -Produkte und der Konfiguration, die für ihren sicheren Betrieb erforderlich ist;"
+                        },
+                        {
+                          "id": "anhang-6.1.2.e",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "e)"
+                            }
+                          ],
+                          "prose": "die Zusicherung, dass die IKT-Dienste oder -Produkte die Sicherheitsanforderungen gemäß Buchstabe a erfüllen;"
+                        },
+                        {
+                          "id": "anhang-6.1.2.f",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "f)"
+                            }
+                          ],
+                          "prose": "Methoden zur Validierung, dass die bereitgestellten IKT-Dienste oder -Produkte die angegebenen Sicherheitsanforderungen erfüllen, sowie die Dokumentation der Ergebnisse der Validierung."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "anhang-6.1.3",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.1.3."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen überprüfen die Verfahren in geplanten Zeitabständen sowie bei erheblichen Sicherheitsvorfällen und aktualisieren sie – soweit angemessen."
+                    }
+                  ]
+                },
+                {
+                  "id": "anhang-6.2",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "6.2."
+                    }
+                  ],
+                  "prose": "Sicherer Entwicklungszyklus",
+                  "parts": [
+                    {
+                      "id": "anhang-6.2.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.2.1."
+                        }
+                      ],
+                      "prose": "Vor der Entwicklung eines Netz- und Informationssystems, einschließlich Software, legen die betreffenden Einrichtungen Vorschriften für die Sicherheit der Entwicklung von Netz- und Informationssystemen fest und wenden diese bei der internen Entwicklung von Netz- und Informationssystemen und bei der Auslagerung der Entwicklung von Netz- und Informationssystemen an. Die Vorschriften gelten für alle Entwicklungsphasen, einschließlich Spezifikation, Konzeption, Entwicklung, Umsetzung und Tests."
+                    },
+                    {
+                      "id": "anhang-6.2.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.2.2."
+                        }
+                      ],
+                      "prose": "Für die Zwecke von Nummer 6.2.1 müssen die betreffenden Einrichtungen",
+                      "parts": [
+                        {
+                          "id": "anhang-6.2.2.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "eine Analyse der Sicherheitsanforderungen in der Spezifikations- und Entwurfsphase jedes Entwicklungs- oder Beschaffungsvorhabens vornehmen, das von den betreffenden Einrichtungen oder im Namen dieser Einrichtungen durchgeführt wird;"
+                        },
+                        {
+                          "id": "anhang-6.2.2.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "bei allen Tätigkeiten zur Entwicklung von Informationssystemen bestimmte Grundsätze für den Aufbau sicherer Systeme und für ein sicheres Programmieren wie etwa die Förderung von konzeptintegrierter Cybersicherheit und Null-Vertrauen-Architekturen anwenden;"
+                        },
+                        {
+                          "id": "anhang-6.2.2.c",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "c)"
+                            }
+                          ],
+                          "prose": "Sicherheitsanforderungen in Bezug auf Entwicklungsumgebungen festlegen;"
+                        },
+                        {
+                          "id": "anhang-6.2.2.d",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "d)"
+                            }
+                          ],
+                          "prose": "Sicherheitstestverfahren im Entwicklungszyklus einführen und umsetzen;"
+                        },
+                        {
+                          "id": "anhang-6.2.2.e",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "e)"
+                            }
+                          ],
+                          "prose": "Daten über Sicherheitstests angemessen auswählen, schützen und verwalten;"
+                        },
+                        {
+                          "id": "anhang-6.2.2.f",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "f)"
+                            }
+                          ],
+                          "prose": "die Testdaten entsprechend der Risikobewertung gemäß Nummer 2.1 bereinigen und anonymisieren."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "anhang-6.2.3",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.2.3."
+                        }
+                      ],
+                      "prose": "Bei einer ausgelagerten Entwicklung von Netz- und Informationssystemen wenden die betreffenden Einrichtungen darüber hinaus die in den Nummern 5 und 6.1 genannten Grundsätze und Verfahren an."
+                    },
+                    {
+                      "id": "anhang-6.2.4",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.2.4."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen überprüfen ihre Vorschriften für die Sicherheit der Entwicklung in geplanten Zeitabständen und aktualisieren sie erforderlichenfalls."
+                    }
+                  ]
+                },
+                {
+                  "id": "anhang-6.3",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "6.3."
+                    }
+                  ],
+                  "prose": "Konfigurationsmanagement",
+                  "parts": [
+                    {
+                      "id": "anhang-6.3.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.3.1."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen ergreifen geeignete Maßnahmen, um Konfigurationen, einschließlich Sicherheitskonfigurationen von Hardware, Software, Diensten und Netzen, festzulegen, zu dokumentieren, umzusetzen und zu überwachen."
+                    },
+                    {
+                      "id": "anhang-6.3.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.3.2."
+                        }
+                      ],
+                      "prose": "Für die Zwecke von Nummer 6.3.1 müssen die betreffenden Einrichtungen",
+                      "parts": [
+                        {
+                          "id": "anhang-6.3.2.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "Konfigurationen für ihre Hardware, Software, Dienste und Netze festlegen und deren Sicherheit gewährleisten;"
+                        },
+                        {
+                          "id": "anhang-6.3.2.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "Verfahren und Instrumente zur Durchsetzung der festgelegten sicheren Konfigurationen für Hardware, Software, Dienste und Netze, für neu installierte Systeme sowie für Systeme, die über ihre gesamte Lebensdauer in Betrieb sind, festlegen und umsetzen."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "anhang-6.3.3",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.3.3."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen überprüfen die Konfigurationen in geplanten Zeitabständen oder bei erheblichen Sicherheitsvorfällen oder wesentlichen Änderungen der Betriebsabläufe oder der Risiken und aktualisieren sie – soweit angemessen."
+                    }
+                  ]
+                },
+                {
+                  "id": "anhang-6.4",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "6.4."
+                    }
+                  ],
+                  "prose": "Änderungsmanagement, Reparatur und Wartung",
+                  "parts": [
+                    {
+                      "id": "anhang-6.4.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.4.1."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen wenden Verfahren für das Änderungsmanagement an, um Änderungen an Netz- und Informationssystemen zu kontrollieren. Die Verfahren müssen – soweit anwendbar – mit den allgemeinen Grundsätzen der betreffenden Einrichtungen in Bezug auf das Änderungsmanagement im Einklang stehen."
+                    },
+                    {
+                      "id": "anhang-6.4.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.4.2."
+                        }
+                      ],
+                      "prose": "Die in Nummer 6.4.1 genannten Verfahren gelten für Freigaben, Änderungen und Notfalländerungen an in Betrieb befindlicher Software und Hardware sowie für Änderungen der Konfiguration. Durch die Verfahren wird sichergestellt, dass diese Änderungen dokumentiert und auf der Grundlage der gemäß Nummer 2.1 durchgeführten Risikobewertung im Hinblick auf die möglichen Auswirkungen getestet und bewertet werden, bevor sie umgesetzt werden."
+                    },
+                    {
+                      "id": "anhang-6.4.3",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.4.3."
+                        }
+                      ],
+                      "prose": "Konnten die regulären Änderungsmanagementverfahren aufgrund eines Notfalls nicht befolgt werden, dokumentieren die betreffenden Einrichtungen das Ergebnis der Änderung und die Begründung für die Nichteinhaltung der Verfahren."
+                    },
+                    {
+                      "id": "anhang-6.4.4",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.4.4."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen überprüfen die Verfahren in geplanten Zeitabständen sowie bei erheblichen Sicherheitsvorfällen oder wesentlichen Änderungen der Betriebsabläufe oder der Risiken und aktualisieren sie – soweit angemessen."
+                    }
+                  ]
+                },
+                {
+                  "id": "anhang-6.5",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "6.5."
+                    }
+                  ],
+                  "prose": "Sicherheitsprüfung",
+                  "parts": [
+                    {
+                      "id": "anhang-6.5.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.5.1."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen legen ein Konzept und Verfahren für Sicherheitsprüfungen fest, setzen sie um und wenden sie an."
+                    },
+                    {
+                      "id": "anhang-6.5.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.5.2."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen",
+                      "parts": [
+                        {
+                          "id": "anhang-6.5.2.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "legen auf der Grundlage der gemäß Nummer 2.1 durchgeführten Risikobewertung die Notwendigkeit, den Umfang, die Häufigkeit und die Art der Sicherheitsprüfungen fest;"
+                        },
+                        {
+                          "id": "anhang-6.5.2.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "führen Sicherheitsprüfungen nach einer dokumentierten Prüfmethode durch, die sich auf die Komponenten erstrecken, die im Rahmen einer Risikoanalyse als für den sicheren Betrieb relevant eingestuft wurden;"
+                        },
+                        {
+                          "id": "anhang-6.5.2.c",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "c)"
+                            }
+                          ],
+                          "prose": "dokumentieren die Art, den Umfang, den Zeitraum und die Ergebnisse der Prüfungen, einschließlich der Bewertung der Kritikalität und der Risikominderungsmaßnahmen für jede Feststellung;"
+                        },
+                        {
+                          "id": "anhang-6.5.2.d",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "d)"
+                            }
+                          ],
+                          "prose": "wenden im Falle kritischer Feststellungen Risikominderungsmaßnahmen an."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "anhang-6.5.3",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.5.3."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen überprüfen ihre Konzepte für die Sicherheitsprüfung in geplanten Zeitabständen und aktualisieren sie – soweit angemessen."
+                    }
+                  ]
+                },
+                {
+                  "id": "anhang-6.6",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "6.6."
+                    }
+                  ],
+                  "prose": "Sicherheitspatch-Management",
+                  "parts": [
+                    {
+                      "id": "anhang-6.6.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.6.1."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen legen Verfahren, die mit den in Nummer 6.4.1 genannten Änderungsmanagementverfahren im Einklang stehen, und Änderungs-, Schwachstellen- und Risikomanagementverfahren sowie andere einschlägige Verfahren fest und wenden sie an, um sicherzustellen, dass",
+                      "parts": [
+                        {
+                          "id": "anhang-6.6.1.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "Sicherheitspatches innerhalb einer angemessenen Frist nach ihrer Verfügbarmachung angewendet werden;"
+                        },
+                        {
+                          "id": "anhang-6.6.1.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "Sicherheitspatches getestet werden, bevor sie in Produktionssystemen angewendet werden;"
+                        },
+                        {
+                          "id": "anhang-6.6.1.c",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "c)"
+                            }
+                          ],
+                          "prose": "Sicherheitspatches aus vertrauenswürdigen Quellen stammen und auf ihre Integrität geprüft werden;"
+                        },
+                        {
+                          "id": "anhang-6.6.1.d",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "d)"
+                            }
+                          ],
+                          "prose": "zusätzliche Maßnahmen umgesetzt und Restrisiken akzeptiert werden, wenn ein Patch nicht verfügbar ist oder nicht gemäß Nummer 6.6.2 angewendet wird."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "anhang-6.6.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.6.2."
+                        }
+                      ],
+                      "prose": "Abweichend von Nummer 6.6.1 Buchstabe a können die betreffenden Einrichtungen verzichten, Sicherheitspatches anzuwenden, wenn die Nachteile der Anwendung der Sicherheitspatches die Vorteile für die Cybersicherheit überwiegen. Die betreffenden Einrichtungen dokumentieren und begründen dies ordnungsgemäß."
+                    }
+                  ]
+                },
+                {
+                  "id": "anhang-6.7",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "6.7."
+                    }
+                  ],
+                  "prose": "Netzsicherheit",
+                  "parts": [
+                    {
+                      "id": "anhang-6.7.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.7.1."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen ergreifen geeignete Maßnahmen, um ihre Netz- und Informationssysteme vor Cyberbedrohungen zu schützen."
+                    },
+                    {
+                      "id": "anhang-6.7.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.7.2."
+                        }
+                      ],
+                      "prose": "Für die Zwecke von Nummer 6.7.1 müssen die betreffenden Einrichtungen",
+                      "parts": [
+                        {
+                          "id": "anhang-6.7.2.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "die Architektur des Netzes verständlich und aktuell dokumentieren;"
+                        },
+                        {
+                          "id": "anhang-6.7.2.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "Kontrollen festlegen und durchführen, um die internen Netzdomänen der betreffenden Einrichtungen vor unbefugtem Zugriff zu schützen;"
+                        },
+                        {
+                          "id": "anhang-6.7.2.c",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "c)"
+                            }
+                          ],
+                          "prose": "die Kontrollen so konfigurieren, dass Zugriffe und Netzkommunikation verhindert werden, wenn dies für den Betrieb der betreffenden Einrichtungen nicht erforderlich ist;"
+                        },
+                        {
+                          "id": "anhang-6.7.2.d",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "d)"
+                            }
+                          ],
+                          "prose": "die Kontrollen für den Fernzugriff auf Netz- und Informationssysteme, einschließlich des Zugangs von Diensteanbietern, festlegen und durchführen;"
+                        },
+                        {
+                          "id": "anhang-6.7.2.e",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "e)"
+                            }
+                          ],
+                          "prose": "keine Systeme verwenden, die für die Verwaltung der Umsetzung der Sicherheitskonzepte für andere Zwecke verwendet werden;"
+                        },
+                        {
+                          "id": "anhang-6.7.2.f",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "f)"
+                            }
+                          ],
+                          "prose": "nicht benötigte Verbindungen und Dienste ausdrücklich verbieten oder deaktivieren;"
+                        },
+                        {
+                          "id": "anhang-6.7.2.g",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "g)"
+                            }
+                          ],
+                          "prose": "– soweit angemessen – den Zugang zu ihren Netz- und Informationssystemen ausschließlich mit von den betreffenden Einrichtungen genehmigten Geräten gewähren;"
+                        },
+                        {
+                          "id": "anhang-6.7.2.h",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "h)"
+                            }
+                          ],
+                          "prose": "Verbindungen von Diensteanbietern nur nach einem Genehmigungsantrag und für einen bestimmten Zeitraum, z. B. für die Dauer von Wartungsarbeiten, zulassen;"
+                        },
+                        {
+                          "id": "anhang-6.7.2.i",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "i)"
+                            }
+                          ],
+                          "prose": "die Kommunikation zwischen verschiedenen Systemen nur über vertrauenswürdige Kanäle herstellen, die durch logische, kryptografische oder physikalische Trennung von anderen Kommunikationskanälen isoliert sind, und eine sichere Identifizierung ihrer Endpunkte und den Schutz der Kanaldaten vor Änderung oder Offenlegung ermöglichen;"
+                        },
+                        {
+                          "id": "anhang-6.7.2.j",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "j)"
+                            }
+                          ],
+                          "prose": "einen Durchführungsplan für den sicheren, angemessenen und schrittweisen vollständigen Übergang zur neuesten Generation der Kommunikationsprotokolle für die Netzwerkschicht annehmen und Maßnahmen zur Beschleunigung dieses Übergangs festlegen;"
+                        },
+                        {
+                          "id": "anhang-6.7.2.k",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "k)"
+                            }
+                          ],
+                          "prose": "einen Durchführungsplan für die Einführung international vereinbarter und interoperabler moderner E-Mail-Kommunikationsnormen annehmen, um die E-Mail-Kommunikation zur Minderung von Schwachstellen im Zusammenhang mit E-Mail-Bedrohungen zu sichern, und Maßnahmen zur Beschleunigung dieser Einführung festlegen;"
+                        },
+                        {
+                          "id": "anhang-6.7.2.l",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "l)"
+                            }
+                          ],
+                          "prose": "bewährte Verfahren für die Sicherheit des DNS sowie für die Sicherheit und Hygiene des Internet-Routings bei Verkehr, der aus dem Netz stammt und für das Netz bestimmt ist, anwenden."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "anhang-6.7.3",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.7.3."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen überprüfen diese Maßnahmen in geplanten Zeitabständen sowie bei erheblichen Sicherheitsvorfällen oder wesentlichen Änderungen der Betriebsabläufe oder der Risiken und aktualisieren sie – soweit angemessen."
+                    }
+                  ]
+                },
+                {
+                  "id": "anhang-6.8",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "6.8."
+                    }
+                  ],
+                  "prose": "Netzsegmentierung",
+                  "parts": [
+                    {
+                      "id": "anhang-6.8.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.8.1."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen segmentieren ihre Systeme entsprechend den Ergebnissen der Risikobewertung gemäß Nummer 2.1 in Netze oder Zonen. Sie segmentieren ihre eigenen Systeme und Netze von Systemen und Netzen Dritter."
+                    },
+                    {
+                      "id": "anhang-6.8.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.8.2."
+                        }
+                      ],
+                      "prose": "Für diese Zwecke müssen die betreffenden Einrichtungen",
+                      "parts": [
+                        {
+                          "id": "anhang-6.8.2.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "die funktionale, logische und physische Beziehung, einschließlich des Standorts, zwischen vertrauenswürdigen Systemen und Diensten berücksichtigen;"
+                        },
+                        {
+                          "id": "anhang-6.8.2.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "den Zugang zu einem Netz oder einer Zone auf der Grundlage einer Bewertung seiner/ihrer Sicherheitsanforderungen gewähren;"
+                        },
+                        {
+                          "id": "anhang-6.8.2.c",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "c)"
+                            }
+                          ],
+                          "prose": "Systeme, die für den Betrieb der betreffenden Einrichtungen oder für die Sicherheit unverzichtbar sind, in gesicherten Zonen unterbringen;"
+                        },
+                        {
+                          "id": "anhang-6.8.2.d",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "d)"
+                            }
+                          ],
+                          "prose": "eine demilitarisierte Zone innerhalb ihrer Kommunikationsnetze aufbauen, um die Sicherheit der Kommunikation, die aus ihren Netzen stammt oder für ihr Netz bestimmt ist, zu gewährleisten;"
+                        },
+                        {
+                          "id": "anhang-6.8.2.e",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "e)"
+                            }
+                          ],
+                          "prose": "den Zugang zu und die Kommunikation zwischen und innerhalb von Zonen auf diejenigen beschränken, die für den Betrieb der betreffenden Einrichtungen oder für die Sicherheit erforderlich sind;"
+                        },
+                        {
+                          "id": "anhang-6.8.2.f",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "f)"
+                            }
+                          ],
+                          "prose": "das spezielle Netz für die Verwaltung von Netz- und Informationssystemen vom operativen Netz der betreffenden Einrichtungen trennen;"
+                        },
+                        {
+                          "id": "anhang-6.8.2.g",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "g)"
+                            }
+                          ],
+                          "prose": "Netzverwaltungskanäle von anderem Netzverkehr trennen;"
+                        },
+                        {
+                          "id": "anhang-6.8.2.h",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "h)"
+                            }
+                          ],
+                          "prose": "die Produktionssysteme für die Dienste der betreffenden Einrichtungen von den Systemen trennen, die bei der Entwicklung und beim Testen, einschließlich der Sicherung, verwendet werden."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "anhang-6.8.3",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.8.3."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen überprüfen die Netzsegmentierung in geplanten Zeitabständen sowie bei erheblichen Sicherheitsvorfällen oder wesentlichen Änderungen der Betriebsabläufe oder der Risiken und aktualisieren sie – soweit angemessen."
+                    }
+                  ]
+                },
+                {
+                  "id": "anhang-6.9",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "6.9."
+                    }
+                  ],
+                  "prose": "Schutz gegen Schadsoftware und nicht genehmigte Software",
+                  "parts": [
+                    {
+                      "id": "anhang-6.9.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.9.1."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen schützen ihre Netz- und Informationssysteme vor Schadsoftware und nicht genehmigter Software."
+                    },
+                    {
+                      "id": "anhang-6.9.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.9.2."
+                        }
+                      ],
+                      "prose": "Zu diesem Zweck führen die betreffenden Einrichtungen insbesondere Maßnahmen durch, um die Verwendung von Schadsoftware oder nicht genehmigter Software aufzudecken oder zu verhindern. Die betreffenden Einrichtungen stellen – soweit angemessen – sicher, dass ihre Netz- und Informationssysteme mit einer Erkennungs- und Reaktionssoftware ausgestattet sind, die regelmäßig im Einklang mit der gemäß Nummer 2.1 durchgeführten Risikobewertung und den vertraglichen Vereinbarungen mit den Anbietern aktualisiert wird."
+                    }
+                  ]
+                },
+                {
+                  "id": "anhang-6.10",
+                  "name": "item",
+                  "props": [
+                    {
+                      "name": "label",
+                      "value": "6.10."
+                    }
+                  ],
+                  "prose": "Behandlung und Offenlegung von Schwachstellen",
+                  "parts": [
+                    {
+                      "id": "anhang-6.10.1",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.10.1."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen erlangen Informationen über technische Schwachstellen in ihren Netz- und Informationssystemen, bewerten ihre Exposition gegenüber solchen Schwachstellen und ergreifen geeignete Maßnahmen zum Umgang mit diesen Schwachstellen."
+                    },
+                    {
+                      "id": "anhang-6.10.2",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.10.2."
+                        }
+                      ],
+                      "prose": "Für die Zwecke von Nummer 6.10.1 müssen die betreffenden Einrichtungen",
+                      "parts": [
+                        {
+                          "id": "anhang-6.10.2.a",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "a)"
+                            }
+                          ],
+                          "prose": "Informationen über Schwachstellen über geeignete Kanäle, wie z. B. Ankündigungen von CSIRTs oder zuständigen Behörden oder von Anbietern oder Diensteanbietern bereitgestellte Informationen, verfolgen;"
+                        },
+                        {
+                          "id": "anhang-6.10.2.b",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "b)"
+                            }
+                          ],
+                          "prose": "– soweit angemessen – Schwachstellen-Scans durchführen und die Ergebnisse der Scans in geplanten Zeitabständen aufzeichnen;"
+                        },
+                        {
+                          "id": "anhang-6.10.2.c",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "c)"
+                            }
+                          ],
+                          "prose": "Schwachstellen, die von den betreffenden Einrichtungen als für ihren Betrieb kritisch eingestuft wurden, unverzüglich beheben;"
+                        },
+                        {
+                          "id": "anhang-6.10.2.d",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "d)"
+                            }
+                          ],
+                          "prose": "sicherstellen, dass die Behandlung von Schwachstellen mit den Verfahren für das Änderungsmanagement, das Sicherheitspatch-Management, das Risikomanagement und das Management von Sicherheitsvorfällen vereinbar ist;"
+                        },
+                        {
+                          "id": "anhang-6.10.2.e",
+                          "name": "item",
+                          "props": [
+                            {
+                              "name": "label",
+                              "value": "e)"
+                            }
+                          ],
+                          "prose": "ein Verfahren für die Offenlegung von Schwachstellen im Einklang mit den geltenden nationalen Konzepten für die koordinierte Offenlegung von Schwachstellen festlegen."
+                        }
+                      ]
+                    },
+                    {
+                      "id": "anhang-6.10.3",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.10.3."
+                        }
+                      ],
+                      "prose": "Wenn dies wegen der möglichen Auswirkungen der Schwachstelle gerechtfertigt ist, erstellen die betreffenden Einrichtungen einen Plan zur Minderung der Schwachstelle und setzen ihn um. Ansonsten dokumentieren und begründen die betreffenden Einrichtungen, warum die Schwachstelle keine Abhilfemaßnahmen erfordert."
+                    },
+                    {
+                      "id": "anhang-6.10.4",
+                      "name": "item",
+                      "props": [
+                        {
+                          "name": "label",
+                          "value": "6.10.4."
+                        }
+                      ],
+                      "prose": "Die betreffenden Einrichtungen überprüfen in geplanten Abständen die Kanäle, die sie für die Überwachung von Informationen über Schwachstellen nutzen, und aktualisieren sie – soweit angemessen."
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}}

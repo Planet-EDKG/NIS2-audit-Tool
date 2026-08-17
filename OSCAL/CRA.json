@@ -1,0 +1,924 @@
+{
+  "catalog": {
+    "uuid": "cra-v1-catalog-uuid-kapitel-2",
+    "metadata": {
+      "title": "Verordnung (EU) 2024/2847 (Cyberresilienz-Verordnung)",
+      "version": "1.0",
+      "oscal-version": "1.1.2",
+      "remarks": "Teil 2: Kapitel II - Pflichten der Wirtschaftsakteure und Bestimmungen in Bezug auf freie und quelloffene Software (Artikel 13 bis 26).[cite: 4]"
+    },
+    "groups": [
+      {
+        "id": "cra-kapitel-2",
+        "title": "KAPITEL II: PFLICHTEN DER WIRTSCHAFTSAKTEURE UND BESTIMMUNGEN IN BEZUG AUF FREIE UND QUELLOFFENE SOFTWARE",
+        "controls": [
+          {
+            "id": "cra-art-13",
+            "title": "Artikel 13: Pflichten der Hersteller",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-13_stmt",
+                "name": "statement",
+                "prose": "Wenn sie ein Produkt mit digitalen Elementen in den Verkehr bringen, gewährleisten die Hersteller, dass dieses Produkt gemäß den grundlegenden Cybersicherheitsanforderungen in Anhang I Teil I konzipiert, entwickelt und hergestellt worden ist.[cite: 4] Die Hersteller führen eine Bewertung der Cybersicherheitsrisiken durch und berücksichtigen diese in allen Lebenszyklusphasen des Produkts.[cite: 4] Sie stellen sicher, dass Schwachstellen wirksam und im Einklang mit Anhang I Teil II behandelt werden.[cite: 4]"
+              },
+              {
+                "id": "cra-art-13_guidance",
+                "name": "guidance",
+                "prose": "Die Hersteller legen einen Unterstützungszeitraum fest, der die voraussichtliche Nutzungsdauer widerspiegelt und mindestens fünf Jahre beträgt (außer die Lebensdauer ist kürzer).[cite: 4] Vor dem Inverkehrbringen wird eine technische Dokumentation erstellt und ein Konformitätsbewertungsverfahren durchgeführt.[cite: 4] Die Hersteller stellen die EU-Konformitätserklärung aus, bringen die CE-Kennzeichnung an und bewahren die Dokumentation mindestens zehn Jahre oder für die Dauer des Unterstützungszeitraums auf.[cite: 4] Sie benennen eine zentrale Anlaufstelle für Nutzer und stellen sicher, dass notwendige Informationen und Anleitungen beigefügt sind.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-14",
+            "title": "Artikel 14: Meldepflichten der Hersteller",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-14_stmt",
+                "name": "statement",
+                "prose": "Ein Hersteller meldet jede aktiv ausgenutzte Schwachstelle sowie jeden schwerwiegenden Sicherheitsvorfall, der sich auf die Sicherheit des Produkts auswirkt, gleichzeitig dem als Koordinator benannten CSIRT und der ENISA über die einheitliche Meldeplattform.[cite: 4]"
+              },
+              {
+                "id": "cra-art-14_guidance",
+                "name": "guidance",
+                "prose": "Für aktiv ausgenutzte Schwachstellen und schwerwiegende Sicherheitsvorfälle legt der Hersteller unverzüglich (innerhalb von 24 Stunden) eine Frühwarnung vor.[cite: 4] Innerhalb von 72 Stunden folgt eine ausführlichere Meldung.[cite: 4] Ein Abschlussbericht muss spätestens 14 Tage nach Bereitstellung einer Korrekturmaßnahme (bei Schwachstellen) bzw. innerhalb eines Monats nach der Sicherheitsvorfallmeldung vorgelegt werden.[cite: 4] Die Hersteller informieren auch die betroffenen Nutzer über Schwachstellen und Sicherheitsvorfälle sowie über Risikominderungsmaßnahmen.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-15",
+            "title": "Artikel 15: Freiwillige Meldungen",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-15_stmt",
+                "name": "statement",
+                "prose": "Hersteller und andere Personen können Schwachstellen, Cyberbedrohungen, Sicherheitsvorfälle sowie Beinahe-Vorfälle auf freiwilliger Basis einem als Koordinator benannten CSIRT oder der ENISA melden.[cite: 4] Die CSIRTs und die ENISA stellen die Vertraulichkeit sicher; freiwillige Meldungen dürfen nicht zu zusätzlichen Pflichten für die meldende Person führen.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-16",
+            "title": "Artikel 16: Einrichtung einer einheitlichen Meldeplattform",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-16_stmt",
+                "name": "statement",
+                "prose": "Zur Vereinfachung der Meldepflichten richtet die ENISA eine einheitliche Meldeplattform ein, über die Meldungen abgewickelt und an die zuständigen nationalen CSIRTs weitergeleitet werden.[cite: 4] Unter außergewöhnlichen Umständen und auf Antrag des Herstellers kann die Verbreitung einer Meldung aus Cybersicherheitsgründen hinausgeschoben werden, um unmittelbare hohe Risiken durch die Offenlegung zu vermeiden.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-17",
+            "title": "Artikel 17: Sonstige Bestimmungen im Zusammenhang mit der Berichterstattung",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-17_stmt",
+                "name": "statement",
+                "prose": "Die ENISA kann dem EU-CyCLONe-Netzwerk gemeldete Informationen zur Verfügung stellen, sofern sie für das operative Krisenmanagement relevant sind.[cite: 4] Zur Sensibilisierung und Verhinderung schwerwiegender Vorfälle können CSIRTs die Öffentlichkeit informieren.[cite: 4] Die ENISA erstellt alle 24 Monate einen technischen Bericht über aufkommende Cybersicherheitstrends.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-18",
+            "title": "Artikel 18: Bevollmächtigte",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-18_stmt",
+                "name": "statement",
+                "prose": "Ein Hersteller kann schriftlich einen Bevollmächtigten benennen, der bestimmte Aufgaben (z.B. Bereithaltung der EU-Konformitätserklärung und technischen Dokumentation für zehn Jahre) für die Marktüberwachungsbehörden übernimmt und mit diesen zusammenarbeitet.[cite: 4] Die originären Herstellerpflichten (Entwicklung, Sicherheitsprozesse) können nicht delegiert werden.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-19",
+            "title": "Artikel 19: Pflichten der Einführer",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-19_stmt",
+                "name": "statement",
+                "prose": "Die Einführer bringen nur Produkte mit digitalen Elementen in den Verkehr, die den grundlegenden Cybersicherheitsanforderungen genügen.[cite: 4] Sie stellen sicher, dass Konformitätsbewertungen durchgeführt, die CE-Kennzeichnung angebracht und die Kontaktangaben des Einführers angegeben wurden.[cite: 4]"
+              },
+              {
+                "id": "cra-art-19_guidance",
+                "name": "guidance",
+                "prose": "Ist ein Einführer der Auffassung, dass ein Produkt nicht konform ist oder ein erhebliches Risiko birgt, darf er es nicht in den Verkehr bringen und muss den Hersteller sowie die Behörden informieren.[cite: 4] Einführer müssen bei festgestellten Schwachstellen umgehend den Hersteller informieren und gegebenenfalls Rückrufe oder Korrekturmaßnahmen einleiten.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-20",
+            "title": "Artikel 20: Pflichten der Händler",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-20_stmt",
+                "name": "statement",
+                "prose": "Wenn sie ein Produkt mit digitalen Elementen auf dem Markt bereitstellen, befolgen die Händler die Vorschriften dieser Verordnung mit der gebührenden Sorgfalt.[cite: 4] Sie überprüfen vor der Bereitstellung, ob das Produkt die CE-Kennzeichnung trägt und die erforderlichen Dokumente beigefügt sind.[cite: 4] Bei Nichtkonformität leiten sie Korrekturmaßnahmen ein und informieren bei erheblichen Risiken die Marktüberwachungsbehörden.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-21",
+            "title": "Artikel 21: Fälle, in denen die Pflichten der Hersteller auch für Einführer und Händler gelten",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-21_stmt",
+                "name": "statement",
+                "prose": "Ein Einführer oder Händler gilt als Hersteller und unterliegt den Herstellerpflichten (Artikel 13 und 14), wenn er ein Produkt unter seinem eigenen Namen oder seiner eigenen Marke in den Verkehr bringt oder eine wesentliche Änderung an einem bereits auf dem Markt befindlichen Produkt vornimmt.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-22",
+            "title": "Artikel 22: Sonstige Fälle, in denen die Pflichten der Hersteller gelten",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-22_stmt",
+                "name": "statement",
+                "prose": "Eine natürliche oder juristische Person, die nicht Hersteller, Einführer oder Händler ist, aber eine wesentliche Änderung an einem Produkt vornimmt und es bereitstellt, gilt für den von der Änderung betroffenen Teil (oder für das gesamte Produkt, wenn die Cybersicherheit insgesamt beeinflusst wird) als Hersteller.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-23",
+            "title": "Artikel 23: Identifizierung der Wirtschaftsakteure",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-23_stmt",
+                "name": "statement",
+                "prose": "Die Wirtschaftsakteure müssen den Marktüberwachungsbehörden auf Anfrage Informationen darüber übermitteln, von wem sie Produkte bezogen haben und an wen sie diese abgegeben haben.[cite: 4] Diese Informationen müssen zehn Jahre lang vorgehalten werden.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-24",
+            "title": "Artikel 24: Pflichten der Verwalter quelloffener Software",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-24_stmt",
+                "name": "statement",
+                "prose": "Verwalter quelloffener Software (Open-Source Stewards) entwickeln und dokumentieren auf überprüfbare Weise eine Cybersicherheitsstrategie, um die sichere Entwicklung und den wirksamen Umgang mit Schwachstellen zu fördern.[cite: 4] Sie arbeiten mit den Marktüberwachungsbehörden zusammen und legen auf Verlangen die entsprechende Dokumentation vor.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-25",
+            "title": "Artikel 25: Sicherheitsbescheinigung für freie und quelloffene Software",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-25_stmt",
+                "name": "statement",
+                "prose": "Die Kommission kann durch delegierte Rechtsakte freiwillige Programme zur Bescheinigung der Sicherheit von freier und quelloffener Software einführen.[cite: 4] Diese Programme ermöglichen Entwicklern, Nutzern und Dritten die Bewertung der Konformität mit grundlegenden Cybersicherheitsanforderungen.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-26",
+            "title": "Artikel 26: Leitlinien",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-26_stmt",
+                "name": "statement",
+                "prose": "Zur Erleichterung der Einhaltung, insbesondere für Kleinst-, kleine und mittlere Unternehmen (KMU), veröffentlicht die Kommission Leitlinien.[cite: 4] Diese decken unter anderem den Anwendungsbereich (z.B. Datenfernverarbeitung, quelloffene Software), Unterstützungszeiträume, den Begriff der wesentlichen Änderung und die Interaktion mit anderen Harmonisierungsrechtsvorschriften der Union ab.[cite: 4]"
+              }
+            ]
+          },
+          {
+        "id": "cra-kapitel-3",
+        "title": "KAPITEL III: KONFORMITÄT DES PRODUKTS MIT DIGITALEN ELEMENTEN",
+        "controls": [
+          {
+            "id": "cra-art-27",
+            "title": "Artikel 27: Konformitätsvermutung",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-27_stmt",
+                "name": "statement",
+                "prose": "Bei Produkten mit digitalen Elementen und vom Hersteller festgelegten Verfahren, die mit harmonisierten Normen oder Teilen davon übereinstimmen, deren Fundstellen im Amtsblatt der Europäischen Union veröffentlicht worden sind, wird eine Konformität mit den grundlegenden Cybersicherheitsanforderungen in Anhang I vermutet, soweit diese Anforderungen von den betreffenden Normen oder Teilen davon abgedeckt sind.[cite: 4]"
+              },
+              {
+                "id": "cra-art-27_guidance",
+                "name": "guidance",
+                "prose": "Die Kommission fordert europäische Normungsorganisationen auf, harmonisierte Normen auszuarbeiten.[cite: 4] Wenn solche Normen nicht fristgerecht vorliegen, nicht dem Auftrag entsprechen oder das Normungsverfahren blockiert ist, kann die Kommission durch Durchführungsrechtsakte gemeinsame Spezifikationen festlegen, die ebenfalls eine Konformitätsvermutung auslösen.[cite: 4] Gleiches gilt für Produkte, für die ein europäisches Cybersicherheitszertifikat gemäß Verordnung (EU) 2019/881 ausgestellt wurde, sofern dieses die Anforderungen in Anhang I abdeckt.[cite: 4] Der Erhalt eines Cybersicherheitszertifikats der Stufe 'mittel' hebt zudem bestimmte Pflichten zur Konformitätsbewertung durch Dritte auf.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-28",
+            "title": "Artikel 28: EU-Konformitätserklärung",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-28_stmt",
+                "name": "statement",
+                "prose": "Die EU-Konformitätserklärung wird vom Hersteller ausgestellt und besagt, dass die Erfüllung der grundlegenden Cybersicherheitsanforderungen in Anhang I nachgewiesen worden ist.[cite: 4] Mit der Ausstellung der EU-Konformitätserklärung übernimmt der Hersteller die Verantwortung für die Konformität des Produkts mit digitalen Elementen.[cite: 4]"
+              },
+              {
+                "id": "cra-art-28_guidance",
+                "name": "guidance",
+                "prose": "Die Erklärung entspricht in ihrem Aufbau dem Muster in Anhang V (bzw. Anhang VI bei der vereinfachten Form) und wird in den Sprachen abgefasst, die der Mitgliedstaat vorschreibt, in dem das Produkt bereitgestellt wird.[cite: 4] Unterliegt das Produkt mehreren Rechtsvorschriften der Union, wird eine einzige EU-Konformitätserklärung für sämtliche Unionsrechtsvorschriften ausgestellt.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-29",
+            "title": "Artikel 29: Allgemeine Grundsätze der CE-Kennzeichnung",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-29_stmt",
+                "name": "statement",
+                "prose": "Für die CE-Kennzeichnung gelten die allgemeinen Grundsätze gemäß Artikel 30 der Verordnung (EG) Nr. 765/2008.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-30",
+            "title": "Artikel 30: Vorschriften und Bedingungen für die Anbringung der CE-Kennzeichnung",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-30_stmt",
+                "name": "statement",
+                "prose": "Die CE-Kennzeichnung ist gut sichtbar, leserlich und dauerhaft auf dem Produkt mit digitalen Elementen anzubringen.[cite: 4] Falls die Art des Produkts dies nicht zulässt, wird sie auf der Verpackung und der beigefügten EU-Konformitätserklärung angebracht. Bei Softwareprodukten kann sie auch auf der begleitenden Website platziert werden.[cite: 4]"
+              },
+              {
+                "id": "cra-art-30_guidance",
+                "name": "guidance",
+                "prose": "Die CE-Kennzeichnung wird vor dem Inverkehrbringen angebracht und kann kleiner als 5 mm sein, sofern sie lesbar bleibt.[cite: 4] Ihr kann ein Piktogramm oder ein anderes Zeichen folgen, das auf besondere Risiken hinweist.[cite: 4] Ist eine notifizierte Stelle an der Konformitätsbewertung beteiligt (Modul H), folgt deren Kennnummer nach der CE-Kennzeichnung.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-31",
+            "title": "Artikel 31: Technische Dokumentation",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-31_stmt",
+                "name": "statement",
+                "prose": "Die technische Dokumentation enthält alle einschlägigen Daten oder Einzelheiten darüber, wie der Hersteller sicherstellt, dass das Produkt mit digitalen Elementen und die vom Hersteller festgelegten Verfahren den grundlegenden Cybersicherheitsanforderungen in Anhang I genügen.[cite: 4] Sie enthält zumindest die in Anhang VII genannten Angaben.[cite: 4]"
+              },
+              {
+                "id": "cra-art-31_guidance",
+                "name": "guidance",
+                "prose": "Die Dokumentation wird vor dem Inverkehrbringen erstellt und während des Unterstützungszeitraums laufend aktualisiert.[cite: 4] Es wird eine einzige technische Dokumentation für alle anwendbaren Unionsrechtsvorschriften erstellt und in einer Amtssprache des Mitgliedstaats der notifizierten Stelle (oder einer zugelassenen Sprache) abgefasst.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-32",
+            "title": "Artikel 32: Konformitätsbewertungsverfahren für Produkte mit digitalen Elementen",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-32_stmt",
+                "name": "statement",
+                "prose": "Der Hersteller führt eine Konformitätsbewertung durch, um festzustellen, ob die grundlegenden Cybersicherheitsanforderungen in Anhang I erfüllt sind.[cite: 4]"
+              },
+              {
+                "id": "cra-art-32_guidance",
+                "name": "guidance",
+                "prose": "Für reguläre Produkte kann der Nachweis erbracht werden durch: a) internes Kontrollverfahren (Modul A), b) EU-Baumusterprüfung (Modul B) und interne Fertigungskontrolle (Modul C), c) umfassende Qualitätssicherung (Modul H), oder d) eine europäische Cybersicherheitszertifizierung.[cite: 4]\nFür 'wichtige Produkte mit digitalen Elementen' (Klasse I) gilt: Wenn keine harmonisierten Normen/gemeinsame Spezifikationen vorliegen oder diese nicht vollständig angewandt wurden, ist zwingend Modul B+C oder Modul H anzuwenden.[cite: 4]\nFür 'wichtige Produkte mit digitalen Elementen' (Klasse II) ist das interne Kontrollverfahren (Modul A) ausgeschlossen; hier muss immer Modul B+C, Modul H oder eine EU-Zertifizierung der Stufe 'mittel' gewählt werden.[cite: 4]\nFür 'kritische Produkte mit digitalen Elementen' (Anhang IV) ist ein europäisches Cybersicherheitszertifikat verpflichtend (sofern festgelegt) oder es gelten die Verfahren für Klasse II.[cite: 4]\nFreie und quelloffene Software in Anhang III darf nach Modul A geprüft werden, sofern die technische Dokumentation öffentlich zugänglich gemacht wird.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-33",
+            "title": "Artikel 33: Unterstützungsmaßnahmen für Kleinstunternehmen sowie kleine und mittlere Unternehmen, einschließlich Start-up-Unternehmen",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-33_stmt",
+                "name": "statement",
+                "prose": "Die Mitgliedstaaten ergreifen Maßnahmen, die auf die Bedürfnisse von Kleinst- und Kleinunternehmen zugeschnitten sind, wie Sensibilisierungs- und Schulungsmaßnahmen, spezielle Kommunikationskanäle und die Unterstützung von Prüf- und Konformitätsbewertungstätigkeiten.[cite: 4]"
+              },
+              {
+                "id": "cra-art-33_guidance",
+                "name": "guidance",
+                "prose": "Die Mitgliedstaaten können 'Reallabore' für Cyberresilienz einrichten, um kontrollierte Testumgebungen für innovative Produkte vor dem Inverkehrbringen anzubieten.[cite: 4] Die Kommission stellt Leitlinien bereit und informiert über finanzielle Unterstützung.[cite: 4] Kleinst- und Kleinunternehmen können die technische Dokumentation (Anhang VII) in einem von der Kommission durch Durchführungsrechtsakte festzulegenden vereinfachten Format vorlegen, das von notifizierten Stellen akzeptiert werden muss.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-34",
+            "title": "Artikel 34: Abkommen über die gegenseitige Anerkennung",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-34_stmt",
+                "name": "statement",
+                "prose": "Unter Berücksichtigung des Niveaus der technischen Entwicklung und des Konzepts für die Konformitätsbewertung eines Drittlands kann die Union Abkommen über die gegenseitige Anerkennung mit Drittländern schließen, um den internationalen Handel zu fördern und zu erleichtern.[cite: 4]"
+              }
+            ]
+          },
+          {
+        "id": "cra-kapitel-4",
+        "title": "KAPITEL IV: NOTIFIZIERUNG VON KONFORMITÄTSBEWERTUNGSSTELLEN",
+        "controls": [
+          {
+            "id": "cra-art-35_38",
+            "title": "Artikel 35 - 38: Notifizierung und notifizierende Behörden",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-35_38_stmt",
+                "name": "statement",
+                "prose": "Die Mitgliedstaaten notifizieren der Kommission und den anderen Mitgliedstaaten die Stellen, die befugt sind, Konformitätsbewertungen gemäß dieser Verordnung durchzuführen.[cite: 4] Sie sorgen bis zum 11. Dezember 2026 dafür, dass es in der Union eine ausreichende Zahl notifizierter Stellen gibt, um Engpässe beim Marktzugang zu verhindern.[cite: 4] Jeder Mitgliedstaat benennt eine notifizierende Behörde, die für die Bewertung, Benennung, Notifizierung und Überwachung von Konformitätsbewertungsstellen zuständig ist.[cite: 4]"
+              },
+              {
+                "id": "cra-art-35_38_guidance",
+                "name": "guidance",
+                "prose": "Die Bewertung und Überwachung kann von einer nationalen Akkreditierungsstelle im Sinne der Verordnung (EG) Nr. 765/2008 erfolgen.[cite: 4] Notifizierende Behörden müssen so eingerichtet sein, dass es zu keinem Interessenkonflikt mit den Konformitätsbewertungsstellen kommt, und sie müssen Objektivität, Unparteilichkeit und Vertraulichkeit gewährleisten.[cite: 4] Die Mitgliedstaaten unterrichten die Kommission über ihre Verfahren zur Bewertung und Notifizierung, und die Kommission macht diese Informationen der Öffentlichkeit zugänglich.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-39",
+            "title": "Artikel 39: Anforderungen an notifizierte Stellen",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-39_stmt",
+                "name": "statement",
+                "prose": "Konformitätsbewertungsstellen müssen für die Notifizierung Anforderungen bezüglich Rechtspersönlichkeit, Unabhängigkeit, Objektivität und Unparteilichkeit erfüllen.[cite: 4] Sie müssen ein unabhängiger Dritter sein und dürfen nicht Konstrukteur, Entwickler, Hersteller, Lieferant, Einführer, Händler oder Verwender der zu bewertenden Produkte sein.[cite: 4]"
+              },
+              {
+                "id": "cra-art-39_guidance",
+                "name": "guidance",
+                "prose": "Die Stellen müssen über ausreichendes und kompetentes Personal verfügen, das eine solide Fach- und Berufsausbildung sowie ausreichende Kenntnis der Cybersicherheitsanforderungen und harmonisierten Normen besitzt.[cite: 4] Die Entlohnung des bewertenden Personals darf sich nicht nach der Anzahl der durchgeführten Bewertungen oder deren Ergebnissen richten.[cite: 4] Die Stellen müssen eine Haftpflichtversicherung abschließen und die berufliche Schweigepflicht wahren.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-40_41",
+            "title": "Artikel 40 & 41: Konformitätsvermutung, Zweigstellen und Unterauftragnehmer",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-40_41_stmt",
+                "name": "statement",
+                "prose": "Weist eine Konformitätsbewertungsstelle nach, dass sie die Kriterien der einschlägigen harmonisierten Normen erfüllt, wird davon ausgegangen, dass sie die Anforderungen für notifizierte Stellen (Artikel 39) erfüllt.[cite: 4] Vergibt eine notifizierte Stelle Aufgaben an Unterauftragnehmer oder Zweigstellen, stellt sie sicher, dass diese die gleichen Anforderungen erfüllen, und trägt die volle Verantwortung für deren Arbeiten.[cite: 4] Arbeiten dürfen nur mit Zustimmung des Herstellers an Unterauftragnehmer vergeben werden.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-42_46",
+            "title": "Artikel 42 - 46: Notifizierungsverfahren und Anfechtung",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-42_46_stmt",
+                "name": "statement",
+                "prose": "Eine Konformitätsbewertungsstelle beantragt ihre Notifizierung bei der notifizierenden Behörde ihres Mitgliedstaats.[cite: 4] Dem Antrag werden eine Beschreibung der Tätigkeiten, Verfahren und Produkte sowie ggf. eine Akkreditierungsurkunde beigelegt.[cite: 4] Die Notifizierung erfolgt über das NANDO-Informationssystem der Kommission.[cite: 4]"
+              },
+              {
+                "id": "cra-art-42_46_guidance",
+                "name": "guidance",
+                "prose": "Die Stelle darf nur tätig werden, wenn Kommission und andere Mitgliedstaaten keine Einwände erhoben haben (innerhalb von zwei Wochen bei Vorliegen einer Akkreditierungsurkunde, ansonsten zwei Monate).[cite: 4] Die Kommission weist jeder notifizierten Stelle eine eindeutige Kennnummer zu und veröffentlicht ein Verzeichnis.[cite: 4] Erfüllt eine Stelle die Anforderungen nicht mehr, schränkt die notifizierende Behörde die Notifizierung ein, setzt sie aus oder widerruft sie.[cite: 4] Die Kommission kann die Kompetenz einer notifizierten Stelle untersuchen und Korrekturmaßnahmen verlangen.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-47",
+            "title": "Artikel 47: Operative Pflichten der notifizierten Stellen",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-47_stmt",
+                "name": "statement",
+                "prose": "Die notifizierten Stellen führen die Konformitätsbewertungen im Einklang mit den vorgeschriebenen Verfahren unter Wahrung der Verhältnismäßigkeit durch und vermeiden unnötige Belastungen der Wirtschaftsakteure.[cite: 4] Dabei berücksichtigen sie die Größe des Unternehmens (insbesondere KMU) und die Komplexität des Produkts, halten jedoch stets das für die Cybersicherheit erforderliche Schutzniveau ein.[cite: 4]"
+              },
+              {
+                "id": "cra-art-47_guidance",
+                "name": "guidance",
+                "prose": "Stellt eine Stelle fest, dass ein Hersteller die Anforderungen nicht erfüllt hat, fordert sie ihn zu Korrekturmaßnahmen auf und stellt keine Bescheinigung aus.[cite: 4] Bei Feststellung von Mängeln während der Überwachung kann die Bescheinigung ausgesetzt oder widerrufen werden.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-48_51",
+            "title": "Artikel 48 - 51: Einspruch, Meldepflichten und Koordinierung",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-48_51_stmt",
+                "name": "statement",
+                "prose": "Die Mitgliedstaaten stellen sicher, dass ein Einspruchsverfahren gegen die Entscheidungen der notifizierten Stellen vorgesehen ist.[cite: 4] Notifizierte Stellen melden der notifizierenden Behörde alle Verweigerungen, Aussetzungen und Aufhebungen von Bescheinigungen sowie Umstände mit Auswirkungen auf die Notifizierung.[cite: 4] Die Kommission sorgt für Erfahrungsaustausch und richtet eine sektorübergreifende Koordinierungsgruppe der notifizierten Stellen ein.[cite: 4]"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cra-kapitel-5",
+        "title": "KAPITEL V: MARKTÜBERWACHUNG UND DURCHSETZUNG",
+        "controls": [
+          {
+            "id": "cra-art-52",
+            "title": "Artikel 52: Marktüberwachung und Kontrolle auf dem Unionsmarkt",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-52_stmt",
+                "name": "statement",
+                "prose": "Die Verordnung (EU) 2019/1020 gilt für die Produkte mit digitalen Elementen, die in den Anwendungsbereich der vorliegenden Verordnung fallen.[cite: 4] Jeder Mitgliedstaat benennt für die Zwecke der Gewährleistung der wirksamen Durchführung dieser Verordnung eine oder mehrere Marktüberwachungsbehörden.[cite: 4]"
+              },
+              {
+                "id": "cra-art-52_guidance",
+                "name": "guidance",
+                "prose": "Die Marktüberwachungsbehörden arbeiten mit den Zertifizierungsbehörden, den CSIRTs, der ENISA und den Datenschutzbehörden zusammen.[cite: 4] Sie überwachen auch die Verpflichtungen für Verwalter quelloffener Software.[cite: 4] Die Mitgliedstaaten statten die Behörden mit angemessenen finanziellen, technischen und personellen Ressourcen aus.[cite: 4] Im Hinblick auf die einheitliche Anwendung wird eine ADCO (Gruppe zur administrativen Zusammenarbeit) eingesetzt, die auch Statistiken über Unterstützungszeiträume veröffentlicht und Leitlinien bereitstellt.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-53",
+            "title": "Artikel 53: Zugang zu Daten und zur Dokumentation",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-53_stmt",
+                "name": "statement",
+                "prose": "Soweit dies für die Konformitätsbewertung erforderlich ist, erhalten die Marktüberwachungsbehörden auf begründeten Antrag Zugang zu den Daten, die für die Bewertung der Konzeption, Entwicklung, Herstellung und die Behandlung von Schwachstellen solcher Produkte erforderlich sind, einschließlich interner Unterlagen des Wirtschaftsakteurs.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-54",
+            "title": "Artikel 54: Nationale Verfahren für Produkte mit erheblichem Cybersicherheitsrisiko",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-54_stmt",
+                "name": "statement",
+                "prose": "Hat die Marktüberwachungsbehörde Grund zu der Annahme, dass ein Produkt ein erhebliches Cybersicherheitsrisiko birgt, führt sie eine Konformitätsbewertung durch.[cite: 4] Genügt das Produkt den Anforderungen nicht, fordert die Behörde den Wirtschaftsakteur auf, Korrekturmaßnahmen zu ergreifen, das Produkt vom Markt zu nehmen oder es zurückzurufen.[cite: 4]"
+              },
+              {
+                "id": "cra-art-54_guidance",
+                "name": "guidance",
+                "prose": "Ergreift der Wirtschaftsakteur keine angemessenen Maßnahmen, trifft die Behörde vorläufige Maßnahmen zur Einschränkung oder Untersagung der Bereitstellung.[cite: 4] Sie unterrichtet die Kommission und die anderen Mitgliedstaaten hierüber.[cite: 4] Bei der Bewertung der Erheblichkeit eines Cybersicherheitsrisikos berücksichtigen die Behörden auch nichttechnische Risikofaktoren.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-55",
+            "title": "Artikel 55: Schutzklauselverfahren der Union",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-55_stmt",
+                "name": "statement",
+                "prose": "Erhebt ein Mitgliedstaat Einwände gegen eine nationale Maßnahme eines anderen Mitgliedstaats oder hält die Kommission diese für unionsrechtswidrig, prüft die Kommission die Maßnahme.[cite: 4] Ist sie gerechtfertigt, müssen alle Mitgliedstaaten das Produkt von ihrem Markt nehmen.[cite: 4] Ist sie nicht gerechtfertigt, muss der betreffende Mitgliedstaat sie zurücknehmen.[cite: 4] Liegt die Nichtkonformität an Mängeln in harmonisierten Normen oder Zertifizierungsschemata, leitet die Kommission entsprechende Anpassungsverfahren ein.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-56",
+            "title": "Artikel 56: Verfahren auf Unionsebene",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-56_stmt",
+                "name": "statement",
+                "prose": "Unter außergewöhnlichen Umständen (z. B. sofortiges Eingreifen zur Bewahrung des Binnenmarkts erforderlich) kann die Kommission bei Produkten, die weiterhin ein erhebliches Risiko bergen und bei denen nationale Behörden nicht wirksam vorgegangen sind, selbst eine Bewertung vornehmen, gegebenenfalls mit Unterstützung der ENISA.[cite: 4]"
+              },
+              {
+                "id": "cra-art-56_guidance",
+                "name": "guidance",
+                "prose": "Auf Basis dieser Bewertung kann die Kommission Durchführungsrechtsakte über Korrekturmaßnahmen oder einschränkende Maßnahmen (einschließlich Rückruf oder Rücknahme vom Markt) auf Unionsebene erlassen.[cite: 4] Die Mitgliedstaaten müssen diese unverzüglich umsetzen.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-57",
+            "title": "Artikel 57: Konforme Produkte mit digitalem Elementen, die ein erhebliches Cybersicherheitsrisiko bergen",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-57_stmt",
+                "name": "statement",
+                "prose": "Entspricht ein Produkt zwar der Verordnung, birgt aber dennoch ein erhebliches Cybersicherheitsrisiko (z.B. für Gesundheit, Sicherheit, Grundrechte oder Dienste wesentlicher Einrichtungen), fordert die Marktüberwachungsbehörde den Wirtschaftsakteur auf, geeignete Maßnahmen zu ergreifen, um das Risiko zu beseitigen oder das Produkt vom Markt zu nehmen.[cite: 4]"
+              },
+              {
+                "id": "cra-art-57_guidance",
+                "name": "guidance",
+                "prose": "Die Kommission und andere Mitgliedstaaten werden über diese Maßnahmen unterrichtet.[cite: 4] Die Kommission prüft die Maßnahme und entscheidet über ihre Berechtigung.[cite: 4] Auch auf Unionsebene kann die Kommission unter außergewöhnlichen Umständen Durchführungsrechtsakte zu Korrekturmaßnahmen erlassen.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-58",
+            "title": "Artikel 58: Formale Nichtkonformität",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-58_stmt",
+                "name": "statement",
+                "prose": "Stellt eine Marktüberwachungsbehörde fest, dass die CE-Kennzeichnung fehlerhaft oder gar nicht angebracht wurde, die EU-Konformitätserklärung nicht oder nicht ordnungsgemäß ausgestellt wurde oder die technische Dokumentation unvollständig ist, fordert sie den Hersteller auf, die Nichtkonformität zu beheben.[cite: 4] Besteht der Mangel weiter, schränkt der Mitgliedstaat die Bereitstellung auf dem Markt ein oder sorgt für einen Rückruf.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-59_60",
+            "title": "Artikel 59 & 60: Gemeinsame Tätigkeiten und koordinierte Kontrollen (Sweeps)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-59_60_stmt",
+                "name": "statement",
+                "prose": "Die Marktüberwachungsbehörden können gemeinsame Tätigkeiten durchführen, um die Cybersicherheit und den Verbraucherschutz zu gewährleisten.[cite: 4] Die Kommission oder die ENISA können entsprechende gemeinsame Tätigkeiten vorschlagen.[cite: 4] Zur Prüfung der Einhaltung führen die Behörden gleichzeitige koordinierte Kontrollen (Sweeps) durch.[cite: 4]"
+              },
+              {
+                "id": "cra-art-59_60_guidance",
+                "name": "guidance",
+                "prose": "Sweeps werden in der Regel von der Kommission koordiniert.[cite: 4] Die ENISA kann auf Grundlage von Meldungen über Schwachstellen oder Sicherheitsvorfälle Kategorien von Produkten vorschlagen, zu denen Sweeps organisiert werden sollten.[cite: 4] Die Ermittlungsbefugnisse nach nationalem Recht dürfen bei diesen Sweeps umfassend genutzt werden.[cite: 4]"
+              }
+            ]
+          }
+        ]
+      }
+        ]
+      }
+        ]
+      },
+      {
+        "id": "cra-kapitel-6",
+        "title": "KAPITEL VI: ÜBERTRAGENE BEFUGNISSE UND AUSSCHUSSVERFAHREN",
+        "controls": [
+          {
+            "id": "cra-art-61_62",
+            "title": "Artikel 61 & 62: Ausübung der Befugnisübertragung und Ausschussverfahren",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-61_62_stmt",
+                "name": "statement",
+                "prose": "Die Befugnis zum Erlass delegierter Rechtsakte wird der Kommission unter bestimmten Bedingungen und für einen Zeitraum von fünf Jahren ab dem 10. Dezember 2024 übertragen.[cite: 4] Diese Befugnis verlängert sich stillschweigend um Zeiträume gleicher Länge, sofern das Europäische Parlament oder der Rat nicht widersprechen.[cite: 4]"
+              },
+              {
+                "id": "cra-art-61_62_guidance",
+                "name": "guidance",
+                "prose": "Das Europäische Parlament oder der Rat können die Befugnisübertragung jederzeit widerrufen.[cite: 4] Vor Erlass eines delegierten Rechtsakts konsultiert die Kommission die Sachverständigen der Mitgliedstaaten.[cite: 4] Die Kommission wird bei der Durchführung durch einen Ausschuss im Sinne der Verordnung (EU) Nr. 182/2011 unterstützt.[cite: 4]"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cra-kapitel-7",
+        "title": "KAPITEL VII: VERTRAULICHKEIT UND SANKTIONEN",
+        "controls": [
+          {
+            "id": "cra-art-63",
+            "title": "Artikel 63: Vertraulichkeit",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-63_stmt",
+                "name": "statement",
+                "prose": "Alle an der Anwendung dieser Verordnung beteiligten Parteien wahren die Vertraulichkeit der Informationen und Daten, von denen sie in Ausübung ihrer Aufgaben Kenntnis erlangen.[cite: 4]"
+              },
+              {
+                "id": "cra-art-63_guidance",
+                "name": "guidance",
+                "prose": "Geschützt werden insbesondere Rechte des geistigen Eigentums, Geschäftsgeheimnisse, die wirksame Durchführung der Verordnung, öffentliche und nationale Sicherheitsinteressen sowie die Integrität von Straf- oder Verwaltungsverfahren.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-64",
+            "title": "Artikel 64: Sanktionen",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-64_stmt",
+                "name": "statement",
+                "prose": "Die Mitgliedstaaten erlassen Vorschriften über Sanktionen, die bei Verstößen gegen diese Verordnung zu verhängen sind. Diese müssen wirksam, verhältnismäßig und abschreckend sein.[cite: 4]"
+              },
+              {
+                "id": "cra-art-64_guidance",
+                "name": "guidance",
+                "prose": "Bei Nichteinhaltung der grundlegenden Cybersicherheitsanforderungen (Anhang I) oder der Herstellerpflichten (Art. 13 und 14) werden Geldbußen bis 15.000.000 EUR oder 2,5 % des weltweiten Jahresumsatzes verhängt (der höhere Betrag gilt).[cite: 4] Bei anderen Pflichtverstößen drohen Geldbußen bis 10.000.000 EUR oder 2 % des Umsatzes.[cite: 4] Für falsche, unvollständige oder irreführende Angaben gegenüber Behörden drohen bis zu 5.000.000 EUR oder 1 % des Umsatzes.[cite: 4] Bei der Festsetzung werden Art, Schwere, Dauer, Unternehmensgröße (besonders KMU) und frühere Sanktionen berücksichtigt.[cite: 4] Ausnahmen von bestimmten Geldbußen bestehen für Kleinst-/Kleinunternehmen bei Fristversäumnissen der Frühwarnung sowie generell für Verwalter quelloffener Software.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-65",
+            "title": "Artikel 65: Verbandsklagen",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-65_stmt",
+                "name": "statement",
+                "prose": "Die Richtlinie (EU) 2020/1828 findet Anwendung auf Verbandsklagen gegen Zuwiderhandlungen durch Wirtschaftsakteure gegen Bestimmungen dieser Verordnung, die die Kollektivinteressen der Verbraucher beeinträchtigen oder zu beeinträchtigen drohen.[cite: 4]"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cra-kapitel-8",
+        "title": "KAPITEL VIII: ÜBERGANGS- UND SCHLUSSBESTIMMUNGEN",
+        "controls": [
+          {
+            "id": "cra-art-66_68",
+            "title": "Artikel 66 - 68: Änderungen bestehender Verordnungen und Richtlinien",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-66_68_stmt",
+                "name": "statement",
+                "prose": "Die Verordnung (EU) 2019/1020 (Marktüberwachung), die Richtlinie (EU) 2020/1828 (Verbandsklagen) und die Verordnung (EU) Nr. 168/2013 werden um Verweise auf die Verordnung (EU) 2024/2847 (Cyberresilienz-Verordnung) ergänzt.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-69",
+            "title": "Artikel 69: Übergangsbestimmungen",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-69_stmt",
+                "name": "statement",
+                "prose": "EU-Baumusterprüfbescheinigungen und Zulassungen in Bezug auf Cybersicherheitsanforderungen aus anderen Harmonisierungsrechtsvorschriften bleiben bis zum 11. Juni 2028 gültig.[cite: 4] Produkte, die vor dem 11. Dezember 2027 in den Verkehr gebracht wurden, fallen nur bei wesentlichen Änderungen nach diesem Datum unter die Anforderungen der Verordnung.[cite: 4] Die Meldepflichten (Artikel 14) gelten jedoch für alle betroffenen Produkte, auch wenn sie vor dem 11. Dezember 2027 in den Verkehr gebracht wurden.[cite: 4]"
+              }
+            ]
+          },
+          {
+            "id": "cra-art-70_71",
+            "title": "Artikel 70 & 71: Bewertung, Inkrafttreten und Geltungsbeginn",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-art-70_71_stmt",
+                "name": "statement",
+                "prose": "Die Kommission legt bis zum 11. Dezember 2030 und danach alle vier Jahre einen Bericht zur Bewertung und Überprüfung der Verordnung vor.[cite: 4] Bis 11. September 2028 wird die Wirksamkeit der einheitlichen Meldeplattform bewertet.[cite: 4]"
+              },
+              {
+                "id": "cra-art-70_71_guidance",
+                "name": "guidance",
+                "prose": "Die Verordnung tritt am zwanzigsten Tag nach Veröffentlichung in Kraft und gilt ab dem 11. Dezember 2027.[cite: 4] Die Meldepflichten nach Artikel 14 gelten jedoch bereits ab dem 11. September 2026, und die Bestimmungen zur Notifizierung von Konformitätsbewertungsstellen (Kapitel IV) gelten ab dem 11. Juni 2026.[cite: 4]"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cra-anhang-1",
+        "title": "ANHANG I: GRUNDLEGENDE CYBERSECURITYANFORDERUNGEN",
+        "controls": [
+          {
+            "id": "cra-anhang-1-teil-1",
+            "title": "Teil I: Cybersicherheitsanforderungen in Bezug auf die Eigenschaften von Produkten mit digitalen Elementen",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cra-anhang-1-teil-1_stmt",
+                "name": "statement",
+                "prose": "(1) Produkte mit digitalen Elementen werden so konzipiert, entwickelt und hergestellt, dass sie angesichts der Risiken ein angemessenes Cybersicherheitsniveau gewährleisten.[cite: 4]"
+              },
+              {
+                "id": "cra-anhang-1-teil-1_guidance",
+                "name": "guidance",
+                "prose": "(2) Auf der Grundlage der Risikobewertung müssen Produkte mit digitalen Elementen, soweit zutreffend:\n*   ohne bekannte ausnutzbare Schwachstellen bereitgestellt werden;[cite: 4]\n*   mit einer sicheren Standardkonfiguration (und Rücksetzfunktion) bereitgestellt werden;[cite: 4]\n*   sicherstellen, dass Schwachstellen durch Sicherheitsaktualisierungen (ggf. automatische mit Opt-out-Mechanismus) behoben werden können;[cite: 4]\n*   durch geeignete Kontrollmechanismen Schutz vor unbefugtem Zugriff bieten (Authentifizierung/Zugangsverwaltung) und Vorfälle melden;[cite: 4]\n*   die Vertraulichkeit von Daten (z.B. durch Verschlüsselung) schützen;[cite: 4]\n*   die Integrität von Daten, Befehlen und Programmen vor Manipulation schützen und Beschädigungen melden;[cite: 4]\n*   die Datenverarbeitung auf das erforderliche Maß beschränken (Datenminimierung);[cite: 4]\n*   die Verfügbarkeit wesentlicher Funktionen (inkl. DDoS-Abwehr) sicherstellen;[cite: 4]\n*   negative Auswirkungen auf die Verfügbarkeit von Diensten anderer Geräte/Netze minimieren;[cite: 4]\n*   möglichst geringe Angriffsflächen bieten;[cite: 4]\n*   die Auswirkungen eines Sicherheitsvorfalls durch Mitigationstechniken verringern;[cite: 4]\n*   sicherheitsbezogene Informationen durch Aufzeichnung und/oder Überwachung einschlägiger interner (Abläufe/Ereignisse) bereitstellen.[cite: 4]"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

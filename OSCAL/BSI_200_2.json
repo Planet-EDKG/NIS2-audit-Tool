@@ -1,0 +1,1002 @@
+{
+  "catalog": {
+    "uuid": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+    "metadata": {
+      "title": "BSI-Standard 200-2: IT-Grundschutz-Methodik",
+      "version": "1.0",
+      "oscal-version": "1.1.2",
+      "remarks": "Methodik zum Aufbau eines ISMS nach IT-Grundschutz."
+    }, 
+  "groups": [
+    {
+      "id": "bsi-200-2-kap-3",
+      "title": "3 Initiierung des Sicherheitsprozesses",
+      "controls": [
+        {
+          "id": "bsi-200-2-3.1",
+          "title": "3.1 Übernahme von Verantwortung durch die Leitungsebene",
+          "parts": [
+            {
+              "id": "bsi-200-2-3.1_stmt",
+              "name": "statement",
+              "prose": "Die oberste Leitungsebene jeder Behörde und jedes Unternehmens ist dafür verantwortlich, dass alle Geschäftsbereiche zielgerichtet und ordnungsgemäß funktionieren und dass Risiken frühzeitig erkannt und minimiert werden.[cite: 2] Mit der steigenden Abhängigkeit der Geschäftsprozesse von der Informationsverarbeitung steigen also auch die Anforderungen, dass die Informationssicherheit nach innen und außen gewährleistet ist.[cite: 2] Die oberste Leitungsebene muss den Sicherheitsprozess initiieren, steuern und kontrollieren.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-3.1_guidance",
+              "name": "guidance",
+              "prose": "Die operative Aufgabe 'Informationssicherheit' wird typischerweise an einen Informationssicherheitsbeauftragten (ISB) delegiert.[cite: 2] In der Einstiegsphase muss zumindest ein Verantwortlicher benannt werden, der die ersten Schritte plant.[cite: 2] Zu den sicherheitsrelevanten Themen, über die die Leitungsebene informiert werden muss, gehören:\n* die Sicherheitsrisiken für die Institution und deren Informationen sowie die damit verbundenen Auswirkungen und Kosten,[cite: 2]\n* die Auswirkungen von Sicherheitsvorfällen auf die kritischen Geschäftsprozesse,[cite: 2]\n* die Sicherheitsanforderungen, die sich aus gesetzlichen und vertraglichen Vorgaben ergeben,[cite: 2]\n* die für die Branche typischen Standardvorgehensweisen zur Informationssicherheit,[cite: 2]\n* der aktuelle Stand der Informationssicherheit im Sinne eines Reifegrades und daraus abgeleitete Handlungsempfehlungen.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-3.1_aktionspunkte",
+              "name": "aktionspunkte",
+              "prose": "Aktionspunkte:\n* Die Leitungsebene informiert sich über mögliche Risiken und Konsequenzen aufgrund fehlender Informationssicherheit.[cite: 2]\n* Die Leitungsebene übernimmt die Gesamtverantwortung für Informationssicherheit.[cite: 2]\n* Die Leitungsebene initiiert den Informationssicherheitsprozess innerhalb der Institution und benennt einen Verantwortlichen für Informationssicherheit.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-3.2",
+          "title": "3.2 Konzeption und Planung des Sicherheitsprozesses",
+          "parts": [
+            {
+              "id": "bsi-200-2-3.2_stmt",
+              "name": "statement",
+              "prose": "Um ein angemessenes Sicherheitsniveau zu erreichen und aufrechterhalten zu können, ist es notwendig, einen kontinuierlichen Informationssicherheitsprozess zu etablieren und eine angemessene Strategie für Informationssicherheit (IS-Strategie) festzulegen.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-3.2.1",
+              "name": "3.2.1 Ermittlung von Rahmenbedingungen",
+              "prose": "Jede Institution sollte ihre wichtigsten Geschäftsprozesse und Fachaufgaben sowie deren Bedarf an Informationssicherheit ermitteln.[cite: 2] Allgemeine Einflussfaktoren umfassen Geschäftsziele, Organisationsstruktur, Zusammenarbeit mit Externen und den strategischen Kontext.[cite: 2] Interne Rahmenbedingungen betreffen die Analyse der Geschäftsprozesse und Fachaufgaben sowie eine grobe Übersicht der genutzten Anwendungen und IT-Systeme.[cite: 2] Externe Rahmenbedingungen beinhalten gesetzliche Vorgaben, Anforderungen von Kunden und branchenspezifische Standards.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-3.2.2",
+              "name": "3.2.2 Formulierung von allgemeinen Informationssicherheitszielen",
+              "prose": "Aus den grundsätzlichen Zielen der Institution und den allgemeinen Rahmenbedingungen sollten zunächst allgemeine Sicherheitsziele abgeleitet werden.[cite: 2] Mögliche Ziele sind z. B. hohe Verlässlichkeit des Handelns, Gewährleistung des guten Rufs, Sicherung von unwiederbringlichen Werten oder der Schutz von natürlichen Personen.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-3.2.3",
+              "name": "3.2.3 Bestimmung des angemessenen Sicherheitsniveaus der Geschäftsprozesse",
+              "prose": "Das angestrebte Sicherheitsniveau für einzelne Geschäftsprozesse kann in die Kategorien 'normal', 'hoch' oder 'sehr hoch' eingeteilt werden.[cite: 2]\n* **Sehr hoch:** Die Offenlegung oder der Ausfall führt zum Zusammenbruch der Institution oder hat schwerwiegende Folgen für breite gesellschaftliche oder wirtschaftliche Bereiche.[cite: 2]\n* **Hoch:** Im Schadensfall tritt Handlungsunfähigkeit zentraler Bereiche der Institution ein; Schäden haben erhebliche Beeinträchtigungen zur Folge.[cite: 2]\n* **Normal:** Längere Ausfallzeiten sind nicht tolerabel; Schäden haben Beeinträchtigungen der Institution zur Folge.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-3.2.4",
+              "name": "3.2.4 Ersterfassung der Prozesse, Anwendungen und IT-Systeme",
+              "prose": "Die Ergebnisse sollten in einer Übersicht der vorhandenen Assets der Institution konsolidiert werden.[cite: 2] Es müssen ausgehend von den wesentlichen Geschäftsprozessen die Anwendungen, IT-Systeme, Netzkomponenten und Räume identifiziert werden.[cite: 2] Auf Grundlage der erfassten Informationen sollte ein rudimentärer Netzplan als grafische Übersicht erstellt werden.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-3.2_aktionspunkte",
+              "name": "aktionspunkte",
+              "prose": "Aktionspunkte:\n* Ansprechpartner für alle Geschäftsprozesse und Fachaufgaben benennen.[cite: 2]\n* Grobeinschätzung der Wertigkeit und des Sicherheitsniveaus durchführen.[cite: 2]\n* Interne und externe Rahmenbedingungen ermitteln.[cite: 2]\n* Bedeutung der Geschäftsprozesse, Fachaufgaben und Informationen abschätzen.[cite: 2]\n* Allgemeine Informationssicherheitsziele festlegen.[cite: 2]\n* Konsolidierte Übersicht der vorhandenen Assets erstellen.[cite: 2]\n* Zustimmung der Leitungsebene einholen.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-3.3",
+          "title": "3.3 Entscheidung für Vorgehensweise",
+          "parts": [
+            {
+              "id": "bsi-200-2-3.3_stmt",
+              "name": "statement",
+              "prose": "Der IT-Grundschutz bietet verschiedene Vorgehensweisen an: Basis-, Standard- und Kern-Absicherung.[cite: 2] Die Auswahl erfolgt basierend auf der Entscheidungshilfe unter Zuhilfenahme der Ersterfassung.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-3.3.1_3.3.3",
+              "name": "Vorgehensweisen",
+              "prose": "* **Basis-Absicherung:** Ermöglicht einen schnellen, breiten Einstieg zur Erlangung einer grundlegenden Erst-Absicherung über alle relevanten Geschäftsprozesse hinweg.[cite: 2]\n* **Kern-Absicherung:** Fokussiert sich auf einen kleinen, aber existenziell wichtigen Teil des Informationsverbunds (die 'Kronjuwelen').[cite: 2]\n* **Standard-Absicherung:** Entspricht der klassischen IT-Grundschutz-Vorgehensweise und bietet ein hohes, spezifisch angepasstes Sicherheitsniveau für die gesamte Institution.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-3.3.4",
+              "name": "3.3.4 Festlegung des Geltungsbereichs",
+              "prose": "Der Geltungsbereich für die Erstellung der Sicherheitskonzeption wird 'Informationsverbund' genannt.[cite: 2] Ein Informationsverbund umfasst die Gesamtheit von infrastrukturellen, organisatorischen, personellen und technischen Komponenten, die der Aufgabenerfüllung in einem bestimmten Anwendungsbereich dienen.[cite: 2] Der Geltungsbereich muss eindeutig abgegrenzt werden, und Schnittstellen zu externen Partnern müssen beschrieben werden.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-3.3.5",
+              "name": "3.3.5 Managemententscheidung",
+              "prose": "Das Management muss auf Grundlage der erarbeiteten Vorlage entscheiden, für welche Bereiche der Institution welche Vorgehensweise gewählt werden soll.[cite: 2] Die Entscheidung und der Zeitplan für die Umsetzung müssen dokumentiert werden.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-3.4",
+          "title": "3.4 Erstellung einer Leitlinie zur Informationssicherheit",
+          "parts": [
+            {
+              "id": "bsi-200-2-3.4_stmt",
+              "name": "statement",
+              "prose": "Die Leitlinie zur Informationssicherheit beschreibt allgemein verständlich, für welche Zwecke, mit welchen Mitteln und mit welchen Strukturen Informationssicherheit innerhalb der Institution hergestellt werden soll.[cite: 2] Sie beinhaltet die von der Institution angestrebten Informationssicherheitsziele sowie die verfolgte Sicherheitsstrategie.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-3.4_guidance",
+              "name": "guidance",
+              "prose": "Die Erstellung sollte idealerweise durch ein IS-Management-Team oder eine dedizierte Entwicklungsgruppe erfolgen, unter Beteiligung wesentlicher Fachbereiche und der Leitungsebene.[cite: 2] Die Sicherheitsleitlinie sollte mindestens folgende Informationen beinhalten:\n* Stellenwert der Informationssicherheit und Bedeutung der wesentlichen Informationen und IT für die Aufgabenerfüllung.[cite: 2]\n* Bezug der Informationssicherheitsziele zu den Geschäftszielen oder Aufgaben.[cite: 2]\n* Sicherheitsziele und Kernelemente der Sicherheitsstrategie.[cite: 2]\n* Zusicherung der Durchsetzung durch die Institutionsleitung.[cite: 2]\n* Beschreibung der etablierten Organisationsstruktur.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-3.4_aktionspunkte",
+              "name": "aktionspunkte",
+              "prose": "Aktionspunkte:\n* Auftrag der Leitungsebene zur Erarbeitung einer Sicherheitsleitlinie einholen.[cite: 2]\n* Entwicklungsgruppe für die Sicherheitsleitlinie einberufen.[cite: 2]\n* Geltungsbereich und Inhalte festlegen.[cite: 2]\n* Inkraftsetzung durch die Leitungsebene veranlassen.[cite: 2]\n* Sicherheitsleitlinie allen Mitarbeitern bekannt geben.[cite: 2]\n* Sicherheitsleitlinie regelmäßig überprüfen und gegebenenfalls aktualisieren.[cite: 2]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bsi-200-2-kap-4",
+      "title": "4 Organisation des Sicherheitsprozesses",
+      "controls": [
+        {
+          "id": "bsi-200-2-4.1",
+          "title": "4.1 Integration der Informationssicherheit in organisationsweite Abläufe und Prozesse",
+          "parts": [
+            {
+              "id": "bsi-200-2-4.1_stmt",
+              "name": "statement",
+              "prose": "Das Management der Informationssicherheit muss vernünftig in bestehende Organisationsstrukturen integriert und Ansprechpartner müssen festgelegt werden.[cite: 2] Aufgaben und Zuständigkeiten müssen klar voneinander abgegrenzt sein.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-4.2",
+          "title": "4.2 Aufbau der Informationssicherheitsorganisation",
+          "parts": [
+            {
+              "id": "bsi-200-2-4.2_stmt",
+              "name": "statement",
+              "prose": "In Abhängigkeit von der Institutionsgröße bieten sich verschiedene Möglichkeiten für die Aufbauorganisation des Informationssicherheitsmanagements an.[cite: 2] In großen Institutionen gibt es ein umfassenderes Team, in mittleren Institutionen werden IS-Management-Team und ISB oft zusammengefasst, und in sehr kleinen Institutionen übernimmt der ISB alle Aufgaben.[cite: 2] Bei Bedarf kann auch ein ICS-Bereich in die IS-Organisation integriert werden.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-4.3",
+          "title": "4.3 Aufgaben, Verantwortungen und Kompetenzen in der IS-Organisation",
+          "parts": [
+            {
+              "id": "bsi-200-2-4.3_stmt",
+              "name": "statement",
+              "prose": "Der Informationssicherheitsbeauftragte und das IS-Management-Team müssen klar definierte Aufgaben, Verantwortungsbereiche und Kompetenzen haben, die von der Leitungsebene festzulegen sind.[cite: 2] Die Rollen sind so einzubinden, dass alle Beteiligten untereinander kommunizieren können.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-4.4",
+          "title": "4.4 Der Informationssicherheitsbeauftragte (ISB)",
+          "parts": [
+            {
+              "id": "bsi-200-2-4.4_stmt",
+              "name": "statement",
+              "prose": "Es sollte ein Hauptansprechpartner für alle Aspekte rund um die Informationssicherheit, ein Informationssicherheitsbeauftragter (ISB), ernannt werden, der die Aufgabe koordiniert und vorantreibt.[cite: 2] Der ISB ist zuständig für die Wahrnehmung aller Belange der Informationssicherheit und berät die Unternehmensleitung.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-4.4_guidance",
+              "name": "guidance",
+              "prose": "Aufgaben des ISB umfassen die Steuerung des Informationssicherheitsprozesses, Erstellung der Leitlinie und des Sicherheitskonzepts, Untersuchung von Sicherheitsvorfällen und Koordinierung von Schulungsmaßnahmen.[cite: 2] Es ist empfehlenswert, die Position des ISB organisatorisch als Stabsstelle direkt der Leitungsebene zuzuordnen und nicht in der IT-Abteilung zu verorten, um Rollenkonflikte zu vermeiden.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-4.5",
+          "title": "4.5 Das IS-Management-Team",
+          "parts": [
+            {
+              "id": "bsi-200-2-4.5_stmt",
+              "name": "statement",
+              "prose": "Das IS-Management-Team unterstützt den ISB, indem es übergreifende Maßnahmen in der Gesamtorganisation koordiniert, Informationen zusammenträgt und Kontrollaufgaben durchführt.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-4.5_guidance",
+              "name": "guidance",
+              "prose": "Das Team sollte sich aus Personen zusammensetzen, die über Kenntnisse in Informationssicherheit und technische Kenntnisse über die eingesetzten Systeme verfügen.[cite: 2] In großen Institutionen ist es sinnvoll, wenn die verschiedenen Fachbereiche jeweils einen Vertreter im IS-Management-Team haben.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-4.6",
+          "title": "4.6 Bereichs- und Projekt-Sicherheitsbeauftragte bzw. Beauftragter für IT-Sicherheit",
+          "parts": [
+            {
+              "id": "bsi-200-2-4.6_stmt",
+              "name": "statement",
+              "prose": "In großen Institutionen kann es erforderlich sein, in den verschiedenen Bereichen eigene Sicherheitsbeauftragte einzusetzen.[cite: 2]\n* **Bereichs-Sicherheitsbeauftragter:** Verantwortlich für alle Sicherheitsbelange in seiner Abteilung oder Außenstelle.[cite: 2]\n* **Beauftragter für IT-Sicherheit:** Sorgt für die technische Umsetzung der IT-Sicherheit und ist typischerweise im IT-Betrieb tätig.[cite: 2]\n* **Projekt-Sicherheitsbeauftragter:** Wird für große Projekte benannt, um den Sicherheitsbedarf zu klären und Projektergebnisse sicher einzubinden.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-4.7",
+          "title": "4.7 Der ICS-Informationssicherheitsbeauftragte (ICS-ISB)",
+          "parts": [
+            {
+              "id": "bsi-200-2-4.7_stmt",
+              "name": "statement",
+              "prose": "Institutionen mit industriellen Steuerungskomponenten (ICS) sollten einen ICS-Informationssicherheitsbeauftragten (ICS-ISB) benennen, um die speziellen Sicherheitsanforderungen im Bereich der industriellen Steuerung abzudecken.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-4.7_guidance",
+              "name": "guidance",
+              "prose": "Der ICS-ISB sollte Mitglied im IS-Management-Team sein und eng mit dem generellen ISB kooperieren, um Synergien zu nutzen und Risiken zu vermeiden.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-4.8",
+          "title": "4.8 IS-Koordinierungsausschuss",
+          "parts": [
+            {
+              "id": "bsi-200-2-4.8_stmt",
+              "name": "statement",
+              "prose": "Der IS-Koordinierungsausschuss ist in der Regel keine Dauereinrichtung, sondern wird bei Bedarf einberufen.[cite: 2] Er hat die Aufgabe, das Zusammenspiel zwischen dem IS-Management-Team, den Fachverantwortlichen, dem ISB und der Leitungsebene zu koordinieren.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-4.9",
+          "title": "4.9 Der Datenschutzbeauftragte",
+          "parts": [
+            {
+              "id": "bsi-200-2-4.9_stmt",
+              "name": "statement",
+              "prose": "Um den Datenschutz zu gewährleisten, sollte ein kompetenter und qualifizierter Ansprechpartner für Datenschutzfragen ernannt werden.[cite: 2] Dieser ist weisungsunabhängig und berichtet direkt der Behörden- bzw. Unternehmensleitung.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-4.9_guidance",
+              "name": "guidance",
+              "prose": "Der Datenschutzbeauftragte hat die Einhaltung der Datenschutzvorschriften zu überwachen und arbeitet eng mit dem ISB zusammen.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-4.10",
+          "title": "4.10 Zusammenspiel mit anderen Organisationseinheiten und Managementdisziplinen",
+          "parts": [
+            {
+              "id": "bsi-200-2-4.10_stmt",
+              "name": "statement",
+              "prose": "Da auch andere Bereiche (z. B. Datenschutz, Objektschutz, Notfallmanagement) Aufgaben im Bereich Sicherheit wahrnehmen, ist ein koordiniertes Vorgehen abzustimmen.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-4.10_guidance",
+              "name": "guidance",
+              "prose": "Bei der Ausgestaltung der Rollen ist darauf zu achten, welche Aufgaben in Personalunion wahrgenommen werden können und wo es zu Rollenkonflikten kommen könnte.[cite: 2] Beispielsweise sollte ein Revisor oder Auditor nicht gleichzeitig die Aufgaben des Informationssicherheitsmanagements übernehmen.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-4.11",
+          "title": "4.11 Einbindung externer Sicherheitsexperten",
+          "parts": [
+            {
+              "id": "bsi-200-2-4.11_stmt",
+              "name": "statement",
+              "prose": "Wenn wesentliche Rollen wie der ISB nicht durch interne Mitarbeiter wahrgenommen werden können, können qualifizierte Externe beauftragt werden.[cite: 2] Dies ist insbesondere in kleinen Unternehmen oder Behörden zweckmäßig oder wenn spezielles Fachwissen fehlt.[cite: 2]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+  "groups": [
+    {
+      "id": "bsi-200-2-kap-5",
+      "title": "5 Dokumentation im Sicherheitsprozess",
+      "controls": [
+        {
+          "id": "bsi-200-2-5.1",
+          "title": "5.1 Klassifikation von Informationen",
+          "parts": [
+            {
+              "id": "bsi-200-2-5.1_stmt",
+              "name": "statement",
+              "prose": "Um Informationen angemessen schützen zu können, muss deren Bedeutung für die Institution klar sein.[cite: 2] Um sich einfacher darüber austauschen zu können, welchen Wert bestimmte Arten von Informationen haben, wird ein Klassifikationsschema benötigt, in dem beschrieben ist, welche Abstufungen der Wertigkeit es gibt und wie diese voneinander abgegrenzt sind.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-5.1_guidance",
+              "name": "guidance",
+              "prose": "Es bietet sich an, von den Grundwerten der Informationssicherheit (Vertraulichkeit, Integrität und Verfügbarkeit) auszugehen und Informationen entsprechend zu klassifizieren.[cite: 2] Ein typisches Beispiel für ein Klassifikationsschema (wie im staatlichen Geheimschutz) ist die Einteilung in: VS – NUR FÜR DEN DIENSTGEBRAUCH, VS – VERTRAULICH, GEHEIM und STRENG GEHEIM.[cite: 2] Um einen funktionierenden Prozess zur Klassifikation aufzubauen, sollten geeignete Rollen eingerichtet werden: Data Creator (Ersteller), Data Owner (Fachverantwortlicher), Data User (Benutzer) und Data Auditor (Klassifikationsverantwortlicher/Compliance Manager).[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-5.1_aktionspunkte",
+              "name": "aktionspunkte",
+              "prose": "Aktionspunkte:\n* Klassifikationsschema erstellen, das eine korrekte, unkomplizierte und nachvollziehbare Einstufung von Informationen ermöglicht.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-5.2",
+          "title": "5.2 Informationsfluss im Informationssicherheitsprozess",
+          "parts": [
+            {
+              "id": "bsi-200-2-5.2_stmt",
+              "name": "statement",
+              "prose": "In den verschiedenen Schritten des Informationssicherheitsprozesses entsteht eine Vielzahl an Berichten, Konzepten, Richtlinien und Meldungen, die aussagekräftig und für die jeweilige Zielgruppe verständlich sein müssen.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-5.2.1",
+              "name": "5.2.1 Berichte an die Leitungsebene",
+              "prose": "Die Leitungsebene benötigt Eckdaten zum Stand der Informationssicherheit, aufbereitet in Managementberichten.[cite: 2] Diese sollten Status und Umsetzungsgrad des Sicherheitskonzepts, Ergebnisse von Audits, Berichte über Sicherheitsvorfälle sowie Fortschritte und Probleme im Sicherheitsprozess abdecken.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-5.2.2",
+              "name": "5.2.2 Dokumentation im Informationssicherheitsprozess",
+              "prose": "Eine ausreichende Dokumentation macht getroffene Entscheidungen nachvollziehbar, Handlungen wiederholbar und deckt Schwächen auf.[cite: 2] Die Dokumentation unterteilt sich in Dokumente für das Sicherheitsmanagement, technische Dokumentation und Anleitungen für Mitarbeiter, Aufzeichnung von Managemententscheidungen, Gesetze und Regelungen sowie Referenzdokumente für eine Zertifizierung.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-5.2.3",
+              "name": "5.2.3 Anforderungen an die Dokumentation",
+              "prose": "Dokumente müssen gekennzeichnet sein (Titel, Ersteller, Version, letzte/nächste Überarbeitung, Freigabe, Klassifizierung, Verteilerkreis).[cite: 2] Für die Detailtiefe gilt das Prinzip 'dem Ziel und Zweck angemessen'.[cite: 2] Alle Dokumente sollen regelmäßig durch ein Änderungsmanagement-Verfahren aktualisiert werden.[cite: 2] Sicherheit und Datenschutz (Verfügbarkeit, Integrität, Vertraulichkeit) der Dokumente müssen gemäß dem 'Need-to-know-Prinzip' garantiert werden.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-5.2.4",
+              "name": "5.2.4 Informationsfluss und Meldewege",
+              "prose": "Alle Betroffenen müssen zeitnah informiert werden, wobei klar sein muss, wer mit wem wann kommuniziert und welche Kanäle genutzt werden.[cite: 2] Grundsätzliche Festlegungen zum Informationsfluss sollten in einer Richtlinie dokumentiert und von der Leitungsebene verabschiedet werden.[cite: 2] Synergieeffekte mit anderen Managementprozessen (z.B. IT-Betrieb, Notfallmanagement) sollten genutzt werden.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-5.2_aktionspunkte",
+              "name": "aktionspunkte",
+              "prose": "Aktionspunkte:\n* Grundsätzliche Festlegungen zum Informationsfluss dokumentieren und verabschieden lassen.[cite: 2]\n* Leitungsebene über Ergebnisse informieren und Korrekturmaßnahmen einholen.[cite: 2]\n* Alle Teilaspekte nachvollziehbar dokumentieren und aktuell halten.[cite: 2]\n* Meldewege aktuell halten und Synergien mit anderen Managementprozessen finden.[cite: 2]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bsi-200-2-kap-6",
+      "title": "6 Erstellung einer Sicherheitskonzeption nach der Vorgehensweise Basis-Absicherung",
+      "controls": [
+        {
+          "id": "bsi-200-2-6.0",
+          "title": "Voraussetzungen und Aktionsfelder der Basis-Absicherung",
+          "parts": [
+            {
+              "id": "bsi-200-2-6.0_stmt",
+              "name": "statement",
+              "prose": "Voraussetzungen für die Basis-Absicherung sind ein initiierter Informationssicherheitsprozess, definierte Leitlinie und Organisation, eine Übersicht der vorhandenen Assets und die Auswahl der Basis-Absicherung als Vorgehensweise.[cite: 2] Die Erstellung gliedert sich in die Festlegung des Geltungsbereichs, Auswahl und Priorisierung der Bausteine, IT-Grundschutz-Check, Realisierung und die Auswahl einer folgenden Vorgehensweise.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-6.1",
+          "title": "6.1 Festlegung des Geltungsbereichs für die Basis-Absicherung",
+          "parts": [
+            {
+              "id": "bsi-200-2-6.1_stmt",
+              "name": "statement",
+              "prose": "Es muss festgelegt werden, welchen Bereich der Institution die Sicherheitskonzeption abdecken soll (Informationsverbund).[cite: 2] Der Geltungsbereich kann die gesamte Institution oder einzelne Bereiche umfassen, muss aber klar abgegrenzt sein.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-6.2",
+          "title": "6.2 Auswahl und Priorisierung für die Basis-Absicherung",
+          "parts": [
+            {
+              "id": "bsi-200-2-6.2_stmt",
+              "name": "statement",
+              "prose": "Der betrachtete Informationsverbund muss mithilfe der in der Ersterfassung identifizierten Prozesse, Anwendungen, IT-Systeme, Rüstungen und Netzverbindungen sowie den Bausteinen des IT-Grundschutz-Kompendiums nachgebildet werden (IT-Grundschutz-Modell).[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-6.2_guidance",
+              "name": "guidance",
+              "prose": "Die Bausteine sind gekennzeichnet (R1, R2, R3), um eine sinnvolle zeitliche Reihenfolge für die Umsetzung der Anforderungen zu empfehlen.[cite: 2] R1-Bausteine sollten vorrangig umgesetzt werden.[cite: 2] Die Zuordnung von Bausteinen zu Zielobjekten sollte tabellarisch dokumentiert werden (Titel, Zielobjekt, Ansprechpartner, Reihenfolge, Hinweise).[cite: 2] Für die Erstellung des Sicherheitskonzepts müssen aus den Baustein-Anforderungen konkrete Sicherheitsmaßnahmen abgeleitet werden.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-6.3",
+          "title": "6.3 IT-Grundschutz-Check für Basis-Absicherung",
+          "parts": [
+            {
+              "id": "bsi-200-2-6.3_stmt",
+              "name": "statement",
+              "prose": "Die Auswahl und Priorisierung der IT-Grundschutz-Bausteine wird als Prüfplan genutzt, um anhand eines Soll-Ist-Vergleichs herauszufinden, welche Basis-Anforderungen ausreichend oder nur unzureichend erfüllt sind.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-6.3_guidance",
+              "name": "guidance",
+              "prose": "Der Check besteht aus drei Schritten: organisatorische Vorbereitungen (Sichtung von Dokumenten, Identifikation der Interviewpartner), Durchführung des Soll-Ist-Vergleichs mittels Interviews (Umsetzungsstatus: entbehrlich/ja/teilweise/nein) und der nachvollziehbaren Dokumentation der Ergebnisse.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-6.4",
+          "title": "6.4 Realisierung",
+          "parts": [
+            {
+              "id": "bsi-200-2-6.4_stmt",
+              "name": "statement",
+              "prose": "Für die bisher nicht erfüllten Basis-Anforderungen müssen geeignete Sicherheitsmaßnahmen festgelegt und umgesetzt werden.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-6.4_guidance",
+              "name": "guidance",
+              "prose": "Die Realisierung umfasst die Sichtung der Untersuchungsergebnisse, die Konsolidierung der Basis-Anforderungen, eine Kosten- und Aufwandsschätzung, die Festlegung einer Umsetzungsreihenfolge (falls Ressourcen nicht sofort ausreichen), die Festlegung von Aufgaben und Verantwortungen sowie die Einplanung realisierungsbegleitender Anforderungen (z.B. Schulungen).[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-6.5",
+          "title": "6.5 Auswahl einer folgenden Vorgehensweise",
+          "parts": [
+            {
+              "id": "bsi-200-2-6.5_stmt",
+              "name": "statement",
+              "prose": "Da die Basis-Absicherung eine Einstiegsvorgehensweise ist, sollte zeitnah entschieden werden, wann mit dem Verbesserungsprozess (Standard- oder Kern-Absicherung) begonnen wird, um mittelfristig ein vollständiges Sicherheitskonzept zu etablieren.[cite: 2]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bsi-200-2-kap-7",
+      "title": "7 Erstellung einer Sicherheitskonzeption nach der Vorgehensweise Kern-Absicherung",
+      "controls": [
+        {
+          "id": "bsi-200-2-7.1",
+          "title": "7.1 Die Methodik der Kern-Absicherung",
+          "parts": [
+            {
+              "id": "bsi-200-2-7.1_stmt",
+              "name": "statement",
+              "prose": "Die Vorgehensweise Kern-Absicherung konzentriert sich auf den Schutz von besonders schützenswerten Assets, den sogenannten 'Kronjuwelen'.[cite: 2] Hierbei ist von einem erhöhten Schutzbedarf auszugehen, weshalb die Basis- und Standard-Anforderungen komplett umgesetzt werden müssen und darauf aufbauend eine Risikoanalyse durchgeführt werden muss.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-7.2",
+          "title": "7.2 Festlegung des Geltungsbereichs für die Kern-Absicherung",
+          "parts": [
+            {
+              "id": "bsi-200-2-7.2_stmt",
+              "name": "statement",
+              "prose": "Der Bereich, für den die Sicherheitskonzeption erstellt wird, muss festgelegt werden und umfasst alle (Teil-)Geschäftsprozesse, Anwendungen, IT-Systeme und Infrastrukturen, die für die Bearbeitung der besonders kritischen Informationen benötigt werden.[cite: 2] Der Informationsverbund sollte klar abgegrenzt und möglichst klein gehalten werden, um die Komplexität der Absicherung zu minimieren.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-7.3",
+          "title": "7.3 Identifikation und Festlegung der kritischen Assets (Kronjuwelen)",
+          "parts": [
+            {
+              "id": "bsi-200-2-7.3_stmt",
+              "name": "statement",
+              "prose": "Als Kronjuwelen werden diejenigen Geschäftsprozesse und Informationen bezeichnet, die am wichtigsten für den Erhalt der Institution sind und deren Kompromittierung einen existenzbedrohenden Schaden bedeutet.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-7.3_guidance",
+              "name": "guidance",
+              "prose": "Die Menge dieser Geschäftsprozesse ist überschaubar und umfasst nur einen kleinen Anteil aller Geschäftsprozesse.[cite: 2] Die Festlegung der Kronjuwelen erfolgt typischerweise durch die Leitungsebene.[cite: 2] Typische Beispiele sind Details über anstehende geschäftliche Entscheidungen, Produktentwicklungen, administrative Zugriffsdaten, Kryptomaterial oder Baupläne/Rezepturen.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-7.4",
+          "title": "7.4 Strukturanalyse",
+          "parts": [
+            {
+              "id": "bsi-200-2-7.4_stmt",
+              "name": "statement",
+              "prose": "Das Zusammenspiel der Geschäftsprozesse, der Anwendungen und der vorliegenden Informationstechnik muss analysiert und dokumentiert werden, oft ausgehend von einem Netztopologieplan.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-7.5",
+          "title": "7.5 Schutzbedarfsfeststellung",
+          "parts": [
+            {
+              "id": "bsi-200-2-7.5_stmt",
+              "name": "statement",
+              "prose": "Zweck ist es zu ermitteln, welcher Schutz für die Geschäftsprozesse und IT angemessen ist (normal, hoch, sehr hoch).[cite: 2] Bei der Kern-Absicherung ist für die 'Kronjuwelen' von einem Schutzbedarf der Kategorien 'hoch' und 'sehr hoch' auszugehen.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-7.6",
+          "title": "7.6 Modellierung: Auswahl und Anpassung von Anforderungen",
+          "parts": [
+            {
+              "id": "bsi-200-2-7.6_stmt",
+              "name": "statement",
+              "prose": "Die Bausteine des IT-Grundschutz-Kompendiums müssen auf die Zielobjekte und Teilbereiche des Informationsverbunds abgebildet werden.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-7.7",
+          "title": "7.7 IT-Grundschutz-Check",
+          "parts": [
+            {
+              "id": "bsi-200-2-7.7_stmt",
+              "name": "statement",
+              "prose": "Mithilfe von Interviews wird der Status quo des Informationsverbunds in Bezug auf den Grad der Erfüllung der Sicherheitsanforderungen (ja/teilweise/nein/entbehrlich) ermittelt, um Verbesserungsmöglichkeiten aufzuzeigen.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-7.8",
+          "title": "7.8 Risikoanalyse und weiterführende Sicherheitsmaßnahmen",
+          "parts": [
+            {
+              "id": "bsi-200-2-7.8_stmt",
+              "name": "statement",
+              "prose": "Bei einem hohen oder sehr hohen Schutzbedarf ist zu prüfen, ob zusätzliche oder höherwertige Sicherheitsmaßnahmen erforderlich sind.[cite: 2] Hierfür muss für die betroffenen Bereiche eine Risikoanalyse durchgeführt werden, um angemessene Sicherheitsmaßnahmen zu identifizieren.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-7.9",
+          "title": "7.9 Umsetzung und weitere Schritte",
+          "parts": [
+            {
+              "id": "bsi-200-2-7.9_stmt",
+              "name": "statement",
+              "prose": "Die identifizierten Sicherheitsmaßnahmen müssen umgesetzt werden. Es muss regelmäßig überprüft werden, ob die Sicherheitsvorkehrungen noch der Gefährdungslage entsprechen.[cite: 2] Nach der Absicherung der Kronjuwelen sollte der Schutz auf weitere Bereiche der Institution ausgeweitet werden (z. B. durch Standard-Absicherung) oder eine Zertifizierung nach ISO 27001 auf Basis von IT-Grundschutz angestrebt werden.[cite: 2]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+  ],
+  "groups": [
+      {
+        "id": "bsi-200-2-kap-8",
+        "title": "8 Erstellung einer Sicherheitskonzeption nach der Vorgehensweise der Standard-Absicherung",
+        "controls": [
+          {
+            "id": "bsi-200-2-8.0",
+            "title": "8.0 Grundlagen der Standard-Absicherung",
+            "parts": [
+              {
+                "id": "bsi-200-2-8.0_stmt",
+                "name": "statement",
+                "prose": "Eines der Ziele der Standard-Absicherung des IT-Grundschutzes ist es, eine pragmatische und effektive Vorgehensweise zur Erzielung eines normalen Sicherheitsniveaus anzubieten, das auch als Basis für ein höheres Sicherheitsniveau dienen kann.[cite: 2]"
+              },
+              {
+                "id": "bsi-200-2-8.0_guidance",
+                "name": "guidance",
+                "prose": "Die Durchführung einer Standard-Absicherung nach IT-Grundschutz gliedert sich in die nachfolgenden Aktionsfelder:\n* Festlegung des Geltungsbereichs (Informationsverbund).[cite: 2]\n* Strukturanalyse zur Erfassung der Geschäftsprozesse, Anwendungen, IT-Systeme, Netze und Infrastruktur.[cite: 2]\n* Schutzbedarfsfeststellung zur Ermittlung des angemessenen Schutzes (normal, hoch, sehr hoch).[cite: 2]\n* Auswahl von Anforderungen und Anpassung von Maßnahmen (Modellierung) auf Basis des IT-Grundschutz-Kompendiums.[cite: 2]\n* IT-Grundschutz-Check als Soll-Ist-Vergleich.[cite: 2]\n* Risikoanalyse, falls ein hoher oder sehr hoher Schutzbedarf vorliegt oder besondere Einsatzbedingungen gegeben sind.[cite: 2]"
+              }
+            ]
+          },
+          {
+            "id": "bsi-200-2-8.1",
+            "title": "8.1 Strukturanalyse",
+            "parts": [
+              {
+                "id": "bsi-200-2-8.1_stmt",
+                "name": "statement",
+                "prose": "Die Strukturanalyse dient der Vorerhebung von Informationen, die für die weitere Vorgehensweise in der Erstellung eines Sicherheitskonzepts nach IT-Grundschutz benötigt werden.[cite: 2] Dabei geht es um die Erfassung der Bestandteile (Geschäftsprozesse, Informationen, Anwendungen, IT- und ICS-Systeme, Räume, Kommunikationsnetze), die zur Betrachtung des Geltungsbereichs benötigt werden.[cite: 2]"
+              },
+              {
+                "id": "bsi-200-2-8.1.1",
+                "name": "8.1.1 Komplexitätsreduktion durch Gruppenbildung",
+                "prose": "Ähnliche Objekte sollten sinnvoll zu Gruppen zusammengefasst werden, um die Ergebnisse der Strukturanalyse handhabbar zu machen und die Administration zu vereinfachen.[cite: 2] Objekte können einer Gruppe zugeordnet werden, wenn sie vom gleichen Typ sind, ähnliche Aufgaben haben, ähnlichen Rahmenbedingungen unterliegen und den gleichen Schutzbedarf aufweisen.[cite: 2]"
+              },
+              {
+                "id": "bsi-200-2-8.1.2_3",
+                "name": "8.1.2 & 8.1.3 Erfassung von Geschäftsprozessen und Anwendungen",
+                "prose": "Es muss ein Bezug zwischen den Geschäftsprozessen und der Wertschöpfung einer Institution und den zu schützenden Informationen sowie der verwendeten IT hergestellt werden.[cite: 2] Ausgehend von jedem Geschäftsprozess müssen die damit zusammenhängenden Anwendungen und die verarbeiteten Informationen identifiziert und dokumentiert werden.[cite: 2]"
+              },
+              {
+                "id": "bsi-200-2-8.1.4",
+                "name": "8.1.4 Netzplanerhebung",
+                "prose": "Ein Netzplan (Netztopologieplan) ist eine grafische Übersicht über die eingesetzten IT-, ICS- und IoT-Komponenten sowie deren Vernetzung und Außenverbindungen.[cite: 2] Der Netzplan sollte um virtuelle IT-Systeme ergänzt und auf den aktuellen Stand gebracht werden.[cite: 2]"
+              },
+              {
+                "id": "bsi-200-2-8.1.5_7",
+                "name": "8.1.5 - 8.1.7 Erhebung der IT-, ICS- und sonstiger Systeme",
+                "prose": "Es ist eine tabellarische Liste der vorhandenen und geplanten IT-Systeme (Server, Clients, Netzkomponenten), ICS-Geräte (z. B. speicherprogrammierbare Steuerungen) und sonstiger vernetzter Geräte (IoT-Geräte wie Sensoren, Klimaanlagen) aufzustellen.[cite: 2] Die Systeme sind den Anwendungen zuzuordnen.[cite: 2]"
+              },
+              {
+                "id": "bsi-200-2-8.1.8",
+                "name": "8.1.8 Erfassung der Räume",
+                "prose": "In ein Sicherheitskonzept müssen alle Liegenschaften, Gebäude und Räume einbezogen werden, innerhalb derer die betrachteten Geschäftsprozesse betrieben oder IT-/ICS-Systeme aufgestellt werden (inkl. Heimarbeitsplätze oder externe Standorte).[cite: 2]"
+              }
+            ]
+          },
+          {
+            "id": "bsi-200-2-8.2",
+            "title": "8.2 Schutzbedarfsfeststellung",
+            "parts": [
+              {
+                "id": "bsi-200-2-8.2_stmt",
+                "name": "statement",
+                "prose": "Zweck der Schutzbedarfsfeststellung ist es, zu ermitteln, welcher Schutz für die Geschäftsprozesse, die dabei verarbeiteten Informationen und die eingesetzte Informationstechnik in Bezug auf Vertraulichkeit, Integrität und Verfügbarkeit ausreichend und angemessen ist.[cite: 2]"
+              },
+              {
+                "id": "bsi-200-2-8.2.1",
+                "name": "8.2.1 Definition der Schutzbedarfskategorien",
+                "prose": "Der IT-Grundschutz unterteilt den Schutzbedarf in drei Kategorien anhand möglicher Schadensauswirkungen:\n* **normal:** Die Schadensauswirkungen sind begrenzt und überschaubar.[cite: 2]\n* **hoch:** Die Schadensauswirkungen können beträchtlich sein.[cite: 2]\n* **sehr hoch:** Die Schadensauswirkungen können ein existenziell bedrohliches, katastrophales Ausmaß erreichen.[cite: 2]\nDiese Kategorien werden anhand typischer Schadensszenarien (z. B. Verstoß gegen Gesetze, finanzielle Auswirkungen) bewertet.[cite: 2]"
+              },
+              {
+                "id": "bsi-200-2-8.2.2",
+                "name": "8.2.2 Vorgehen bei der Schutzbedarfsfeststellung",
+                "prose": "Der Schutzbedarf der Geschäftsprozesse vererbt sich auf die Anwendungen und weiter auf die IT-Systeme, ICS-Geräte, Räume und Netze (Vererbung).[cite: 2] Bei mehreren Anwendungen auf einem System bestimmt der höchste Schutzbedarf den Gesamtschutzbedarf des Objekts (Maximumprinzip).[cite: 2] Werden viele kleine Schäden zusammengefasst, kann sich der Schutzbedarf erhöhen (Kumulationseffekt); durch redundante Auslegung kann der Schutzbedarf einzelner Komponenten sinken (Verteilungseffekt).[cite: 2]"
+              },
+              {
+                "id": "bsi-200-2-8.2.8",
+                "name": "8.2.8 Schutzbedarfsfeststellung für Kommunikationsverbindungen",
+                "prose": "Kritische Kommunikationsverbindungen (z. B. Außenverbindungen, Verbindungen für hochschutzbedürftige Informationen) müssen identifiziert und gesondert auf ihren Schutzbedarf bezüglich Vertraulichkeit, Integrität und Verfügbarkeit analysiert werden.[cite: 2]"
+              },
+              {
+                "id": "bsi-200-2-8.2.9",
+                "name": "8.2.9 Schlussfolgerungen",
+                "prose": "Wenn ein hoher oder sehr hoher Schutzbedarf festgestellt wird, reichen die IT-Grundschutz-Anforderungen oft nicht aus und es muss eine zusätzliche Risikoanalyse durchgeführt werden.[cite: 2] Um Risiken und Kosten einzudämmen, sollten Sicherheitszonen (räumlich, technisch, personell) zur Trennung von Bereichen mit unterschiedlichem Schutzbedarf eingerichtet werden.[cite: 2]"
+              }
+            ]
+          },
+          {
+            "id": "bsi-200-2-8.3",
+            "title": "8.3 Modellierung eines Informationsverbunds",
+            "parts": [
+              {
+                "id": "bsi-200-2-8.3_stmt",
+                "name": "statement",
+                "prose": "Der betrachtete Informationsverbund wird mithilfe der vorhandenen Bausteine aus dem IT-Grundschutz-Kompendium nachgebildet (IT-Grundschutz-Modell).[cite: 2]"
+              },
+              {
+                "id": "bsi-200-2-8.3.1",
+                "name": "8.3.1 Das IT-Grundschutz-Kompendium",
+                "prose": "Das Kompendium ist in prozessorientierte Bausteine (Schichten: ISMS, ORP, CON, OPS, DER) und systemorientierte Bausteine (Schichten: INF, NET, SYS, APP, IND) gegliedert.[cite: 2] Jeder Baustein enthält Gefährdungslagen und Sicherheitsanforderungen (unterteilt in Basis-, Standard- und Anforderungen bei erhöhtem Schutzbedarf).[cite: 2]"
+              },
+              {
+                "id": "bsi-200-2-8.3.3",
+                "name": "8.3.3 Reihenfolge der Baustein-Umsetzung",
+                "prose": "Um ein grundlegendes Sicherheitsgerüst zu erreichen, sollten Bausteine in einer sinnvollen zeitlichen Reihenfolge umgesetzt werden: R1-Bausteine (z. B. ISMS, ORP, Kern-IT-Betrieb) haben Vorrang, gefolgt von R2- und R3-Bausteinen.[cite: 2]"
+              },
+              {
+                "id": "bsi-200-2-8.3.5",
+                "name": "8.3.5 Modellierung bei Virtualisierung und Cloud-Systemen",
+                "prose": "Virtuelle IT-Systeme werden wie physische Systeme modelliert.[cite: 2] Bei Cloud-Computing-Plattformen muss modelliert werden, wer (Cloud-Anbieter oder Cloud-Anwender) für welche Ebenen des Stacks (IaaS, PaaS, SaaS) die Verantwortung trägt.[cite: 2]"
+              },
+              {
+                "id": "bsi-200-2-8.3.6",
+                "name": "8.3.6 Anpassung der Baustein-Anforderungen",
+                "prose": "Die Sicherheitsanforderungen müssen in konkrete Handlungsvorgaben (Sicherheitsmaßnahmen) umgewandelt werden, die wirksam, geeignet, praktikabel, akzeptiert und wirtschaftlich sein müssen.[cite: 2]"
+              }
+            ]
+          },
+          {
+            "id": "bsi-200-2-8.4",
+            "title": "8.4 IT-Grundschutz-Check",
+            "parts": [
+              {
+                "id": "bsi-200-2-8.4_stmt",
+                "name": "statement",
+                "prose": "Der IT-Grundschutz-Check ist ein Organisationsinstrument, das einen schnellen Überblick über das vorhandene Sicherheitsniveau bietet, indem der Status quo des Informationsverbunds anhand eines Soll-Ist-Vergleichs ermittelt wird.[cite: 2]"
+              },
+              {
+                "id": "bsi-200-2-8.4.1",
+                "name": "8.4.1 Organisatorische Vorarbeiten",
+                "prose": "Hausinterne Richtlinien und Papiere müssen gesichtet werden, externe Stellen (z. B. Outsourcing-Dienstleister) müssen identifiziert und Hauptansprechpartner für die Interviews festgelegt werden.[cite: 2] Die Ergebnisse werden in einem Prüfplan dokumentiert.[cite: 2]"
+              }
+            ]
+          }
+        ]
+      },
+      {
+  "groups": [
+    {
+      "id": "bsi-200-2-kap-8-4-2",
+      "title": "8.4.2 Durchführung des Soll-Ist-Vergleichs",
+      "controls": [
+        {
+          "id": "bsi-200-2-8.4.2",
+          "title": "8.4.2 Durchführung des Soll-Ist-Vergleichs",
+          "parts": [
+            {
+              "id": "bsi-200-2-8.4.2_stmt",
+              "name": "statement",
+              "prose": "Sind alle erforderlichen Vorarbeiten erledigt, kann die eigentliche Erhebung an den zuvor festgesetzten Terminen beginnen. Hierzu werden die Sicherheitsanforderungen des jeweiligen Bausteins, für den die Interviewpartner zuständig sind, der Reihe nach durchgearbeitet.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-8.4.2_status",
+              "name": "Umsetzungsstatus",
+              "prose": "Als Antworten bezüglich des Umsetzungsstatus der einzelnen Anforderungen kommen folgende Aussagen in Betracht:\n*   **entbehrlich:** Die Erfüllung der Anforderung ist in der vorgeschlagenen Art nicht notwendig, weil die Anforderung im betrachteten Informationsverbund nicht relevant ist (z. B. weil Dienste nicht aktiviert wurden) oder durch Alternativmaßnahmen behandelt wurde.[cite: 2] Wird der Umsetzungsstatus einer Anforderung auf „entbehrlich“ gesetzt, müssen über die Kreuzreferenztabelle des jeweiligen Bausteins die zugehörigen elementaren Gefährdungen identifiziert werden.[cite: 2] Wurden Alternativmaßnahmen ergriffen, muss begründet werden, dass das Risiko, das von allen betreffenden elementaren Gefährdungen ausgeht, angemessen minimiert wurde.[cite: 2] Generell ist zu beachten, dass bei Basis-Anforderungen das entstehende Risiko nicht übernommen werden kann.[cite: 2] Anforderungen dürfen nicht auf „entbehrlich“ gesetzt werden, wenn das Risiko für eine im Baustein identifizierte elementare Gefährdung über die Kreuzreferenztabelle pauschal akzeptiert oder ausgeschlossen wird.[cite: 2]\n*   **ja:** Zu der Anforderung wurden geeignete Maßnahmen vollständig, wirksam und angemessen umgesetzt.[cite: 2]\n*   **teilweise:** Die Anforderung wurde nur teilweise umgesetzt.[cite: 2]\n*   **nein:** Die Anforderung wurde noch nicht erfüllt, also geeignete Maßnahmen sind größtenteils noch nicht umgesetzt.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-8.4.2_guidance",
+              "name": "guidance",
+              "prose": "Es ist sinnvoll, bei den Interviews nicht nur die Bausteintexte, sondern auch die Umsetzungshinweise oder andere ergänzende Materialien griffbereit zu haben.[cite: 2] Den Befragten sollte der Zweck des IT-Grundschutz-Checks kurz vorgestellt werden.[cite: 2] Es bietet sich an, mit den Anforderungsüberschriften fortzufahren und die Anforderungen kurz zu erläutern.[cite: 2] Dem Gesprächspartner sollte die Möglichkeit gegeben werden, auf die bereits umgesetzten Anforderungen und Maßnahmen einzugehen und danach noch offene Punkte zu besprechen.[cite: 2]\nDie Befragungstiefe richtet sich zunächst nach dem Niveau von Basis- und Standard-Anforderungen; über diese hinausweisende Aspekte hochschutzbedürftiger Anwendungen sollten erst nach Abschluss des IT-Grundschutz-Checks betrachtet werden.[cite: 2] Falls der Bedarf besteht, die in den Interviews gemachten Aussagen zu verifizieren, bietet es sich an, stichprobenartig die entsprechenden Regelungen und Konzepte zu sichten, im Bereich Infrastruktur gemeinsam mit dem Ansprechpartner die zu untersuchenden Objekte vor Ort zu besichtigen sowie Client- bzw. Servereinstellungen an ausgewählten IT-Systemen zu überprüfen.[cite: 2]\nZum Abschluss jedes Bausteins sollte den Befragten das Ergebnis (Umsetzungsstatus der Anforderungen: entbehrlich/ja/teilweise/nein) mitgeteilt und diese Entscheidung erläutert werden.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-8.4.2_aktionspunkte",
+              "name": "aktionspunkte",
+              "prose": "Aktionspunkte zu 8.4.2 Durchführung des Soll-Ist-Vergleichs:\n*   Je nach Fachgebiet vorab Checklisten erstellen[cite: 2]\n*   Zielsetzung des IT-Grundschutz-Checks den Interviewpartnern erläutern[cite: 2]\n*   Umsetzungsstatus der einzelnen Anforderungen erfragen[cite: 2]\n*   Antworten anhand von Stichproben am Objekt verifizieren[cite: 2]\n*   Den Befragten die Ergebnisse mitteilen[cite: 2]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bsi-200-2-kap-8-4-3",
+      "title": "8.4.3 Dokumentation der Ergebnisse",
+      "controls": [
+        {
+          "id": "bsi-200-2-8.4.3",
+          "title": "8.4.3 Dokumentation der Ergebnisse",
+          "parts": [
+            {
+              "id": "bsi-200-2-8.4.3_stmt",
+              "name": "statement",
+              "prose": "Die Ergebnisse des IT-Grundschutz-Checks sollten so dokumentiert werden, dass sie für alle Beteiligten nachvollziehbar sind und als Grundlage für die Umsetzungsplanung der defizitären Anforderungen und Maßnahmen genutzt werden können.[cite: 2] Der Dokumentationsaufwand sollte nicht unterschätzt werden.[cite: 2] Daher sollten geeignete Hilfsmittel genutzt werden, die bei der Erstellung und Aktualisierung aller im Sicherheitsprozess erforderlichen Dokumente unterstützen.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-8.4.3_guidance_1",
+              "name": "guidance",
+              "prose": "Dies können zum einen geeignete IT-Grundschutz-Tools sein, also Anwendungen, die die gesamte Vorgehensweise nach IT-Grundschutz unterstützen, beginnend bei der Stammdatenerfassung, über die Schutzbedarfsfeststellung, die Risikoanalyse sowie den Soll-Ist-Vergleich (IT-Grundschutz-Check) bis hin zur Erfüllung der Anforderungen.[cite: 2] Hierdurch ergeben sich komfortable Möglichkeiten zur Auswertung und Revision der Ergebnisse, z. B. die Suche nach bestimmten Einträgen, die Generierung von Reports, Kostenauswertungen sowie Statistikfunktionen.[cite: 2]\nDes Weiteren stehen als Hilfsmittel zum IT-Grundschutz Formulare zur Verfügung.[cite: 2] Zu jedem Baustein des IT-Grundschutz-Kompendiums gibt es eine Datei, in der tabellarisch für jede Anforderung des Bausteins die Ergebnisse des Soll-Ist-Vergleichs erfasst werden können.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-8.4.3_guidance_2",
+              "name": "guidance",
+              "prose": "Zur Dokumentation des IT-Grundschutz-Checks sollten erfasst werden:\n*   Die Nummer und die Bezeichnung des Objektes oder Gruppe von Objekten, der der Baustein bei der Modellierung zugeordnet wurde,[cite: 2]\n*   der Standort der zugeordneten Objekte bzw. Gruppe von Objekten,[cite: 2]\n*   das Erfassungsdatum und der Name des Erfassers und[cite: 2]\n*   die befragten Ansprechpartner.[cite: 2]\nDie eigentlichen Ergebnisse des Soll-Ist-Vergleichs sollten tabellarisch erfasst werden.[cite: 2] Dabei sollten zu jeder Anforderung des jeweiligen Bausteins folgende Informationen festgehalten werden:\n*   **Umsetzungsgrad (entbehrlich/ja/teilweise/nein):** Der im Interview ermittelte Umsetzungsstatus der jeweiligen Anforderung ist zu erfassen.[cite: 2] Im Hinblick auf eine mögliche Zertifizierung sollte zudem festgehalten werden, durch welche Maßnahmen die Anforderungen konkret erfüllt werden.[cite: 2]\n*   **Umsetzung bis . . .:** Ein solches Feld ist sinnvoll, auch wenn es während eines IT-Grundschutz-Checks im Allgemeinen nicht ausgefüllt wird.[cite: 2] Es dient als Platzhalter, um in der Realisierungsplanung an dieser Stelle zu dokumentieren, bis zu welchem Termin die Anforderung vollständig umgesetzt sein soll.[cite: 2]\n*   **Verantwortliche:** Falls es bei der Durchführung des Soll-Ist-Vergleichs eindeutig ist, welche Mitarbeiter für die vollständige Umsetzung einer defizitären Anforderung oder Maßnahme verantwortlich sind, sollte das namentlich in diesem Feld dokumentiert werden.[cite: 2] Falls die Verantwortung nicht eindeutig erkennbar ist, sollte das Feld frei gelassen werden.[cite: 2] Im Zuge der späteren Realisierungsplanung ist dann ein Verantwortlicher zu bestimmen, dessen Name hier eingetragen werden kann.[cite: 2]\n*   **Bemerkungen/Begründungen:** Ein solches Feld ist wichtig, um getroffene Entscheidungen später nachvollziehen zu können, beispielsweise für die Zertifizierung.[cite: 2] Bei Anforderungen, deren Umsetzung entbehrlich erscheint, ist hier die Begründung zu nennen.[cite: 2] Bei Anforderungen, die noch nicht oder nur teilweise umgesetzt sind, sollte in diesem Feld dokumentiert werden, welche Maßnahmen noch umgesetzt werden müssen.[cite: 2] In dieses Feld sollten auch alle anderen Bemerkungen eingetragen werden, die bei der Beseitigung von Defiziten hilfreich oder im Zusammenhang mit der Anforderung zu berücksichtigen sind.[cite: 2]\n*   **Defizite/Kostenschätzung:** Für Anforderungen, die nicht oder nur teilweise erfüllt wurden, ist das damit verbundene Risiko in geeigneter Form zu ermitteln und zu dokumentieren.[cite: 2] Dies ist beispielsweise für Audits und Zertifizierungen wichtig.[cite: 2] Bei solchen Maßnahmen sollte außerdem geschätzt werden, welchen finanziellen und personellen Aufwand die Beseitigung der Defizite erfordert.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-8.4.3_aktionspunkte",
+              "name": "aktionspunkte",
+              "prose": "Aktionspunkte zu 8.4.3 Dokumentation der Ergebnisse:\n*   Stamminformationen über jedes Zielobjekt erfassen[cite: 2]\n*   Informationen zum IT-Grundschutz-Check und zum Umsetzungsstatus dokumentieren[cite: 2]\n*   Felder beziehungsweise Platzhalter für die Realisierungsplanung vorsehen[cite: 2]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bsi-200-2-kap-8-5",
+      "title": "8.5 Risikoanalyse",
+      "controls": [
+        {
+          "id": "bsi-200-2-8.5",
+          "title": "8.5 Risikoanalyse",
+          "parts": [
+            {
+              "id": "bsi-200-2-8.5_stmt",
+              "name": "statement",
+              "prose": "Eine Risikoanalyse im Kontext der Informationssicherheit hat die Aufgabe, relevante Gefährdungen für den Informationsverbund zu identifizieren und die daraus möglicherweise resultierenden Risiken abzuschätzen.[cite: 2] Das Ziel ist es, die Risiken durch angemessene Gegenmaßnahmen auf ein akzeptables Maß zu reduzieren, die Restrisiken transparent zu machen und dadurch das Gesamtrisiko systematisch zu steuern.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-8.5_zweistufiger_ansatz",
+              "name": "Zweistufiger Ansatz der IT-Grundschutz-Vorgehensweise",
+              "prose": "In der Vorgehensweise nach IT-Grundschutz wird bei der Erstellung der IT-Grundschutz-Bausteine implizit eine Risikobewertung für Bereiche mit normalem Schutzbedarf durchgeführt.[cite: 2] Hierbei werden nur solche Gefährdungen betrachtet, die nach sorgfältiger Analyse eine so hohe Eintrittswahrscheinlichkeit oder so einschneidende Auswirkungen haben, dass Sicherheitsmaßnahmen ergriffen werden müssen.[cite: 2] Typische Gefährdungen, gegen die sich jeder schützen muss, sind z. B. Schäden durch Feuer, Einbrecher, Schadsoftware oder Hardware-Defekte.[cite: 2] Dieser Ansatz hat den Vorteil, dass Anwender des IT-Grundschutzes für einen Großteil des Informationsverbundes keine individuelle Bedrohungs- und Schwachstellenanalyse durchführen müssen, weil diese Bewertung vorab bereits vorgenommen wurde.[cite: 2]\nIn bestimmten Fällen muss jedoch eine explizite Risikoanalyse durchgeführt werden, beispielsweise wenn der betrachtete Informationsverbund Zielobjekte enthält, die\n*   einen hohen oder sehr hohen Schutzbedarf in mindestens einem der drei Grundwerte Vertraulichkeit, Integrität oder Verfügbarkeit haben oder[cite: 2]\n*   mit den existierenden Bausteinen des IT-Grundschutzes nicht hinreichend abgebildet (modelliert) werden können oder[cite: 2]\n*   in Einsatzszenarien (Umgebung, Anwendung) betrieben werden, die im Rahmen des IT-Grundschutzes nicht vorgesehen sind.[cite: 2]\nIn diesen Fällen stellen sich folgende Fragen:\n*   Welchen Gefährdungen für die Informationsverarbeitung ist durch die Umsetzung der relevanten IT-Grundschutz-Bausteine noch nicht ausreichend oder sogar noch gar nicht Rechnung getragen worden?[cite: 2]\n*   Müssen eventuell ergänzende Sicherheitsmaßnahmen, die über das IT-Grundschutz-Modell hinausgehen, eingeplant und umgesetzt werden?[cite: 2]\nZur Beantwortung dieser Fragen empfiehlt das BSI die Anwendung einer Risikoanalyse auf der Basis von IT-Grundschutz, wie sie im BSI-Standard 200-3 beschrieben ist.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-8.5_methodik_ueberblick",
+              "name": "Überblick über die Methodik nach BSI-Standard 200-3",
+              "prose": "In dem Standard wird dargestellt, wie für bestimmte Zielobjekte festgestellt werden kann, ob und in welcher Hinsicht über den IT-Grundschutz hinaus Handlungsbedarf besteht, um Risiken für die Informationsverarbeitung zu reduzieren.[cite: 2] Hierzu werden Risiken, die von elementaren Gefährdungen ausgehen, eingeschätzt und anhand einer Matrix bewertet.[cite: 2] Die Einschätzung erfolgt über die zu erwartende Häufigkeit des Eintretens und die Höhe des Schadens, der bei Eintritt des Schadensereignisses entsteht.[cite: 2] Aus diesen beiden Anteilen ergibt sich das Risiko.[cite: 2] Hierzu empfiehlt der BSI-Standard 200-3 folgende zusätzliche Arbeitsschritte:\n*   **Etablierung eines Risikomanagementprozesses:** Die grundsätzliche Vorgehensweise der Institution zur Durchführung von Risikoanalysen sollte in einer Richtlinie dokumentiert und durch die Leitungsebene verabschiedet werden.[cite: 2]\n*   **Erstellung der Gefährdungsübersicht:** In diesem Arbeitsschritt wird für jedes zu analysierende Zielobjekt eine Liste der jeweils relevanten Gefährdungen zusammengestellt (zunächst elementare Gefährdungen, darauf aufbauend zusätzliche Gefährdungen aus dem spezifischen Einsatzszenario).[cite: 2]\n*   **Risikoeinstufung:** Die Risikoanalyse ist zweistufig angelegt. Für jedes Zielobjekt und jede Gefährdung wird eine Bewertung unter der Annahme vorgenommen, dass bereits Sicherheitsmaßnahmen umgesetzt oder geplant worden sind.[cite: 2] An die erste Bewertung schließt sich eine zweite an, bei der mögliche Sicherheitsmaßnahmen zur Risikobehandlung betrachtet werden.[cite: 2]\n*   **Behandlung von Risiken:** Abhängig vom Risikoappetit einer Institution sind unterschiedliche Risikoakzeptanzkriterien möglich. Risiken können vermieden, reduziert oder transferiert werden.[cite: 2] Das verbleibende Risiko (Restrisiko) muss der Leitungsebene zur Zustimmung vorgelegt werden (Risiko-Akzeptanz).[cite: 2]\n*   **Konsolidierung des Sicherheitskonzepts:** Bevor der originäre IT-Grundschutz-Prozess fortgesetzt werden kann, muss das erweiterte Sicherheitskonzept konsolidiert werden.[cite: 2] Dabei werden Eignung, Zusammenwirken, Benutzerfreundlichkeit und Angemessenheit der Sicherheitsmaßnahmen insgesamt überprüft.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-8.5_alternative_reihenfolgen",
+              "name": "Alternative Reihenfolgen der Risikoanalyse",
+              "prose": "Wichtig: Um schnellstmöglich die wichtigsten Sicherheitsprobleme zu beseitigen, ist es manchmal zweckmäßig, zuerst die IT-Grundschutz-Anforderungen vollständig zu erfüllen und erst danach eine Risikoanalyse durchzuführen (abweichend vom Standard-Schema).[cite: 2] Diese alternative Reihenfolge bietet sich besonders dann an, wenn der betrachtete Informationsverbund bereits realisiert und in Betrieb ist und die vorliegenden Zielobjekte mit den existierenden Bausteinen hinreichend modelliert werden können.[cite: 2] Für geplante Informationsverbünde oder solche mit untypischen Techniken wird dagegen die originäre Reihenfolge (Risikoanalyse direkt nach dem IT-Grundschutz-Check) empfohlen.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-8.5_aktionspunkte",
+              "name": "aktionspunkte",
+              "prose": "Aktionspunkte zu 8.5 Risikoanalyse:\n*   Grundsätzliche Vorgehensweise der Institution zur Durchführung von Risikoanalysen in einer Richtlinie dokumentieren und der Leitungsebene zur Verabschiedung vorlegen[cite: 2]\n*   Ermitteln, für welche Zielobjekte oder Gruppen von Zielobjekten eine Risikoanalyse durchgeführt werden soll[cite: 2]\n*   BSI-Standard 200-3 Risikoanalyse auf der Basis von IT-Grundschutz systematisch durcharbeiten[cite: 2]\n*   Ergebnisse der Risikoanalysen in das Sicherheitskonzept integrieren[cite: 2]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bsi-200-2-kap-9",
+      "title": "9 Umsetzung der Sicherheitskonzeption",
+      "controls": [
+        {
+          "id": "bsi-200-2-9.0",
+          "title": "Einleitung zur Umsetzung",
+          "parts": [
+            {
+              "id": "bsi-200-2-9.0_stmt",
+              "name": "statement",
+              "prose": "In diesem Kapitel werden verschiedene Aspekte vorgestellt, die bei der Planung und Realisierung von Sicherheitsmaßnahmen beachtet werden müssen.[cite: 2] Dabei wird beschrieben, wie die Umsetzung von Sicherheitsmaßnahmen geplant, durchgeführt, begleitet und überwacht werden kann.[cite: 2] Zu vielen Bausteinen des IT-Grundschutzes existieren Umsetzungshinweise mit beispielhaften Empfehlungen für Sicherheitsmaßnahmen.[cite: 2] Diese sind jedoch nicht als verbindlich zu betrachten, sondern können und sollten durch eigene Maßnahmen ergänzt oder ersetzt werden.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-9.1",
+          "title": "9.1 Sichtung der Untersuchungsergebnisse",
+          "parts": [
+            {
+              "id": "bsi-200-2-9.1_stmt",
+              "name": "statement",
+              "prose": "In einer Gesamtsicht sollte ausgewertet werden, welche Anforderungen aus den IT-Grundschutz-Bausteinen nicht oder nur teilweise umgesetzt wurden.[cite: 2] Dazu bietet es sich an, diese aus den Ergebnissen des IT-Grundschutz-Checks zu extrahieren und in einer Tabelle zusammenzufassen.[cite: 2] Durch Risikoanalysen identifizierte weitere Anforderungen und Maßnahmen sollten ebenfalls tabellarisch erfasst und thematisch zugeordnet werden.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-9.1_guidance",
+              "name": "guidance",
+              "prose": "Die zu erfüllenden Anforderungen müssen passend zu den organisatorischen und technischen Gegebenheiten der Institution zu Sicherheitsmaßnahmen konkretisiert werden.[cite: 2] Außerdem sollten alle Anforderungen und daraus abgeleiteten Maßnahmen daraufhin überprüft werden, ob sie geeignet sind (wirksam, in der Praxis umsetzbar, wirtschaftlich).[cite: 2] Basis-Anforderungen sind so elementar, dass diese im Normalfall nicht ersetzt werden können.[cite: 2] Um später nachvollziehen zu können, wie die konkrete Maßnahmenliste erstellt und verfeinert wurde, sollte dies geeignet dokumentiert werden.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-9.2",
+          "title": "9.2 Kosten- und Aufwandsschätzung",
+          "parts": [
+            {
+              "id": "bsi-200-2-9.2_stmt",
+              "name": "statement",
+              "prose": "Da das Budget zur Umsetzung von Sicherheitsmaßnahmen praktisch immer begrenzt ist, sollte für jede zu realisierende Maßnahme festgehalten werden, welche Investitionskosten und welcher Personalaufwand dafür benötigt werden.[cite: 2] Hierbei sollte zwischen einmaligen und wiederkehrenden Investitionskosten bzw. Personalaufwand unterschieden werden.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-9.2_guidance",
+              "name": "guidance",
+              "prose": "Es ist zu ermitteln, ob alle im ersten Zug abgeleiteten Maßnahmen wirtschaftlich umsetzbar sind.[cite: 2] Falls es Maßnahmen gibt, die nicht wirtschaftlich sind, sollten Überlegungen angestellt werden, durch welche Ersatzmaßnahmen die Anforderungen dennoch erfüllt werden könnten.[cite: 2] Falls keine angemessene Maßnahme gefunden werden kann, muss das entstehende Restrisiko sowie die Entscheidung dokumentiert werden.[cite: 2] Stehen die geschätzten Ressourcen zur Verfügung, muss üblicherweise noch eine Entscheidung der Leitungsebene über das Budget herbeigeführt werden.[cite: 2] Kann kein ausreichendes Budget bereitgestellt werden, sollte anhand von Kreuzreferenztabellen aufgezeigt werden, welches Restrisiko dadurch entsteht.[cite: 2] Das entstehende Restrisiko sollte transparent beschrieben und der Leitungsebene zur Entscheidung vorgelegt werden.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-9.3",
+          "title": "9.3 Festlegung der Umsetzungsreihenfolge der Maßnahmen",
+          "parts": [
+            {
+              "id": "bsi-200-2-9.3_stmt",
+              "name": "statement",
+              "prose": "Grundsätzlich sind als Erstes die aus den Basis-Anforderungen abgeleiteten Maßnahmen umzusetzen, dann die der Standard-Anforderungen.[cite: 2] Die zusätzlichen Maßnahmen für den erhöhten Schutzbedarf sollten erst anschließend angepasst und realisiert werden.[cite: 2] Wenn das vorhandene Budget oder die personellen Ressourcen nicht ausreichen, um sämtliche noch notwendigen Maßnahmen sofort umsetzen zu können, muss hier eine Priorisierung festgelegt werden.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-9.3_guidance",
+              "name": "guidance",
+              "prose": "Die weitere Umsetzungsreihenfolge orientiert sich daran, was für die jeweilige Institution am sinnvollsten ist. Tipps dazu sind:\n*   Orientierung am Lebenszyklus eines Zielobjektes (z.B. bei neuen Objekten Planung/Konzeption vor Betrieb).[cite: 2]\n*   Beachtung zwingender zeitlicher Reihenfolgen aufgrund logischer Abhängigkeiten (z.B. sichere Installation vor Rechtevergabe).[cite: 2]\n*   Bevorzugung von Maßnahmen mit großer Breitenwirkung oder schnellem Sicherheitsgewinn (\"Quick Wins\").[cite: 2]\n*   Priorisierung von Bausteinen mit großem Einfluss auf das Sicherheitsniveau (z.B. Server vor Clients).[cite: 2]\n*   Bevorzugte Behandlung von Bereichen mit auffallend vielen nicht umgesetzten Anforderungen.[cite: 2]\nDie Entscheidung über die Reihenfolge und wo Restrisiken akzeptiert werden, sollte sorgfältig dokumentiert werden.[cite: 2] Wenn Anforderungen nicht erfüllt sind, ist es empfehlenswert, die entstandenen Defizite im Rahmen einer vereinfachten Risikoanalyse zu betrachten.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-9.4",
+          "title": "9.4 Festlegung der Aufgaben und der Verantwortung",
+          "parts": [
+            {
+              "id": "bsi-200-2-9.4_stmt",
+              "name": "statement",
+              "prose": "Nachdem die Reihenfolge für die Umsetzung der Maßnahmen bestimmt wurde, muss anschließend festgelegt werden, wer bis wann welche Maßnahmen realisieren muss.[cite: 2] Dabei ist darauf zu achten, dass der als verantwortlich Benannte ausreichende Fähigkeiten und Kompetenzen zur Umsetzung besitzt und dass ihm die erforderlichen Ressourcen zur Verfügung gestellt werden.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-9.4_guidance",
+              "name": "guidance",
+              "prose": "Ebenso ist festzulegen, wer für die Überwachung der Realisierung verantwortlich ist (typischerweise der ISB).[cite: 2] Der ISB muss regelmäßig die Leitungsebene über den Fortschritt informieren.[cite: 2] Der Realisierungsplan sollte mindestens umfassen: Bezeichnung des Zielobjektes, Nummer/Titel des Bausteins, Titel/Beschreibung der Anforderung, Beschreibung der Maßnahme, Terminplanung, Budgetplanung und Verantwortliche.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-9.5",
+          "title": "9.5 Realisierungsbegleitende Maßnahmen",
+          "parts": [
+            {
+              "id": "bsi-200-2-9.5_stmt",
+              "name": "statement",
+              "prose": "Überaus wichtig ist es, notwendige realisierungsbegleitende Maßnahmen rechtzeitig zu identifizieren bzw. zu konzipieren und für die Realisierung entsprechend einzuplanen.[cite: 2] Zu diesen Maßnahmen gehören insbesondere Sensibilisierungsmaßnahmen, die die betroffenen Mitarbeiter über die Notwendigkeit und Konsequenzen der neuen Sicherheitsmaßnahmen unterrichten.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-9.5_guidance",
+              "name": "guidance",
+              "prose": "Darüber hinaus müssen die betroffenen Mitarbeiter geschult werden, die neuen Sicherheitsmaßnahmen korrekt um- und einzusetzen, da sonst die Maßnahmen oft ihre Wirkung verlieren oder eine ablehnende Haltung entsteht.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-9.5_aktionspunkte",
+              "name": "aktionspunkte",
+              "prose": "Aktionspunkte zu 9 Umsetzung der Sicherheitskonzeption:\n*   Fehlende IT-Grundschutz-Anforderungen und ergänzende Maßnahmen tabellarisch zusammenfassen.[cite: 2]\n*   Sicherheitsmaßnahmen konsolidieren und auf Eignung prüfen.[cite: 2]\n*   Einmalige und wiederkehrende Kosten sowie Aufwand ermitteln.[cite: 2]\n*   Ersatzmaßnahmen für nicht leistbare Maßnahmen auflisten.[cite: 2]\n*   Ressourcenentscheidung herbeiführen und ggf. Entscheidung zum Restrisiko einholen.[cite: 2]\n*   Umsetzungsreihenfolge festlegen, begründen und dokumentieren.[cite: 2]\n*   Termine und Verantwortlichkeiten festlegen.[cite: 2]\n*   Verlauf und Termine überwachen.[cite: 2]\n*   Mitarbeiter schulen und sensibilisieren.[cite: 2]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bsi-200-2-kap-10",
+      "title": "10 Aufrechterhaltung und kontinuierliche Verbesserung der Informationssicherheit",
+      "controls": [
+        {
+          "id": "bsi-200-2-10.0",
+          "title": "Grundlagen der Aufrechterhaltung",
+          "parts": [
+            {
+              "id": "bsi-200-2-10.0_stmt",
+              "name": "statement",
+              "prose": "Um den Informationssicherheitsprozess aufrechtzuerhalten und kontinuierlich verbessern zu können, muss der IS-Prozess selbst regelmäßig auf seine Wirksamkeit und Effizienz hin überprüft werden.[cite: 2] Dabei sollte regelmäßig eine Erfolgskontrolle und Bewertung des IS-Prozesses durch die Leitungsebene stattfinden (Managementbewertung).[cite: 2] Alle Ergebnisse und Beschlüsse müssen nachvollziehbar dokumentiert werden.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-10.1",
+          "title": "10.1 Überprüfung des Informationssicherheitsprozesses auf allen Ebenen",
+          "parts": [
+            {
+              "id": "bsi-200-2-10.1_stmt",
+              "name": "statement",
+              "prose": "Die Überprüfung ist unabdingbar, um Fehler zu erkennen und den IS-Prozess hinsichtlich seiner Effizienz zu optimieren.[cite: 2] Die Informationssicherheitsstrategie sollte Leitaussagen zur Messung der Zielerreichung machen (Welche Ziele werden wie überwacht? Wer ist verantwortlich? Wann wird ausgewertet?).[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-10.1_guidance",
+              "name": "guidance",
+              "prose": "Beispiele für Überprüfungsmethoden sind Definition von Kennzahlen, Auswertung von Sicherheitsvorfällen, Übungen/Tests (z.B. Backup-Wiederherstellung), interne/externe Audits und Zertifizierungen.[cite: 2] Prüfungen sollten nicht von den Erstellern der Sicherheitsvorgaben durchgeführt werden.[cite: 2]\n*   **10.1.1 Überprüfung anhand von Kennzahlen:** Kennzahlen dienen der Überprüfung von Güte, Effizienz und Effektivität und sind oft auf technische Sicherheit fokussiert (z.B. Anzahl erkannter Schadsoftware, Dauer von Systemausfällen).[cite: 2]\n*   **10.1.2 Bewertung des ISMS mithilfe eines Reifegradmodells:** Die Wirksamkeit des ISMS kann anhand eines Reifegradmodells (z.B. von Stufe 0 \"kein ISMS\" bis Stufe 5 \"kontinuierliche Verbesserung\") bewertet werden, oft mehrdimensional angelehnt an das Schichtenmodell.[cite: 2] Der Reifegrad hängt auch von der Integration in andere Managementprozesse (z.B. Projektmanagement, Incident-Management) ab.[cite: 2]\n*   **10.1.3 Überprüfung der Umsetzung der Sicherheitsmaßnahmen:** Anhand des Realisierungsplans wird geprüft, inwieweit Planungen eingehalten wurden.[cite: 2] Eine regelmäßige Informationssicherheitsrevision (IS-Revision) oder ein Cyber-Sicherheits-Check helfen dabei, Schwachstellen zu identifizieren.[cite: 2]\n*   **10.1.4 Zertifizierung nach ISO 27001 auf Basis von IT-Grundschutz:** Eine Zertifizierung überprüft die Umsetzung durch qualifizierte unabhängige Stellen und liefert vergleichbare Auditergebnisse.[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-10.2",
+          "title": "10.2 Eignung der Informationssicherheitsstrategie",
+          "parts": [
+            {
+              "id": "bsi-200-2-10.2_stmt",
+              "name": "statement",
+              "prose": "Die Leitungsebene muss einen Überblick haben, inwieweit die Sicherheitsziele mithilfe der eingesetzten Sicherheitsstrategie tatsächlich erreicht wurden.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-10.2_guidance",
+              "name": "guidance",
+              "prose": "Dazu gehört die Überprüfung der Aktualität von Sicherheitszielen und Rahmenbedingungen (z.B. bei betrieblichen oder organisatorischen Änderungen).[cite: 2] Die Wirtschaftlichkeit der Strategie muss konstant beobachtet werden.[cite: 2] Zudem muss eine wirksame Vorgehensweise für den Umgang mit Beschwerden und Rückmeldungen von Internen und Externen festgelegt werden, um Unzufriedenheit und Fehlern entgegenzuwirken.[cite: 2] Auch muss überlegt werden, ob das ISMS weiterentwickelt oder die gewählte Vorgehensweise erweitert werden soll (z.B. von Basis- auf Standard-Absicherung).[cite: 2]"
+            }
+          ]
+        },
+        {
+          "id": "bsi-200-2-10.3",
+          "title": "10.3 Übernahme der Ergebnisse in den Informationssicherheitsprozess",
+          "parts": [
+            {
+              "id": "bsi-200-2-10.3_stmt",
+              "name": "statement",
+              "prose": "Die Ergebnisse der Bewertung können zu einer Änderung der Sicherheitsziele, der Sicherheitsstrategie oder des Sicherheitskonzepts führen.[cite: 2] Wenn umfangreiche Verbesserungen umgesetzt werden, schließt sich der Managementkreislauf wieder und es wird erneut mit der Planungsphase begonnen.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-10.3_guidance",
+              "name": "guidance",
+              "prose": "Die grundsätzliche Vorgehensweise zur Überprüfung und Verbesserung sollte in einer Richtlinie dokumentiert und von der Leitungsebene verabschiedet werden.[cite: 2] Prüfergebnisse sind im Allgemeinen vertraulich zu behandeln.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-10.3_aktionspunkte",
+              "name": "aktionspunkte",
+              "prose": "Aktionspunkte zu 10 Aufrechterhaltung und kontinuierliche Verbesserung:\n*   Vorgehensweise zur Überprüfung/Verbesserung als Richtlinie dokumentieren und verabschieden.[cite: 2]\n*   Messung der Zielerreichung integrieren.[cite: 2]\n*   Einhaltung des Realisierungsplans, Realisierung und Wirksamkeit/Effizienz der Maßnahmen überprüfen.[cite: 2]\n*   Akzeptanz der Maßnahmen prüfen.[cite: 2]\n*   Rollenkonflikt zwischen Ersteller und Prüfer beachten.[cite: 2]\n*   Vertraulichkeit der Ergebnisse sicherstellen.[cite: 2]\n*   Eignung, Aktualität, Ressourcenangemessenheit und Wirtschaftlichkeit prüfen.[cite: 2]\n*   Ergebnisse als Verbesserungen einfließen lassen.[cite: 2]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bsi-200-2-kap-11",
+      "title": "11 Zertifizierung nach ISO 27001 auf der Basis von IT-Grundschutz",
+      "controls": [
+        {
+          "id": "bsi-200-2-11.0",
+          "title": "Zertifizierung nach ISO 27001 auf der Basis von IT-Grundschutz",
+          "parts": [
+            {
+              "id": "bsi-200-2-11.0_stmt",
+              "name": "statement",
+              "prose": "Um die erfolgreiche Umsetzung von IT-Grundschutz nach außen transparent machen zu können, kann sich das Unternehmen oder die Behörde nach ISO/IEC 27001 zertifizieren lassen.[cite: 2] Das BSI hat hierfür ein Zertifizierungsschema entwickelt.[cite: 2] Eine solche Zertifizierung ist für die Standard-Absicherung vorgesehen sowie für die Kern-Absicherung grundsätzlich möglich.[cite: 2] Bei einer reinen Basis-Absicherung reichen die umgesetzten Maßnahmen für eine Zertifizierung nicht aus.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-11.0_guidance",
+              "name": "guidance",
+              "prose": "Das Zertifikat dient als Qualitätsmerkmal und Wettbewerbsvorteil gegenüber Kunden und Geschäftspartnern.[cite: 2] Grundlage für die Vergabe ist ein Audit durch einen externen, beim BSI zertifizierten Auditor.[cite: 2] Ein solches Zertifikat weist nach, dass Informationssicherheit ein anerkannter Wert ist, ein funktionierendes IS-Management vorhanden ist und ein definiertes Sicherheitsniveau erreicht wurde.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-11.0_aktionspunkte",
+              "name": "aktionspunkte",
+              "prose": "Aktionspunkte zu 11 Zertifizierung:\n*   Informationen zum Zertifizierungsschema lesen.[cite: 2]\n*   Prüfen, ob die Bemühungen transparent gemacht werden sollen.[cite: 2]\n*   Prüfen, ob die Voraussetzungen erfüllt sind.[cite: 2]\n*   Gegebenenfalls Zertifizierungsprozess initiieren.[cite: 2]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bsi-200-2-kap-12",
+      "title": "12 Anhang",
+      "controls": [
+        {
+          "id": "bsi-200-2-12.1",
+          "title": "12.1 Erläuterungen zu den Schadensszenarien",
+          "parts": [
+            {
+              "id": "bsi-200-2-12.1_stmt",
+              "name": "statement",
+              "prose": "Im Anhang sind für die definierten Schadensszenarien beispielhafte Fragestellungen als Hilfsmittel für die Schutzbedarfsfeststellung aufgeführt.[cite: 2]"
+            },
+            {
+              "id": "bsi-200-2-12.1_szenarien",
+              "name": "Beispielhafte Schadensszenarien",
+              "prose": "*   **Verstoß gegen Gesetze/Vorschriften/Verträge:** Fragestellungen zielen auf rechtliche Konsequenzen bei Verlust von Vertraulichkeit, Integrität oder Verfügbarkeit ab (z.B. Strafverfolgung, Nichteinhaltung von Fristen).[cite: 2]\n*   **Beeinträchtigung des informationellen Selbstbestimmungsrechts:** Betrifft die unzulässige Verarbeitung personenbezogener Daten und mögliche Schäden für die gesellschaftliche/wirtschaftliche Stellung des Betroffenen.[cite: 2]\n*   **Beeinträchtigung der persönlichen Unversehrtheit:** Fehlfunktionen können direkte Verletzungen, Invalidität oder den Tod nach sich ziehen (z.B. medizinische Geräte, Verkehrsleitsysteme).[cite: 2]\n*   **Beeinträchtigung der Aufgabenerfüllung:** Schwere des Schadens richtet sich nach Dauer und Umfang der Einschränkungen (z.B. Fristversäumnisse, fehlerhafte Produktion).[cite: 2]\n*   **Negative Innen- oder Außenwirkung:** Entstehung von Ansehens- und Vertrauensverlusten, Demoralisierung der Mitarbeiter oder Verlust der Konkurrenzfähigkeit.[cite: 2]\n*   **Finanzielle Auswirkungen:** Unmittelbare oder mittelbare finanzielle Schäden durch Verlust oder Ausfall (z.B. Regressforderungen, Umsatzverluste, Reparaturkosten).[cite: 2]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+    ]
+}}
