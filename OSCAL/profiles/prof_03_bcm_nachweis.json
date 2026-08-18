@@ -1,0 +1,275 @@
+{
+  "profile": {
+    "uuid": "b1069e1b-128b-4d80-9b9a-2307e7b5a114",
+    "metadata": {
+      "title": "NIS2 Stufe 1 – Anforderungsanalyse: BCM-Nachweis (§30 Abs. 2 Nr. 3 BSIG, Maßnahme 21.c)",
+      "last-modified": "2026-08-18T08:14:41.881266+00:00",
+      "version": "1.0.0",
+      "oscal-version": "1.1.2",
+      "remarks": "Themenspezifisches OSCAL-Profile, abgeleitet aus dem Mapping- und Vorgehensdokument 'AZ Fraunhofer IOSB', Kapitel 3 – Stufe 1: Anforderungsanalyse. Enthaelt die in Stufe 1 referenzierten Rechtsgrundlagen (NIS2-Richtlinie (EU) 2022/2555, NIS2UmsuG/BSIG, NIS2-DVO) sowie die zugehoerigen DVO-Konkretisierungen und den BSI KRITIS-Anforderungskatalog (KdA). Rechtsgrundlage laut Quelldokument:\n- §30 Abs. 2 Nr. 3 BSIG (NIS2UmsuG): Maßnahme 21.c – Backup-Management, Wiederherstellungsplanung und Krisenmanagement\n- NIS2-Durchführungsverordnung (DVO), Anhang Nrn. 4.1.1–4.1.3, 4.2.1–4.2.4: technische Spezifikation der BCM-Anforderungen\n- Für Energieunternehmen als besonders wichtige Einrichtungen (§28 Abs. 1 BSIG) gelten verschärfte Nachweispflichten und Aufsichtsbefugnisse des BSI.\n\nDVO-Punkte (Stufe 1): DVO Anhang Nr. 4.1.1–4.1.3 (BCM-Plan) und 4.2.1–4.2.4 (Backup-Plan, Integritätsprüfung)\n\nZusaetzlich referenzierte Frameworks laut Abschnitt 'Genutzte Frameworks (vollstaendige Abdeckung)' im Quelldokument: C2M2 v2.1 (Reifegrad-Domaenen), ENISA Technical Implementation Guidance (technische Konkretisierung, spiegelt DVO-Anhang-Nummerierung), BSI IT-Grundschutz++ / Anwenderkatalog (Bausteine), ISO/IEC 27001:2022 Annex A (Kontrollrahmen). Diese sind fuer Stufe 1 informativ mit importiert, da sie im Quelldokument als Teil der vollstaendigen Abdeckung je Thema benannt sind."
+    },
+    "imports": [
+      {
+        "href": "cat_nis2_eu.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "artikel-21"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_nis2umg.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "paragraf-28",
+              "paragraf-30"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_dvo.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "anhang-4"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_bsi_kda.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "anforderung-15",
+              "anforderung-17",
+              "anforderung-18",
+              "anforderung-19",
+              "anforderung-71"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_c2m2_practices.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "ARCHITECTURE-1a",
+              "ARCHITECTURE-1b",
+              "ARCHITECTURE-1c",
+              "ARCHITECTURE-1d",
+              "ARCHITECTURE-1e",
+              "ARCHITECTURE-1f",
+              "ARCHITECTURE-1g",
+              "ARCHITECTURE-1h",
+              "ARCHITECTURE-1i",
+              "ARCHITECTURE-1j",
+              "ARCHITECTURE-1k",
+              "ARCHITECTURE-2a",
+              "ARCHITECTURE-2b",
+              "ARCHITECTURE-2c",
+              "ARCHITECTURE-2d",
+              "ARCHITECTURE-2e",
+              "ARCHITECTURE-2f",
+              "ARCHITECTURE-2g",
+              "ARCHITECTURE-2h",
+              "ARCHITECTURE-2i",
+              "ARCHITECTURE-2j",
+              "ARCHITECTURE-2k",
+              "ARCHITECTURE-2l",
+              "ARCHITECTURE-3a",
+              "ARCHITECTURE-3b",
+              "ARCHITECTURE-3c",
+              "ARCHITECTURE-3d",
+              "ARCHITECTURE-3e",
+              "ARCHITECTURE-3f",
+              "ARCHITECTURE-3g",
+              "ARCHITECTURE-3h",
+              "ARCHITECTURE-3i",
+              "ARCHITECTURE-3j",
+              "ARCHITECTURE-3k",
+              "ARCHITECTURE-3l",
+              "ARCHITECTURE-3m",
+              "ARCHITECTURE-4a",
+              "ARCHITECTURE-4b",
+              "ARCHITECTURE-4c",
+              "ARCHITECTURE-4d",
+              "ARCHITECTURE-4e",
+              "ARCHITECTURE-4f",
+              "ARCHITECTURE-4g",
+              "ARCHITECTURE-4h",
+              "ARCHITECTURE-5a",
+              "ARCHITECTURE-5b",
+              "ARCHITECTURE-5c",
+              "ARCHITECTURE-5d",
+              "ARCHITECTURE-5e",
+              "ARCHITECTURE-5f",
+              "ARCHITECTURE-5g",
+              "ARCHITECTURE-5h",
+              "ARCHITECTURE-6a",
+              "ARCHITECTURE-6b",
+              "ARCHITECTURE-6c",
+              "ARCHITECTURE-6d",
+              "ARCHITECTURE-6e",
+              "ARCHITECTURE-6f",
+              "RESPONSE-1a",
+              "RESPONSE-1b",
+              "RESPONSE-1c",
+              "RESPONSE-1d",
+              "RESPONSE-1e",
+              "RESPONSE-1f",
+              "RESPONSE-2a",
+              "RESPONSE-2b",
+              "RESPONSE-2c",
+              "RESPONSE-2d",
+              "RESPONSE-2e",
+              "RESPONSE-2f",
+              "RESPONSE-2g",
+              "RESPONSE-2h",
+              "RESPONSE-2i",
+              "RESPONSE-3a",
+              "RESPONSE-3b",
+              "RESPONSE-3c",
+              "RESPONSE-3d",
+              "RESPONSE-3e",
+              "RESPONSE-3f",
+              "RESPONSE-3g",
+              "RESPONSE-3h",
+              "RESPONSE-3i",
+              "RESPONSE-3j",
+              "RESPONSE-3k",
+              "RESPONSE-3l",
+              "RESPONSE-4a",
+              "RESPONSE-4b",
+              "RESPONSE-4c",
+              "RESPONSE-4d",
+              "RESPONSE-4e",
+              "RESPONSE-4f",
+              "RESPONSE-4g",
+              "RESPONSE-4h",
+              "RESPONSE-4i",
+              "RESPONSE-4j",
+              "RESPONSE-4k",
+              "RESPONSE-4l",
+              "RESPONSE-4m",
+              "RESPONSE-4n",
+              "RESPONSE-4o",
+              "RESPONSE-4p",
+              "RESPONSE-5a",
+              "RESPONSE-5b",
+              "RESPONSE-5c",
+              "RESPONSE-5d",
+              "RESPONSE-5e",
+              "RESPONSE-5f"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_enisa_technical_guide.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "control-4.1.1",
+              "control-4.1.2",
+              "control-4.1.3",
+              "control-4.1.4",
+              "control-4.2.1",
+              "control-4.2.2",
+              "control-4.2.3",
+              "control-4.2.4",
+              "control-4.2.5",
+              "control-4.2.6",
+              "control-4.3.1",
+              "control-4.3.2",
+              "control-4.3.3",
+              "control-4.3.4"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_it_grundschutz__.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "NOT.1.1",
+              "NOT.1.1.1",
+              "NOT.1.1.2",
+              "NOT.1.1.3",
+              "NOT.1.1.4",
+              "NOT.1.2",
+              "NOT.2.1",
+              "NOT.2.1.1",
+              "NOT.2.1.2",
+              "NOT.2.1.3",
+              "NOT.2.1.4",
+              "NOT.3.1",
+              "NOT.3.2",
+              "NOT.3.3",
+              "NOT.3.4",
+              "NOT.3.5",
+              "NOT.3.6",
+              "NOT.4.1",
+              "NOT.4.10",
+              "NOT.4.11",
+              "NOT.4.12",
+              "NOT.4.13",
+              "NOT.4.14",
+              "NOT.4.15",
+              "NOT.4.16",
+              "NOT.4.16.1",
+              "NOT.4.17",
+              "NOT.4.2",
+              "NOT.4.3",
+              "NOT.4.4",
+              "NOT.4.5",
+              "NOT.4.5.1",
+              "NOT.4.5.2",
+              "NOT.4.6",
+              "NOT.4.7",
+              "NOT.4.8",
+              "NOT.4.9"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_ISO27001_AnnexA.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "5.29",
+              "5.30",
+              "5.31",
+              "8.6",
+              "8.13",
+              "8.14",
+              "8.16"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "as-is": true
+    },
+    "modify": {
+      "props": [
+        {
+          "name": "audit-thema-nr",
+          "value": "3"
+        },
+        {
+          "name": "vorgehensstufe",
+          "value": "Stufe 1: Anforderungsanalyse"
+        }
+      ]
+    }
+  }
+}

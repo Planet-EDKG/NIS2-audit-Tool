@@ -1,0 +1,286 @@
+{
+  "profile": {
+    "uuid": "f02057ec-c448-4154-92f4-abf241441896",
+    "metadata": {
+      "title": "NIS2 Stufe 1 – Anforderungsanalyse: Lieferkettensicherheit (§30 Abs. 2 Nr. 4 BSIG, Maßnahme 21.d)",
+      "last-modified": "2026-08-18T08:14:41.881266+00:00",
+      "version": "1.0.0",
+      "oscal-version": "1.1.2",
+      "remarks": "Themenspezifisches OSCAL-Profile, abgeleitet aus dem Mapping- und Vorgehensdokument 'AZ Fraunhofer IOSB', Kapitel 2 – Stufe 1: Anforderungsanalyse. Enthaelt die in Stufe 1 referenzierten Rechtsgrundlagen (NIS2-Richtlinie (EU) 2022/2555, NIS2UmsuG/BSIG, NIS2-DVO) sowie die zugehoerigen DVO-Konkretisierungen und den BSI KRITIS-Anforderungskatalog (KdA). Rechtsgrundlage laut Quelldokument:\n- §30 Abs. 2 Nr. 4 BSIG (NIS2UmsuG): Maßnahme 21.d – Sicherheit der Lieferkette einschließlich sicherheitsbezogener Aspekte der Beziehungen zwischen den Einrichtungen und ihren unmittelbaren Anbietern oder Diensteanbietern\n- NIS2-Durchführungsverordnung (DVO), Anhang Nrn. 5.1.1–5.1.7 und 5.2: technische Spezifikation der Lieferketten-Anforderungen\n- Für Energieunternehmen als besonders wichtige Einrichtungen (§28 Abs. 1 BSIG) gelten verschärfte Nachweispflichten; die Abhängigkeit von IKT-Lieferanten (z.B. SCADA-Hersteller, Netztechnik-Anbieter) macht Lieferkettensicherheit zum kritischen Risikofaktor.\n\nDVO-Punkte (Stufe 1): DVO Anhang Nr. 5.1.1–5.1.7 (Lieferketten-Sicherheitsrichtlinie, Auswahlkriterien, Vertragsklauseln) und Nr. 5.2 (Lieferantenverzeichnis)\n\nZusaetzlich referenzierte Frameworks laut Abschnitt 'Genutzte Frameworks (vollstaendige Abdeckung)' im Quelldokument: C2M2 v2.1 (Reifegrad-Domaenen), ENISA Technical Implementation Guidance (technische Konkretisierung, spiegelt DVO-Anhang-Nummerierung), BSI IT-Grundschutz++ / Anwenderkatalog (Bausteine), ISO/IEC 27001:2022 Annex A (Kontrollrahmen). Diese sind fuer Stufe 1 informativ mit importiert, da sie im Quelldokument als Teil der vollstaendigen Abdeckung je Thema benannt sind."
+    },
+    "imports": [
+      {
+        "href": "cat_nis2_eu.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "artikel-21"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_nis2umg.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "paragraf-28",
+              "paragraf-30"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_dvo.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "anhang-5"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_bsi_kda.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "anforderung-98",
+              "anforderung-99"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_c2m2_practices.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "PROGRAM-1a",
+              "PROGRAM-1b",
+              "PROGRAM-1c",
+              "PROGRAM-1d",
+              "PROGRAM-1e",
+              "PROGRAM-1f",
+              "PROGRAM-1g",
+              "PROGRAM-1h",
+              "PROGRAM-2a",
+              "PROGRAM-2b",
+              "PROGRAM-2c",
+              "PROGRAM-2d",
+              "PROGRAM-2e",
+              "PROGRAM-2f",
+              "PROGRAM-2g",
+              "PROGRAM-2h",
+              "PROGRAM-2i",
+              "PROGRAM-2j",
+              "PROGRAM-3a",
+              "PROGRAM-3b",
+              "PROGRAM-3c",
+              "PROGRAM-3d",
+              "PROGRAM-3e",
+              "PROGRAM-3f",
+              "RISK-1a",
+              "RISK-1b",
+              "RISK-1c",
+              "RISK-1d",
+              "RISK-1e",
+              "RISK-1f",
+              "RISK-1g",
+              "RISK-1h",
+              "RISK-2a",
+              "RISK-2b",
+              "RISK-2c",
+              "RISK-2d",
+              "RISK-2e",
+              "RISK-2f",
+              "RISK-2g",
+              "RISK-2h",
+              "RISK-2i",
+              "RISK-2j",
+              "RISK-2k",
+              "RISK-2l",
+              "RISK-2m",
+              "RISK-3a",
+              "RISK-3b",
+              "RISK-3c",
+              "RISK-3d",
+              "RISK-3e",
+              "RISK-3f",
+              "RISK-3g",
+              "RISK-4a",
+              "RISK-4b",
+              "RISK-4c",
+              "RISK-4d",
+              "RISK-4e",
+              "RISK-5a",
+              "RISK-5b",
+              "RISK-5c",
+              "RISK-5d",
+              "RISK-5e",
+              "RISK-5f",
+              "THIRD-PARTIES-1a",
+              "THIRD-PARTIES-1b",
+              "THIRD-PARTIES-1c",
+              "THIRD-PARTIES-1d",
+              "THIRD-PARTIES-1e",
+              "THIRD-PARTIES-1f",
+              "THIRD-PARTIES-2a",
+              "THIRD-PARTIES-2b",
+              "THIRD-PARTIES-2c",
+              "THIRD-PARTIES-2d",
+              "THIRD-PARTIES-2e",
+              "THIRD-PARTIES-2f",
+              "THIRD-PARTIES-2g",
+              "THIRD-PARTIES-2h",
+              "THIRD-PARTIES-2i",
+              "THIRD-PARTIES-2j",
+              "THIRD-PARTIES-2k",
+              "THIRD-PARTIES-2l",
+              "THIRD-PARTIES-2m",
+              "THIRD-PARTIES-3a",
+              "THIRD-PARTIES-3b",
+              "THIRD-PARTIES-3c",
+              "THIRD-PARTIES-3d",
+              "THIRD-PARTIES-3e",
+              "THIRD-PARTIES-3f"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_enisa_technical_guide.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "control-5.1.1",
+              "control-5.1.2",
+              "control-5.1.3",
+              "control-5.1.4",
+              "control-5.1.5",
+              "control-5.1.6",
+              "control-5.1.7",
+              "control-5.2.1"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_it_grundschutz__.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "BES.1.1",
+              "BES.1.1.1",
+              "BES.1.1.2",
+              "BES.1.1.3",
+              "BES.1.2",
+              "BES.1.3",
+              "BES.1.3.1",
+              "BES.1.4",
+              "BES.1.4.1",
+              "BES.1.5",
+              "BES.1.6",
+              "BES.1.7",
+              "BES.2.1",
+              "BES.2.1.1",
+              "BES.2.1.2",
+              "BES.2.1.3",
+              "BES.2.1.4",
+              "BES.2.1.4.1",
+              "BES.2.1.4.2",
+              "BES.2.1.4.3",
+              "BES.2.1.4.4",
+              "BES.2.1.5",
+              "BES.2.1.6",
+              "BES.2.2",
+              "BES.2.3",
+              "BES.2.4",
+              "BES.2.5",
+              "BES.2.6",
+              "BES.3.1",
+              "BES.3.2",
+              "BES.3.2.1",
+              "BES.3.2.2",
+              "BES.3.3",
+              "BES.4.1",
+              "BES.4.2",
+              "BES.4.3",
+              "BES.4.4",
+              "BES.4.5",
+              "BES.4.5.1",
+              "BES.4.5.2",
+              "BES.4.6",
+              "BES.4.6.1",
+              "BES.4.6.2",
+              "BES.4.6.3",
+              "BES.4.7",
+              "BES.4.8",
+              "BES.4.8.1",
+              "BES.4.8.2",
+              "BES.4.8.3",
+              "BES.4.8.4",
+              "BES.4.9",
+              "BES.5.1",
+              "BES.5.10",
+              "BES.5.10.1",
+              "BES.5.10.2",
+              "BES.5.10.3",
+              "BES.5.10.3.1",
+              "BES.5.10.4",
+              "BES.5.10.5",
+              "BES.5.11",
+              "BES.5.12",
+              "BES.5.13",
+              "BES.5.13.1",
+              "BES.5.14",
+              "BES.5.2",
+              "BES.5.3",
+              "BES.5.4",
+              "BES.5.5",
+              "BES.5.5.1",
+              "BES.5.5.2",
+              "BES.5.6",
+              "BES.5.6.1",
+              "BES.5.6.2",
+              "BES.5.6.3",
+              "BES.5.7",
+              "BES.5.8",
+              "BES.5.9",
+              "BES.5.9.1"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_ISO27001_AnnexA.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "5.19",
+              "5.20",
+              "5.21",
+              "5.22",
+              "5.23"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "as-is": true
+    },
+    "modify": {
+      "props": [
+        {
+          "name": "audit-thema-nr",
+          "value": "2"
+        },
+        {
+          "name": "vorgehensstufe",
+          "value": "Stufe 1: Anforderungsanalyse"
+        }
+      ]
+    }
+  }
+}

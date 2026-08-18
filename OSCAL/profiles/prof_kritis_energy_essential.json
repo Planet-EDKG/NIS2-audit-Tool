@@ -1,0 +1,69 @@
+{
+  "profile": {
+    "uuid": "7a324a68-cecd-4b4d-8dcf-d643bbd4e3d4",
+    "metadata": {
+      "title": "KRITIS Energie – Essential Baseline: Gesamt-Prüfbaseline NIS2 Stufe 1 (Anforderungsanalyse) für den Energiesektor",
+      "last-modified": "2026-08-18T08:23:46.261034+00:00",
+      "version": "1.0.0",
+      "oscal-version": "1.1.2",
+      "remarks": "Gesamt-Pruefbaseline (Stufe 1: Anforderungsanalyse) fuer den Energiesektor (KRITIS) nach NIS2UmsuG/BSIG, zusammengesetzt durch Import aller neun themenspezifischen Stufe-1-Profile aus dem Mapping- und Vorgehensdokument 'AZ Fraunhofer IOSB'. Jedes importierte Profil deckt eines der neun Vorgehenskonzepte (Kapitel 1-9) ab und enthaelt seinerseits die Controls aus NIS2-Richtlinie (EU) 2022/2555, NIS2UmsuG/BSIG, NIS2-DVO, BSI KRITIS-Anforderungskatalog (KdA), C2M2 v2.1, ENISA Technical Implementation Guidance, BSI IT-Grundschutz++ (Anwenderkatalog) und ISO/IEC 27001:2022 Annex A.\n\nImportierte Themenprofile:\n- profile-01-risikomanagement-isms-fundament.json: NIS2 Stufe 1 – Anforderungsanalyse: Risikomanagement und ISMS-Fundament (§30 Abs. 2 Nr. 1 BSIG, Maßnahme 21.a)\n- profile-02-lieferkettensicherheit.json: NIS2 Stufe 1 – Anforderungsanalyse: Lieferkettensicherheit (§30 Abs. 2 Nr. 4 BSIG, Maßnahme 21.d)\n- profile-03-bcm-nachweis.json: NIS2 Stufe 1 – Anforderungsanalyse: BCM-Nachweis (§30 Abs. 2 Nr. 3 BSIG, Maßnahme 21.c)\n- profile-04-incident-response-detektion.json: NIS2 Stufe 1 – Anforderungsanalyse: Incident Response & Detektion (§30 Abs. 2 Nr. 2 BSIG, Maßnahme 21.b)\n- profile-05-wirksamkeitsbewertung-sicherheitsmassnahmen.json: NIS2 Stufe 1 – Anforderungsanalyse: Wirksamkeitsbewertung von Sicherheitsmaßnahmen (§30 Abs. 2 Nr. 8 BSIG, Maßnahme 21.h)\n- profile-06-sensibilisierung-schulung.json: NIS2 Stufe 1 – Anforderungsanalyse: Sensibilisierung und Schulung (§30 Abs. 2 Nr. 6 BSIG, Maßnahme 21.f)\n- profile-07-zugangskontrolle-idm-mfa.json: NIS2 Stufe 1 – Anforderungsanalyse: Zugangskontrolle, Identitätsmanagement und MFA (§30 Abs. 2 Nr. 5 BSIG, Maßnahme 21.e)\n- profile-08-personalsicherheit-informationsschutz.json: NIS2 Stufe 1 – Anforderungsanalyse: Personalsicherheit und Informationsschutz (§30 Abs. 2 Nr. 7 BSIG, Maßnahme 21.g / DVO Nrn. 10, 12)\n- profile-09-schwachstellenmanagement-patch-sicherheitstests.json: NIS2 Stufe 1 – Anforderungsanalyse: Schwachstellenmanagement, Patch-Management und Sicherheitstests (§30 Abs. 2 Nr. 5 BSIG, Maßnahmen 21.e/21.g)\n\nAnwendungsbereich laut Quelldokument: Deutsches Unternehmen im Energiesektor (KRITIS, besonders wichtige Einrichtung nach §28 Abs. 1 BSIG). Jedes der neun Vorgehenskonzepte enthaelt im Quelldokument zusaetzlich einen Abschnitt 'Besonderheiten im Energiesektor (KRITIS-Spezifika)', der sektorspezifische Ergaenzungen (z.B. OT/SCADA, SzA-Pflicht nach §8a Abs. 1a BSIG, IT-Sicherheitskatalog Bundesnetzagentur) beschreibt."
+    },
+    "imports": [
+      {
+        "href": "prof_01_risikomanagement_isms_fundament.json",
+        "include-all": {}
+      },
+      {
+        "href": "prof_02_lieferkettensicherheit.json",
+        "include-all": {}
+      },
+      {
+        "href": "prof_03_bcm_nachweis.json",
+        "include-all": {}
+      },
+      {
+        "href": "prof_04_incident_response_detektion.json",
+        "include-all": {}
+      },
+      {
+        "href": "prof_05_wirksamkeitsbewertung_sicherheitsmassnahmen.json",
+        "include-all": {}
+      },
+      {
+        "href": "prof_06_sensibilisierung_schulung.json",
+        "include-all": {}
+      },
+      {
+        "href": "prof_07_zugangskontrolle_idm_mfa.json",
+        "include-all": {}
+      },
+      {
+        "href": "prof_08_personalsicherheit_informationsschutz.json",
+        "include-all": {}
+      },
+      {
+        "href": "prof_09_schwachstellenmanagement.json",
+        "include-all": {}
+      }
+    ],
+    "merge": {
+      "as-is": true
+    },
+    "modify": {
+      "props": [
+        {
+          "name": "sektor",
+          "value": "Energie (KRITIS)"
+        },
+        {
+          "name": "vorgehensstufe",
+          "value": "Stufe 1: Anforderungsanalyse"
+        },
+        {
+          "name": "baseline-typ",
+          "value": "Essential"
+        }
+      ]
+    }
+  }
+}

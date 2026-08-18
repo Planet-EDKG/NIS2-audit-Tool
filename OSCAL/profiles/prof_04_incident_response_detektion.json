@@ -1,0 +1,398 @@
+{
+  "profile": {
+    "uuid": "f9dd7325-da90-45b2-befe-3b31768af294",
+    "metadata": {
+      "title": "NIS2 Stufe 1 – Anforderungsanalyse: Incident Response & Detektion (§30 Abs. 2 Nr. 2 BSIG, Maßnahme 21.b)",
+      "last-modified": "2026-08-18T08:14:41.881266+00:00",
+      "version": "1.0.0",
+      "oscal-version": "1.1.2",
+      "remarks": "Themenspezifisches OSCAL-Profile, abgeleitet aus dem Mapping- und Vorgehensdokument 'AZ Fraunhofer IOSB', Kapitel 4 – Stufe 1: Anforderungsanalyse. Enthaelt die in Stufe 1 referenzierten Rechtsgrundlagen (NIS2-Richtlinie (EU) 2022/2555, NIS2UmsuG/BSIG, NIS2-DVO) sowie die zugehoerigen DVO-Konkretisierungen und den BSI KRITIS-Anforderungskatalog (KdA). Rechtsgrundlage laut Quelldokument:\n- §30 Abs. 2 Nr. 2 BSIG (NIS2UmsuG): Maßnahme 21.b – Erkennung, Analyse, Eindämmung und Bewältigung von Sicherheitsvorfällen\n- NIS2-Durchführungsverordnung (DVO), Anhang Nrn. 3.1–3.6: Konzept für die Bewältigung von Sicherheitsvorfällen, Monitoring, Logging, Ereignismeldung, Klassifizierung, Reaktion und Post-Incident-Review\n- Für Energieunternehmen als besonders wichtige Einrichtungen (§28 Abs. 1 BSIG) gelten zudem die Meldepflichten nach §32 BSIG (unverzügliche Meldung erheblicher Vorfälle an das BSI) sowie Anforderungen aus dem IT-Sicherheitskatalog der Bundesnetzagentur.\n\nDVO-Punkte (Stufe 1): DVO Anhang Nrn. 3.1–3.6 (Konzept Vorfallsbewältigung, Monitoring, Logging, Ereignismeldung, Klassifizierung, Reaktion, Post-Incident-Review)\n\nZusaetzlich referenzierte Frameworks laut Abschnitt 'Genutzte Frameworks (vollstaendige Abdeckung)' im Quelldokument: C2M2 v2.1 (Reifegrad-Domaenen), ENISA Technical Implementation Guidance (technische Konkretisierung, spiegelt DVO-Anhang-Nummerierung), BSI IT-Grundschutz++ / Anwenderkatalog (Bausteine), ISO/IEC 27001:2022 Annex A (Kontrollrahmen). Diese sind fuer Stufe 1 informativ mit importiert, da sie im Quelldokument als Teil der vollstaendigen Abdeckung je Thema benannt sind."
+    },
+    "imports": [
+      {
+        "href": "cat_nis2_eu.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "artikel-21",
+              "artikel-23"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_nis2umg.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "paragraf-28",
+              "paragraf-30",
+              "paragraf-32"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_dvo.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "anhang-3"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_bsi_kda.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "anforderung-77",
+              "anforderung-78",
+              "anforderung-79",
+              "anforderung-80",
+              "anforderung-81",
+              "anforderung-82",
+              "anforderung-92",
+              "anforderung-93"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_c2m2_practices.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "RESPONSE-1a",
+              "RESPONSE-1b",
+              "RESPONSE-1c",
+              "RESPONSE-1d",
+              "RESPONSE-1e",
+              "RESPONSE-1f",
+              "RESPONSE-2a",
+              "RESPONSE-2b",
+              "RESPONSE-2c",
+              "RESPONSE-2d",
+              "RESPONSE-2e",
+              "RESPONSE-2f",
+              "RESPONSE-2g",
+              "RESPONSE-2h",
+              "RESPONSE-2i",
+              "RESPONSE-3a",
+              "RESPONSE-3b",
+              "RESPONSE-3c",
+              "RESPONSE-3d",
+              "RESPONSE-3e",
+              "RESPONSE-3f",
+              "RESPONSE-3g",
+              "RESPONSE-3h",
+              "RESPONSE-3i",
+              "RESPONSE-3j",
+              "RESPONSE-3k",
+              "RESPONSE-3l",
+              "RESPONSE-4a",
+              "RESPONSE-4b",
+              "RESPONSE-4c",
+              "RESPONSE-4d",
+              "RESPONSE-4e",
+              "RESPONSE-4f",
+              "RESPONSE-4g",
+              "RESPONSE-4h",
+              "RESPONSE-4i",
+              "RESPONSE-4j",
+              "RESPONSE-4k",
+              "RESPONSE-4l",
+              "RESPONSE-4m",
+              "RESPONSE-4n",
+              "RESPONSE-4o",
+              "RESPONSE-4p",
+              "RESPONSE-5a",
+              "RESPONSE-5b",
+              "RESPONSE-5c",
+              "RESPONSE-5d",
+              "RESPONSE-5e",
+              "RESPONSE-5f",
+              "RISK-1a",
+              "RISK-1b",
+              "RISK-1c",
+              "RISK-1d",
+              "RISK-1e",
+              "RISK-1f",
+              "RISK-1g",
+              "RISK-1h",
+              "RISK-2a",
+              "RISK-2b",
+              "RISK-2c",
+              "RISK-2d",
+              "RISK-2e",
+              "RISK-2f",
+              "RISK-2g",
+              "RISK-2h",
+              "RISK-2i",
+              "RISK-2j",
+              "RISK-2k",
+              "RISK-2l",
+              "RISK-2m",
+              "RISK-3a",
+              "RISK-3b",
+              "RISK-3c",
+              "RISK-3d",
+              "RISK-3e",
+              "RISK-3f",
+              "RISK-3g",
+              "RISK-4a",
+              "RISK-4b",
+              "RISK-4c",
+              "RISK-4d",
+              "RISK-4e",
+              "RISK-5a",
+              "RISK-5b",
+              "RISK-5c",
+              "RISK-5d",
+              "RISK-5e",
+              "RISK-5f",
+              "SITUATION-1a",
+              "SITUATION-1b",
+              "SITUATION-1c",
+              "SITUATION-1d",
+              "SITUATION-1e",
+              "SITUATION-1f",
+              "SITUATION-2a",
+              "SITUATION-2b",
+              "SITUATION-2c",
+              "SITUATION-2d",
+              "SITUATION-2e",
+              "SITUATION-2f",
+              "SITUATION-2g",
+              "SITUATION-2h",
+              "SITUATION-2i",
+              "SITUATION-3a",
+              "SITUATION-3b",
+              "SITUATION-3c",
+              "SITUATION-3d",
+              "SITUATION-3e",
+              "SITUATION-3f",
+              "SITUATION-3g",
+              "SITUATION-4a",
+              "SITUATION-4b",
+              "SITUATION-4c",
+              "SITUATION-4d",
+              "SITUATION-4e",
+              "SITUATION-4f",
+              "THREAT-1a",
+              "THREAT-1b",
+              "THREAT-1c",
+              "THREAT-1d",
+              "THREAT-1e",
+              "THREAT-1f",
+              "THREAT-1g",
+              "THREAT-1h",
+              "THREAT-1i",
+              "THREAT-1j",
+              "THREAT-1k",
+              "THREAT-1l",
+              "THREAT-1m",
+              "THREAT-2a",
+              "THREAT-2b",
+              "THREAT-2c",
+              "THREAT-2d",
+              "THREAT-2e",
+              "THREAT-2f",
+              "THREAT-2g",
+              "THREAT-2h",
+              "THREAT-2i",
+              "THREAT-2j",
+              "THREAT-2k",
+              "THREAT-3a",
+              "THREAT-3b",
+              "THREAT-3c",
+              "THREAT-3d",
+              "THREAT-3e",
+              "THREAT-3f"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_enisa_technical_guide.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "control-3.1.1",
+              "control-3.1.2",
+              "control-3.1.3",
+              "control-3.2.1",
+              "control-3.2.2",
+              "control-3.2.3",
+              "control-3.2.4",
+              "control-3.2.5",
+              "control-3.2.6",
+              "control-3.2.7",
+              "control-3.3.1",
+              "control-3.3.2",
+              "control-3.4.1",
+              "control-3.4.2",
+              "control-3.5.1",
+              "control-3.5.2",
+              "control-3.5.3",
+              "control-3.5.4",
+              "control-3.5.5",
+              "control-3.6.1",
+              "control-3.6.2",
+              "control-3.6.3"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_it_grundschutz__.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "DET.1.1",
+              "DET.1.1.1",
+              "DET.1.1.2",
+              "DET.1.1.3",
+              "DET.1.2",
+              "DET.2.1",
+              "DET.2.1.1",
+              "DET.2.1.2",
+              "DET.2.1.3",
+              "DET.2.2",
+              "DET.2.3",
+              "DET.3.1",
+              "DET.3.1.1",
+              "DET.3.1.10",
+              "DET.3.1.11",
+              "DET.3.1.12",
+              "DET.3.1.2",
+              "DET.3.1.3",
+              "DET.3.1.4",
+              "DET.3.1.5",
+              "DET.3.1.6",
+              "DET.3.1.7",
+              "DET.3.1.8",
+              "DET.3.1.9",
+              "DET.3.2",
+              "DET.3.3",
+              "DET.3.4",
+              "DET.3.5",
+              "DET.3.6",
+              "DET.4.1",
+              "DET.4.10",
+              "DET.4.11",
+              "DET.4.11.1",
+              "DET.4.11.2",
+              "DET.4.11.3",
+              "DET.4.12",
+              "DET.4.12.1",
+              "DET.4.13",
+              "DET.4.14",
+              "DET.4.15",
+              "DET.4.16",
+              "DET.4.17",
+              "DET.4.18",
+              "DET.4.19",
+              "DET.4.2",
+              "DET.4.3",
+              "DET.4.4",
+              "DET.4.5",
+              "DET.4.6",
+              "DET.4.6.1",
+              "DET.4.7",
+              "DET.4.8",
+              "DET.4.9",
+              "DET.5.1",
+              "DET.5.1.1",
+              "DET.5.10",
+              "DET.5.10.1",
+              "DET.5.10.2",
+              "DET.5.10.3",
+              "DET.5.10.4",
+              "DET.5.10.5",
+              "DET.5.2",
+              "DET.5.3",
+              "DET.5.3.1",
+              "DET.5.3.2",
+              "DET.5.3.3",
+              "DET.5.4",
+              "DET.5.5",
+              "DET.5.6",
+              "DET.5.7",
+              "DET.5.8",
+              "DET.5.8.1",
+              "DET.5.8.1.1",
+              "DET.5.9",
+              "DET.5.9.1",
+              "DET.6.1",
+              "DET.6.1.1",
+              "DET.6.1.2",
+              "DET.6.1.3",
+              "DET.6.2",
+              "DET.6.2.1",
+              "DET.6.2.2",
+              "REA.1.1",
+              "REA.1.1.1",
+              "REA.1.1.2",
+              "REA.1.1.3",
+              "REA.1.2",
+              "REA.1.3",
+              "REA.2.1",
+              "REA.2.2",
+              "REA.2.3",
+              "REA.2.4",
+              "REA.2.5",
+              "REA.2.5.1",
+              "REA.2.5.2",
+              "REA.2.5.3",
+              "REA.2.6",
+              "REA.2.6.1",
+              "REA.2.6.2",
+              "REA.2.6.2.1",
+              "REA.2.6.3",
+              "REA.2.6.4",
+              "REA.2.6.5",
+              "REA.3.1",
+              "REA.3.1.1"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_ISO27001_AnnexA.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "5.24",
+              "5.25",
+              "5.26",
+              "5.27",
+              "5.28",
+              "5.5",
+              "6.8",
+              "8.9",
+              "8.15",
+              "8.16"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "as-is": true
+    },
+    "modify": {
+      "props": [
+        {
+          "name": "audit-thema-nr",
+          "value": "4"
+        },
+        {
+          "name": "vorgehensstufe",
+          "value": "Stufe 1: Anforderungsanalyse"
+        }
+      ]
+    }
+  }
+}

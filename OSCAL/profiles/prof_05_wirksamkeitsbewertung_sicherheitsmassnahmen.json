@@ -1,0 +1,278 @@
+{
+  "profile": {
+    "uuid": "f78d138e-c1cb-4b5a-97b1-eb1484ddcfea",
+    "metadata": {
+      "title": "NIS2 Stufe 1 – Anforderungsanalyse: Wirksamkeitsbewertung von Sicherheitsmaßnahmen (§30 Abs. 2 Nr. 8 BSIG, Maßnahme 21.h)",
+      "last-modified": "2026-08-18T08:14:41.881266+00:00",
+      "version": "1.0.0",
+      "oscal-version": "1.1.2",
+      "remarks": "Themenspezifisches OSCAL-Profile, abgeleitet aus dem Mapping- und Vorgehensdokument 'AZ Fraunhofer IOSB', Kapitel 5 – Stufe 1: Anforderungsanalyse. Enthaelt die in Stufe 1 referenzierten Rechtsgrundlagen (NIS2-Richtlinie (EU) 2022/2555, NIS2UmsuG/BSIG, NIS2-DVO) sowie die zugehoerigen DVO-Konkretisierungen und den BSI KRITIS-Anforderungskatalog (KdA). Rechtsgrundlage laut Quelldokument:\n- §30 Abs. 2 Nr. 8 BSIG (NIS2UmsuG): Maßnahme 21.h – Konzepte und Verfahren zur Bewertung der Wirksamkeit von Risikomanagementmaßnahmen im Bereich der Cybersicherheit\n- NIS2-Durchführungsverordnung (DVO), Anhang Nrn. 7.1–7.3: Konzept, Verfahren und periodische Überprüfung der Wirksamkeit\n- Für Energieunternehmen als besonders wichtige Einrichtungen (§28 Abs. 1 BSIG) kann das BSI die Vorlage von Nachweisen zur Wirksamkeit ergriffener Maßnahmen einfordern (§39 BSIG).\n\nDVO-Punkte (Stufe 1): DVO Anhang Nrn. 7.1–7.3 (Konzept, Verfahren und periodische Überprüfung der Wirksamkeitsbewertung)\n\nZusaetzlich referenzierte Frameworks laut Abschnitt 'Genutzte Frameworks (vollstaendige Abdeckung)' im Quelldokument: C2M2 v2.1 (Reifegrad-Domaenen), ENISA Technical Implementation Guidance (technische Konkretisierung, spiegelt DVO-Anhang-Nummerierung), BSI IT-Grundschutz++ / Anwenderkatalog (Bausteine), ISO/IEC 27001:2022 Annex A (Kontrollrahmen). Diese sind fuer Stufe 1 informativ mit importiert, da sie im Quelldokument als Teil der vollstaendigen Abdeckung je Thema benannt sind."
+    },
+    "imports": [
+      {
+        "href": "cat_nis2_eu.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "artikel-21"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_nis2umg.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "paragraf-28",
+              "paragraf-30",
+              "paragraf-39"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_dvo.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "anhang-7"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_bsi_kda.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "anforderung-85",
+              "anforderung-86",
+              "anforderung-87"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_c2m2_practices.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "ARCHITECTURE-1a",
+              "ARCHITECTURE-1b",
+              "ARCHITECTURE-1c",
+              "ARCHITECTURE-1d",
+              "ARCHITECTURE-1e",
+              "ARCHITECTURE-1f",
+              "ARCHITECTURE-1g",
+              "ARCHITECTURE-1h",
+              "ARCHITECTURE-1i",
+              "ARCHITECTURE-1j",
+              "ARCHITECTURE-1k",
+              "ARCHITECTURE-2a",
+              "ARCHITECTURE-2b",
+              "ARCHITECTURE-2c",
+              "ARCHITECTURE-2d",
+              "ARCHITECTURE-2e",
+              "ARCHITECTURE-2f",
+              "ARCHITECTURE-2g",
+              "ARCHITECTURE-2h",
+              "ARCHITECTURE-2i",
+              "ARCHITECTURE-2j",
+              "ARCHITECTURE-2k",
+              "ARCHITECTURE-2l",
+              "ARCHITECTURE-3a",
+              "ARCHITECTURE-3b",
+              "ARCHITECTURE-3c",
+              "ARCHITECTURE-3d",
+              "ARCHITECTURE-3e",
+              "ARCHITECTURE-3f",
+              "ARCHITECTURE-3g",
+              "ARCHITECTURE-3h",
+              "ARCHITECTURE-3i",
+              "ARCHITECTURE-3j",
+              "ARCHITECTURE-3k",
+              "ARCHITECTURE-3l",
+              "ARCHITECTURE-3m",
+              "ARCHITECTURE-4a",
+              "ARCHITECTURE-4b",
+              "ARCHITECTURE-4c",
+              "ARCHITECTURE-4d",
+              "ARCHITECTURE-4e",
+              "ARCHITECTURE-4f",
+              "ARCHITECTURE-4g",
+              "ARCHITECTURE-4h",
+              "ARCHITECTURE-5a",
+              "ARCHITECTURE-5b",
+              "ARCHITECTURE-5c",
+              "ARCHITECTURE-5d",
+              "ARCHITECTURE-5e",
+              "ARCHITECTURE-5f",
+              "ARCHITECTURE-5g",
+              "ARCHITECTURE-5h",
+              "ARCHITECTURE-6a",
+              "ARCHITECTURE-6b",
+              "ARCHITECTURE-6c",
+              "ARCHITECTURE-6d",
+              "ARCHITECTURE-6e",
+              "ARCHITECTURE-6f",
+              "ASSET-1a",
+              "ASSET-1b",
+              "ASSET-1c",
+              "ASSET-1d",
+              "ASSET-1e",
+              "ASSET-1f",
+              "ASSET-1g",
+              "ASSET-1h",
+              "ASSET-2a",
+              "ASSET-2b",
+              "ASSET-2c",
+              "ASSET-2d",
+              "ASSET-2e",
+              "ASSET-2f",
+              "ASSET-2g",
+              "ASSET-2h",
+              "ASSET-3a",
+              "ASSET-3b",
+              "ASSET-3c",
+              "ASSET-3d",
+              "ASSET-3e",
+              "ASSET-4a",
+              "ASSET-4b",
+              "ASSET-4c",
+              "ASSET-4d",
+              "ASSET-4e",
+              "ASSET-4f",
+              "ASSET-4g",
+              "ASSET-4h",
+              "ASSET-4i",
+              "ASSET-5a",
+              "ASSET-5b",
+              "ASSET-5c",
+              "ASSET-5d",
+              "ASSET-5e",
+              "ASSET-5f",
+              "PROGRAM-1a",
+              "PROGRAM-1b",
+              "PROGRAM-1c",
+              "PROGRAM-1d",
+              "PROGRAM-1e",
+              "PROGRAM-1f",
+              "PROGRAM-1g",
+              "PROGRAM-1h",
+              "PROGRAM-2a",
+              "PROGRAM-2b",
+              "PROGRAM-2c",
+              "PROGRAM-2d",
+              "PROGRAM-2e",
+              "PROGRAM-2f",
+              "PROGRAM-2g",
+              "PROGRAM-2h",
+              "PROGRAM-2i",
+              "PROGRAM-2j",
+              "PROGRAM-3a",
+              "PROGRAM-3b",
+              "PROGRAM-3c",
+              "PROGRAM-3d",
+              "PROGRAM-3e",
+              "PROGRAM-3f"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_enisa_technical_guide.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "control-7.1",
+              "control-7.2",
+              "control-7.3"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_it_grundschutz__.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "PERF.1.1",
+              "PERF.1.2",
+              "PERF.1.3",
+              "PERF.2.1",
+              "PERF.3.1",
+              "PERF.3.1.1",
+              "PERF.3.1.2",
+              "PERF.3.1.3",
+              "PERF.3.1.4",
+              "PERF.3.2",
+              "PERF.3.2.1",
+              "PERF.3.2.2",
+              "PERF.4.1",
+              "PERF.4.1.1",
+              "PERF.4.1.2",
+              "PERF.4.1.3",
+              "PERF.4.1.4",
+              "PERF.4.1.5",
+              "PERF.4.1.6",
+              "PERF.4.1.7",
+              "PERF.4.1.8",
+              "PERF.4.1.9",
+              "PERF.4.2",
+              "PERF.5.1",
+              "UMS.1.1",
+              "UMS.1.2",
+              "UMS.2.1",
+              "UMS.2.2",
+              "UMS.3.1",
+              "UMS.4.1",
+              "UMS.5.1",
+              "UMS.5.2",
+              "UMS.6.1",
+              "UMS.6.2",
+              "UMS.7.1",
+              "VRB.1.1",
+              "VRB.2.1",
+              "VRB.2.2",
+              "VRB.3.1",
+              "VRB.4.1",
+              "VRB.4.2",
+              "VRB.5.1",
+              "VRB.6.1",
+              "VRB.6.2",
+              "VRB.7.1"
+            ]
+          }
+        ]
+      },
+      {
+        "href": "cat_ISO27001_AnnexA.json",
+        "include-controls": [
+          {
+            "with-ids": [
+              "5.31",
+              "5.36",
+              "8.34"
+            ]
+          }
+        ]
+      }
+    ],
+    "merge": {
+      "as-is": true
+    },
+    "modify": {
+      "props": [
+        {
+          "name": "audit-thema-nr",
+          "value": "5"
+        },
+        {
+          "name": "vorgehensstufe",
+          "value": "Stufe 1: Anforderungsanalyse"
+        }
+      ]
+    }
+  }
+}
