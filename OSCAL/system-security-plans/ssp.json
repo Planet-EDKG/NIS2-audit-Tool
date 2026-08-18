@@ -1,0 +1,1197 @@
+{
+  "system-security-plan": {
+    "uuid": "04f06619-6386-4d14-981a-e93391317318",
+    "metadata": {
+      "title": "System Security Plan – KRITIS Energie NIS2-Konformität (Stufe 2 Evidenzerhebung / Stufe 3 Reifegradbewertung)",
+      "last-modified": "2026-08-18T08:36:50.101535+00:00",
+      "version": "1.0.0",
+      "oscal-version": "1.1.2",
+      "remarks": "SSP auf Basis des Profils 'profile-kritis-energie-essential.json' (Gesamt-Pruefbaseline Energie, Stufe 1). Die implemented-requirements dokumentieren je NIS2-DVO-Anhang-Control die in Stufe 2 (Bestandsaufnahme & Evidenzerhebung) erhobenen Evidenz-IDs (E-R1–E-R14, E-L1–E-L7, E-IR*, E-W*, E-ZK*, E-S*, E-PS*, E-SW*, E1/E3/E4/E7 fuer BCM etc.) aus dem Vorgehensdokument 'AZ Fraunhofer IOSB', sowie die Stufe-3-Reifegradbewertung (C2M2 MIL 1-3, BSI RUN RF/UG 1-5) als OSCAL-props. Die in 'links' referenzierten Dateipfade sind Platzhalter nach dem Namensschema der jeweiligen Evidenz-ID und muessen durch den Auditor mit den tatsaechlichen Nachweisdokumenten (Policies, Logs, Berichte, Protokolle) befuellt werden; sie wurden nicht aus dem Quelldokument uebernommen, da dieses keine konkreten Dateipfade enthaelt."
+    },
+    "import-profile": {
+      "href": "profile-kritis-energie-essential.json"
+    },
+    "system-characteristics": {
+      "system-ids": [
+        {
+          "id": "kritis-energie-nis2-ssp",
+          "identifier-type": "https://ietf.org/rfc/rfc4122"
+        }
+      ],
+      "system-name": "NIS2-Konformitaets-Nachweis Energieunternehmen (KRITIS)",
+      "description": "System Security Plan zur Dokumentation der NIS2-Konformitaet eines deutschen Energieunternehmens (besonders wichtige Einrichtung, §28 Abs. 1 BSIG) gemaess dem Vorgehensdokument 'AZ Fraunhofer IOSB', Stufe 2 (Evidenzerhebung) und Stufe 3 (Reifegradbewertung) je Thema.",
+      "security-sensitivity-level": "moderate",
+      "system-information": {
+        "information-types": [
+          {
+            "uuid": "3ceba12b-205d-441c-ae2e-de34f273abae",
+            "title": "NIS2-Compliance-Nachweise",
+            "description": "Nachweise, Policies, Logs und Berichte zur Erfuellung der NIS2-Risikomanagementmassnahmen.",
+            "confidentiality-impact": {
+              "base": "fips-199-moderate"
+            },
+            "integrity-impact": {
+              "base": "fips-199-moderate"
+            },
+            "availability-impact": {
+              "base": "fips-199-moderate"
+            }
+          }
+        ]
+      },
+      "status": {
+        "state": "operational"
+      },
+      "authorization-boundary": {
+        "description": "Informationssicherheits-Managementsystem und Netz-/Informationssysteme des Energieunternehmens im Geltungsbereich der NIS2-Risikomanagementmassnahmen (§30 BSIG)."
+      }
+    },
+    "system-implementation": {
+      "users": [
+        {
+          "uuid": "1b7f0a26-3d81-4c11-a5d5-b2ba12cb514a",
+          "title": "CISO/ISB",
+          "description": "Informationssicherheitsbeauftragter, direkt berichtend an die Leitungsorgane (DVO 1.2.3).",
+          "role-ids": [
+            "ciso"
+          ]
+        }
+      ],
+      "components": [
+        {
+          "uuid": "c13878d7-1c04-422a-ac9a-2441725ab6c1",
+          "type": "this-system",
+          "title": "ISMS Energieunternehmen (KRITIS)",
+          "description": "Das Informationssicherheits-Managementsystem des Energieunternehmens gemaess NIS2UmsuG/BSIG.",
+          "status": {
+            "state": "operational"
+          }
+        }
+      ]
+    },
+    "control-implementation": {
+      "description": "Umsetzung der Controls aus dem Profil 'profile-kritis-energie-essential.json', dokumentiert je NIS2-DVO-Anhang mit Stufe-2-Evidenzerhebung und Stufe-3-Reifegradbewertung.",
+      "implemented-requirements": [
+        {
+          "uuid": "90ddbb3b-0b7b-4943-b296-209253cb30a8",
+          "control-id": "anhang-1",
+          "description": "Umsetzung der Anforderungen aus NIS2-DVO Anhang 'anhang-1' im Rahmen des Vorgehenskonzepts 'Risikomanagement und ISMS-Fundament' (Thema 1).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "1"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Risikomanagement und ISMS-Fundament"
+            },
+            {
+              "name": "c2m2-mil",
+              "value": "MIL-2",
+              "remarks": "MIL-2 = dokumentiert, periodisch, mit Nachweisen; lt. Dokument (Kap. 1.5.4) Voraussetzung fuer NIS2-Mindestkonformitaet. Zielniveau MIL-3 (Kap. 1.5.5) fuer institutionalisiertes, KPI-gesteuertes Risikomanagement."
+            },
+            {
+              "name": "bsi-run-rf",
+              "value": "RF 2–3",
+              "remarks": "BSI RUN / Grundschutz++ Reifegradskala Risikomanagement (Kap. 1.5.1): RF 2 (dokumentierter Prozess, Nachweise, Massnahmen umgesetzt) bis RF 3 (Abhaengigkeiten/Schnittstellen dokumentiert)."
+            }
+          ],
+          "links": [
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r1.pdf",
+              "rel": "evidence",
+              "text": "E-R1: IS-Sicherheitskonzept (Policy) mit allen 11 Pfichtinhalten (DVO 1.1.1 a–k), form"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r2.pdf",
+              "rel": "evidence",
+              "text": "E-R2: Themenspezifsche Konzepte (topic-specifc policies) für alle relevanten NIS2-Maßn"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r3.pdf",
+              "rel": "evidence",
+              "text": "E-R3: Dokumentierter Risikomanagementrahmen (Methodik, Risikoappetit, Toleranzschwelle"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r4.pdf",
+              "rel": "evidence",
+              "text": "E-R4: Dokumentierte Risikobewertungsergebnisse (Risikoregister, inkl. Drittrisiken, al"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r5.pdf",
+              "rel": "evidence",
+              "text": "E-R5: Dokumentierter Risikobehandlungsplan (mit Maßnahmen, Verantwortlichen, Fristen, "
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r6.pdf",
+              "rel": "evidence",
+              "text": "E-R6: Nachweis formaler Akzeptanz von Restrisiken durch Leitungsorgane oder autorisier"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r7.pdf",
+              "rel": "evidence",
+              "text": "E-R7: Nachweis jährlicher Überprüfung der Risikobewertung und des Behandlungsplans"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r8.pdf",
+              "rel": "evidence",
+              "text": "E-R8: Rollenverzeichnis (CISO/ISB + Stellvertreter, CIO, CERT-Leiter, min. drei Rollen"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r9.pdf",
+              "rel": "evidence",
+              "text": "E-R9: SoD-Matrix oder -Dokumentation (Funktionstrennung, inkl. kompensierende Kontroll"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r10.pdf",
+              "rel": "evidence",
+              "text": "E-R10: Compliance-Berichte an Leitungsorgane (mindestens jährlich, dokumentiert)"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r11.pdf",
+              "rel": "evidence",
+              "text": "E-R11: Nachweis unabhängiger Überprüfung (internes Audit oder externer Review, mindeste"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r12.pdf",
+              "rel": "evidence",
+              "text": "E-R12: Umsetzungsplan mit Maßnahmen, Zuständigen, Fristen, Prioritäten, Status (Grundsc"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r13.pdf",
+              "rel": "evidence",
+              "text": "E-R13: Bedrohungsprofl (Threat Profle) mit Bedrohungszielen, Akteurstypen und -fähigkei"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r14.pdf",
+              "rel": "evidence",
+              "text": "E-R14: Threat Intelligence-Quellen-Übersicht (welche Quellen werden überwacht, wie prio"
+            }
+          ],
+          "remarks": "Stufe 2: Bestandsaufnahme & Evidenzerhebung – Thema 1 (Risikomanagement und ISMS-Fundament).\nErhobene Evidenzen (Evidenz-ID [Pflicht/Ergaenzend]: Inhalt) laut Vorgehensdokument:\n- E-R1 [Pficht]: IS-Sicherheitskonzept (Policy) mit allen 11 Pfichtinhalten (DVO 1.1.1 a–k), formal genehmigt durch Leitungsorgane\n- E-R2 [Pficht]: Themenspezifsche Konzepte (topic-specifc policies) für alle relevanten NIS2-Maßnahmen (21.b–21.h)\n- E-R3 [Pficht]: Dokumentierter Risikomanagementrahmen (Methodik, Risikoappetit, Toleranzschwellen, Risikokriterien)\n- E-R4 [Pficht]: Dokumentierte Risikobewertungsergebnisse (Risikoregister, inkl. Drittrisiken, all-hazards)\n- E-R5 [Pficht]: Dokumentierter Risikobehandlungsplan (mit Maßnahmen, Verantwortlichen, Fristen, Priorisierung)\n- E-R6 [Pficht]: Nachweis formaler Akzeptanz von Restrisiken durch Leitungsorgane oder autorisierte Risikoeigentümer\n- E-R7 [Pficht]: Nachweis jährlicher Überprüfung der Risikobewertung und des Behandlungsplans\n- E-R8 [Pficht]: Rollenverzeichnis (CISO/ISB + Stellvertreter, CIO, CERT-Leiter, min. drei Rollen nach BSI-3/OIS-03)\n- E-R9 [Pficht]: SoD-Matrix oder -Dokumentation (Funktionstrennung, inkl. kompensierende Kontrollen bei Konfikten)\n- E-R10 [Pficht]: Compliance-Berichte an Leitungsorgane (mindestens jährlich, dokumentiert)\n- E-R11 [Pficht]: Nachweis unabhängiger Überprüfung (internes Audit oder externer Review, mindestens jährlich)\n- E-R12 [Pficht]: Umsetzungsplan mit Maßnahmen, Zuständigen, Fristen, Prioritäten, Status (Grundschutz++ UMS)\n- E-R13 [Ergänzend, empfohlen]: Bedrohungsprofl (Threat Profle) mit Bedrohungszielen, Akteurstypen und -fähigkeiten\n- E-R14 [Ergänzend]: Threat Intelligence-Quellen-Übersicht (welche Quellen werden überwacht, wie priorisiert)\n\nStufe 3: Reifegradbewertung.\nC2M2 MIL: MIL-2 – MIL-2 = dokumentiert, periodisch, mit Nachweisen; lt. Dokument (Kap. 1.5.4) Voraussetzung fuer NIS2-Mindestkonformitaet. Zielniveau MIL-3 (Kap. 1.5.5) fuer institutionalisiertes, KPI-gesteuertes Risikomanagement.\nBSI RUN: RF 2–3 – BSI RUN / Grundschutz++ Reifegradskala Risikomanagement (Kap. 1.5.1): RF 2 (dokumentierter Prozess, Nachweise, Massnahmen umgesetzt) bis RF 3 (Abhaengigkeiten/Schnittstellen dokumentiert)."
+        },
+        {
+          "uuid": "301f5e54-2997-4818-8835-1427e6e4f343",
+          "control-id": "anhang-2",
+          "description": "Umsetzung der Anforderungen aus NIS2-DVO Anhang 'anhang-2' im Rahmen des Vorgehenskonzepts 'Risikomanagement und ISMS-Fundament' (Thema 1).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "1"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Risikomanagement und ISMS-Fundament"
+            },
+            {
+              "name": "c2m2-mil",
+              "value": "MIL-2",
+              "remarks": "MIL-2 = dokumentiert, periodisch, mit Nachweisen; lt. Dokument (Kap. 1.5.4) Voraussetzung fuer NIS2-Mindestkonformitaet. Zielniveau MIL-3 (Kap. 1.5.5) fuer institutionalisiertes, KPI-gesteuertes Risikomanagement."
+            },
+            {
+              "name": "bsi-run-rf",
+              "value": "RF 2–3",
+              "remarks": "BSI RUN / Grundschutz++ Reifegradskala Risikomanagement (Kap. 1.5.1): RF 2 (dokumentierter Prozess, Nachweise, Massnahmen umgesetzt) bis RF 3 (Abhaengigkeiten/Schnittstellen dokumentiert)."
+            }
+          ],
+          "links": [
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r1.pdf",
+              "rel": "evidence",
+              "text": "E-R1: IS-Sicherheitskonzept (Policy) mit allen 11 Pfichtinhalten (DVO 1.1.1 a–k), form"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r2.pdf",
+              "rel": "evidence",
+              "text": "E-R2: Themenspezifsche Konzepte (topic-specifc policies) für alle relevanten NIS2-Maßn"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r3.pdf",
+              "rel": "evidence",
+              "text": "E-R3: Dokumentierter Risikomanagementrahmen (Methodik, Risikoappetit, Toleranzschwelle"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r4.pdf",
+              "rel": "evidence",
+              "text": "E-R4: Dokumentierte Risikobewertungsergebnisse (Risikoregister, inkl. Drittrisiken, al"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r5.pdf",
+              "rel": "evidence",
+              "text": "E-R5: Dokumentierter Risikobehandlungsplan (mit Maßnahmen, Verantwortlichen, Fristen, "
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r6.pdf",
+              "rel": "evidence",
+              "text": "E-R6: Nachweis formaler Akzeptanz von Restrisiken durch Leitungsorgane oder autorisier"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r7.pdf",
+              "rel": "evidence",
+              "text": "E-R7: Nachweis jährlicher Überprüfung der Risikobewertung und des Behandlungsplans"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r8.pdf",
+              "rel": "evidence",
+              "text": "E-R8: Rollenverzeichnis (CISO/ISB + Stellvertreter, CIO, CERT-Leiter, min. drei Rollen"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r9.pdf",
+              "rel": "evidence",
+              "text": "E-R9: SoD-Matrix oder -Dokumentation (Funktionstrennung, inkl. kompensierende Kontroll"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r10.pdf",
+              "rel": "evidence",
+              "text": "E-R10: Compliance-Berichte an Leitungsorgane (mindestens jährlich, dokumentiert)"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r11.pdf",
+              "rel": "evidence",
+              "text": "E-R11: Nachweis unabhängiger Überprüfung (internes Audit oder externer Review, mindeste"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r12.pdf",
+              "rel": "evidence",
+              "text": "E-R12: Umsetzungsplan mit Maßnahmen, Zuständigen, Fristen, Prioritäten, Status (Grundsc"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r13.pdf",
+              "rel": "evidence",
+              "text": "E-R13: Bedrohungsprofl (Threat Profle) mit Bedrohungszielen, Akteurstypen und -fähigkei"
+            },
+            {
+              "href": "./evidence/thema-risikomanagement-isms-fundament/e_r14.pdf",
+              "rel": "evidence",
+              "text": "E-R14: Threat Intelligence-Quellen-Übersicht (welche Quellen werden überwacht, wie prio"
+            }
+          ],
+          "remarks": "Stufe 2: Bestandsaufnahme & Evidenzerhebung – Thema 1 (Risikomanagement und ISMS-Fundament).\nErhobene Evidenzen (Evidenz-ID [Pflicht/Ergaenzend]: Inhalt) laut Vorgehensdokument:\n- E-R1 [Pficht]: IS-Sicherheitskonzept (Policy) mit allen 11 Pfichtinhalten (DVO 1.1.1 a–k), formal genehmigt durch Leitungsorgane\n- E-R2 [Pficht]: Themenspezifsche Konzepte (topic-specifc policies) für alle relevanten NIS2-Maßnahmen (21.b–21.h)\n- E-R3 [Pficht]: Dokumentierter Risikomanagementrahmen (Methodik, Risikoappetit, Toleranzschwellen, Risikokriterien)\n- E-R4 [Pficht]: Dokumentierte Risikobewertungsergebnisse (Risikoregister, inkl. Drittrisiken, all-hazards)\n- E-R5 [Pficht]: Dokumentierter Risikobehandlungsplan (mit Maßnahmen, Verantwortlichen, Fristen, Priorisierung)\n- E-R6 [Pficht]: Nachweis formaler Akzeptanz von Restrisiken durch Leitungsorgane oder autorisierte Risikoeigentümer\n- E-R7 [Pficht]: Nachweis jährlicher Überprüfung der Risikobewertung und des Behandlungsplans\n- E-R8 [Pficht]: Rollenverzeichnis (CISO/ISB + Stellvertreter, CIO, CERT-Leiter, min. drei Rollen nach BSI-3/OIS-03)\n- E-R9 [Pficht]: SoD-Matrix oder -Dokumentation (Funktionstrennung, inkl. kompensierende Kontrollen bei Konfikten)\n- E-R10 [Pficht]: Compliance-Berichte an Leitungsorgane (mindestens jährlich, dokumentiert)\n- E-R11 [Pficht]: Nachweis unabhängiger Überprüfung (internes Audit oder externer Review, mindestens jährlich)\n- E-R12 [Pficht]: Umsetzungsplan mit Maßnahmen, Zuständigen, Fristen, Prioritäten, Status (Grundschutz++ UMS)\n- E-R13 [Ergänzend, empfohlen]: Bedrohungsprofl (Threat Profle) mit Bedrohungszielen, Akteurstypen und -fähigkeiten\n- E-R14 [Ergänzend]: Threat Intelligence-Quellen-Übersicht (welche Quellen werden überwacht, wie priorisiert)\n\nStufe 3: Reifegradbewertung.\nC2M2 MIL: MIL-2 – MIL-2 = dokumentiert, periodisch, mit Nachweisen; lt. Dokument (Kap. 1.5.4) Voraussetzung fuer NIS2-Mindestkonformitaet. Zielniveau MIL-3 (Kap. 1.5.5) fuer institutionalisiertes, KPI-gesteuertes Risikomanagement.\nBSI RUN: RF 2–3 – BSI RUN / Grundschutz++ Reifegradskala Risikomanagement (Kap. 1.5.1): RF 2 (dokumentierter Prozess, Nachweise, Massnahmen umgesetzt) bis RF 3 (Abhaengigkeiten/Schnittstellen dokumentiert)."
+        },
+        {
+          "uuid": "38f291fb-0360-4e93-92ab-f084902ddd49",
+          "control-id": "anhang-5",
+          "description": "Umsetzung der Anforderungen aus NIS2-DVO Anhang 'anhang-5' im Rahmen des Vorgehenskonzepts 'Lieferkettensicherheit' (Thema 2).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "2"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Lieferkettensicherheit"
+            },
+            {
+              "name": "c2m2-mil",
+              "value": "MIL-2",
+              "remarks": "MIL-2 = dokumentiert und strukturiert; lt. Dokument (Kap. 2.5.3) entspricht dies der NIS2-Mindestkonformitaet (Cybersicherheitsanforderungen definiert, Kontrollen implementiert, in Vertraegen formalisiert)."
+            },
+            {
+              "name": "bsi-run-rf",
+              "value": "UG 2",
+              "remarks": "BSI RUN-Umsetzungsgrad UG 2 (Zustaendigkeiten und Verantwortungen definiert, an betroffene Parteien kommuniziert), lt. Dokument Kap. 2.5.2."
+            }
+          ],
+          "links": [
+            {
+              "href": "./evidence/thema-lieferkettensicherheit/e_l1.pdf",
+              "rel": "evidence",
+              "text": "E-L1: Lieferketten-Sicherheitsrichtlinie (Supply Chain Security Policy)"
+            },
+            {
+              "href": "./evidence/thema-lieferkettensicherheit/e_l2.pdf",
+              "rel": "evidence",
+              "text": "E-L2: Dokumentierte Auswahlkriterien für Anbieter (Cybersecurity-Aspekte)"
+            },
+            {
+              "href": "./evidence/thema-lieferkettensicherheit/e_l3.pdf",
+              "rel": "evidence",
+              "text": "E-L3: Verträge mit Sicherheitsklauseln nach DVO Nr. 5.1.4 (a)–(h)"
+            },
+            {
+              "href": "./evidence/thema-lieferkettensicherheit/e_l4.pdf",
+              "rel": "evidence",
+              "text": "E-L4: Verzeichnis direkter Anbieter und Diensteanbieter (Lieferantenregister)"
+            },
+            {
+              "href": "./evidence/thema-lieferkettensicherheit/e_l5.pdf",
+              "rel": "evidence",
+              "text": "E-L5: Nachweise über laufendes Lieferanten-Monitoring (SLA-Berichte, Reviews)"
+            },
+            {
+              "href": "./evidence/thema-lieferkettensicherheit/e_l6.pdf",
+              "rel": "evidence",
+              "text": "E-L6: Risikoanalyse-Ergebnisse pro Lieferant/Kategorie"
+            },
+            {
+              "href": "./evidence/thema-lieferkettensicherheit/e_l7.pdf",
+              "rel": "evidence",
+              "text": "E-L7: Auditberichte oder Zertifzierungsnachweise von Lieferanten"
+            }
+          ],
+          "remarks": "Stufe 2: Bestandsaufnahme & Evidenzerhebung – Thema 2 (Lieferkettensicherheit).\nErhobene Evidenzen (Evidenz-ID [Pflicht/Ergaenzend]: Inhalt) laut Vorgehensdokument:\n- E-L1 [Pficht]: Lieferketten-Sicherheitsrichtlinie (Supply Chain Security Policy)\n- E-L2 [Pficht]: Dokumentierte Auswahlkriterien für Anbieter (Cybersecurity-Aspekte)\n- E-L3 [Pficht]: Verträge mit Sicherheitsklauseln nach DVO Nr. 5.1.4 (a)–(h)\n- E-L4 [Pficht]: Verzeichnis direkter Anbieter und Diensteanbieter (Lieferantenregister)\n- E-L5 [Pficht]: Nachweise über laufendes Lieferanten-Monitoring (SLA-Berichte, Reviews)\n- E-L6 [Ergänzend, empfohlen]: Risikoanalyse-Ergebnisse pro Lieferant/Kategorie\n- E-L7 [Ergänzend]: Auditberichte oder Zertifzierungsnachweise von Lieferanten\n\nStufe 3: Reifegradbewertung.\nC2M2 MIL: MIL-2 – MIL-2 = dokumentiert und strukturiert; lt. Dokument (Kap. 2.5.3) entspricht dies der NIS2-Mindestkonformitaet (Cybersicherheitsanforderungen definiert, Kontrollen implementiert, in Vertraegen formalisiert).\nBSI RUN: UG 2 – BSI RUN-Umsetzungsgrad UG 2 (Zustaendigkeiten und Verantwortungen definiert, an betroffene Parteien kommuniziert), lt. Dokument Kap. 2.5.2."
+        },
+        {
+          "uuid": "94d48935-4b04-4517-846a-4ccdcea879d8",
+          "control-id": "anhang-4",
+          "description": "Umsetzung der Anforderungen aus NIS2-DVO Anhang 'anhang-4' im Rahmen des Vorgehenskonzepts 'BCM-Nachweis' (Thema 3).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "3"
+            },
+            {
+              "name": "audit-thema",
+              "value": "BCM-Nachweis"
+            },
+            {
+              "name": "c2m2-mil",
+              "value": "MIL-2",
+              "remarks": "Lt. Dokument (Kap. 3, Entscheidungsbaum): Restore-Test-Protokoll der letzten 12 Monate (E4) vorhanden -> NIS2-Mindestkonformitaet erreicht (MIL-2 C2M2). Fehlt E4, gilt MIL-1 / NIS2 NICHT KONFORM (kritische Luecke). Zielniveau MIL-3."
+            },
+            {
+              "name": "bsi-run-rf",
+              "value": "RF 2–3",
+              "remarks": "Analog zur BSI RUN-Reifegradskala (Kap. 3.5.2), RF 2 (dokumentiert, Nachweise) bis RF 3 (Abhaengigkeiten dokumentiert)."
+            }
+          ],
+          "links": [
+            {
+              "href": "./evidence/thema-bcm-nachweis/e1.pdf",
+              "rel": "evidence",
+              "text": "E1: Backup-Konfg-Export: Frequenz, Aufbewahrungsdauer, Speicherort (Ofine/Of-Site-Ko"
+            },
+            {
+              "href": "./evidence/thema-bcm-nachweis/e3.pdf",
+              "rel": "evidence",
+              "text": "E3: BCM-Plan mit RTO/RPO-Werten und Wiederanlaufreihenfolge kritischer Systeme"
+            },
+            {
+              "href": "./evidence/thema-bcm-nachweis/e4.pdf",
+              "rel": "evidence",
+              "text": "E4: Restore-Test-Protokoll der letzten 12 Monate (erfolgreich durchgeführt)"
+            },
+            {
+              "href": "./evidence/thema-bcm-nachweis/e7.pdf",
+              "rel": "evidence",
+              "text": "E7: Direkte Beobachtung eines Restore-Vorgangs durch Prüfer"
+            }
+          ],
+          "remarks": "Stufe 2: Bestandsaufnahme & Evidenzerhebung – Thema 3 (BCM-Nachweis).\nErhobene Evidenzen (Evidenz-ID [Pflicht/Ergaenzend]: Inhalt) laut Vorgehensdokument:\n- E1 [Pficht]: Backup-Konfg-Export: Frequenz, Aufbewahrungsdauer, Speicherort (Ofine/Of-Site-Kopie)\n- E3 [Pficht]: BCM-Plan mit RTO/RPO-Werten und Wiederanlaufreihenfolge kritischer Systeme\n- E4 [Pficht]: Restore-Test-Protokoll der letzten 12 Monate (erfolgreich durchgeführt)\n- E7 [Ergänzend]: Direkte Beobachtung eines Restore-Vorgangs durch Prüfer\n\nStufe 3: Reifegradbewertung.\nC2M2 MIL: MIL-2 – Lt. Dokument (Kap. 3, Entscheidungsbaum): Restore-Test-Protokoll der letzten 12 Monate (E4) vorhanden -> NIS2-Mindestkonformitaet erreicht (MIL-2 C2M2). Fehlt E4, gilt MIL-1 / NIS2 NICHT KONFORM (kritische Luecke). Zielniveau MIL-3.\nBSI RUN: RF 2–3 – Analog zur BSI RUN-Reifegradskala (Kap. 3.5.2), RF 2 (dokumentiert, Nachweise) bis RF 3 (Abhaengigkeiten dokumentiert)."
+        },
+        {
+          "uuid": "81bd0a6c-e47c-444d-83af-1aa2be621070",
+          "control-id": "anhang-3",
+          "description": "Umsetzung der Anforderungen aus NIS2-DVO Anhang 'anhang-3' im Rahmen des Vorgehenskonzepts 'Incident Response & Detektion' (Thema 4).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "4"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Incident Response & Detektion"
+            },
+            {
+              "name": "c2m2-mil",
+              "value": "MIL-2",
+              "remarks": "MIL-2 (RESPONSE/SITUATION/THREAT/RISK-Domaenen: dokumentiert, periodisch) als Mindestniveau fuer NIS2-Konformitaet; Zielniveau MIL-3 (institutionalisiert, KPI-gesteuert)."
+            },
+            {
+              "name": "bsi-run-rf",
+              "value": "RF 2–3",
+              "remarks": "BSI RUN-Reifegradskala Kap. 4.5.5: relevante Subdimensionen fuer Detektion/Reaktion, RF 2-3 als Mindestnachweisniveau."
+            }
+          ],
+          "links": [
+            {
+              "href": "./evidence/thema-incident-response-detektion/e_ir1.pdf",
+              "rel": "evidence",
+              "text": "E-IR1: Dokumentierte Incident-Handling-Policy (inkl. Kategorisierungssystem, Kommunikat"
+            },
+            {
+              "href": "./evidence/thema-incident-response-detektion/e_ir2.pdf",
+              "rel": "evidence",
+              "text": "E-IR2: Nachweis Test der Policy (letzter 12 Monate, mind. 1 Übungsform)"
+            },
+            {
+              "href": "./evidence/thema-incident-response-detektion/e_ir3.pdf",
+              "rel": "evidence",
+              "text": "E-IR3: Nachweis aktivem Monitoring und Logging (Konfguration, Tool-Nachweis)"
+            },
+            {
+              "href": "./evidence/thema-incident-response-detektion/e_ir4.pdf",
+              "rel": "evidence",
+              "text": "E-IR4: Protokollierungsrichtlinie (was, wo, wie lange, Schutzmaßnahmen)"
+            },
+            {
+              "href": "./evidence/thema-incident-response-detektion/e_ir5.pdf",
+              "rel": "evidence",
+              "text": "E-IR5: Dokumentierter Meldemechanismus für Ereignisse (intern + extern)"
+            },
+            {
+              "href": "./evidence/thema-incident-response-detektion/e_ir6.pdf",
+              "rel": "evidence",
+              "text": "E-IR6: Incident-Tracking-System / Repository (Nachweis dokumentierter Vorfälle)"
+            },
+            {
+              "href": "./evidence/thema-incident-response-detektion/e_ir7.pdf",
+              "rel": "evidence",
+              "text": "E-IR7: Nachweis von Post-Incident-Reviews (mindestens bei erheblichen Vorfällen)"
+            },
+            {
+              "href": "./evidence/thema-incident-response-detektion/e_ir8.pdf",
+              "rel": "evidence",
+              "text": "E-IR8: Playbooks / Runbooks für häufge Vorfalltypen (Ransomware, Phishing, DoS)"
+            },
+            {
+              "href": "./evidence/thema-incident-response-detektion/e_ir9.pdf",
+              "rel": "evidence",
+              "text": "E-IR9: SIEM/EDR/XDR-Nachweis (Konfguration, Use-Case-Abdeckung)"
+            }
+          ],
+          "remarks": "Stufe 2: Bestandsaufnahme & Evidenzerhebung – Thema 4 (Incident Response & Detektion).\nErhobene Evidenzen (Evidenz-ID [Pflicht/Ergaenzend]: Inhalt) laut Vorgehensdokument:\n- E-IR1 [Pficht]: Dokumentierte Incident-Handling-Policy (inkl. Kategorisierungssystem, Kommunikationsplan, Rollen/RACI)\n- E-IR2 [Pficht]: Nachweis Test der Policy (letzter 12 Monate, mind. 1 Übungsform)\n- E-IR3 [Pficht]: Nachweis aktivem Monitoring und Logging (Konfguration, Tool-Nachweis)\n- E-IR4 [Pficht]: Protokollierungsrichtlinie (was, wo, wie lange, Schutzmaßnahmen)\n- E-IR5 [Pficht]: Dokumentierter Meldemechanismus für Ereignisse (intern + extern)\n- E-IR6 [Pficht]: Incident-Tracking-System / Repository (Nachweis dokumentierter Vorfälle)\n- E-IR7 [Pficht]: Nachweis von Post-Incident-Reviews (mindestens bei erheblichen Vorfällen)\n- E-IR8 [Ergänzend, empfohlen]: Playbooks / Runbooks für häufge Vorfalltypen (Ransomware, Phishing, DoS)\n- E-IR9 [Ergänzend]: SIEM/EDR/XDR-Nachweis (Konfguration, Use-Case-Abdeckung)\n\nStufe 3: Reifegradbewertung.\nC2M2 MIL: MIL-2 – MIL-2 (RESPONSE/SITUATION/THREAT/RISK-Domaenen: dokumentiert, periodisch) als Mindestniveau fuer NIS2-Konformitaet; Zielniveau MIL-3 (institutionalisiert, KPI-gesteuert).\nBSI RUN: RF 2–3 – BSI RUN-Reifegradskala Kap. 4.5.5: relevante Subdimensionen fuer Detektion/Reaktion, RF 2-3 als Mindestnachweisniveau."
+        },
+        {
+          "uuid": "8ffa48a0-572d-40ea-993a-90c6552972dd",
+          "control-id": "anhang-7",
+          "description": "Umsetzung der Anforderungen aus NIS2-DVO Anhang 'anhang-7' im Rahmen des Vorgehenskonzepts 'Wirksamkeitsbewertung von Sicherheitsmaßnahmen' (Thema 5).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "5"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Wirksamkeitsbewertung von Sicherheitsmaßnahmen"
+            },
+            {
+              "name": "c2m2-mil",
+              "value": "MIL-2",
+              "remarks": "MIL-2 als Mindestniveau (dokumentiertes Bewertungsverfahren, Nachweise); Zielniveau MIL-3 gemaess Dokument (Kap. 5) fuer institutionalisierte, KPI-gesteuerte Wirksamkeitspruefung."
+            },
+            {
+              "name": "bsi-run-rf",
+              "value": "RF 4–5",
+              "remarks": "BSI RUN-Reifegrad RF 4–5 (KPIs definiert; kontinuierliche Verbesserung auf Basis Messungen, Revisionen, Tests, reale Vorfaelle), lt. Dokument Kap. 5 (Zeile 896)."
+            }
+          ],
+          "links": [
+            {
+              "href": "./evidence/thema-wirksamkeitsbewertung-sicherheitsmassnahmen/e_w1.pdf",
+              "rel": "evidence",
+              "text": "E-W1: Dokumentiertes Konzept/Policy zur Wirksamkeitsbewertung (inkl. Branchenstandards"
+            },
+            {
+              "href": "./evidence/thema-wirksamkeitsbewertung-sicherheitsmassnahmen/e_w2.pdf",
+              "rel": "evidence",
+              "text": "E-W2: Festgelegte Maßnahmen / Kontrollen die überwacht werden (Scope-Liste)"
+            },
+            {
+              "href": "./evidence/thema-wirksamkeitsbewertung-sicherheitsmassnahmen/e_w3.pdf",
+              "rel": "evidence",
+              "text": "E-W3: Defnierte Bewertungsmethoden (Self-Assessment, Audit, Pentest, VA, etc.)"
+            },
+            {
+              "href": "./evidence/thema-wirksamkeitsbewertung-sicherheitsmassnahmen/e_w4.pdf",
+              "rel": "evidence",
+              "text": "E-W4: Defnierte KPIs / Messgrößen für Wirksamkeit"
+            },
+            {
+              "href": "./evidence/thema-wirksamkeitsbewertung-sicherheitsmassnahmen/e_w5.pdf",
+              "rel": "evidence",
+              "text": "E-W5: Defnierte Rollen und Verantwortlichkeiten für Messung und Bewertung"
+            },
+            {
+              "href": "./evidence/thema-wirksamkeitsbewertung-sicherheitsmassnahmen/e_w6.pdf",
+              "rel": "evidence",
+              "text": "E-W6: Nachweise aus tatsächlich durchgeführten Wirksamkeitsprüfungen (Logs, Berichte)"
+            },
+            {
+              "href": "./evidence/thema-wirksamkeitsbewertung-sicherheitsmassnahmen/e_w7.pdf",
+              "rel": "evidence",
+              "text": "E-W7: Managementbericht über den Stand der Informationssicherheit (Leitungsebene infor"
+            },
+            {
+              "href": "./evidence/thema-wirksamkeitsbewertung-sicherheitsmassnahmen/e_w8.pdf",
+              "rel": "evidence",
+              "text": "E-W8: Umsetzungsplan mit Priorisierung, Fristen, Verantwortlichen, Statustracking"
+            },
+            {
+              "href": "./evidence/thema-wirksamkeitsbewertung-sicherheitsmassnahmen/e_w9.pdf",
+              "rel": "evidence",
+              "text": "E-W9: Nachweis Überprüfung und Aktualisierung des Konzepts (mind. alle 2 Jahre)"
+            },
+            {
+              "href": "./evidence/thema-wirksamkeitsbewertung-sicherheitsmassnahmen/e_w10.pdf",
+              "rel": "evidence",
+              "text": "E-W10: Konfgurationsbaselines für kritische Assets (technische Grundlage der Bewertung)"
+            }
+          ],
+          "remarks": "Stufe 2: Bestandsaufnahme & Evidenzerhebung – Thema 5 (Wirksamkeitsbewertung von Sicherheitsmaßnahmen).\nErhobene Evidenzen (Evidenz-ID [Pflicht/Ergaenzend]: Inhalt) laut Vorgehensdokument:\n- E-W1 [Pficht]: Dokumentiertes Konzept/Policy zur Wirksamkeitsbewertung (inkl. Branchenstandards)\n- E-W2 [Pficht]: Festgelegte Maßnahmen / Kontrollen die überwacht werden (Scope-Liste)\n- E-W3 [Pficht]: Defnierte Bewertungsmethoden (Self-Assessment, Audit, Pentest, VA, etc.)\n- E-W4 [Pficht]: Defnierte KPIs / Messgrößen für Wirksamkeit\n- E-W5 [Pficht]: Defnierte Rollen und Verantwortlichkeiten für Messung und Bewertung\n- E-W6 [Pficht]: Nachweise aus tatsächlich durchgeführten Wirksamkeitsprüfungen (Logs, Berichte)\n- E-W7 [Pficht]: Managementbericht über den Stand der Informationssicherheit (Leitungsebene informiert)\n- E-W8 [Pficht]: Umsetzungsplan mit Priorisierung, Fristen, Verantwortlichen, Statustracking\n- E-W9 [Pficht]: Nachweis Überprüfung und Aktualisierung des Konzepts (mind. alle 2 Jahre)\n- E-W10 [Ergänzend]: Konfgurationsbaselines für kritische Assets (technische Grundlage der Bewertung)\n\nStufe 3: Reifegradbewertung.\nC2M2 MIL: MIL-2 – MIL-2 als Mindestniveau (dokumentiertes Bewertungsverfahren, Nachweise); Zielniveau MIL-3 gemaess Dokument (Kap. 5) fuer institutionalisierte, KPI-gesteuerte Wirksamkeitspruefung.\nBSI RUN: RF 4–5 – BSI RUN-Reifegrad RF 4–5 (KPIs definiert; kontinuierliche Verbesserung auf Basis Messungen, Revisionen, Tests, reale Vorfaelle), lt. Dokument Kap. 5 (Zeile 896)."
+        },
+        {
+          "uuid": "683afe9b-730e-4558-8972-8bb04eaee080",
+          "control-id": "anhang-8",
+          "description": "Umsetzung der Anforderungen aus NIS2-DVO Anhang 'anhang-8' im Rahmen des Vorgehenskonzepts 'Sensibilisierung und Schulung' (Thema 6).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "6"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Sensibilisierung und Schulung"
+            },
+            {
+              "name": "c2m2-mil",
+              "value": "MIL-2",
+              "remarks": "MIL-2 (WORKFORCE-Domaene: dokumentiertes Sensibilisierungs-/Schulungsprogramm) als NIS2-Mindestniveau; Zielniveau MIL-3."
+            },
+            {
+              "name": "bsi-run-rf",
+              "value": "UG 2–3",
+              "remarks": "BSI RUN-Umsetzungsgrade UG 2 bis UG 4–5 lt. Dokument Kap. 6 (gestaffelt nach Institutionalisierungsgrad der Sensibilisierung)."
+            }
+          ],
+          "links": [
+            {
+              "href": "./evidence/thema-sensibilisierung-schulung/e_s1.pdf",
+              "rel": "evidence",
+              "text": "E-S1: Dokumentiertes Sensibilisierungsprogramm (Ziele, Inhalte, Frequenz, Zielgruppen,"
+            },
+            {
+              "href": "./evidence/thema-sensibilisierung-schulung/e_s2.pdf",
+              "rel": "evidence",
+              "text": "E-S2: Nachweise der Teilnahme (Teilnahmelisten, Abzeichnungen, Zertifkate, Abschlussna"
+            },
+            {
+              "href": "./evidence/thema-sensibilisierung-schulung/e_s3.pdf",
+              "rel": "evidence",
+              "text": "E-S3: Nachweis: Leitungsorgane haben am Programm teilgenommen"
+            },
+            {
+              "href": "./evidence/thema-sensibilisierung-schulung/e_s4.pdf",
+              "rel": "evidence",
+              "text": "E-S4: Dokumentiertes Schulungsprogramm für sicherheitsrelevante Rollen (Ziele, Inhalte"
+            },
+            {
+              "href": "./evidence/thema-sensibilisierung-schulung/e_s5.pdf",
+              "rel": "evidence",
+              "text": "E-S5: Wirksamkeitsnachweis (Quizauswertungen, Assessment-Ergebnisse, Teilnehmerfeedbac"
+            },
+            {
+              "href": "./evidence/thema-sensibilisierung-schulung/e_s6.pdf",
+              "rel": "evidence",
+              "text": "E-S6: Nachweis der jährlichen Aktualisierung beider Programme"
+            },
+            {
+              "href": "./evidence/thema-sensibilisierung-schulung/e_s7.pdf",
+              "rel": "evidence",
+              "text": "E-S7: Nachweis: Schulung vor Zugangsvergabe bei neuen/wechselnden Mitarbeitenden"
+            },
+            {
+              "href": "./evidence/thema-sensibilisierung-schulung/e_s8.pdf",
+              "rel": "evidence",
+              "text": "E-S8: Vertragsklausel oder Nachweis: Externe Dienstleister verpfichtet, Mitarbeitende "
+            },
+            {
+              "href": "./evidence/thema-sensibilisierung-schulung/e_s9.pdf",
+              "rel": "evidence",
+              "text": "E-S9: Phishing-Simulationsergebnisse oder äquivalente praktische Tests"
+            },
+            {
+              "href": "./evidence/thema-sensibilisierung-schulung/e_s10.pdf",
+              "rel": "evidence",
+              "text": "E-S10: Zielgruppenanalyse / Rollenbasierter Schulungsbedarf (Lückenanalyse)"
+            }
+          ],
+          "remarks": "Stufe 2: Bestandsaufnahme & Evidenzerhebung – Thema 6 (Sensibilisierung und Schulung).\nErhobene Evidenzen (Evidenz-ID [Pflicht/Ergaenzend]: Inhalt) laut Vorgehensdokument:\n- E-S1 [Pficht]: Dokumentiertes Sensibilisierungsprogramm (Ziele, Inhalte, Frequenz, Zielgruppen, Syllabus)\n- E-S2 [Pficht]: Nachweise der Teilnahme (Teilnahmelisten, Abzeichnungen, Zertifkate, Abschlussnachweise)\n- E-S3 [Pficht]: Nachweis: Leitungsorgane haben am Programm teilgenommen\n- E-S4 [Pficht]: Dokumentiertes Schulungsprogramm für sicherheitsrelevante Rollen (Ziele, Inhalte, Frequenz je Rolle)\n- E-S5 [Pficht]: Wirksamkeitsnachweis (Quizauswertungen, Assessment-Ergebnisse, Teilnehmerfeedback)\n- E-S6 [Pficht]: Nachweis der jährlichen Aktualisierung beider Programme\n- E-S7 [Pficht]: Nachweis: Schulung vor Zugangsvergabe bei neuen/wechselnden Mitarbeitenden\n- E-S8 [Pficht (HR-03 68.2)]: Vertragsklausel oder Nachweis: Externe Dienstleister verpfichtet, Mitarbeitende zu schulen\n- E-S9 [Ergänzend, empfohlen]: Phishing-Simulationsergebnisse oder äquivalente praktische Tests\n- E-S10 [Ergänzend]: Zielgruppenanalyse / Rollenbasierter Schulungsbedarf (Lückenanalyse)\n\nStufe 3: Reifegradbewertung.\nC2M2 MIL: MIL-2 – MIL-2 (WORKFORCE-Domaene: dokumentiertes Sensibilisierungs-/Schulungsprogramm) als NIS2-Mindestniveau; Zielniveau MIL-3.\nBSI RUN: UG 2–3 – BSI RUN-Umsetzungsgrade UG 2 bis UG 4–5 lt. Dokument Kap. 6 (gestaffelt nach Institutionalisierungsgrad der Sensibilisierung)."
+        },
+        {
+          "uuid": "56c2d0bb-5211-4ec3-bd35-c26d6aff4c8d",
+          "control-id": "anhang-9",
+          "description": "Umsetzung der Anforderungen aus NIS2-DVO Anhang 'anhang-9' im Rahmen des Vorgehenskonzepts 'Zugangskontrolle, Identitätsmanagement und MFA' (Thema 7).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "7"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Zugangskontrolle, Identitätsmanagement und MFA"
+            },
+            {
+              "name": "c2m2-mil",
+              "value": "MIL-2",
+              "remarks": "MIL-2 (ACCESS/ARCHITECTURE/WORKFORCE-Domaenen: dokumentiertes IDM-/Zugriffskonzept, MFA eingefuehrt) als NIS2-Mindestniveau; Zielniveau MIL-3."
+            },
+            {
+              "name": "bsi-run-rf",
+              "value": "UG 2–3",
+              "remarks": "BSI RUN-Umsetzungsgrade UG 2 bis UG 4–5 lt. Dokument Kap. 7 (gestaffelt nach Institutionalisierungsgrad IDM/MFA)."
+            }
+          ],
+          "links": [
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk1.pdf",
+              "rel": "evidence",
+              "text": "E-ZK1: Zugangskontrollkonzept (Policy) dokumentiert, kommuniziert, umgesetzt"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk2.pdf",
+              "rel": "evidence",
+              "text": "E-ZK2: Rollen- und Rechtekonzept (Least Privilege, Need-to-know, SoD)"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk3.pdf",
+              "rel": "evidence",
+              "text": "E-ZK3: Register aller gewährten Zugrifsrechte (Benutzer, Rollen, Datum, Berechtigungen)"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk4.pdf",
+              "rel": "evidence",
+              "text": "E-ZK4: Nachweis regelmäßiger Zugrifsrechte-Reviews (mind. jährlich, dokumentiert)"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk5.pdf",
+              "rel": "evidence",
+              "text": "E-ZK5: Nachweise zu Deprovisionierung bei Beendigung/Wechsel (_≤_30 Tage)"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk6.pdf",
+              "rel": "evidence",
+              "text": "E-ZK6: Inventar aller Identitäten (Start/Stop, Privilegien, Systemkonten)"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk7.pdf",
+              "rel": "evidence",
+              "text": "E-ZK7: Nachweis eindeutiger Kennungen (keine generischen Shared Accounts ohne Genehmigu"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk8.pdf",
+              "rel": "evidence",
+              "text": "E-ZK8: Richtlinie und Nachweis: MFA für privilegierte Konten und Systemverwaltung"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk9.pdf",
+              "rel": "evidence",
+              "text": "E-ZK9: Nachweis: MFA für extern erreichbare Systeme (VPN, RDP, Cloud, Webportale)"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk10.pdf",
+              "rel": "evidence",
+              "text": "E-ZK10: Passwort-Policy mit Mindestlänge, Komplexität, Gültigkeitsdauer, History"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk11.pdf",
+              "rel": "evidence",
+              "text": "E-ZK11: Nachweis separate Admin-Konten (keine Nutzung für Alltagsaufgaben)"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk12.pdf",
+              "rel": "evidence",
+              "text": "E-ZK12: Kryptographiekonzept (Policy, Algorithmen, Schlüsselverwaltung)"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk13.pdf",
+              "rel": "evidence",
+              "text": "E-ZK13: Netzwerkdokumentation (Topologie, Segmentierung, Sicherheitszonen)"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk14.pdf",
+              "rel": "evidence",
+              "text": "E-ZK14: Nachweis IAM/PAM-System (zentrales Berechtigungsmanagement)"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk15.pdf",
+              "rel": "evidence",
+              "text": "E-ZK15: Phishing-resistente MFA-Konfguration (FIDO2, Passkeys) für hochkritische Systeme"
+            }
+          ],
+          "remarks": "Stufe 2: Bestandsaufnahme & Evidenzerhebung – Thema 7 (Zugangskontrolle, Identitätsmanagement und MFA).\nErhobene Evidenzen (Evidenz-ID [Pflicht/Ergaenzend]: Inhalt) laut Vorgehensdokument:\n- E-ZK1 [Pficht]: Zugangskontrollkonzept (Policy) dokumentiert, kommuniziert, umgesetzt\n- E-ZK2 [Pficht]: Rollen- und Rechtekonzept (Least Privilege, Need-to-know, SoD)\n- E-ZK3 [Pficht]: Register aller gewährten Zugrifsrechte (Benutzer, Rollen, Datum, Berechtigungen)\n- E-ZK4 [Pficht]: Nachweis regelmäßiger Zugrifsrechte-Reviews (mind. jährlich, dokumentiert)\n- E-ZK5 [Pficht]: Nachweise zu Deprovisionierung bei Beendigung/Wechsel (_≤_30 Tage)\n- E-ZK6 [Pficht]: Inventar aller Identitäten (Start/Stop, Privilegien, Systemkonten)\n- E-ZK7 [Pficht]: Nachweis eindeutiger Kennungen (keine generischen Shared Accounts ohne Genehmigung)\n- E-ZK8 [Pficht]: Richtlinie und Nachweis: MFA für privilegierte Konten und Systemverwaltung\n- E-ZK9 [Pficht]: Nachweis: MFA für extern erreichbare Systeme (VPN, RDP, Cloud, Webportale)\n- E-ZK10 [Pficht]: Passwort-Policy mit Mindestlänge, Komplexität, Gültigkeitsdauer, History\n- E-ZK11 [Pficht]: Nachweis separate Admin-Konten (keine Nutzung für Alltagsaufgaben)\n- E-ZK12 [Pficht]: Kryptographiekonzept (Policy, Algorithmen, Schlüsselverwaltung)\n- E-ZK13 [Ergänzend]: Netzwerkdokumentation (Topologie, Segmentierung, Sicherheitszonen)\n- E-ZK14 [Ergänzend]: Nachweis IAM/PAM-System (zentrales Berechtigungsmanagement)\n- E-ZK15 [Ergänzend, empfohlen]: Phishing-resistente MFA-Konfguration (FIDO2, Passkeys) für hochkritische Systeme\n\nStufe 3: Reifegradbewertung.\nC2M2 MIL: MIL-2 – MIL-2 (ACCESS/ARCHITECTURE/WORKFORCE-Domaenen: dokumentiertes IDM-/Zugriffskonzept, MFA eingefuehrt) als NIS2-Mindestniveau; Zielniveau MIL-3.\nBSI RUN: UG 2–3 – BSI RUN-Umsetzungsgrade UG 2 bis UG 4–5 lt. Dokument Kap. 7 (gestaffelt nach Institutionalisierungsgrad IDM/MFA)."
+        },
+        {
+          "uuid": "db3dbb33-3e7a-40bd-ad9e-56df829e51a8",
+          "control-id": "anhang-11",
+          "description": "Umsetzung der Anforderungen aus NIS2-DVO Anhang 'anhang-11' im Rahmen des Vorgehenskonzepts 'Zugangskontrolle, Identitätsmanagement und MFA' (Thema 7).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "7"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Zugangskontrolle, Identitätsmanagement und MFA"
+            },
+            {
+              "name": "c2m2-mil",
+              "value": "MIL-2",
+              "remarks": "MIL-2 (ACCESS/ARCHITECTURE/WORKFORCE-Domaenen: dokumentiertes IDM-/Zugriffskonzept, MFA eingefuehrt) als NIS2-Mindestniveau; Zielniveau MIL-3."
+            },
+            {
+              "name": "bsi-run-rf",
+              "value": "UG 2–3",
+              "remarks": "BSI RUN-Umsetzungsgrade UG 2 bis UG 4–5 lt. Dokument Kap. 7 (gestaffelt nach Institutionalisierungsgrad IDM/MFA)."
+            }
+          ],
+          "links": [
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk1.pdf",
+              "rel": "evidence",
+              "text": "E-ZK1: Zugangskontrollkonzept (Policy) dokumentiert, kommuniziert, umgesetzt"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk2.pdf",
+              "rel": "evidence",
+              "text": "E-ZK2: Rollen- und Rechtekonzept (Least Privilege, Need-to-know, SoD)"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk3.pdf",
+              "rel": "evidence",
+              "text": "E-ZK3: Register aller gewährten Zugrifsrechte (Benutzer, Rollen, Datum, Berechtigungen)"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk4.pdf",
+              "rel": "evidence",
+              "text": "E-ZK4: Nachweis regelmäßiger Zugrifsrechte-Reviews (mind. jährlich, dokumentiert)"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk5.pdf",
+              "rel": "evidence",
+              "text": "E-ZK5: Nachweise zu Deprovisionierung bei Beendigung/Wechsel (_≤_30 Tage)"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk6.pdf",
+              "rel": "evidence",
+              "text": "E-ZK6: Inventar aller Identitäten (Start/Stop, Privilegien, Systemkonten)"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk7.pdf",
+              "rel": "evidence",
+              "text": "E-ZK7: Nachweis eindeutiger Kennungen (keine generischen Shared Accounts ohne Genehmigu"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk8.pdf",
+              "rel": "evidence",
+              "text": "E-ZK8: Richtlinie und Nachweis: MFA für privilegierte Konten und Systemverwaltung"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk9.pdf",
+              "rel": "evidence",
+              "text": "E-ZK9: Nachweis: MFA für extern erreichbare Systeme (VPN, RDP, Cloud, Webportale)"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk10.pdf",
+              "rel": "evidence",
+              "text": "E-ZK10: Passwort-Policy mit Mindestlänge, Komplexität, Gültigkeitsdauer, History"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk11.pdf",
+              "rel": "evidence",
+              "text": "E-ZK11: Nachweis separate Admin-Konten (keine Nutzung für Alltagsaufgaben)"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk12.pdf",
+              "rel": "evidence",
+              "text": "E-ZK12: Kryptographiekonzept (Policy, Algorithmen, Schlüsselverwaltung)"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk13.pdf",
+              "rel": "evidence",
+              "text": "E-ZK13: Netzwerkdokumentation (Topologie, Segmentierung, Sicherheitszonen)"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk14.pdf",
+              "rel": "evidence",
+              "text": "E-ZK14: Nachweis IAM/PAM-System (zentrales Berechtigungsmanagement)"
+            },
+            {
+              "href": "./evidence/thema-zugangskontrolle-idm-mfa/e_zk15.pdf",
+              "rel": "evidence",
+              "text": "E-ZK15: Phishing-resistente MFA-Konfguration (FIDO2, Passkeys) für hochkritische Systeme"
+            }
+          ],
+          "remarks": "Stufe 2: Bestandsaufnahme & Evidenzerhebung – Thema 7 (Zugangskontrolle, Identitätsmanagement und MFA).\nErhobene Evidenzen (Evidenz-ID [Pflicht/Ergaenzend]: Inhalt) laut Vorgehensdokument:\n- E-ZK1 [Pficht]: Zugangskontrollkonzept (Policy) dokumentiert, kommuniziert, umgesetzt\n- E-ZK2 [Pficht]: Rollen- und Rechtekonzept (Least Privilege, Need-to-know, SoD)\n- E-ZK3 [Pficht]: Register aller gewährten Zugrifsrechte (Benutzer, Rollen, Datum, Berechtigungen)\n- E-ZK4 [Pficht]: Nachweis regelmäßiger Zugrifsrechte-Reviews (mind. jährlich, dokumentiert)\n- E-ZK5 [Pficht]: Nachweise zu Deprovisionierung bei Beendigung/Wechsel (_≤_30 Tage)\n- E-ZK6 [Pficht]: Inventar aller Identitäten (Start/Stop, Privilegien, Systemkonten)\n- E-ZK7 [Pficht]: Nachweis eindeutiger Kennungen (keine generischen Shared Accounts ohne Genehmigung)\n- E-ZK8 [Pficht]: Richtlinie und Nachweis: MFA für privilegierte Konten und Systemverwaltung\n- E-ZK9 [Pficht]: Nachweis: MFA für extern erreichbare Systeme (VPN, RDP, Cloud, Webportale)\n- E-ZK10 [Pficht]: Passwort-Policy mit Mindestlänge, Komplexität, Gültigkeitsdauer, History\n- E-ZK11 [Pficht]: Nachweis separate Admin-Konten (keine Nutzung für Alltagsaufgaben)\n- E-ZK12 [Pficht]: Kryptographiekonzept (Policy, Algorithmen, Schlüsselverwaltung)\n- E-ZK13 [Ergänzend]: Netzwerkdokumentation (Topologie, Segmentierung, Sicherheitszonen)\n- E-ZK14 [Ergänzend]: Nachweis IAM/PAM-System (zentrales Berechtigungsmanagement)\n- E-ZK15 [Ergänzend, empfohlen]: Phishing-resistente MFA-Konfguration (FIDO2, Passkeys) für hochkritische Systeme\n\nStufe 3: Reifegradbewertung.\nC2M2 MIL: MIL-2 – MIL-2 (ACCESS/ARCHITECTURE/WORKFORCE-Domaenen: dokumentiertes IDM-/Zugriffskonzept, MFA eingefuehrt) als NIS2-Mindestniveau; Zielniveau MIL-3.\nBSI RUN: UG 2–3 – BSI RUN-Umsetzungsgrade UG 2 bis UG 4–5 lt. Dokument Kap. 7 (gestaffelt nach Institutionalisierungsgrad IDM/MFA)."
+        },
+        {
+          "uuid": "e5f8d956-6490-4cf2-93a1-0e40e3d788fa",
+          "control-id": "anhang-10",
+          "description": "Umsetzung der Anforderungen aus NIS2-DVO Anhang 'anhang-10' im Rahmen des Vorgehenskonzepts 'Personalsicherheit und Informationsschutz' (Thema 8).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "8"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Personalsicherheit und Informationsschutz"
+            },
+            {
+              "name": "c2m2-mil",
+              "value": "MIL-2",
+              "remarks": "MIL-2 (ACCESS-1/ASSET-2-Domaenen: dokumentierte HR-/Asset-Prozesse) als NIS2-Mindestniveau; Zielniveau MIL-3."
+            },
+            {
+              "name": "bsi-run-rf",
+              "value": "UG 2–3",
+              "remarks": "BSI RUN-Umsetzungsgrade UG 2–3 bis UG 4–5 lt. Dokument Kap. 8."
+            }
+          ],
+          "links": [
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps1.pdf",
+              "rel": "evidence",
+              "text": "E-PS1: Beschäftigungsvereinbarung mit IS-Verpfichtungen (Vorlage + Nachweis Unterzeichn"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps2.pdf",
+              "rel": "evidence",
+              "text": "E-PS2: Nachweis Sicherheitsüberprüfungen vor Einstellung (Prozess + Muster)"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps3.pdf",
+              "rel": "evidence",
+              "text": "E-PS3: Acceptable Use Policy (AUP) inkl. Vertraulichkeitsverpfichtungen"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps4.pdf",
+              "rel": "evidence",
+              "text": "E-PS4: Ofboarding-Verfahren mit Checkliste (Zugangsentzug _≤_30 Tage, Asset-Rückgabe, N"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps5.pdf",
+              "rel": "evidence",
+              "text": "E-PS5: Identitätsinventar (alle Nutzer inkl. externe + Servicekonten, mit Privilegien u"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps6.pdf",
+              "rel": "evidence",
+              "text": "E-PS6: Nachweis regelmäßiger Identitäts-Reviews (mind. jährlich für alle, mind. jährlic"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps7.pdf",
+              "rel": "evidence",
+              "text": "E-PS7: Informationsklassifzierungsschema (Kategorien, Kriterien, Handhabungsregeln)"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps8.pdf",
+              "rel": "evidence",
+              "text": "E-PS8: Asset-Inventar (NIS-Systeme + zugehörige Assets, mit Eigentümer und Kritikalität"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps9.pdf",
+              "rel": "evidence",
+              "text": "E-PS9: Nachweis regelmäßiger Inventarüberprüfung (mind. jährlich, mit Änderungshistorie"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps10.pdf",
+              "rel": "evidence",
+              "text": "E-PS10: Geheimhaltungs-/Vertraulichkeitsvereinbarungen (intern + extern, mind. jährlich "
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps11.pdf",
+              "rel": "evidence",
+              "text": "E-PS11: Disziplinarverfahren dokumentiert und an Mitarbeitende kommuniziert"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps12.pdf",
+              "rel": "evidence",
+              "text": "E-PS12: Verfahren für sichere Medienentsorgung/-vernichtung (Datenträger, physische Doku"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps13.pdf",
+              "rel": "evidence",
+              "text": "E-PS13: Nachweis Asset-Rückgabe bei Mitarbeiterausscheiden (Protokolle, Exit-Checkliste)"
+            }
+          ],
+          "remarks": "Stufe 2: Bestandsaufnahme & Evidenzerhebung – Thema 8 (Personalsicherheit und Informationsschutz).\nErhobene Evidenzen (Evidenz-ID [Pflicht/Ergaenzend]: Inhalt) laut Vorgehensdokument:\n- E-PS1 [Pficht]: Beschäftigungsvereinbarung mit IS-Verpfichtungen (Vorlage + Nachweis Unterzeichnung vor Zugang)\n- E-PS2 [Pficht]: Nachweis Sicherheitsüberprüfungen vor Einstellung (Prozess + Muster)\n- E-PS3 [Pficht]: Acceptable Use Policy (AUP) inkl. Vertraulichkeitsverpfichtungen\n- E-PS4 [Pficht]: Ofboarding-Verfahren mit Checkliste (Zugangsentzug _≤_30 Tage, Asset-Rückgabe, Nachpfichten)\n- E-PS5 [Pficht]: Identitätsinventar (alle Nutzer inkl. externe + Servicekonten, mit Privilegien und Start/Stop)\n- E-PS6 [Pficht]: Nachweis regelmäßiger Identitäts-Reviews (mind. jährlich für alle, mind. jährlich separat für Admins)\n- E-PS7 [Pficht]: Informationsklassifzierungsschema (Kategorien, Kriterien, Handhabungsregeln)\n- E-PS8 [Pficht]: Asset-Inventar (NIS-Systeme + zugehörige Assets, mit Eigentümer und Kritikalität)\n- E-PS9 [Pficht]: Nachweis regelmäßiger Inventarüberprüfung (mind. jährlich, mit Änderungshistorie)\n- E-PS10 [Pficht]: Geheimhaltungs-/Vertraulichkeitsvereinbarungen (intern + extern, mind. jährlich überprüft)\n- E-PS11 [Pficht]: Disziplinarverfahren dokumentiert und an Mitarbeitende kommuniziert\n- E-PS12 [Ergänzend]: Verfahren für sichere Medienentsorgung/-vernichtung (Datenträger, physische Dokumente)\n- E-PS13 [Ergänzend]: Nachweis Asset-Rückgabe bei Mitarbeiterausscheiden (Protokolle, Exit-Checkliste)\n\nStufe 3: Reifegradbewertung.\nC2M2 MIL: MIL-2 – MIL-2 (ACCESS-1/ASSET-2-Domaenen: dokumentierte HR-/Asset-Prozesse) als NIS2-Mindestniveau; Zielniveau MIL-3.\nBSI RUN: UG 2–3 – BSI RUN-Umsetzungsgrade UG 2–3 bis UG 4–5 lt. Dokument Kap. 8."
+        },
+        {
+          "uuid": "acfb6d45-079f-46cb-823c-45214026a654",
+          "control-id": "anhang-11",
+          "description": "Umsetzung der Anforderungen aus NIS2-DVO Anhang 'anhang-11' im Rahmen des Vorgehenskonzepts 'Personalsicherheit und Informationsschutz' (Thema 8).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "8"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Personalsicherheit und Informationsschutz"
+            },
+            {
+              "name": "c2m2-mil",
+              "value": "MIL-2",
+              "remarks": "MIL-2 (ACCESS-1/ASSET-2-Domaenen: dokumentierte HR-/Asset-Prozesse) als NIS2-Mindestniveau; Zielniveau MIL-3."
+            },
+            {
+              "name": "bsi-run-rf",
+              "value": "UG 2–3",
+              "remarks": "BSI RUN-Umsetzungsgrade UG 2–3 bis UG 4–5 lt. Dokument Kap. 8."
+            }
+          ],
+          "links": [
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps1.pdf",
+              "rel": "evidence",
+              "text": "E-PS1: Beschäftigungsvereinbarung mit IS-Verpfichtungen (Vorlage + Nachweis Unterzeichn"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps2.pdf",
+              "rel": "evidence",
+              "text": "E-PS2: Nachweis Sicherheitsüberprüfungen vor Einstellung (Prozess + Muster)"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps3.pdf",
+              "rel": "evidence",
+              "text": "E-PS3: Acceptable Use Policy (AUP) inkl. Vertraulichkeitsverpfichtungen"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps4.pdf",
+              "rel": "evidence",
+              "text": "E-PS4: Ofboarding-Verfahren mit Checkliste (Zugangsentzug _≤_30 Tage, Asset-Rückgabe, N"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps5.pdf",
+              "rel": "evidence",
+              "text": "E-PS5: Identitätsinventar (alle Nutzer inkl. externe + Servicekonten, mit Privilegien u"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps6.pdf",
+              "rel": "evidence",
+              "text": "E-PS6: Nachweis regelmäßiger Identitäts-Reviews (mind. jährlich für alle, mind. jährlic"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps7.pdf",
+              "rel": "evidence",
+              "text": "E-PS7: Informationsklassifzierungsschema (Kategorien, Kriterien, Handhabungsregeln)"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps8.pdf",
+              "rel": "evidence",
+              "text": "E-PS8: Asset-Inventar (NIS-Systeme + zugehörige Assets, mit Eigentümer und Kritikalität"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps9.pdf",
+              "rel": "evidence",
+              "text": "E-PS9: Nachweis regelmäßiger Inventarüberprüfung (mind. jährlich, mit Änderungshistorie"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps10.pdf",
+              "rel": "evidence",
+              "text": "E-PS10: Geheimhaltungs-/Vertraulichkeitsvereinbarungen (intern + extern, mind. jährlich "
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps11.pdf",
+              "rel": "evidence",
+              "text": "E-PS11: Disziplinarverfahren dokumentiert und an Mitarbeitende kommuniziert"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps12.pdf",
+              "rel": "evidence",
+              "text": "E-PS12: Verfahren für sichere Medienentsorgung/-vernichtung (Datenträger, physische Doku"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps13.pdf",
+              "rel": "evidence",
+              "text": "E-PS13: Nachweis Asset-Rückgabe bei Mitarbeiterausscheiden (Protokolle, Exit-Checkliste)"
+            }
+          ],
+          "remarks": "Stufe 2: Bestandsaufnahme & Evidenzerhebung – Thema 8 (Personalsicherheit und Informationsschutz).\nErhobene Evidenzen (Evidenz-ID [Pflicht/Ergaenzend]: Inhalt) laut Vorgehensdokument:\n- E-PS1 [Pficht]: Beschäftigungsvereinbarung mit IS-Verpfichtungen (Vorlage + Nachweis Unterzeichnung vor Zugang)\n- E-PS2 [Pficht]: Nachweis Sicherheitsüberprüfungen vor Einstellung (Prozess + Muster)\n- E-PS3 [Pficht]: Acceptable Use Policy (AUP) inkl. Vertraulichkeitsverpfichtungen\n- E-PS4 [Pficht]: Ofboarding-Verfahren mit Checkliste (Zugangsentzug _≤_30 Tage, Asset-Rückgabe, Nachpfichten)\n- E-PS5 [Pficht]: Identitätsinventar (alle Nutzer inkl. externe + Servicekonten, mit Privilegien und Start/Stop)\n- E-PS6 [Pficht]: Nachweis regelmäßiger Identitäts-Reviews (mind. jährlich für alle, mind. jährlich separat für Admins)\n- E-PS7 [Pficht]: Informationsklassifzierungsschema (Kategorien, Kriterien, Handhabungsregeln)\n- E-PS8 [Pficht]: Asset-Inventar (NIS-Systeme + zugehörige Assets, mit Eigentümer und Kritikalität)\n- E-PS9 [Pficht]: Nachweis regelmäßiger Inventarüberprüfung (mind. jährlich, mit Änderungshistorie)\n- E-PS10 [Pficht]: Geheimhaltungs-/Vertraulichkeitsvereinbarungen (intern + extern, mind. jährlich überprüft)\n- E-PS11 [Pficht]: Disziplinarverfahren dokumentiert und an Mitarbeitende kommuniziert\n- E-PS12 [Ergänzend]: Verfahren für sichere Medienentsorgung/-vernichtung (Datenträger, physische Dokumente)\n- E-PS13 [Ergänzend]: Nachweis Asset-Rückgabe bei Mitarbeiterausscheiden (Protokolle, Exit-Checkliste)\n\nStufe 3: Reifegradbewertung.\nC2M2 MIL: MIL-2 – MIL-2 (ACCESS-1/ASSET-2-Domaenen: dokumentierte HR-/Asset-Prozesse) als NIS2-Mindestniveau; Zielniveau MIL-3.\nBSI RUN: UG 2–3 – BSI RUN-Umsetzungsgrade UG 2–3 bis UG 4–5 lt. Dokument Kap. 8."
+        },
+        {
+          "uuid": "bd018f83-9374-4249-8045-81fac9a898b3",
+          "control-id": "anhang-12",
+          "description": "Umsetzung der Anforderungen aus NIS2-DVO Anhang 'anhang-12' im Rahmen des Vorgehenskonzepts 'Personalsicherheit und Informationsschutz' (Thema 8).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "8"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Personalsicherheit und Informationsschutz"
+            },
+            {
+              "name": "c2m2-mil",
+              "value": "MIL-2",
+              "remarks": "MIL-2 (ACCESS-1/ASSET-2-Domaenen: dokumentierte HR-/Asset-Prozesse) als NIS2-Mindestniveau; Zielniveau MIL-3."
+            },
+            {
+              "name": "bsi-run-rf",
+              "value": "UG 2–3",
+              "remarks": "BSI RUN-Umsetzungsgrade UG 2–3 bis UG 4–5 lt. Dokument Kap. 8."
+            }
+          ],
+          "links": [
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps1.pdf",
+              "rel": "evidence",
+              "text": "E-PS1: Beschäftigungsvereinbarung mit IS-Verpfichtungen (Vorlage + Nachweis Unterzeichn"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps2.pdf",
+              "rel": "evidence",
+              "text": "E-PS2: Nachweis Sicherheitsüberprüfungen vor Einstellung (Prozess + Muster)"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps3.pdf",
+              "rel": "evidence",
+              "text": "E-PS3: Acceptable Use Policy (AUP) inkl. Vertraulichkeitsverpfichtungen"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps4.pdf",
+              "rel": "evidence",
+              "text": "E-PS4: Ofboarding-Verfahren mit Checkliste (Zugangsentzug _≤_30 Tage, Asset-Rückgabe, N"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps5.pdf",
+              "rel": "evidence",
+              "text": "E-PS5: Identitätsinventar (alle Nutzer inkl. externe + Servicekonten, mit Privilegien u"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps6.pdf",
+              "rel": "evidence",
+              "text": "E-PS6: Nachweis regelmäßiger Identitäts-Reviews (mind. jährlich für alle, mind. jährlic"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps7.pdf",
+              "rel": "evidence",
+              "text": "E-PS7: Informationsklassifzierungsschema (Kategorien, Kriterien, Handhabungsregeln)"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps8.pdf",
+              "rel": "evidence",
+              "text": "E-PS8: Asset-Inventar (NIS-Systeme + zugehörige Assets, mit Eigentümer und Kritikalität"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps9.pdf",
+              "rel": "evidence",
+              "text": "E-PS9: Nachweis regelmäßiger Inventarüberprüfung (mind. jährlich, mit Änderungshistorie"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps10.pdf",
+              "rel": "evidence",
+              "text": "E-PS10: Geheimhaltungs-/Vertraulichkeitsvereinbarungen (intern + extern, mind. jährlich "
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps11.pdf",
+              "rel": "evidence",
+              "text": "E-PS11: Disziplinarverfahren dokumentiert und an Mitarbeitende kommuniziert"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps12.pdf",
+              "rel": "evidence",
+              "text": "E-PS12: Verfahren für sichere Medienentsorgung/-vernichtung (Datenträger, physische Doku"
+            },
+            {
+              "href": "./evidence/thema-personalsicherheit-informationsschutz/e_ps13.pdf",
+              "rel": "evidence",
+              "text": "E-PS13: Nachweis Asset-Rückgabe bei Mitarbeiterausscheiden (Protokolle, Exit-Checkliste)"
+            }
+          ],
+          "remarks": "Stufe 2: Bestandsaufnahme & Evidenzerhebung – Thema 8 (Personalsicherheit und Informationsschutz).\nErhobene Evidenzen (Evidenz-ID [Pflicht/Ergaenzend]: Inhalt) laut Vorgehensdokument:\n- E-PS1 [Pficht]: Beschäftigungsvereinbarung mit IS-Verpfichtungen (Vorlage + Nachweis Unterzeichnung vor Zugang)\n- E-PS2 [Pficht]: Nachweis Sicherheitsüberprüfungen vor Einstellung (Prozess + Muster)\n- E-PS3 [Pficht]: Acceptable Use Policy (AUP) inkl. Vertraulichkeitsverpfichtungen\n- E-PS4 [Pficht]: Ofboarding-Verfahren mit Checkliste (Zugangsentzug _≤_30 Tage, Asset-Rückgabe, Nachpfichten)\n- E-PS5 [Pficht]: Identitätsinventar (alle Nutzer inkl. externe + Servicekonten, mit Privilegien und Start/Stop)\n- E-PS6 [Pficht]: Nachweis regelmäßiger Identitäts-Reviews (mind. jährlich für alle, mind. jährlich separat für Admins)\n- E-PS7 [Pficht]: Informationsklassifzierungsschema (Kategorien, Kriterien, Handhabungsregeln)\n- E-PS8 [Pficht]: Asset-Inventar (NIS-Systeme + zugehörige Assets, mit Eigentümer und Kritikalität)\n- E-PS9 [Pficht]: Nachweis regelmäßiger Inventarüberprüfung (mind. jährlich, mit Änderungshistorie)\n- E-PS10 [Pficht]: Geheimhaltungs-/Vertraulichkeitsvereinbarungen (intern + extern, mind. jährlich überprüft)\n- E-PS11 [Pficht]: Disziplinarverfahren dokumentiert und an Mitarbeitende kommuniziert\n- E-PS12 [Ergänzend]: Verfahren für sichere Medienentsorgung/-vernichtung (Datenträger, physische Dokumente)\n- E-PS13 [Ergänzend]: Nachweis Asset-Rückgabe bei Mitarbeiterausscheiden (Protokolle, Exit-Checkliste)\n\nStufe 3: Reifegradbewertung.\nC2M2 MIL: MIL-2 – MIL-2 (ACCESS-1/ASSET-2-Domaenen: dokumentierte HR-/Asset-Prozesse) als NIS2-Mindestniveau; Zielniveau MIL-3.\nBSI RUN: UG 2–3 – BSI RUN-Umsetzungsgrade UG 2–3 bis UG 4–5 lt. Dokument Kap. 8."
+        },
+        {
+          "uuid": "d71527d7-25a5-439d-a593-b40eba111b8b",
+          "control-id": "anhang-6",
+          "description": "Umsetzung der Anforderungen aus NIS2-DVO Anhang 'anhang-6' im Rahmen des Vorgehenskonzepts 'Schwachstellenmanagement, Patch-Management und Sicherheitstests' (Thema 9).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "9"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Schwachstellenmanagement, Patch-Management und Sicherheitstests"
+            },
+            {
+              "name": "c2m2-mil",
+              "value": "MIL-2",
+              "remarks": "MIL-2 (ASSET/THREAT/RISK/SITUATION-Domaenen: dokumentierte Verfahren, regelmaessige Scans/Patches) als NIS2-Mindestniveau; Zielniveau MIL-3."
+            },
+            {
+              "name": "bsi-run-rf",
+              "value": "UG 2–3",
+              "remarks": "BSI RUN-Umsetzungsgrade UG 2–3 bis UG 4–5 lt. Dokument Kap. 9."
+            }
+          ],
+          "links": [
+            {
+              "href": "./evidence/thema-schwachstellenmanagement-patch-sicherheitstests/e_sw1.pdf",
+              "rel": "evidence",
+              "text": "E-SW1: Vollständiges IT/OT-Asset-Inventar (Konfgurationsstände, Eigentümer, Kritikalitä"
+            },
+            {
+              "href": "./evidence/thema-schwachstellenmanagement-patch-sicherheitstests/e_sw2.pdf",
+              "rel": "evidence",
+              "text": "E-SW2: Dokumentierte Konfgurationsbaselines (CIS Benchmarks, BSI-Härtungsleitfäden oder"
+            },
+            {
+              "href": "./evidence/thema-schwachstellenmanagement-patch-sicherheitstests/e_sw3.pdf",
+              "rel": "evidence",
+              "text": "E-SW3: Schwachstellenregister mit Komponenten, Kritikalität, Status und Zeitstempel"
+            },
+            {
+              "href": "./evidence/thema-schwachstellenmanagement-patch-sicherheitstests/e_sw4.pdf",
+              "rel": "evidence",
+              "text": "E-SW4: Nachweis Schwachstellenscans (Logs, Berichte, Scan-Konfguration, Frequenz)"
+            },
+            {
+              "href": "./evidence/thema-schwachstellenmanagement-patch-sicherheitstests/e_sw5.pdf",
+              "rel": "evidence",
+              "text": "E-SW5: Nachweis zeitnaher Behebung kritischer Schwachstellen (Patch-Logs, Tickets)"
+            },
+            {
+              "href": "./evidence/thema-schwachstellenmanagement-patch-sicherheitstests/e_sw6.pdf",
+              "rel": "evidence",
+              "text": "E-SW6: Mitigationsplan oder dokumentierte Begründung für nicht behobene Schwachstellen"
+            },
+            {
+              "href": "./evidence/thema-schwachstellenmanagement-patch-sicherheitstests/e_sw7.pdf",
+              "rel": "evidence",
+              "text": "E-SW7: Dokumentiertes Änderungsmanagement-Verfahren (inkl. Risikobewertung, Rollback)"
+            },
+            {
+              "href": "./evidence/thema-schwachstellenmanagement-patch-sicherheitstests/e_sw8.pdf",
+              "rel": "evidence",
+              "text": "E-SW8: Nachweis Sicherheitstests (mind. jährlicher Penetrationstest, Bericht mit Kritik"
+            },
+            {
+              "href": "./evidence/thema-schwachstellenmanagement-patch-sicherheitstests/e_sw9.pdf",
+              "rel": "evidence",
+              "text": "E-SW9: Netzwerkdokumentation (Topologie,"
+            },
+            {
+              "href": "./evidence/thema-schwachstellenmanagement-patch-sicherheitstests/e_sw10.pdf",
+              "rel": "evidence",
+              "text": "E-SW10: EDR/EPP-Konfguration und Nachweis regelmäßiger Updates"
+            },
+            {
+              "href": "./evidence/thema-schwachstellenmanagement-patch-sicherheitstests/e_sw11.pdf",
+              "rel": "evidence",
+              "text": "E-SW11: Sichere Beschafungsrichtlinie (mit Sicherheitsanforderungen, EOL-Prüfung)"
+            },
+            {
+              "href": "./evidence/thema-schwachstellenmanagement-patch-sicherheitstests/e_sw12.pdf",
+              "rel": "evidence",
+              "text": "E-SW12: CVD-Mechanismus (Kontaktmöglichkeit für externe Schwachstellenmeldungen)"
+            },
+            {
+              "href": "./evidence/thema-schwachstellenmanagement-patch-sicherheitstests/e_sw13.pdf",
+              "rel": "evidence",
+              "text": "E-SW13: Systemhärtungsnachweis und Dokumentation verwendeter Härtungsanleitungen"
+            },
+            {
+              "href": "./evidence/thema-schwachstellenmanagement-patch-sicherheitstests/e_sw14.pdf",
+              "rel": "evidence",
+              "text": "E-SW14: SBOM/Bill of Materials für kritische Softwarekomponenten"
+            }
+          ],
+          "remarks": "Stufe 2: Bestandsaufnahme & Evidenzerhebung – Thema 9 (Schwachstellenmanagement, Patch-Management und Sicherheitstests).\nErhobene Evidenzen (Evidenz-ID [Pflicht/Ergaenzend]: Inhalt) laut Vorgehensdokument:\n- E-SW1 [Pficht]: Vollständiges IT/OT-Asset-Inventar (Konfgurationsstände, Eigentümer, Kritikalität)\n- E-SW2 [Pficht]: Dokumentierte Konfgurationsbaselines (CIS Benchmarks, BSI-Härtungsleitfäden oder äquivalent)\n- E-SW3 [Pficht]: Schwachstellenregister mit Komponenten, Kritikalität, Status und Zeitstempel\n- E-SW4 [Pficht]: Nachweis Schwachstellenscans (Logs, Berichte, Scan-Konfguration, Frequenz)\n- E-SW5 [Pficht]: Nachweis zeitnaher Behebung kritischer Schwachstellen (Patch-Logs, Tickets)\n- E-SW6 [Pficht]: Mitigationsplan oder dokumentierte Begründung für nicht behobene Schwachstellen\n- E-SW7 [Pficht]: Dokumentiertes Änderungsmanagement-Verfahren (inkl. Risikobewertung, Rollback)\n- E-SW8 [Pficht (BSI-95/RB-18)]: Nachweis Sicherheitstests (mind. jährlicher Penetrationstest, Bericht mit Kritikalitätsbewertung)\n- E-SW9 [Pficht]: Netzwerkdokumentation (Topologie,\n- E-SW10 [Pficht]: EDR/EPP-Konfguration und Nachweis regelmäßiger Updates\n- E-SW11 [Pficht]: Sichere Beschafungsrichtlinie (mit Sicherheitsanforderungen, EOL-Prüfung)\n- E-SW12 [Pficht (DVO 6.10.2e)]: CVD-Mechanismus (Kontaktmöglichkeit für externe Schwachstellenmeldungen)\n- E-SW13 [Ergänzend]: Systemhärtungsnachweis und Dokumentation verwendeter Härtungsanleitungen\n- E-SW14 [Ergänzend]: SBOM/Bill of Materials für kritische Softwarekomponenten\n\nStufe 3: Reifegradbewertung.\nC2M2 MIL: MIL-2 – MIL-2 (ASSET/THREAT/RISK/SITUATION-Domaenen: dokumentierte Verfahren, regelmaessige Scans/Patches) als NIS2-Mindestniveau; Zielniveau MIL-3.\nBSI RUN: UG 2–3 – BSI RUN-Umsetzungsgrade UG 2–3 bis UG 4–5 lt. Dokument Kap. 9."
+        }
+      ]
+    }
+  }
+}
