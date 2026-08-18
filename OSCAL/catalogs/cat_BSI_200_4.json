@@ -1,0 +1,903 @@
+{
+  "catalog": {
+    "uuid": "2f8becfc-bef2-5cb4-a22c-c9522c349278",
+    "metadata": {
+      "title": "BSI-Standard 200-4: Business Continuity Management",
+      "last-modified": "2026-08-17T08:42:00Z",
+      "version": "1.0",
+      "oscal-version": "1.1.2",
+      "remarks": "Methodik zum Business Continuity Management (BCM) nach BSI-Standard 200-4.   ",
+      "props": [
+        {
+          "name": "source-standard",
+          "value": "BSI-Standard 200-4"
+        }
+      ]
+    },
+    "groups": [
+      {
+        "id": "bsi-200-4-kap-3",
+        "title": "3 Initiierung des BCMS durch die Institutionsleitung (R+AS)",
+        "controls": [
+          {
+            "id": "bsi-200-4-3.1",
+            "title": "3.1 Übernahme der Verantwortung durch die Leitungsebene (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-3.1_stmt",
+                "name": "statement",
+                "prose": "Die Institutionsleitung ist für das zielgerichtete und ordnungsgemäße Funktionieren der Institution und damit auch für die Aufrechterhaltung des Geschäftsbetriebs in Notfällen verantwortlich. Sie ist die Instanz, welche die Entscheidung über den Umgang mit Risiken trifft und die entsprechenden Ressourcen zur Verfügung stellen muss. Die Verantwortung für das BCM verbleibt bei ihr.    Die Institutionsleitung muss sich zur Etablierung, Aufrechterhaltung und Verbesserung eines BCMS verpflichten und aktiv Informationen über den Status Quo des BCM einfordern.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          },
+          {
+            "id": "bsi-200-4-3.2",
+            "title": "3.2 Zielsetzung (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-3.2_stmt",
+                "name": "statement",
+                "prose": "Jede Institution braucht eine individuelle Zielsetzung für ein angemessenes BCM. Die Institutionsleitung muss die Ziele für das BCM vorgeben und sie innerhalb der Institution kommunizieren.    Die Zielsetzung geht vorrangig auf drei Fragen ein:\n*   Warum wird in der Institution ein BCM benötigt? (Motivation)   \n*   Welche konkreten Ziele werden mit dem BCM verfolgt?   \n*   Wie lange soll durch das BCM ein Ausfall des Normalbetriebs kompensiert werden? (Abzusichernder Zeitraum)   "
+              },
+              {
+                "id": "bsi-200-4-3.2.1",
+                "name": "section",
+                "prose": "Die Institution sollte die spezifischen Gründe für ein BCM identifizieren, dokumentieren und das BCMS danach ausrichten. Es gibt interne Gründe (z.B. Erhöhung der Überlebensfähigkeit, Resilienz) und externe Gründe (z.B. Umsetzungsplan Bund, gesetzliche/regulatorische Vorgaben wie KRITIS, MaRisk, DSGVO).   ",
+                "title": "3.2.1 Motivation für den Aufbau eines BCMS (R+AS)"
+              },
+              {
+                "id": "bsi-200-4-3.2.2",
+                "name": "section",
+                "prose": "Die Institutionsleitung muss die strategischen Ziele festlegen. Zu berücksichtigen sind z.B. zu schützende Geschäftsziele, tolerierbare Ausfallarten, Risikobereitschaft und das primäre Ziel der Bewältigung.   ",
+                "title": "3.2.2 Entwicklung der Ziele des BCMS (R+AS)"
+              },
+              {
+                "id": "bsi-200-4-3.2.3",
+                "name": "section",
+                "prose": "Es muss festgelegt werden, wie lange der Geschäftsbetrieb durch das BCMS abgesichert werden soll. In der Praxis ist ein Zeitraum von 14 bis 30 Tagen üblich, kann aber branchenspezifisch abweichen (z.B. in der Produktion mehrere Monate). Der Zeitraum muss individuell festgelegt und regelmäßig überprüft werden.   ",
+                "title": "3.2.3 Abzusichernder Zeitraum durch ein BCMS (R+AS)"
+              }
+            ],
+            "class": "BSI-200-4"
+          },
+          {
+            "id": "bsi-200-4-3.3",
+            "title": "3.3 Geltungsbereich (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-3.3_stmt",
+                "name": "statement",
+                "prose": "Die Institutionsleitung muss festlegen, welcher Bereich der Institution abgesichert werden soll (Geltungsbereich des BCMS). Dieser kann die gesamte Institution umfassen oder nur Teilbereiche. Die Grenzen und Schnittstellen (z.B. bei Outsourcing) müssen klar definiert und begründet werden.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          },
+          {
+            "id": "bsi-200-4-3.4",
+            "title": "3.4 Entscheidung zur Vorgehensweise (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-3.4_stmt",
+                "name": "statement",
+                "prose": "Die Institutionsleitung muss entscheiden, wie die weiteren Schritte zum Aufbau eines BCMS aussehen sollen (Reaktiv-, Aufbau- oder Standard-BCMS) und den Zeitplan dokumentieren.    Das Ziel sollte langfristig ein Standard-BCMS sein. Die Durchlaufzeit des PDCA-Zyklus sollte sich an der Veränderungsgeschwindigkeit der Institution orientieren (empfohlen: ein Geschäftsjahr).   "
+              }
+            ],
+            "class": "BSI-200-4"
+          },
+          {
+            "id": "bsi-200-4-3.5",
+            "title": "3.5 Benennung des oder der BC-Beauftragten (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-3.5_stmt",
+                "name": "statement",
+                "prose": "Ein BC-Beauftragter (BCB) muss benannt werden, der als Hauptanlaufstelle dient und die BCM-Aufgaben koordiniert. Eine qualifizierte Vertretung ist ebenfalls zu benennen.    Die Position sollte organisatorisch als Stabsstelle eingerichtet werden, mit direktem Vorspracherecht bei der Institutionsleitung.    Die Stelle sollte mit mindestens 50% Ressourcen ausgestattet sein.    Der BCB muss über angemessene fachliche und persönliche Eigenschaften verfügen (z.B. Kommunikationsfähigkeit, BCM-Kenntnisse).   "
+              }
+            ],
+            "class": "BSI-200-4"
+          }
+        ],
+        "class": "chapter"
+      },
+      {
+        "id": "bsi-200-4-kap-4",
+        "title": "4 Konzeption und Planung des BCMS (R+AS)",
+        "controls": [
+          {
+            "id": "bsi-200-4-4.1",
+            "title": "4.1 Definition und Abgrenzung (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-4.1_stmt",
+                "name": "statement",
+                "prose": "Für das BCM müssen mindestens die Begriffe Störung, Notfall und Krise eindeutig voneinander abgegrenzt definiert werden.    Zudem sollten die Zuständigkeiten zur Bewältigung sowie Eskalationskriterien klar geregelt werden.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          },
+          {
+            "id": "bsi-200-4-4.2",
+            "title": "4.2 Analyse der erweiterten Rahmenbedingungen (AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-4.2.1",
+                "name": "section",
+                "prose": "Die relevanten internen und externen Interessengruppen sowie deren Anforderungen und Erwartungen müssen ermittelt werden (Interessengruppenanalyse).    Der Grad der Einflussnahme sollte eingeschätzt und dokumentiert werden.   ",
+                "title": "4.2.1 Identifizierung von Anforderungen und Einflussfaktoren an das BCMS (AS)"
+              },
+              {
+                "id": "bsi-200-4-4.2.2",
+                "name": "section",
+                "prose": "Es sollte festgelegt werden, ob, wer, welche Informationen, über welches Medium, wie häufig und zu welchen Zeitpunkten mit den identifizierten Interessengruppen kommuniziert.   ",
+                "title": "4.2.2 Festlegung der Kommunikation mit Interessengruppen (AS)"
+              },
+              {
+                "id": "bsi-200-4-4.2.3",
+                "name": "section",
+                "prose": "Alle für das BCMS relevanten Schnittstellen (z.B. Risikomanagement, Facility Management, Personalmanagement, IT) müssen ermittelt, definiert und eindeutig beschrieben werden, um Doppelarbeiten zu vermeiden.   ",
+                "title": "4.2.3 Identifizierung von Schnittstellen (AS)"
+              }
+            ],
+            "class": "BSI-200-4"
+          },
+          {
+            "id": "bsi-200-4-4.3",
+            "title": "4.3 Definition der BC-Aufbauorganisation (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-4.3_stmt",
+                "name": "statement",
+                "prose": "Die Rollen der BC-Vorsorgeorganisation (z.B. Institutionsleitung, BCB, optionale BC-Koordinierende, BC-Gremium, BC-Vorsorgeteams) müssen mit ihren Aufgaben, Rechten und Pflichten definiert und geeigneten Mitarbeitenden übertragen werden.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          },
+          {
+            "id": "bsi-200-4-4.4",
+            "title": "4.4 Dokumentation (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-4.4_stmt",
+                "name": "statement",
+                "prose": "Eine angemessene Dokumentation (Dokumente zur Vorsorge wie Leitlinie BCMS und Notfallvorsorgekonzept; Dokumente zur Reaktion wie Notfallhandbuch) ist erforderlich.    Im Aufbau- und Standard-BCMS ist eine Dokumentenlenkung (Festlegung von Dokumentinformationen, Überprüfung und Aktualisierung) verpflichtend.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          },
+          {
+            "id": "bsi-200-4-4.5",
+            "title": "4.5 Ressourcenplanung (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-4.5_stmt",
+                "name": "statement",
+                "prose": "Die Institutionsleitung muss angemessene personelle, zeitliche und finanzielle Ressourcen bereitstellen. Die Planung muss regelmäßig auf Angemessenheit überprüft und angepasst werden.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          },
+          {
+            "id": "bsi-200-4-4.6_4.7",
+            "title": "4.6 Schulung und 4.7 Sensibilisierung (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-4.6_4.7_stmt",
+                "name": "statement",
+                "prose": "Für alle Rollen im BCM muss sichergestellt werden, dass sie die benötigten Fähigkeiten und Kenntnisse durch Schulungen erlangen. Zudem müssen alle Mitarbeitenden zielgruppenorientiert und bedarfsgerecht für das BCM sensibilisiert werden.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          },
+          {
+            "id": "bsi-200-4-4.8",
+            "title": "4.8 Leitlinie BCMS (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-4.8_stmt",
+                "name": "statement",
+                "prose": "Die Leitlinie BCMS (erstellt meist durch den BCB, freigegeben durch die Institutionsleitung) bildet den verbindlichen Rahmen und Auftrag zum Aufbau und Betrieb des BCMS. Sie dokumentiert u.a. Motivation, Ziele, Geltungsbereich, Verantwortlichkeiten und den abzusichernden Zeitraum. Die Leitlinie muss inhaltlich geprüft, freigegeben und allen Mitarbeitenden bekannt gegeben werden.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          }
+        ],
+        "class": "chapter"
+      },
+      {
+        "id": "bsi-200-4-kap-5",
+        "title": "5 Aufbau und Befähigung der BAO (R+AS)",
+        "controls": [
+          {
+            "id": "bsi-200-4-5.1",
+            "title": "5.1 Aufbau der BAO (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-5.1_stmt",
+                "name": "statement",
+                "prose": "Zur zielgerichteten Bewältigung von Notfällen ist eine Besondere Aufbauorganisation (BAO) erforderlich, die typischerweise durch einen Stab geleitet wird. Der Stab (bestehend aus Kernteam, situativer Erweiterung und Stabsassistenz) lenkt, koordiniert und unterstützt die Bewältigung. Die BAO muss personell besetzt werden (Hauptzuständige und Stellvertretung), was von der Institutionsleitung freizugeben ist.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          },
+          {
+            "id": "bsi-200-4-5.2",
+            "title": "5.2 Detektion, Alarmierung und Eskalation (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-5.2_stmt",
+                "name": "statement",
+                "prose": "Ein Alarmierungs- und Eskalationsprozess muss definiert und dokumentiert werden. Schadensereignisse müssen an eine zentrale Entscheidungsinstanz gemeldet werden. Diese entscheidet anhand von Kriterien über die Einstufung (Störung, Notfall, Krise) und alarmiert bei Bedarf unverzüglich die BAO. Die Erreichbarkeit der BAO (z.B. Rufbereitschaften) muss sichergestellt sein.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          },
+          {
+            "id": "bsi-200-4-5.3",
+            "title": "5.3 Definition von Sofortmaßnahmen (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-5.3_stmt",
+                "name": "statement",
+                "prose": "Innerhalb des Notfallhandbuchs müssen Sofortmaßnahmen dokumentiert werden, die Regelungen zum Schutz von Leib und Leben beinhalten müssen.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          },
+          {
+            "id": "bsi-200-4-5.4_5.5",
+            "title": "5.4 & 5.5 Stabsarbeit und Geschäftsordnung (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-5.4_5.5_stmt",
+                "name": "statement",
+                "prose": "Im Reaktiv-BCMS müssen grundlegende Methoden und Regeln (Verhaltenskodex, Protokollierung) festgelegt werden. Im Aufbau- und Standard-BCMS ist eine formelle Geschäftsordnung des Stabes erforderlich. Diese regelt z.B. Konstituierung/Auflösung, Zusammenarbeitsmodell, Arbeitsbedingungen, Protokollierung und besondere Befugnisse.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          },
+          {
+            "id": "bsi-200-4-5.6",
+            "title": "5.6 Herstellung der Fähigkeit zur Stabsarbeit (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-5.6_stmt",
+                "name": "statement",
+                "prose": "Die Stabsmitglieder müssen für ihre Aufgaben befähigt werden (Schulung). Es muss geregelt werden, wie Lagebeobachtung und -visualisierung erfolgt. Ein Stabsraum mit entsprechender Ausstattung (Kommunikation, Visualisierung, Battleboxen) muss geplant und eingerichtet werden.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          },
+          {
+            "id": "bsi-200-4-5.7",
+            "title": "5.7 NuK-Kommunikation (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-5.7_stmt",
+                "name": "statement",
+                "prose": "Die Notfall- und Krisen-Kommunikation (NuK-Kommunikation) muss vorbereitet werden. Es sind verbindliche Regeln für interne und externe Kommunikation festzulegen. Für das Aufbau- und Standard-BCMS erfordert dies ein detailliertes Kommunikationskonzept.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          },
+          {
+            "id": "bsi-200-4-5.8",
+            "title": "5.8 Nacharbeiten und Deeskalation (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-5.8_stmt",
+                "name": "statement",
+                "prose": "Es sind Regelungen für die Nacharbeiten zur Rückführung in den Normalbetrieb und die Kriterien zur Deeskalation und Auflösung der BAO zu definieren.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          },
+          {
+            "id": "bsi-200-4-5.9",
+            "title": "5.9 Analyse der Bewältigung (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-5.9_stmt",
+                "name": "statement",
+                "prose": "Nach einem Notfall/einer Krise muss der Vorfall analysiert werden, um Korrektur- und Verbesserungspotenziale für das BCMS abzuleiten. Die Ergebnisse sind zu dokumentieren und an die Institutionsleitung zu berichten.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          }
+        ],
+        "class": "chapter"
+      },
+      {
+        "id": "bsi-200-4-kap-6",
+        "title": "6 BIA-Vorfilter (R+A)",
+        "controls": [
+          {
+            "id": "bsi-200-4-6.0",
+            "title": "BIA-Vorfilter (R+A)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-6.0_stmt",
+                "name": "statement",
+                "prose": "Um den Aufwand für die Business-Impact-Analyse (BIA) im Reaktiv- oder Aufbau-BCMS zu reduzieren, wird ein BIA-Vorfilter eingesetzt. Er grenzt die potenziell zeitkritischsten Geschäftsprozesse ein. Ansätze hierfür sind die Vorauswahl von Geschäftsprozessen (z.B. per Prozesslandkarte), von Organisationseinheiten (anhand Organigramm) oder von Produkten/Services. Die Leitfrage lautet in etwa: „Welche Einheiten bereiten bei einem Ausfall innerhalb von x Tagen zu hohe Schäden?“ Die Ergebnisse müssen konsolidiert und von der Institutionsleitung freigegeben werden.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          }
+        ],
+        "class": "chapter"
+      },
+      {
+        "id": "bsi-200-4-kap-7",
+        "title": "7 Business-Impact-Analyse (R+AS)",
+        "controls": [
+          {
+            "id": "bsi-200-4-7.0",
+            "title": "Ziel und Kenngrößen der BIA",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-7.0_stmt",
+                "name": "statement",
+                "prose": "In der BIA wird untersucht, welche Geschäftsprozesse zeitkritisch sind. Daraus werden Wiederanlaufanforderungen abgeleitet. Die BIA betrachtet nur die potenziellen Auswirkungen eines Ausfalls (Worst Case), nicht dessen Ursachen.   "
+              },
+              {
+                "id": "bsi-200-4-7.0_kenngroessen",
+                "name": "item",
+                "prose": "*   **MTPD (Maximal tolerierbare Ausfallzeit):** Wie lange ein Geschäftsprozess maximal ausfallen darf, bevor nicht tolerierbare Auswirkungen auftreten.   \n*   **RTO (Geforderte Wiederanlaufzeit):** Zeitraum vom Ausrufen des Notfalls bis zur Inbetriebnahme der BC-Lösung. (RTO < MTPD).   \n*   **RPO (Maximal zulässiger Datenverlust):** Alter der Daten, um im Notbetrieb sinnvoll arbeiten zu können.   \n*   **MBCO (Notbetriebsniveau):** Wie leistungsfähig der Notbetrieb sein soll.   \nDie Methodik muss im Standard- und Aufbau-BCMS dokumentiert werden.   ",
+                "title": "Kenngrößen"
+              }
+            ],
+            "class": "BSI-200-4"
+          },
+          {
+            "id": "bsi-200-4-7.1",
+            "title": "7.1 Vorbereitung der BIA (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-7.1.1",
+                "name": "section",
+                "prose": "Alle Geschäftsprozesse im GP-Umfang müssen identifiziert und in einer passenden Abstraktionsebene erfasst werden.   ",
+                "title": "7.1.1 Erhebung der Geschäftsprozesse"
+              },
+              {
+                "id": "bsi-200-4-7.1.2",
+                "name": "section",
+                "prose": "Zeithorizonte (z.B. 24h, 3 Tage, 7 Tage), Schadensszenarien (z.B. finanzielle Auswirkungen, Imageschaden) und Schadenskategorien (z.B. gering bis sehr hoch) müssen definiert werden. Ein Untragbarkeitsniveau legt fest, ab welcher Schadenskategorie Auswirkungen nicht mehr toleriert werden.   ",
+                "title": "7.1.2 Festlegung der BIA-Parameter"
+              },
+              {
+                "id": "bsi-200-4-7.1.3",
+                "name": "section",
+                "prose": "Es müssen mindestens die Kategorien IT, Personal, Infrastruktur und Dienstleistungen berücksichtigt werden. Ressourcen sollten sinnvoll zu Clustern (z.B. Standardarbeitsplatz) zusammengefasst werden.   ",
+                "title": "7.1.3 Ressourcenkategorien"
+              },
+              {
+                "id": "bsi-200-4-7.1.4_5",
+                "name": "section",
+                "prose": "Die Erhebung erfolgt idealerweise über BIA-Workshops. Hilfsmittel wie Dokumentvorlagen oder Software-Tools sollten vorbereitet werden.   ",
+                "title": "7.1.4 & 7.1.5 Planung und Hilfsmittel"
+              }
+            ],
+            "class": "BSI-200-4"
+          },
+          {
+            "id": "bsi-200-4-7.2",
+            "title": "7.2 Durchführung der BIA (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-7.2.1",
+                "name": "section",
+                "prose": "Das Schadenspotenzial jedes Geschäftsprozesses wird bewertet (Worst-Case-Prinzip empfohlen). Daraus wird die MTPD abgeleitet (kleinster Zeithorizont, bei dem das Untragbarkeitsniveau erreicht wird). Die Bewertung muss begründet werden. Für zeitkritische Prozesse werden RTO und Notbetriebsniveau festgelegt.   ",
+                "title": "7.2.1 Identifizierung zeitkritischer Geschäftsprozesse"
+              },
+              {
+                "id": "bsi-200-4-7.2.2",
+                "name": "section",
+                "prose": "Für zeitkritische Prozesse muss im Aufbau- und Standard-BCMS ermittelt werden, ob für einen Notbetrieb unverzichtbare Abhängigkeiten zu anderen Prozessen bestehen. Die RTO der benötigten Prozesse muss abgestimmt werden.   ",
+                "title": "7.2.2 Identifizierung der Prozessabhängigkeiten (AS)"
+              },
+              {
+                "id": "bsi-200-4-7.2.3",
+                "name": "section",
+                "prose": "Für alle zeitkritischen Geschäftsprozesse müssen die für einen Notbetrieb erforderlichen Ressourcen ermittelt werden. Relevante Größen sind die RTO der Ressource, der Ressourcenbedarf im Zeitverlauf und (für Daten/IT) die RPO.   ",
+                "title": "7.2.3 Identifizierung der Ressourcenabhängigkeiten"
+              },
+              {
+                "id": "bsi-200-4-7.2.4",
+                "name": "section",
+                "prose": "Ressourcen, die von vielen zeitkritischen Prozessen benötigt werden (SPoF), stellen ein erhöhtes Risiko dar und müssen in der BCM-Risikoanalyse gesondert untersucht werden.   ",
+                "title": "7.2.4 Identifizierung von Single Points of Failure (AS)"
+              }
+            ],
+            "class": "BSI-200-4"
+          },
+          {
+            "id": "bsi-200-4-7.3",
+            "title": "7.3 Auswertung (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-7.3_stmt",
+                "name": "statement",
+                "prose": "Die Ergebnisse müssen qualitätsgesichert und zu einer Gesamtübersicht zusammengefasst werden. Diese umfasst die zeitkritischen Prozesse, deren Abhängigkeiten und die abhängigen Ressourcen inkl. RTO/RPO.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          }
+        ],
+        "class": "chapter"
+      },
+      {
+        "id": "bsi-200-4-kap-8",
+        "title": "8 Soll-Ist-Vergleich (R+AS)",
+        "controls": [
+          {
+            "id": "bsi-200-4-8.0",
+            "title": "Soll-Ist-Vergleich (R+AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-8.0_stmt",
+                "name": "statement",
+                "prose": "Im Soll-Ist-Vergleich wird geprüft, ob die in der BIA geforderte Wiederanlaufzeit (RTO) mit der tatsächlichen Wiederanlaufzeit (RTA) sowie die RPO mit dem tatsächlichen Datenverlust (RPA) übereinstimmt.    Ressourcenzuständige müssen identifiziert und befragt werden. Bei Lücken (RTA > RTO) besteht weiterer Handlungsbedarf, der mit der Institutionsleitung abgestimmt wird.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          }
+        ],
+        "class": "chapter"
+      },
+      {
+        "id": "bsi-200-4-kap-9",
+        "title": "9 BCM-Risikoanalyse (AS)",
+        "controls": [
+          {
+            "id": "bsi-200-4-9.0",
+            "title": "BCM-Risikoanalyse (AS)",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-9.0_stmt",
+                "name": "statement",
+                "prose": "Die BCM-Risikoanalyse untersucht für alle in der BIA identifizierten zeitkritischen Ressourcen (insbesondere SPoFs), gegen welche Gefährdungen der Geschäftsbetrieb abgesichert werden soll. Es kann auf etablierte Standards (wie BSI-Standard 200-3 oder ISO 31000) zurückgegriffen werden.   "
+              },
+              {
+                "id": "bsi-200-4-9.0_guidance",
+                "name": "guidance",
+                "prose": "Die Risikoanalyse umfasst: Auswahl der Methode, Erstellung der Gefährdungsübersicht (Fokus im BCM: Verfügbarkeit), Risikoeinschätzung (Netto-Betrachtung unter Berücksichtigung von RTO/RTA), Risikobewertung (z.B. gering, mittel, hoch) und Ableitung der Risikobehandlung (Vermeidung, Reduktion). Die Ergebnisse und Restrisiken müssen der Institutionsleitung berichtet und von ihr akzeptiert werden.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          }
+        ],
+        "class": "chapter"
+      },
+      {
+        "id": "bsi-200-4-kap-10",
+        "title": "10 Business-Continuity-Strategien und -Lösungen (AS)",
+        "controls": [
+          {
+            "id": "bsi-200-4-10.0",
+            "title": "10.1 & 10.2 BC-Strategien",
+            "props": [
+              {
+                "name": "verbindlichkeit",
+                "value": "MUSS"
+              },
+              {
+                "name": "bcm-phase",
+                "value": "Business Impact Analyse (BIA)"
+              },
+              {
+                "name": "massnahmen-typ",
+                "value": "Präventiv"
+              }
+            ],
+            "parts": [
+              {
+                "id": "bsi-200-4-10.0_stmt",
+                "name": "statement",
+                "prose": "Die Institution muss geeignete BC-Strategien definieren, die den Handlungsbedarf aus Risikoanalyse und BIA abdecken.   "
+              },
+              {
+                "id": "bsi-200-4-10.0_guidance",
+                "name": "guidance",
+                "prose": "Mögliche BC-Strategien (z.B. Ausweichstandort, mobiles Arbeiten) werden identifiziert und anschließend bewertet. Bewertungskriterien umfassen u.a. Einhalten der RTO, Erreichbares Notbetriebsniveau, Restrisiken, finanzielle Aufwände, Einhaltung von Anforderungen und maximal mögliche Notbetriebsdauer.   "
+              }
+            ],
+            "class": "BSI-200-4"
+          }
+        ],
+        "class": "chapter"
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "d39443c5-8b86-51cc-aa48-8a9b7fb9d07d",
+          "title": "BSI-Standard 200-4: Business Continuity Management (Quelldokument)",
+          "rlinks": [
+            {
+              "href": "https://www.bsi.bund.de/",
+              "media-type": "text/markdown"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
