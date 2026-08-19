@@ -1,158 +1,229 @@
 {
   "assessment-plan": {
-    "uuid": "74c1f5ed-7b04-49e4-a89b-f8b0120715fd",
+    "uuid": "95911db3-41d8-4b50-a6cf-140108dedc05",
     "metadata": {
-      "title": "IFA SYSTEM1234 Assessment Plan",
-      "published": "2026-05-13T12:30:00.00000-00:00",
-      "last-modified": "2026-05-12T02:36:09.00000-00:00",
-      "version": "1.1.0",
-      "oscal-version": "1.2.2",
-      "revisions": [
-        {
-          "title": "IFA GoodRead Assessment Plan",
-          "last-modified": "2024-02-01T13:57:28.355446-04:00",
-          "version": "1.0",
-          "oscal-version": "1.1.2",
-          "links": [
-            {
-              "href": "#60077e84-e62f-4375-8c6c-b0e0d4560c5f",
-              "rel": "version-history"
-            }
-          ],
-          "remarks": "This OSCAL version of the IFA Assessment Plan is part of the v 1.3.0 OSCAL content release."
-        },
-        {
-          "title": "IFA SYSTEM1234 Assessment Plan",
-          "last-modified": "2025-07-06T15:05:10.355446-04:00",
-          "version": "1.1.0",
-          "oscal-version": "1.1.3",
-          "links": [
-            {
-              "href": "#97f36be8-fec0-4fa6-bcdf-e3f838eba040",
-              "rel": "version-history"
-            }
-          ],
-          "remarks": "This OSCAL version of the IFA Assessment Plan is part of the v 1.4.0 OSCAL content release."
-        }
-      ],
-      "roles": [
-        {
-          "id": "assessor",
-          "title": "IFA Security Control Assessor"
-        }
-      ],
-      "parties": [
-        {
-          "uuid": "e7730080-71ce-4b20-bec4-84f33136fd58",
-          "type": "person",
-          "name": "Amy Assessor",
-          "member-of-organizations": [
-            "3a675986-b4ff-4030-b178-e953c2e55d64"
-          ]
-        },
-        {
-          "uuid": "3a675986-b4ff-4030-b178-e953c2e55d64",
-          "type": "organization",
-          "name": "Important Federal Agency",
-          "short-name": "IFA",
-          "links": [
-            {
-              "href": "https://www.ifa.gov",
-              "rel": "website"
-            }
-          ]
-        }
-      ],
-      "responsible-parties": [
-        {
-          "role-id": "assessor",
-          "party-uuids": [
-            "e7730080-71ce-4b20-bec4-84f33136fd58"
-          ]
-        }
-      ],
-      "remarks": "In this version of the artifact, the content was updated to OSCAL v1.2.2."
+      "title": "Assessment Plan – NIS2 KRITIS Energie (Stufe 1–4, Vorgehenskonzepte 1–9)",
+      "last-modified": "2026-08-19T07:03:04.911044+00:00",
+      "version": "1.0.0",
+      "oscal-version": "1.1.2",
+      "remarks": "OSCAL Assessment Plan zum vierstufigen NIS2-Auditvorgehen des Quelldokuments 'AZ Fraunhofer IOSB': Stufe 1 Anforderungsanalyse (profile-*.json / profile-kritis-energie-essential.json), Stufe 2 Evidenzerhebung (ssp.json implemented-requirements), Stufe 3 Reifegradbewertung (ssp.json props c2m2-mil / bsi-run-rf) und Stufe 4 Luekenanalyse & Audit (ar.json Findings/Observations/Risks, poam.json Behebungsplan). Der Plan deckt alle 9 Vorgehenskonzepte (Themen) fuer den Energiesektor (KRITIS, besonders wichtige Einrichtung nach §28 Abs. 1 BSIG) ab."
     },
     "import-ssp": {
-      "href": "../../ssp/xml/ifa_ssp.xml"
+      "href": "ssp.json"
     },
     "local-definitions": {
-      "activities": [
+      "objectives-and-methods": [
         {
-          "uuid": "52277182-1ba3-4cb6-8d96-b1b97aaf9d6b",
-          "title": "Examine System Elements for Least Privilege Design and Implementation",
-          "description": "The activity and it steps will be performed by the assessor and facilitated by owner, ISSO, and product team for the IFA SYSTEM1234 system with necessary information and access about least privilege design and implementation of the system's elements: the application, web framework, server, and cloud account infrastructure.",
+          "uuid": "78118cdb-fc05-4f00-836f-f70c1e833962",
+          "control-id": "anhang-1",
+          "description": "Bewertung der Konformitaet des Controls 'anhang-1' (Thema 1: Risikomanagement und ISMS-Fundament) anhand des Ampel-Bewertungsschemas des Quelldokuments: Erfuellt (Evidenz vorhanden, aktuell, vollstaendig) / Teilweise erfuellt (Evidenz vorhanden, aber veraltet/lueckenhaft/nicht formalisiert) / Nicht erfuellt (Evidenz fehlt vollstaendig) / Nicht anwendbar (begruendet nicht relevant).",
           "props": [
             {
-              "name": "method",
-              "value": "EXAMINE"
+              "name": "audit-thema-nr",
+              "value": "1"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Risikomanagement und ISMS-Fundament"
             }
-          ],
-          "steps": [
+          ]
+        },
+        {
+          "uuid": "1844779f-7d84-4251-90d2-78a7327863b9",
+          "control-id": "anhang-2",
+          "description": "Bewertung der Konformitaet des Controls 'anhang-2' (Thema 1: Risikomanagement und ISMS-Fundament) anhand des Ampel-Bewertungsschemas des Quelldokuments: Erfuellt (Evidenz vorhanden, aktuell, vollstaendig) / Teilweise erfuellt (Evidenz vorhanden, aber veraltet/lueckenhaft/nicht formalisiert) / Nicht erfuellt (Evidenz fehlt vollstaendig) / Nicht anwendbar (begruendet nicht relevant).",
+          "props": [
             {
-              "uuid": "733e3cbf-e398-46b6-9c02-a2cb534c341e",
-              "title": "Obtain Network Access via VPN to IFA SYSTEM1234 Environment",
-              "description": "The assessor will obtain network access with appropriately configured VPN account to see admin frontend to the application for PAO staff, which is only accessible via VPN with an appropriately configured role for PAO staff accounts."
+              "name": "audit-thema-nr",
+              "value": "1"
             },
             {
-              "uuid": "4ce7e0b4-d69e-4b80-a700-8600b4d4d933",
-              "title": "Obtain Credentials and Access to AWSomeCloud Account for IFA SYSTEM1234 System",
-              "description": "The assessor will obtain access to the SYSTEM1234 Product Team's AWSomeCloud account with their single sign-on credentials to a read-only assessor role."
-            },
-            {
-              "uuid": "3d0297de-e47b-4360-b9c3-cf5c425f86cd",
-              "title": "Obtain Application Access Provided by Product Team",
-              "description": "The assessor will obtain non-privileged account credentials with the PAO staff role to test this role in the application does not permit excessive administrative operations."
-            },
-            {
-              "uuid": "64ca1ef6-3ad4-4747-97c6-40890222463f",
-              "title": "Confirm Load Balancer Blocks Access to Admin Frontend from Internet",
-              "description": "The assessor will confirm that the load balancer for public access does not allow access to Admin Frontend of the application from the Internet."
-            },
-            {
-              "uuid": "715f0592-166f-44f6-bb66-d99623e035dc",
-              "title": "Confirm SYSTEM1234's PAO Role Cannot Manage Users",
-              "description": "The assessor will confirm that user's logged into the SYSTEM1234 Application with the PAO staff role cannot add, modify, or disable users from the system."
-            },
-            {
-              "uuid": "4641957b-a0fa-4c61-af1a-d3e9101efe40",
-              "title": "Confirm Django Admin Panel Not Available",
-              "description": "The assessor will confirm with web-based interface and API methods users with the PAO Staff role cannot access the Django admin panel functions and interactively change application's database records."
+              "name": "audit-thema",
+              "value": "Risikomanagement und ISMS-Fundament"
             }
-          ],
-          "related-controls": {
-            "control-selections": [
-              {
-                "include-controls": [
-                  {
-                    "control-id": "ac-6.1"
-                  }
-                ]
-              }
-            ]
-          },
-          "responsible-roles": [
+          ]
+        },
+        {
+          "uuid": "bf2ca994-4202-4610-9e7d-541f903d968e",
+          "control-id": "anhang-5",
+          "description": "Bewertung der Konformitaet des Controls 'anhang-5' (Thema 2: Lieferkettensicherheit) anhand des Ampel-Bewertungsschemas des Quelldokuments: Erfuellt (Evidenz vorhanden, aktuell, vollstaendig) / Teilweise erfuellt (Evidenz vorhanden, aber veraltet/lueckenhaft/nicht formalisiert) / Nicht erfuellt (Evidenz fehlt vollstaendig) / Nicht anwendbar (begruendet nicht relevant).",
+          "props": [
             {
-              "role-id": "assessor",
-              "party-uuids": [
-                "e7730080-71ce-4b20-bec4-84f33136fd58"
-              ]
+              "name": "audit-thema-nr",
+              "value": "2"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Lieferkettensicherheit"
+            }
+          ]
+        },
+        {
+          "uuid": "72f7fe9c-4320-476a-bea3-5f9ad171955f",
+          "control-id": "anhang-4",
+          "description": "Bewertung der Konformitaet des Controls 'anhang-4' (Thema 3: BCM-Nachweis) anhand des Ampel-Bewertungsschemas des Quelldokuments: Erfuellt (Evidenz vorhanden, aktuell, vollstaendig) / Teilweise erfuellt (Evidenz vorhanden, aber veraltet/lueckenhaft/nicht formalisiert) / Nicht erfuellt (Evidenz fehlt vollstaendig) / Nicht anwendbar (begruendet nicht relevant).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "3"
+            },
+            {
+              "name": "audit-thema",
+              "value": "BCM-Nachweis"
+            }
+          ]
+        },
+        {
+          "uuid": "7f560a33-9d46-48b6-8571-d5565f0a6371",
+          "control-id": "anhang-3",
+          "description": "Bewertung der Konformitaet des Controls 'anhang-3' (Thema 4: Incident Response & Detektion) anhand des Ampel-Bewertungsschemas des Quelldokuments: Erfuellt (Evidenz vorhanden, aktuell, vollstaendig) / Teilweise erfuellt (Evidenz vorhanden, aber veraltet/lueckenhaft/nicht formalisiert) / Nicht erfuellt (Evidenz fehlt vollstaendig) / Nicht anwendbar (begruendet nicht relevant).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "4"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Incident Response & Detektion"
+            }
+          ]
+        },
+        {
+          "uuid": "94d754dd-59f6-40a7-9199-a2f00444958d",
+          "control-id": "anhang-7",
+          "description": "Bewertung der Konformitaet des Controls 'anhang-7' (Thema 5: Wirksamkeitsbewertung von Sicherheitsmaßnahmen) anhand des Ampel-Bewertungsschemas des Quelldokuments: Erfuellt (Evidenz vorhanden, aktuell, vollstaendig) / Teilweise erfuellt (Evidenz vorhanden, aber veraltet/lueckenhaft/nicht formalisiert) / Nicht erfuellt (Evidenz fehlt vollstaendig) / Nicht anwendbar (begruendet nicht relevant).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "5"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Wirksamkeitsbewertung von Sicherheitsmaßnahmen"
+            }
+          ]
+        },
+        {
+          "uuid": "f445843f-bf1d-40eb-a1ea-1850d295157b",
+          "control-id": "anhang-8",
+          "description": "Bewertung der Konformitaet des Controls 'anhang-8' (Thema 6: Sensibilisierung und Schulung) anhand des Ampel-Bewertungsschemas des Quelldokuments: Erfuellt (Evidenz vorhanden, aktuell, vollstaendig) / Teilweise erfuellt (Evidenz vorhanden, aber veraltet/lueckenhaft/nicht formalisiert) / Nicht erfuellt (Evidenz fehlt vollstaendig) / Nicht anwendbar (begruendet nicht relevant).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "6"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Sensibilisierung und Schulung"
+            }
+          ]
+        },
+        {
+          "uuid": "9847f225-9dd7-4419-9ffc-666d31d87db8",
+          "control-id": "anhang-9",
+          "description": "Bewertung der Konformitaet des Controls 'anhang-9' (Thema 7: Zugangskontrolle, Identitätsmanagement und MFA) anhand des Ampel-Bewertungsschemas des Quelldokuments: Erfuellt (Evidenz vorhanden, aktuell, vollstaendig) / Teilweise erfuellt (Evidenz vorhanden, aber veraltet/lueckenhaft/nicht formalisiert) / Nicht erfuellt (Evidenz fehlt vollstaendig) / Nicht anwendbar (begruendet nicht relevant).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "7"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Zugangskontrolle, Identitätsmanagement und MFA"
+            }
+          ]
+        },
+        {
+          "uuid": "61ebfc3b-050e-4277-aa7b-1b9aa662d560",
+          "control-id": "anhang-11",
+          "description": "Bewertung der Konformitaet des Controls 'anhang-11' (Thema 7: Zugangskontrolle, Identitätsmanagement und MFA) anhand des Ampel-Bewertungsschemas des Quelldokuments: Erfuellt (Evidenz vorhanden, aktuell, vollstaendig) / Teilweise erfuellt (Evidenz vorhanden, aber veraltet/lueckenhaft/nicht formalisiert) / Nicht erfuellt (Evidenz fehlt vollstaendig) / Nicht anwendbar (begruendet nicht relevant).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "7"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Zugangskontrolle, Identitätsmanagement und MFA"
+            }
+          ]
+        },
+        {
+          "uuid": "c68c3126-bb4c-4d05-a762-5d6d48e7d3af",
+          "control-id": "anhang-10",
+          "description": "Bewertung der Konformitaet des Controls 'anhang-10' (Thema 8: Personalsicherheit und Informationsschutz) anhand des Ampel-Bewertungsschemas des Quelldokuments: Erfuellt (Evidenz vorhanden, aktuell, vollstaendig) / Teilweise erfuellt (Evidenz vorhanden, aber veraltet/lueckenhaft/nicht formalisiert) / Nicht erfuellt (Evidenz fehlt vollstaendig) / Nicht anwendbar (begruendet nicht relevant).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "8"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Personalsicherheit und Informationsschutz"
+            }
+          ]
+        },
+        {
+          "uuid": "5a0bc119-6baf-4fa9-a20f-7daa1a72f521",
+          "control-id": "anhang-11",
+          "description": "Bewertung der Konformitaet des Controls 'anhang-11' (Thema 8: Personalsicherheit und Informationsschutz) anhand des Ampel-Bewertungsschemas des Quelldokuments: Erfuellt (Evidenz vorhanden, aktuell, vollstaendig) / Teilweise erfuellt (Evidenz vorhanden, aber veraltet/lueckenhaft/nicht formalisiert) / Nicht erfuellt (Evidenz fehlt vollstaendig) / Nicht anwendbar (begruendet nicht relevant).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "8"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Personalsicherheit und Informationsschutz"
+            }
+          ]
+        },
+        {
+          "uuid": "ad5b515d-3dd6-46c1-8b50-38655350a1fe",
+          "control-id": "anhang-12",
+          "description": "Bewertung der Konformitaet des Controls 'anhang-12' (Thema 8: Personalsicherheit und Informationsschutz) anhand des Ampel-Bewertungsschemas des Quelldokuments: Erfuellt (Evidenz vorhanden, aktuell, vollstaendig) / Teilweise erfuellt (Evidenz vorhanden, aber veraltet/lueckenhaft/nicht formalisiert) / Nicht erfuellt (Evidenz fehlt vollstaendig) / Nicht anwendbar (begruendet nicht relevant).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "8"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Personalsicherheit und Informationsschutz"
+            }
+          ]
+        },
+        {
+          "uuid": "4dd4f484-79bf-4916-bd37-e08b80777259",
+          "control-id": "anhang-6",
+          "description": "Bewertung der Konformitaet des Controls 'anhang-6' (Thema 9: Schwachstellenmanagement, Patch-Management und Sicherheitstests) anhand des Ampel-Bewertungsschemas des Quelldokuments: Erfuellt (Evidenz vorhanden, aktuell, vollstaendig) / Teilweise erfuellt (Evidenz vorhanden, aber veraltet/lueckenhaft/nicht formalisiert) / Nicht erfuellt (Evidenz fehlt vollstaendig) / Nicht anwendbar (begruendet nicht relevant).",
+          "props": [
+            {
+              "name": "audit-thema-nr",
+              "value": "9"
+            },
+            {
+              "name": "audit-thema",
+              "value": "Schwachstellenmanagement, Patch-Management und Sicherheitstests"
             }
           ]
         }
       ]
     },
+    "terms-and-conditions": {
+      "parts": [
+        {
+          "name": "assessment-methodology",
+          "prose": "Bewertungsschema (Ampel) laut Quelldokument, je erhobener Evidenz: Erfuellt (Evidenz vorhanden, aktuell, vollstaendig) / Teilweise erfuellt (vorhanden, aber veraltet, lueckenhaft oder nicht formalisiert) / Nicht erfuellt (fehlt vollstaendig) / Nicht anwendbar (begruendet nicht relevant). Methoden je Objective: EXAMINE (Dokumentenpruefung), INTERVIEW (Gespraeche mit Prozessverantwortlichen)."
+        },
+        {
+          "name": "prioritization",
+          "prose": "Massnahmen aus Stufe 4 werden priorisiert: Prioritaet 1 – Sofortmassnahmen fuer NIS2-Konformitaet (0-4 Wochen); Prioritaet 2 – Kurzfristige Massnahmen zur MIL-2-Festigung (1-3 Monate); Prioritaet 3 – Mittelfristige Massnahmen zum Zielniveau MIL-3 (3-12 Monate)."
+        }
+      ]
+    },
     "reviewed-controls": {
       "control-selections": [
-        {
-          "include-controls": [
-            {
-              "control-id": "ac-6.1"
-            }
-          ]
-        }
-      ],
-      "control-objective-selections": [
         {
           "include-all": {}
         }
@@ -161,59 +232,716 @@
     "assessment-subjects": [
       {
         "type": "component",
-        "description": "The assessor for the IFA SYSTEM1234 Project, including the application and infrastructure for this information system, are within scope of this assessment.",
+        "description": "ISMS und Netz-/Informationssysteme des Energieunternehmens im Geltungsbereich §30 BSIG (alle 9 Vorgehenskonzepte).",
         "include-all": {}
       }
     ],
-    "tasks": [
-      {
-        "uuid": "b3504d22-0e75-4dd7-9247-618661beba4e",
-        "type": "action",
-        "title": "Examine Least Privilege Design and Implementation",
-        "associated-activities": [
-          {
-            "activity-uuid": "0d243b23-a889-478f-9716-6d4870e56209",
-            "subjects": [
-              {
-                "type": "component",
-                "include-all": {}
-              }
-            ]
-          }
-        ],
-        "responsible-roles": [
-          {
-            "role-id": "assessor"
-          }
-        ],
-        "remarks": "Per IFA's use of NIST SP-800 53A, the assessor, with the support of the owner, information system security officer, and product team for the IFA SYSTEM1234 project, will examine least privilege design and implementation with the following:\n\n* list of security functions (deployed in hardware, software, and firmware) and security-relevant information for which access must be explicitly authorized;\n* system configuration settings and associated documentation;\n"
-      }
-    ],
-    "back-matter": {
-      "resources": [
+    "assessment-assets": {
+      "components": [
         {
-          "uuid": "60077e84-e62f-4375-8c6c-b0e0d4560c5f",
-          "title": "IFA GoodRead Assessment Plan",
-          "rlinks": [
-            {
-              "href": "https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.3.0.zip",
-              "media-type": "application/oscal+zip"
-            }
-          ],
-          "remarks": "This OSCAL version of the IFA Assessment Plan released with the OSCAL content v1.3.0."
-        },
-        {
-          "uuid": "97f36be8-fec0-4fa6-bcdf-e3f838eba040",
-          "title": "IFA SYSTEM1234 Assessment Plan",
-          "rlinks": [
-            {
-              "href": "https://github.com/usnistgov/oscal-content/archive/refs/tags/v1.4.0.zip",
-              "media-type": "application/oscal+zip"
-            }
-          ],
-          "remarks": "This OSCAL version of the IFA Assessment Plan was released with the OSCAL content v1.4.0."
+          "uuid": "5b548253-11cf-4eca-9cd6-8c5bd7af7b8f",
+          "type": "software",
+          "title": "OSCAL-Toolchain (Catalogs, Profile, SSP, AP, AR, POA&M)",
+          "description": "cat_nis2_eu.json, cat_nis2umg.json, cat_dvo.json, cat_bsi_kda.json, cat_c2m2_practices.json, cat_enisa_technical_guide.json, cat_it_grundschutz__.json, cat_ISO27001_AnnexA.json, profile-01..09-*.json, profile-kritis-energie-essential.json, ssp.json, ar.json, poam.json.",
+          "status": {
+            "state": "operational"
+          }
         }
       ]
-    }
+    },
+    "tasks": [
+      {
+        "uuid": "a74c252a-d289-482c-ad67-d0360fb3fc86",
+        "type": "action",
+        "title": "Stufe 1: Anforderungsanalyse",
+        "description": "Erhebung der Rechtsgrundlagen (NIS2-Richtlinie, NIS2UmsuG/BSIG), DVO-Punkte und Pflichtelemente je Thema. Ergebnis: profile-<thema>.json / profile-kritis-energie-essential.json.",
+        "props": [
+          {
+            "name": "vorgehensstufe-id",
+            "value": "stufe-1"
+          }
+        ],
+        "subjects": [
+          {
+            "type": "component",
+            "include-all": {}
+          }
+        ],
+        "tasks": [
+          {
+            "uuid": "7d0f391f-b0c7-47c3-b351-14b0777f0c34",
+            "type": "action",
+            "title": "Stufe 1: Anforderungsanalyse – Thema 1: Risikomanagement und ISMS-Fundament",
+            "description": "Durchfuehrung von 'Stufe 1: Anforderungsanalyse' fuer Thema 1 (Risikomanagement und ISMS-Fundament), Controls: anhang-1, anhang-2.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "1"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 1: Anforderungsanalyse"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "a9128eb8-4c6d-494e-a0a3-eaa1cc9dcde7",
+            "type": "action",
+            "title": "Stufe 1: Anforderungsanalyse – Thema 2: Lieferkettensicherheit",
+            "description": "Durchfuehrung von 'Stufe 1: Anforderungsanalyse' fuer Thema 2 (Lieferkettensicherheit), Controls: anhang-5.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "2"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 1: Anforderungsanalyse"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "07a1a80c-859b-42c0-862f-ebfdac3c7415",
+            "type": "action",
+            "title": "Stufe 1: Anforderungsanalyse – Thema 3: BCM-Nachweis",
+            "description": "Durchfuehrung von 'Stufe 1: Anforderungsanalyse' fuer Thema 3 (BCM-Nachweis), Controls: anhang-4.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "3"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 1: Anforderungsanalyse"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "d5480163-0ebb-4f7d-a8b5-8804a91eebcb",
+            "type": "action",
+            "title": "Stufe 1: Anforderungsanalyse – Thema 4: Incident Response & Detektion",
+            "description": "Durchfuehrung von 'Stufe 1: Anforderungsanalyse' fuer Thema 4 (Incident Response & Detektion), Controls: anhang-3.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "4"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 1: Anforderungsanalyse"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "67629fed-26fe-45e9-a86f-85c02ce344db",
+            "type": "action",
+            "title": "Stufe 1: Anforderungsanalyse – Thema 5: Wirksamkeitsbewertung von Sicherheitsmaßnahmen",
+            "description": "Durchfuehrung von 'Stufe 1: Anforderungsanalyse' fuer Thema 5 (Wirksamkeitsbewertung von Sicherheitsmaßnahmen), Controls: anhang-7.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "5"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 1: Anforderungsanalyse"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "72693d3c-ca1c-4388-8418-b4d03163d9a7",
+            "type": "action",
+            "title": "Stufe 1: Anforderungsanalyse – Thema 6: Sensibilisierung und Schulung",
+            "description": "Durchfuehrung von 'Stufe 1: Anforderungsanalyse' fuer Thema 6 (Sensibilisierung und Schulung), Controls: anhang-8.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "6"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 1: Anforderungsanalyse"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "d65d5d89-c8a7-452e-81ba-ee3079065921",
+            "type": "action",
+            "title": "Stufe 1: Anforderungsanalyse – Thema 7: Zugangskontrolle, Identitätsmanagement und MFA",
+            "description": "Durchfuehrung von 'Stufe 1: Anforderungsanalyse' fuer Thema 7 (Zugangskontrolle, Identitätsmanagement und MFA), Controls: anhang-9, anhang-11.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "7"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 1: Anforderungsanalyse"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "8e19f036-f7ee-4a54-81a9-12d5403d1099",
+            "type": "action",
+            "title": "Stufe 1: Anforderungsanalyse – Thema 8: Personalsicherheit und Informationsschutz",
+            "description": "Durchfuehrung von 'Stufe 1: Anforderungsanalyse' fuer Thema 8 (Personalsicherheit und Informationsschutz), Controls: anhang-10, anhang-11, anhang-12.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "8"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 1: Anforderungsanalyse"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "b0c71b53-b924-426d-aeb4-9e06f83e1d0a",
+            "type": "action",
+            "title": "Stufe 1: Anforderungsanalyse – Thema 9: Schwachstellenmanagement, Patch-Management und Sicherheitstests",
+            "description": "Durchfuehrung von 'Stufe 1: Anforderungsanalyse' fuer Thema 9 (Schwachstellenmanagement, Patch-Management und Sicherheitstests), Controls: anhang-6.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "9"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 1: Anforderungsanalyse"
+              }
+            ],
+            "associated-activities": []
+          }
+        ]
+      },
+      {
+        "uuid": "15f44d88-1e03-41d4-ace0-e99536379e80",
+        "type": "action",
+        "title": "Stufe 2: Evidenzerhebung",
+        "description": "Erhebung der konkreten Nachweise (Policies, Logs, Berichte, Protokolle) je Evidenz-ID (E-R*, E-L*, E-IR*, E-W*, E-ZK*, E-S*, E-PS*, E-SW* u.a.). Ergebnis: implemented-requirements in ssp.json.",
+        "props": [
+          {
+            "name": "vorgehensstufe-id",
+            "value": "stufe-2"
+          }
+        ],
+        "subjects": [
+          {
+            "type": "component",
+            "include-all": {}
+          }
+        ],
+        "tasks": [
+          {
+            "uuid": "303cfa4d-f751-4c13-8c43-7a665d37f0e2",
+            "type": "action",
+            "title": "Stufe 2: Evidenzerhebung – Thema 1: Risikomanagement und ISMS-Fundament",
+            "description": "Durchfuehrung von 'Stufe 2: Evidenzerhebung' fuer Thema 1 (Risikomanagement und ISMS-Fundament), Controls: anhang-1, anhang-2.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "1"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 2: Evidenzerhebung"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "4513df47-cd49-45e6-873c-80f751a67746",
+            "type": "action",
+            "title": "Stufe 2: Evidenzerhebung – Thema 2: Lieferkettensicherheit",
+            "description": "Durchfuehrung von 'Stufe 2: Evidenzerhebung' fuer Thema 2 (Lieferkettensicherheit), Controls: anhang-5.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "2"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 2: Evidenzerhebung"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "98edb48c-ba32-43dd-850a-14a6eed37628",
+            "type": "action",
+            "title": "Stufe 2: Evidenzerhebung – Thema 3: BCM-Nachweis",
+            "description": "Durchfuehrung von 'Stufe 2: Evidenzerhebung' fuer Thema 3 (BCM-Nachweis), Controls: anhang-4.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "3"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 2: Evidenzerhebung"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "6417bc85-79b2-430d-875c-cf634f172f92",
+            "type": "action",
+            "title": "Stufe 2: Evidenzerhebung – Thema 4: Incident Response & Detektion",
+            "description": "Durchfuehrung von 'Stufe 2: Evidenzerhebung' fuer Thema 4 (Incident Response & Detektion), Controls: anhang-3.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "4"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 2: Evidenzerhebung"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "898bac02-6cfd-4962-948b-762df585b32c",
+            "type": "action",
+            "title": "Stufe 2: Evidenzerhebung – Thema 5: Wirksamkeitsbewertung von Sicherheitsmaßnahmen",
+            "description": "Durchfuehrung von 'Stufe 2: Evidenzerhebung' fuer Thema 5 (Wirksamkeitsbewertung von Sicherheitsmaßnahmen), Controls: anhang-7.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "5"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 2: Evidenzerhebung"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "adba82c2-7dea-40dc-b668-2ea2f183a5ad",
+            "type": "action",
+            "title": "Stufe 2: Evidenzerhebung – Thema 6: Sensibilisierung und Schulung",
+            "description": "Durchfuehrung von 'Stufe 2: Evidenzerhebung' fuer Thema 6 (Sensibilisierung und Schulung), Controls: anhang-8.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "6"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 2: Evidenzerhebung"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "5b1ec9f4-1e79-4a1b-a7f0-df8ac1870f2d",
+            "type": "action",
+            "title": "Stufe 2: Evidenzerhebung – Thema 7: Zugangskontrolle, Identitätsmanagement und MFA",
+            "description": "Durchfuehrung von 'Stufe 2: Evidenzerhebung' fuer Thema 7 (Zugangskontrolle, Identitätsmanagement und MFA), Controls: anhang-9, anhang-11.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "7"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 2: Evidenzerhebung"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "8af08719-3c4b-46bf-a9c0-d6340d62e26b",
+            "type": "action",
+            "title": "Stufe 2: Evidenzerhebung – Thema 8: Personalsicherheit und Informationsschutz",
+            "description": "Durchfuehrung von 'Stufe 2: Evidenzerhebung' fuer Thema 8 (Personalsicherheit und Informationsschutz), Controls: anhang-10, anhang-11, anhang-12.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "8"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 2: Evidenzerhebung"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "88022a7f-5a5c-472e-befa-16af9ebdf351",
+            "type": "action",
+            "title": "Stufe 2: Evidenzerhebung – Thema 9: Schwachstellenmanagement, Patch-Management und Sicherheitstests",
+            "description": "Durchfuehrung von 'Stufe 2: Evidenzerhebung' fuer Thema 9 (Schwachstellenmanagement, Patch-Management und Sicherheitstests), Controls: anhang-6.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "9"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 2: Evidenzerhebung"
+              }
+            ],
+            "associated-activities": []
+          }
+        ]
+      },
+      {
+        "uuid": "098c8920-88bb-45b2-ac3d-f0ffeea81a2d",
+        "type": "action",
+        "title": "Stufe 3: Reifegradbewertung",
+        "description": "Bewertung des Reifegrads je Thema nach C2M2 MIL 1-3 und BSI RUN RF/UG 1-5. Ergebnis: props 'c2m2-mil' / 'bsi-run-rf' in ssp.json.",
+        "props": [
+          {
+            "name": "vorgehensstufe-id",
+            "value": "stufe-3"
+          }
+        ],
+        "subjects": [
+          {
+            "type": "component",
+            "include-all": {}
+          }
+        ],
+        "tasks": [
+          {
+            "uuid": "a403cf86-efdd-499f-a66b-6f02f83de7b8",
+            "type": "action",
+            "title": "Stufe 3: Reifegradbewertung – Thema 1: Risikomanagement und ISMS-Fundament",
+            "description": "Durchfuehrung von 'Stufe 3: Reifegradbewertung' fuer Thema 1 (Risikomanagement und ISMS-Fundament), Controls: anhang-1, anhang-2.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "1"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 3: Reifegradbewertung"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "4ecd2cfd-55a2-4593-acc6-cb381408a77c",
+            "type": "action",
+            "title": "Stufe 3: Reifegradbewertung – Thema 2: Lieferkettensicherheit",
+            "description": "Durchfuehrung von 'Stufe 3: Reifegradbewertung' fuer Thema 2 (Lieferkettensicherheit), Controls: anhang-5.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "2"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 3: Reifegradbewertung"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "994f2a80-5c28-4c71-9723-2c6ba2b56bfc",
+            "type": "action",
+            "title": "Stufe 3: Reifegradbewertung – Thema 3: BCM-Nachweis",
+            "description": "Durchfuehrung von 'Stufe 3: Reifegradbewertung' fuer Thema 3 (BCM-Nachweis), Controls: anhang-4.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "3"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 3: Reifegradbewertung"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "65f9245a-efbb-4b1f-95a8-4fe970e6f556",
+            "type": "action",
+            "title": "Stufe 3: Reifegradbewertung – Thema 4: Incident Response & Detektion",
+            "description": "Durchfuehrung von 'Stufe 3: Reifegradbewertung' fuer Thema 4 (Incident Response & Detektion), Controls: anhang-3.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "4"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 3: Reifegradbewertung"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "66d32556-a1e6-4db4-b30a-aeeb55799729",
+            "type": "action",
+            "title": "Stufe 3: Reifegradbewertung – Thema 5: Wirksamkeitsbewertung von Sicherheitsmaßnahmen",
+            "description": "Durchfuehrung von 'Stufe 3: Reifegradbewertung' fuer Thema 5 (Wirksamkeitsbewertung von Sicherheitsmaßnahmen), Controls: anhang-7.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "5"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 3: Reifegradbewertung"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "18c788a6-5e0b-40d6-be00-c5a58d1086f5",
+            "type": "action",
+            "title": "Stufe 3: Reifegradbewertung – Thema 6: Sensibilisierung und Schulung",
+            "description": "Durchfuehrung von 'Stufe 3: Reifegradbewertung' fuer Thema 6 (Sensibilisierung und Schulung), Controls: anhang-8.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "6"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 3: Reifegradbewertung"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "38d4bc8e-d046-431b-be5c-3de51c9d97e3",
+            "type": "action",
+            "title": "Stufe 3: Reifegradbewertung – Thema 7: Zugangskontrolle, Identitätsmanagement und MFA",
+            "description": "Durchfuehrung von 'Stufe 3: Reifegradbewertung' fuer Thema 7 (Zugangskontrolle, Identitätsmanagement und MFA), Controls: anhang-9, anhang-11.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "7"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 3: Reifegradbewertung"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "7ccc8cd1-ead4-466d-a44b-7f7c18cb559d",
+            "type": "action",
+            "title": "Stufe 3: Reifegradbewertung – Thema 8: Personalsicherheit und Informationsschutz",
+            "description": "Durchfuehrung von 'Stufe 3: Reifegradbewertung' fuer Thema 8 (Personalsicherheit und Informationsschutz), Controls: anhang-10, anhang-11, anhang-12.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "8"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 3: Reifegradbewertung"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "601b8652-e5e0-4480-8e83-deacd45842d0",
+            "type": "action",
+            "title": "Stufe 3: Reifegradbewertung – Thema 9: Schwachstellenmanagement, Patch-Management und Sicherheitstests",
+            "description": "Durchfuehrung von 'Stufe 3: Reifegradbewertung' fuer Thema 9 (Schwachstellenmanagement, Patch-Management und Sicherheitstests), Controls: anhang-6.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "9"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 3: Reifegradbewertung"
+              }
+            ],
+            "associated-activities": []
+          }
+        ]
+      },
+      {
+        "uuid": "05c77807-103c-440a-9e4d-a33380b16742",
+        "type": "action",
+        "title": "Stufe 4: Lückenanalyse & Audit",
+        "description": "Ampelbewertung je Control (Erfuellt/Teilweise erfuellt/Nicht erfuellt/Nicht anwendbar), Ableitung priorisierter Massnahmen (Prioritaet 1: Sofortmassnahmen 0-4 Wochen; Prioritaet 2: Kurzfristig/MIL-2-Festigung 1-3 Monate; Prioritaet 3: Mittelfristig/MIL-3 3-12 Monate). Ergebnis: ar.json (findings/observations/risks) und poam.json (Behebungsplan).",
+        "props": [
+          {
+            "name": "vorgehensstufe-id",
+            "value": "stufe-4"
+          }
+        ],
+        "subjects": [
+          {
+            "type": "component",
+            "include-all": {}
+          }
+        ],
+        "tasks": [
+          {
+            "uuid": "6f69e968-028d-4f49-8413-b39c4b00ba2d",
+            "type": "action",
+            "title": "Stufe 4: Lückenanalyse & Audit – Thema 1: Risikomanagement und ISMS-Fundament",
+            "description": "Durchfuehrung von 'Stufe 4: Lückenanalyse & Audit' fuer Thema 1 (Risikomanagement und ISMS-Fundament), Controls: anhang-1, anhang-2.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "1"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 4: Lückenanalyse & Audit"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "c6f5f4e8-0951-4b18-a9c1-0ae0a4b0de02",
+            "type": "action",
+            "title": "Stufe 4: Lückenanalyse & Audit – Thema 2: Lieferkettensicherheit",
+            "description": "Durchfuehrung von 'Stufe 4: Lückenanalyse & Audit' fuer Thema 2 (Lieferkettensicherheit), Controls: anhang-5.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "2"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 4: Lückenanalyse & Audit"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "db9e80da-a4b2-4637-8c4e-47919eb7c136",
+            "type": "action",
+            "title": "Stufe 4: Lückenanalyse & Audit – Thema 3: BCM-Nachweis",
+            "description": "Durchfuehrung von 'Stufe 4: Lückenanalyse & Audit' fuer Thema 3 (BCM-Nachweis), Controls: anhang-4.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "3"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 4: Lückenanalyse & Audit"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "20ab0513-a8f0-4d6d-b1fb-9d1bc04d469b",
+            "type": "action",
+            "title": "Stufe 4: Lückenanalyse & Audit – Thema 4: Incident Response & Detektion",
+            "description": "Durchfuehrung von 'Stufe 4: Lückenanalyse & Audit' fuer Thema 4 (Incident Response & Detektion), Controls: anhang-3.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "4"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 4: Lückenanalyse & Audit"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "6e9cd40c-ea32-4540-b188-08453b84124c",
+            "type": "action",
+            "title": "Stufe 4: Lückenanalyse & Audit – Thema 5: Wirksamkeitsbewertung von Sicherheitsmaßnahmen",
+            "description": "Durchfuehrung von 'Stufe 4: Lückenanalyse & Audit' fuer Thema 5 (Wirksamkeitsbewertung von Sicherheitsmaßnahmen), Controls: anhang-7.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "5"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 4: Lückenanalyse & Audit"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "6f2a9994-0d55-4f16-a4f8-43e7fe20eab5",
+            "type": "action",
+            "title": "Stufe 4: Lückenanalyse & Audit – Thema 6: Sensibilisierung und Schulung",
+            "description": "Durchfuehrung von 'Stufe 4: Lückenanalyse & Audit' fuer Thema 6 (Sensibilisierung und Schulung), Controls: anhang-8.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "6"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 4: Lückenanalyse & Audit"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "b5126a44-bbf6-4e6d-9901-c50e877c6723",
+            "type": "action",
+            "title": "Stufe 4: Lückenanalyse & Audit – Thema 7: Zugangskontrolle, Identitätsmanagement und MFA",
+            "description": "Durchfuehrung von 'Stufe 4: Lückenanalyse & Audit' fuer Thema 7 (Zugangskontrolle, Identitätsmanagement und MFA), Controls: anhang-9, anhang-11.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "7"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 4: Lückenanalyse & Audit"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "c19936e7-edcf-4d71-9d30-4d4597c2a1db",
+            "type": "action",
+            "title": "Stufe 4: Lückenanalyse & Audit – Thema 8: Personalsicherheit und Informationsschutz",
+            "description": "Durchfuehrung von 'Stufe 4: Lückenanalyse & Audit' fuer Thema 8 (Personalsicherheit und Informationsschutz), Controls: anhang-10, anhang-11, anhang-12.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "8"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 4: Lückenanalyse & Audit"
+              }
+            ],
+            "associated-activities": []
+          },
+          {
+            "uuid": "edccc794-0008-44d5-8882-e202abe2bdc3",
+            "type": "action",
+            "title": "Stufe 4: Lückenanalyse & Audit – Thema 9: Schwachstellenmanagement, Patch-Management und Sicherheitstests",
+            "description": "Durchfuehrung von 'Stufe 4: Lückenanalyse & Audit' fuer Thema 9 (Schwachstellenmanagement, Patch-Management und Sicherheitstests), Controls: anhang-6.",
+            "props": [
+              {
+                "name": "audit-thema-nr",
+                "value": "9"
+              },
+              {
+                "name": "vorgehensstufe",
+                "value": "Stufe 4: Lückenanalyse & Audit"
+              }
+            ],
+            "associated-activities": []
+          }
+        ]
+      }
+    ]
   }
 }
