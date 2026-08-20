@@ -1,0 +1,69 @@
+{
+  "catalog": {
+    "uuid": "8f2b1e2a-1e2d-4a3b-9c1a-nis2-art21-demo",
+    "metadata": {
+      "title": "NIS2 EU-Richtlinie — Art. 21 Risikomanagementmassnahmen",
+      "version": "2022/2555 (Demo-Auszug)"
+    },
+    "groups": [
+      {
+        "id": "art21-2-a-b",
+        "title": "a)–b) Risikoanalyse & Lieferkette",
+        "controls": [
+          {
+            "id": "21.2a",
+            "title": "Konzepte zur Risikoanalyse und Sicherheit von Informationssystemen",
+            "parts": [{"name": "statement", "prose": "Der Betreiber muss dokumentierte Konzepte zur systematischen Risikoanalyse vorweisen, die regelmaessig aktualisiert werden."}]
+          },
+          {
+            "id": "21.2b",
+            "title": "Sicherheit in der Lieferkette",
+            "parts": [{"name": "statement", "prose": "Es sind Verfahren zur Bewertung der Cybersicherheit von Zulieferern und Dienstleistern zu etablieren."}]
+          }
+        ]
+      },
+      {
+        "id": "art21-2-c-e",
+        "title": "c)–e) Systemsicherheit & Kryptografie",
+        "controls": [
+          {
+            "id": "21.2c",
+            "title": "Bewaeltigung von Sicherheitsvorfaellen",
+            "parts": [{"name": "statement", "prose": "Ein dokumentierter Incident-Response-Prozess mit klaren Meldewegen an die zustaendige Behoerde muss vorhanden sein."}]
+          },
+          {
+            "id": "21.2d",
+            "title": "Konzepte und Verfahren zur Bewertung der Wirksamkeit von Risikomanagementmassnahmen fuer Cybersicherheit",
+            "parts": [{"name": "statement", "prose": "Der Betreiber muss dokumentierte Verfahren vorweisen, mit denen die Wirksamkeit implementierter Sicherheitsmassnahmen regelmaessig bewertet wird. Dies umfasst Patch-Management-Zyklen, Penetrationstests sowie ein strukturiertes Reporting an die Leitungsebene gemaess Art. 20 Abs. 1."}]
+          },
+          {
+            "id": "21.2e",
+            "title": "Kryptografie und Verschluesselung",
+            "parts": [{"name": "statement", "prose": "Sensible Daten sind gemaess dem Stand der Technik zu verschluesseln, sowohl bei der Uebertragung als auch bei der Speicherung."}]
+          }
+        ]
+      },
+      {
+        "id": "art21-2-f-h",
+        "title": "f)–h) Governance & Zugriffskontrolle",
+        "controls": [
+          {
+            "id": "21.2f",
+            "title": "Personalsicherheit, Konzepte fuer die Zugangskontrolle und Management von Anlagen",
+            "parts": [{"name": "statement", "prose": "Rollenbasierte Zugriffskonzepte und Sicherheitsueberpruefungen fuer Mitarbeitende in sicherheitskritischen Positionen sind zu dokumentieren."}]
+          },
+          {
+            "id": "21.2g",
+            "title": "Verwendung von Multi-Faktor-Authentifizierung",
+            "parts": [{"name": "statement", "prose": "Fuer alle administrativen und sicherheitskritischen Zugaenge ist eine Multi-Faktor-Authentifizierung verpflichtend einzusetzen."}]
+          },
+          {
+            "id": "21.2h",
+            "title": "Gesicherte Sprach-, Video- und Textkommunikation",
+            "parts": [{"name": "statement", "prose": "Fuer die interne Notfallkommunikation sind gesicherte, redundante Kommunikationssysteme vorzuhalten."}]
+          }
+        ]
+      }
+    ]
+  }
+}
